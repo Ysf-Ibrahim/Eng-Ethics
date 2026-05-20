@@ -44,9 +44,9 @@
     <a href="#case-2"><span>2</span> Heathrow Terminal 5</a>
     <a href="#case-3"><span>3</span> Boeing 737 MAX Crisis</a>
     <a href="#case-4"><span>4</span> Ariane 5 Flight 501</a>
-    <a href="#case-5"><span>5</span> Case Study 5</a>
-    <a href="#case-6"><span>6</span> Case Study 6</a>
-    <a href="#case-7"><span>7</span> Case Study 7</a>
+    <a href="#case-5"><span>5</span> Therac-25 Accidents</a>
+    <a href="#case-6"><span>6</span> Tacoma Narrows</a>
+    <a href="#case-7"><span>7</span> Gulf Hotel Fire</a>
     <a href="#case-8"><span>8</span> Case Study 8</a>
     <a href="#case-9"><span>9</span> Case Study 9</a>
     <a href="#case-10"><span>10</span> Case Study 10</a>
@@ -59,7 +59,7 @@
         <h2 id="how-to-use-title">Study the same way the exam asks questions.</h2>
       </div>
       <p>
-        Cases 1 to 4 are complete guided lessons with one-by-one MCQ practice. Cases 5 to 10 are clean
+        Cases 1 to 7 are complete guided lessons with one-by-one MCQ practice. Cases 8 to 10 are clean
         <strong>coming soon</strong> placeholders so future content can be added without the page feeling repetitive.
       </p>
     </section>
@@ -1451,19 +1451,564 @@
       </article>
     </section>
 
-    <section id="case-5" class="case-section coming-soon-section" data-case-id="case-5" aria-labelledby="case-5-title">
-      <div class="case-heading"><div><p class="case-count">Case 5 of 10</p><h2 id="case-5-title">Case Study 5</h2></div><p class="case-status">Coming soon</p></div>
-      <article class="coming-soon-card"><h3>Coming soon</h3><p>Add transcript to generate this case with story, exam notes, MCQs, written questions, templates, and revision summary.</p></article>
+    <section id="case-5" class="case-section therac-case" data-case-id="case-5" aria-labelledby="case-5-title">
+      <div class="case-heading">
+        <div>
+          <p class="case-count">Case 5 of 10</p>
+          <h2 id="case-5-title">Therac-25 Radiation Therapy Accidents</h2>
+          <p class="case-theme">
+            <strong>Main theme:</strong> Medical-device software failure, missing hardware interlocks, poor software
+            testing, unclear error messages, repeated denial, weak accountability, and patient safety.
+          </p>
+        </div>
+        <p class="case-status completed therac-status" data-status-for="case-5" data-default-status="Lesson ready">Lesson ready</p>
+      </div>
+
+      <article id="therac-story" class="study-card therac-story-card">
+        <p class="section-kicker">Medical-device safety</p>
+        <h3>1. Story</h3>
+        <p>
+          Therac-25 was a radiation therapy machine made by AECL Medical. It was designed to treat cancer patients
+          using high-energy electron beams or x-rays. Unlike older machines, Therac-25 relied heavily on software
+          instead of physical hardware interlocks. This made the software safety-critical because wrong software
+          behavior could directly expose patients to dangerous radiation.
+        </p>
+        <p>
+          The first major victim discussed in the video was Katie Yarborough. She went for a normal cancer treatment
+          expecting a small prescribed dose, but during treatment she felt a burning sensation and told the technician,
+          "You burned me." The technician believed this was impossible. Later, her injuries showed that she had
+          received a massive overdose, not the intended safe dose.
+        </p>
+        <p>
+          The problem did not stop after one patient. Similar accidents happened in different hospitals. Patients
+          reported burning, electric shocks, pain, or strange sensations during treatment. Some suffered severe
+          injuries and some died. Doctors, physicists, and operators became suspicious because the injuries looked
+          like radiation overdoses, but AECL repeatedly claimed that such overdoses were impossible.
+        </p>
+        <p>
+          A major issue was the machine's error handling. Operators often saw vague error messages such as
+          "malfunction" followed by a number. The meanings of these codes were not clearly explained in manuals.
+          Operators became used to these errors and could press a key to proceed without understanding whether the
+          error was harmless or deadly.
+        </p>
+        <p>
+          One famous error was <strong>Malfunction 54</strong>. It was eventually reproduced by Dr. Fritz Hager and
+          staff after a serious accident. They discovered that if an operator quickly edited the treatment settings
+          within the few seconds while magnets were physically moving into position, the software did not properly
+          detect the change. The screen could show one treatment setup while the machine was physically configured
+          differently, allowing an unfiltered high-energy beam to hit the patient.
+        </p>
+        <p>
+          Another later problem involved arithmetic overflow in a software task that checked the turntable position.
+          The counter could overflow back to zero, making the system think there was no error and allowing treatment
+          to proceed incorrectly.
+        </p>
+        <p>
+          The deeper ethical issue is that Therac-25 trusted software too much and removed or reduced hardware safety
+          interlocks used in earlier machines. AECL's safety analysis did not properly examine the software, even
+          though the software controlled a life-critical medical device. The software was based on older code, written
+          by one unidentified programmer, and lacked strong independent documentation and review.
+        </p>
+        <p>
+          The case became visible through repeated patient injuries, doctors and physicists reporting suspicious
+          radiation burns, operators comparing incidents, and finally the reproduction of Malfunction 54. The FDA
+          declared the device defective and demanded corrective action. Later fixes included software changes and
+          hardware safety features, such as a dose-per-pulse monitor that could stop dangerous doses even if software
+          failed.
+        </p>
+        <p>
+          The main lesson is that in medical and safety-critical systems, software must never be trusted blindly.
+          Engineers must design for real user behavior, clear error messages, independent software review, hardware
+          fail-safes, proper testing, and fast accountability when patients report harm.
+        </p>
+      </article>
+
+      <article id="therac-summary" class="study-card therac-super-summary">
+        <p class="section-kicker">High Yield</p>
+        <h3>2. Super Summary</h3>
+        <p>
+          Therac-25 was a cancer radiation therapy machine that relied heavily on software instead of older hardware
+          safety interlocks. Several patients received massive radiation overdoses because software errors, unclear
+          machine states, and poor fail-safe design allowed powerful unfiltered beams to be delivered. The problem
+          became visible through repeated patient injuries, doctors noticing radiation-like burns, operators sharing
+          similar incidents, and finally the reproduction of "Malfunction 54." AECL repeatedly denied that overdoses
+          were possible, which delayed proper corrective action.
+        </p>
+        <ul class="study-list therac-summary-list">
+          <li><strong>Main ethical issue:</strong> Patient safety was put at risk because a life-critical medical device relied on poorly tested software without enough independent hardware protection.</li>
+          <li><strong>How it became visible:</strong> Patients felt burning/shocks, developed severe radiation injuries, doctors reported suspicious overdose signs, and Malfunction 54 was later reproduced.</li>
+          <li><strong>Most important violation, patient safety:</strong> The machine directly harmed patients because software faults could deliver deadly radiation doses.</li>
+          <li><strong>Software responsibility violation:</strong> AECL did not properly analyze, document, test, or independently review the software even though it controlled radiation delivery.</li>
+          <li><strong>Fail-safe violation:</strong> Older hardware interlocks were reduced or removed, so software errors did not have enough physical protection to stop dangerous beams.</li>
+          <li><strong>Transparency violation:</strong> Error messages were vague, manuals did not explain malfunction codes, and AECL denied or minimized overdose reports.</li>
+          <li><strong>Accountability violation:</strong> AECL responded too slowly, rejected early warnings, claimed overdoses were impossible, and allowed use to continue after similar accidents.</li>
+          <li><strong>Human-factor issue:</strong> Operators were expected to work with unclear errors and could press proceed without knowing if the fault was harmless or dangerous.</li>
+          <li><strong>Main causes:</strong> Overreliance on software, poor testing, reused older code, unclear error messages, lack of hardware interlocks, race-condition/timing bugs, arithmetic overflow, and weak response to incidents.</li>
+          <li><strong>Stakeholders affected:</strong> Patients, families, operators, hospitals, AECL, regulators, medical physicists, and public trust in medical technology.</li>
+          <li><strong>Consequences:</strong> Severe injuries, patient deaths, lawsuits, FDA action, corrective action plans, hardware/software fixes, and loss of trust in Therac-25.</li>
+          <li><strong>What should have been done:</strong> Keep hardware interlocks, test software thoroughly, document code, explain errors clearly, design fail-safe shutdowns, investigate early accidents seriously, inform users, and stop using the machine until proven safe.</li>
+          <li><strong>Final lesson:</strong> In medical devices, software failure can kill. Safety-critical systems need testing, transparency, hardware fail-safes, human-centered design, and accountability before and after harm occurs.</li>
+        </ul>
+      </article>
+
+      <article id="therac-ethics" class="study-card">
+        <p class="section-kicker">Principle Map</p>
+        <h3>3. Ethics Violated</h3>
+        <div class="ethics-grid">
+          <div class="ethics-card priority-card">
+            <h4>Patient Safety / Public Welfare</h4>
+            <span class="most-important-badge">⭐ Most Important</span>
+            <p>Therac-25 delivered massive radiation overdoses to patients who trusted the machine for cancer treatment.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Patient safety was violated because software and design failures exposed patients to deadly radiation.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Professional Responsibility</h4>
+            <p>AECL had a duty to fully test, document, review, and validate software used in a life-critical medical device.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Professional responsibility was violated because safety-critical software was not treated with enough engineering discipline.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Fail-Safe Design</h4>
+            <p>The machine relied too much on software and lacked enough hardware interlocks to stop unsafe radiation delivery.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Fail-safe design was violated because a software mistake could reach the patient without physical protection.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Transparency</h4>
+            <p>Error codes were vague, manuals did not explain them clearly, and AECL denied that overdoses were possible.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Transparency was violated because users and hospitals did not receive clear safety information.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Accountability</h4>
+            <p>AECL responded slowly to repeated accidents and minimized early reports instead of immediately accepting risk and protecting patients.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Accountability was violated because the company did not act quickly enough after warning signs and repeated harm.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Human Factors</h4>
+            <p>Operators worked with confusing interfaces, unclear errors, and workflows where quick edits could trigger dangerous states.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Human factors were ignored because the system was not designed for real operator behavior under routine work.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Testing and Validation</h4>
+            <p>The software was not tested enough under realistic use, fast editing, timing conditions, and failure cases.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Testing was violated because the device was not validated for the way operators actually used it.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Risk Management</h4>
+            <p>AECL underestimated the risk of software faults in a radiation machine.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Risk management was weak because the company did not properly control foreseeable software and overdose hazards.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Regulatory Responsibility</h4>
+            <p>The FDA eventually had to declare the machine defective and require corrective action.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Regulatory responsibility became critical because manufacturer controls were insufficient to protect patients.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Public Trust</h4>
+            <p>The repeated accidents damaged trust in medical technology and software-controlled treatment machines.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Public trust was harmed because a device meant to heal patients instead injured and killed them.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="therac-quiz" class="study-card quiz-card therac-quiz-card">
+        <div class="quiz-heading">
+          <div>
+            <p class="section-kicker">MCQ Practice</p>
+            <h3>4. MCQ Practice</h3>
+            <p class="quiz-note">One Therac-25 question appears at a time. Submit your answer to reveal feedback, then move to the next question.</p>
+          </div>
+          <p class="score-pill" data-score-for="case-5">Quiz Score: Not started</p>
+        </div>
+        <p class="quiz-warning" data-warning-for="case-5" aria-live="polite"></p>
+        <div class="quiz-list" data-quiz-for="case-5"></div>
+        <div class="quiz-actions">
+          <button type="button" class="primary-button" data-submit-quiz="case-5">Submit Answer</button>
+          <button type="button" class="primary-button" data-next-question="case-5" hidden>Next Question</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-5">Restart Quiz</button>
+        </div>
+      </article>
+
+      <article id="therac-written" class="study-card">
+        <p class="section-kicker">Written Answers</p>
+        <h3>5. Written Questions</h3>
+        <ol class="written-list">
+          <li class="written-question important-question therac-written-question">
+            <h4>Explain the Therac-25 accidents. <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Therac-25 was a radiation therapy machine used to treat cancer patients, but several patients received massive radiation overdoses because of software and design failures. The machine relied heavily on software instead of hardware interlocks, and its safety analysis did not properly examine the software. Patients reported burning, shocks, and severe injuries, but AECL repeatedly claimed overdoses were impossible. The case shows how unsafe software, poor testing, unclear errors, and weak accountability can turn a medical device into a danger to patients.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Radiation therapy machine</li><li>Software-controlled</li><li>Overdoses</li><li>Missing hardware interlocks</li><li>AECL denial</li></ul></div><div><h5>Best keywords</h5><p>Therac-25, radiation overdose, software failure, patient safety, hardware interlocks</p></div><div><h5>Mistake to avoid</h5><p>Do not describe it as only operator error.</p></div></div>
+          </li>
+          <li class="written-question important-question therac-written-question">
+            <h4>What ethical principles were violated in the Therac-25 case? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>The main principles violated were patient safety, professional responsibility, transparency, accountability, testing and validation, risk management, and fail-safe design. Patient safety was the most important because patients received dangerous radiation overdoses from a medical device. Professional responsibility was violated because AECL did not properly test or document safety-critical software. Transparency and accountability were violated because AECL denied overdose claims and did not respond quickly enough to repeated warnings.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Patient safety most important</li><li>Software testing</li><li>Fail-safe design</li><li>Transparency</li><li>Accountability</li></ul></div><div><h5>Best keywords</h5><p>patient safety, professional responsibility, transparency, accountability, fail-safe</p></div><div><h5>Mistake to avoid</h5><p>Do not only list principles. Explain how each was violated.</p></div></div>
+          </li>
+          <li class="written-question important-question therac-written-question">
+            <h4>What role did poor software engineering practices play in the Therac-25 disaster? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Poor software engineering practices were central to the Therac-25 disaster. AECL relied on software to control a dangerous radiation machine but did not properly analyze, test, document, or independently review the software. The code was based on older software and written by one unidentified programmer. The system had unclear error messages, race-condition/timing problems, arithmetic overflow, and weak handling of unsafe states. Because hardware interlocks were reduced, software errors could directly harm patients.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Poor software review</li><li>Old code</li><li>Weak documentation</li><li>Race/timing bug</li><li>Arithmetic overflow</li><li>No hardware backup</li></ul></div><div><h5>Best keywords</h5><p>software engineering, testing, documentation, race condition, overflow, safety-critical</p></div><div><h5>Mistake to avoid</h5><p>Do not say the software was a small side issue.</p></div></div>
+          </li>
+          <li class="written-question important-question therac-written-question">
+            <h4>How does the Therac-25 case illustrate the importance of safety redundancy? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Therac-25 shows that safety redundancy is essential because the machine relied too much on software and lacked enough independent hardware interlocks. In older machines, hardware mechanisms could prevent unsafe radiation delivery even if an operator or software error occurred. In Therac-25, software faults could allow unfiltered high-energy beams to reach patients. Proper redundancy, such as hardware interlocks and dose monitors, would provide backup protection if software safety checks failed.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Software relied on too much</li><li>Hardware interlocks missing</li><li>Unfiltered beam reached patients</li><li>Dose monitor later added</li></ul></div><div><h5>Best keywords</h5><p>redundancy, hardware interlocks, fail-safe, dose monitor, patient safety</p></div><div><h5>Mistake to avoid</h5><p>Do not say redundancy means only having more software.</p></div></div>
+          </li>
+          <li class="written-question important-question therac-written-question">
+            <h4>How was the Therac-25 problem discovered or made visible? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>The problem became visible through repeated patient injuries and suspicious overdose symptoms. Patients reported burning, shocks, and severe pain during treatment, and doctors/physicists noticed injuries that looked like radiation overdoses. Operators and hospitals began comparing similar incidents. Later, Dr. Fritz Hager and staff reproduced Malfunction 54 by recreating the fast editing sequence, proving that the machine could enter a dangerous state. The FDA then declared the device defective and required corrective action.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Patient complaints</li><li>Radiation-like injuries</li><li>Similar incidents</li><li>Malfunction 54 reproduced</li><li>FDA action</li></ul></div><div><h5>Best keywords</h5><p>Malfunction 54, patient injuries, overdose, reproduction, FDA</p></div><div><h5>Mistake to avoid</h5><p>Do not say AECL discovered and fixed it immediately.</p></div></div>
+          </li>
+          <li class="written-question important-question therac-written-question">
+            <h4>How did AECL's handling of the accidents violate accountability? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>AECL violated accountability because it repeatedly denied or minimized early overdose reports and claimed such events were impossible. Instead of immediately stopping use, informing all users, and fully investigating the software, the company responded slowly while similar accidents continued. Accountability required accepting the possibility of failure, protecting patients first, cooperating with hospitals and regulators, issuing clear warnings, and implementing strong software and hardware fixes.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Denial</li><li>Slow response</li><li>Repeated accidents</li><li>Need to warn users</li><li>Corrective action</li></ul></div><div><h5>Best keywords</h5><p>accountability, denial, corrective action, patient protection, AECL</p></div><div><h5>Mistake to avoid</h5><p>Do not define accountability generally without applying it to AECL's response.</p></div></div>
+          </li>
+          <li class="written-question important-question therac-written-question">
+            <h4>Why were vague error messages dangerous in Therac-25? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Vague error messages were dangerous because operators often saw "malfunction" codes without clear explanations. Since manuals did not explain the codes properly, operators became used to errors and could press proceed without knowing whether the fault was harmless or deadly. In a medical device, error messages must be clear, meaningful, and designed to stop unsafe operation when patient safety is uncertain.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Unclear malfunction codes</li><li>Operators normalized errors</li><li>Pressed proceed</li><li>No danger explanation</li></ul></div><div><h5>Best keywords</h5><p>error messages, human factors, operator interface, transparency, fail-safe</p></div><div><h5>Mistake to avoid</h5><p>Do not blame operators only. The interface design was unsafe.</p></div></div>
+          </li>
+          <li class="written-question important-question therac-written-question">
+            <h4>What should AECL have done differently? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>AECL should have treated Therac-25 as a safety-critical medical device and performed deep software safety analysis, independent code review, realistic testing, and full documentation. It should have kept hardware interlocks, designed clear error messages, prevented treatment from continuing after unknown faults, investigated early injuries seriously, informed hospitals and regulators, and removed machines from service until proven safe.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Software analysis</li><li>Hardware interlocks</li><li>Clear error messages</li><li>Stop after faults</li><li>Inform users/regulators</li></ul></div><div><h5>Best keywords</h5><p>software safety, hardware interlocks, testing, transparency, accountability</p></div><div><h5>Mistake to avoid</h5><p>Do not only say "fix the bug." The whole safety process had to change.</p></div></div>
+          </li>
+          <li class="written-question therac-written-question">
+            <h4>Who were the stakeholders affected by the Therac-25 accidents?</h4>
+            <p>The stakeholders included patients, patients' families, operators, hospitals, doctors, medical physicists, AECL, regulators, and the public. Patients were directly harmed by radiation overdoses. Families suffered from injury and death. Operators and hospitals had to use a dangerous and unclear system. Regulators became involved to protect future patients, and public trust in medical technology was damaged.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Patients and families</li><li>Operators/hospitals</li><li>AECL</li><li>Regulators</li><li>Public trust</li></ul></div><div><h5>Best keywords</h5><p>stakeholders, patients, hospitals, FDA, public trust</p></div><div><h5>Mistake to avoid</h5><p>Do not mention only AECL and hospitals.</p></div></div>
+          </li>
+          <li class="written-question therac-written-question">
+            <h4>What is the main engineering ethics lesson from Therac-25?</h4>
+            <p>The main lesson is that software in medical devices can be life-critical and must be engineered with the same seriousness as physical safety systems. Engineers must test software thoroughly, document it clearly, design for real user behavior, use hardware fail-safes, investigate incidents quickly, and prioritize patient safety over confidence in technology. Advanced technology is not ethical unless it is safe, transparent, and accountable.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Software can kill</li><li>Patient safety</li><li>Testing/documentation</li><li>Real user behavior</li><li>Fail-safes</li><li>Accountability</li></ul></div><div><h5>Best keywords</h5><p>safety-critical software, medical device, patient safety, fail-safe, accountability</p></div><div><h5>Mistake to avoid</h5><p>Do not say "advanced technology is always safe."</p></div></div>
+          </li>
+        </ol>
+      </article>
     </section>
 
-    <section id="case-6" class="case-section coming-soon-section" data-case-id="case-6" aria-labelledby="case-6-title">
-      <div class="case-heading"><div><p class="case-count">Case 6 of 10</p><h2 id="case-6-title">Case Study 6</h2></div><p class="case-status">Coming soon</p></div>
-      <article class="coming-soon-card"><h3>Coming soon</h3><p>Add transcript to generate this case. This section is ready for a future engineering ethics lesson.</p></article>
+    <section id="case-6" class="case-section tacoma-case" data-case-id="case-6" aria-labelledby="case-6-title">
+      <div class="case-heading">
+        <div>
+          <p class="case-count">Case 6 of 10</p>
+          <h2 id="case-6-title">Tacoma Narrows Bridge Collapse</h2>
+          <p class="case-theme">
+            <strong>Main theme:</strong> Responsible design under uncertainty, public safety, wind-induced motion,
+            cost-saving, warning signs, testing, and professional judgment.
+          </p>
+        </div>
+        <p class="case-status completed tacoma-status" data-status-for="case-6" data-default-status="Lesson ready">Lesson ready</p>
+      </div>
+
+      <article id="tacoma-story" class="study-card tacoma-story-card">
+        <p class="section-kicker">Bridge Failure Logic</p>
+        <h3>1. Case in One Clear Story</h3>
+        <p>
+          Tacoma Narrows Bridge opened in 1940 as a long suspension bridge. To reduce cost and material, engineers used
+          a very slender plate-girder design instead of a deeper, stiffer truss design. This made the bridge elegant and
+          economical, but also very flexible.
+        </p>
+        <p>
+          Even before collapse, the bridge moved noticeably in moderate winds and was nicknamed "Galloping Gertie."
+          This movement was an early warning sign. Four months after opening, wind caused the bridge to move violently.
+          The important point is that the bridge did not fail simply because it was too weak for gravity loads. It failed
+          because its shape and flexibility made it unstable under wind.
+        </p>
+        <p>
+          The final collapse was mainly due to <strong>torsional flutter</strong>, meaning the bridge twisted as wind
+          forces amplified the motion. This is different from simple vertical resonance. The bridge showed that a
+          structure can look efficient and strong in one sense, but still fail if engineers underestimate dynamic
+          environmental forces.
+        </p>
+        <p class="bridge-final-line">
+          This case teaches that engineers must design for real-world conditions, not only ideal calculations.
+          Cost-saving and innovation are acceptable only when public safety is still protected.
+        </p>
+      </article>
+
+      <article id="tacoma-core" class="study-card tacoma-core-card">
+        <p class="section-kicker">Memorize This</p>
+        <h3>2. Exam Core, What I Must Actually Know</h3>
+        <div class="bridge-one-idea">
+          <span>If you remember only one idea:</span>
+          <p>Tacoma Narrows failed because a very slender, cost-saving bridge design was not stable under wind-induced motion.</p>
+        </div>
+        <div class="bridge-must-know">
+          <h4>Must know:</h4>
+          <ul>
+            <li>The bridge was long, slender, flexible, and economical.</li>
+            <li>It moved noticeably before collapse, so there were warning signs.</li>
+            <li>The final failure was mainly twisting motion called <strong>torsional flutter</strong>.</li>
+            <li>Do not say only "resonance." The video says vertical resonance happened, but torsional flutter caused the collapse.</li>
+            <li>The ethical issue is <strong>public safety</strong>: engineers must consider all real loads, including wind and dynamic effects.</li>
+            <li>Cost-saving is not wrong, but it becomes dangerous if it reduces safety or stiffness without enough testing.</li>
+            <li>Engineers should have used better aerodynamic design, more stiffness, wind/dynamic testing, and stronger response to warning signs.</li>
+            <li><strong>Best final sentence:</strong> "Tacoma Narrows shows that elegant and economical design is not enough if the structure is unsafe under real-world conditions."</li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="tacoma-ethics" class="study-card tacoma-meaning-card">
+        <p class="section-kicker">Ethics Meaning</p>
+        <h3>3. Ethics Meaning</h3>
+        <p class="meaning-lead">
+          The main ethical issue is not fraud or software error. It is <strong>responsible design under uncertainty</strong>.
+        </p>
+        <div class="meaning-rows">
+          <div class="meaning-row"><h4>Public safety</h4><p>The bridge was public infrastructure, so the design had to remain safe under realistic wind conditions.</p></div>
+          <div class="meaning-row"><h4>Professional responsibility</h4><p>Engineers must consider all important loading conditions, not only gravity and static strength.</p></div>
+          <div class="meaning-row"><h4>Cost vs safety</h4><p>The design saved material and money, but safety should limit how far cost reduction can go.</p></div>
+          <div class="meaning-row"><h4>Risk management</h4><p>The bridge's visible movement before collapse was a warning sign that should have triggered deeper investigation.</p></div>
+          <div class="meaning-row"><h4>Testing and validation</h4><p>A slender new design needed stronger wind and aerodynamic testing before being trusted for public use.</p></div>
+          <div class="meaning-row"><h4>Innovation responsibility</h4><p>When engineers push design limits, new failure modes can appear. Innovation requires extra caution, not less.</p></div>
+          <div class="meaning-row"><h4>Accountability</h4><p>The collapse became a lesson for future bridge design. Ethical accountability means learning from failure and improving standards.</p></div>
+        </div>
+      </article>
+
+      <article id="tacoma-quiz" class="study-card quiz-card tacoma-quiz-card">
+        <div class="quiz-heading">
+          <div>
+            <p class="section-kicker">Exam Drill</p>
+            <h3>4. Exam-Style MCQs</h3>
+            <p class="quiz-note">One Tacoma Narrows question appears at a time. Submit, read the explanation, then continue.</p>
+          </div>
+          <p class="score-pill" data-score-for="case-6">Quiz Score: Not started</p>
+        </div>
+        <p class="quiz-warning" data-warning-for="case-6" aria-live="polite"></p>
+        <div class="quiz-list" data-quiz-for="case-6"></div>
+        <div class="quiz-actions">
+          <button type="button" class="primary-button" data-submit-quiz="case-6">Submit Answer</button>
+          <button type="button" class="primary-button" data-next-question="case-6" hidden>Next Question</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-6">Restart Quiz</button>
+        </div>
+      </article>
+
+      <article id="tacoma-written" class="study-card">
+        <p class="section-kicker">Written Practice</p>
+        <h3>5. Written Questions</h3>
+        <ol class="written-list">
+          <li class="written-question important-question tacoma-written-question">
+            <h4>Explain the Tacoma Narrows Bridge collapse. <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Tacoma Narrows Bridge was a long suspension bridge that opened in 1940. To reduce cost and material, it used a slender plate-girder design instead of a stiffer truss design. This made it flexible and vulnerable to wind. The bridge moved noticeably before collapse and was called "Galloping Gertie." Its final failure was caused mainly by torsional flutter, where wind amplified twisting motion until the bridge collapsed. The case teaches that engineers must consider dynamic wind effects, not only gravity and static strength.</p>
+            <div class="answer-support"><div><h5>Key exam points</h5><ul><li>Slender design</li><li>Cost-saving</li><li>Wind-induced motion</li><li>Torsional flutter</li><li>Not only resonance</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not say it collapsed only because of resonance.</p></div></div>
+          </li>
+          <li class="written-question important-question tacoma-written-question">
+            <h4>Why is this an engineering ethics case? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>It is an engineering ethics case because a public bridge must protect users under real environmental conditions. The design reduced material and cost but also reduced stiffness. Engineers have a professional duty to consider all major loads, including wind and dynamic effects. Cost-saving and innovation are acceptable only if the final design remains safe.</p>
+            <div class="answer-support"><div><h5>Key exam points</h5><ul><li>Public safety</li><li>Professional responsibility</li><li>Cost vs safety</li><li>Real-world loads</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not treat it as only a physics accident.</p></div></div>
+          </li>
+          <li class="written-question important-question tacoma-written-question">
+            <h4>How did cost-saving contribute to the failure? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Cost-saving influenced the use of narrow plate girders instead of deeper trusses. This made the bridge lighter and cheaper, but also less stiff. The reduced stiffness made the bridge more vulnerable to wind-induced motion. Cost-saving is not unethical by itself, but it becomes dangerous when safety and testing are not enough.</p>
+            <div class="answer-support"><div><h5>Key exam points</h5><ul><li>Plate girders</li><li>Less material</li><li>Less stiffness</li><li>Wind vulnerability</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not say saving money is always unethical.</p></div></div>
+          </li>
+          <li class="written-question important-question tacoma-written-question">
+            <h4>What is the difference between resonance and torsional flutter in this case? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>The bridge did experience vertical oscillations related to wind and vortex shedding, which people often connect to resonance. However, the final collapse was mainly due to torsional flutter. Torsional flutter means wind amplified the bridge's twisting motion until the stresses became too large. Therefore, saying only "resonance" is incomplete.</p>
+            <div class="answer-support"><div><h5>Key exam points</h5><ul><li>Vortex shedding</li><li>Vertical oscillation</li><li>Torsional twisting</li><li>Flutter caused final collapse</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not confuse vertical motion with final twisting collapse.</p></div></div>
+          </li>
+          <li class="written-question important-question tacoma-written-question">
+            <h4>What ethical responsibilities did engineers have? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Engineers had a responsibility to protect public safety, evaluate all realistic loads, manage risks, test the design, and respond to warning signs. The bridge's visible movement before collapse showed that the structure behaved unusually in wind. Engineers should have investigated deeper and considered aerodynamic stability before public safety was threatened.</p>
+            <div class="answer-support"><div><h5>Key exam points</h5><ul><li>Public safety</li><li>Wind loading</li><li>Risk management</li><li>Testing</li><li>Warning signs</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not only list principles without applying them.</p></div></div>
+          </li>
+          <li class="written-question tacoma-written-question">
+            <h4>What should engineers have done differently?</h4>
+            <p>Engineers should have used a stiffer or more aerodynamic bridge deck, performed wind/dynamic testing, considered torsional flutter, and responded seriously to the bridge's visible movement. Since the design was slender and innovative, it required more caution and validation.</p>
+            <div class="answer-support"><div><h5>Key exam points</h5><ul><li>Stiffer deck</li><li>Aerodynamic design</li><li>Testing</li><li>Flutter</li><li>Warning signs</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not only say "make it stronger" without mentioning wind.</p></div></div>
+          </li>
+          <li class="written-question tacoma-written-question">
+            <h4>What is the main lesson from the Tacoma Narrows Bridge collapse?</h4>
+            <p>The main lesson is that engineers must design for real-world conditions, not only ideal or traditional assumptions. A structure can be strong enough for gravity but unsafe under wind-induced dynamic motion. Innovation and cost-saving require stronger testing and caution, especially when public safety is involved.</p>
+            <div class="answer-support"><div><h5>Key exam points</h5><ul><li>Real conditions</li><li>Wind/dynamic loads</li><li>Innovation risk</li><li>Public safety</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not reduce the lesson to "bridges should be heavy."</p></div></div>
+          </li>
+          <li class="written-question tacoma-written-question">
+            <h4>How did the collapse affect future engineering?</h4>
+            <p>The collapse became a classic engineering lesson. It pushed engineers to take wind, aerodynamics, stiffness, and flutter more seriously in long-span bridge design. The case also shows accountability because engineering failures should be studied and used to improve future safety.</p>
+            <div class="answer-support"><div><h5>Key exam points</h5><ul><li>Learning from failure</li><li>Better wind design</li><li>Accountability</li><li>Future standards</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not ignore the learning after the failure.</p></div></div>
+          </li>
+        </ol>
+      </article>
     </section>
 
-    <section id="case-7" class="case-section coming-soon-section" data-case-id="case-7" aria-labelledby="case-7-title">
-      <div class="case-heading"><div><p class="case-count">Case 7 of 10</p><h2 id="case-7-title">Case Study 7</h2></div><p class="case-status">Coming soon</p></div>
-      <article class="coming-soon-card"><h3>Coming soon</h3><p>Add transcript to generate this case. No repeated template content is shown until the real case is added.</p></article>
+    <section id="case-7" class="case-section gulf-case" data-case-id="case-7" aria-labelledby="case-7-title">
+      <div class="case-heading">
+        <div>
+          <p class="case-count">Case 7 of 10</p>
+          <h2 id="case-7-title">Gulf Hotel Fire, Houston 1943</h2>
+          <p class="case-theme">
+            <strong>Main theme:</strong> Fire safety, vulnerable occupants, code enforcement, risk management,
+            accountability, and the duty to protect public welfare in old public buildings.
+          </p>
+        </div>
+        <p class="case-status completed gulf-status" data-status-for="case-7" data-default-status="Lesson ready">Lesson ready</p>
+      </div>
+
+      <article id="gulf-story" class="study-card gulf-story-card">
+        <p class="section-kicker">Incident Narrative</p>
+        <h3>1. The Case Story</h3>
+        <p>
+          The Gulf Hotel fire happened in downtown Houston in 1943. The hotel was a cheap, old flophouse used by
+          working-class men, travelers, homeless men, elderly men, disabled men, and drunk tenants. A mattress fire
+          started after smoking, and although the fire seemed to be put out, the night manager placed the damp mattress
+          in a second-floor broom closet near the main stairway. The mattress was not fully extinguished and reignited.
+        </p>
+        <p>
+          The fire spread rapidly because the building was old, unsafe, and poorly prepared for fire. The closet also
+          contained cleaning supplies and insecticides, which helped the fire spread. The main stairway became blocked
+          by fire and smoke, the fire escape became crowded, and there was no functioning lighted emergency exit sign.
+          Many occupants were confused, trapped, asleep, elderly, disabled, or intoxicated. Some jumped from windows
+          to escape.
+        </p>
+        <p>
+          The fire caused major loss of life and injury. Out of 133 guests, 55 died and 30 were injured. Many dead were
+          unidentified and buried in a mass grave. The case became an engineering ethics issue because the building
+          lacked basic fire safety systems and the city and business failed to protect vulnerable occupants.
+        </p>
+        <p>
+          The video connects the case to NSPE ethics, especially the duty to "hold paramount the safety, health, and
+          welfare of the public." It also mentions that inspectors had already cited the hotel for a non-working exit
+          light before the fire, but the problem was not fixed in time. The case shows that public safety failures are
+          not only technical, they are ethical failures when known hazards are ignored.
+        </p>
+      </article>
+
+      <article id="gulf-core" class="study-card gulf-core-card">
+        <p class="section-kicker">Exam Cheat Summary</p>
+        <h3>2. What You Must Know for Any Written Question</h3>
+        <p class="gulf-core-lead">
+          The Gulf Hotel fire was a public safety disaster in an old, unsafe Houston flophouse. A smoking-related
+          mattress fire was believed to be extinguished, but the mattress was stored in a closet near the main stairway
+          and reignited. The fire spread quickly because of poor storage, flammable materials, lack of
+          sprinklers/extinguishers, weak exits, no working exit light, and poor code enforcement. Many vulnerable
+          occupants could not escape, causing 55 deaths and 30 injuries.
+        </p>
+        <div class="gulf-matters">
+          <h4>What matters for the exam:</h4>
+          <ul>
+            <li><strong>Main ethical issue:</strong> Public safety was neglected in a building used by vulnerable people.</li>
+            <li><strong>How it became visible:</strong> A mattress reignited, smoke and flames blocked escape routes, people were trapped, and many died or were injured.</li>
+            <li><strong>Most important violation:</strong> Safety, health, and welfare of the public, because known hazards were not fixed before people were harmed.</li>
+            <li><strong>Responsibility failure:</strong> Hotel management mishandled the mattress and failed to provide safe emergency escape conditions.</li>
+            <li><strong>Inspection/code failure:</strong> The hotel had been cited for a faulty exit light, but enforcement and follow-up were too weak.</li>
+            <li><strong>Risk management failure:</strong> Smoking, flammable storage, old wooden structure, no sprinklers, poor exits, and vulnerable occupants created a foreseeable fire risk.</li>
+            <li><strong>Stakeholders:</strong> Tenants, hotel staff and owner, fire inspectors, city authorities, firefighters, victims' families, and the public.</li>
+            <li><strong>Consequences:</strong> 55 deaths, 30 injuries, unidentified victims, mass grave, public loss, and later pressure toward stronger fire codes.</li>
+            <li><strong>What should have been done:</strong> Ban or control smoking, fully remove or extinguish the mattress, store flammables safely, install sprinklers or extinguishers, fix exit signs, inspect and enforce codes, and ensure enough safe exits.</li>
+            <li><strong>Best final sentence:</strong> Engineering ethics requires preventing foreseeable harm, especially when public buildings shelter vulnerable people.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="gulf-meaning" class="study-card gulf-meaning-card">
+        <p class="section-kicker">Ethical Meaning</p>
+        <h3>3. Ethical Meaning</h3>
+        <div class="gulf-meaning-list">
+          <div class="gulf-meaning-item priority-item">
+            <h4>Public Safety, Most Important</h4>
+            <p>The building housed many vulnerable people, but it lacked reliable escape routes, working exit signage, and fire prevention systems.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Public safety was violated because foreseeable fire hazards were allowed to remain in a building full of occupants.</p>
+          </div>
+          <div class="gulf-meaning-item">
+            <h4>Professional Responsibility</h4>
+            <p>Inspectors, owners, and responsible authorities had a duty to identify and correct hazards before disaster.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Professional responsibility means known safety defects must be fixed, not ignored.</p>
+          </div>
+          <div class="gulf-meaning-item">
+            <h4>Accountability</h4>
+            <p>The hotel and city failed to act strongly enough before the fire, even after warnings such as the broken exit light citation.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Accountability was weak because warnings existed but were not followed by timely corrective action.</p>
+          </div>
+          <div class="gulf-meaning-item">
+            <h4>Risk Management</h4>
+            <p>The risk was foreseeable because smoking, old wood, flammable materials, poor exits, and vulnerable occupants made a fire highly dangerous.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Risk management failed because multiple known hazards combined into a deadly event.</p>
+          </div>
+          <div class="gulf-meaning-item">
+            <h4>Code Compliance</h4>
+            <p>The hotel lacked proper fire safety features and was not adequately brought up to code.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Code compliance matters because building codes exist to protect life during emergencies.</p>
+          </div>
+          <div class="gulf-meaning-item">
+            <h4>Transparency and Warning</h4>
+            <p>Emergency exit routes were not clearly marked, and occupants could not quickly find safe exits.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Emergency information must be visible and understandable during panic and smoke.</p>
+          </div>
+          <div class="gulf-meaning-item">
+            <h4>Justice and Protection of Vulnerable People</h4>
+            <p>The victims were mainly poor, transient, elderly, disabled, or intoxicated men, making the neglect more serious.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Ethical responsibility is stronger when the affected people are vulnerable and have limited power.</p>
+          </div>
+          <div class="gulf-meaning-item">
+            <h4>Learning from Failure</h4>
+            <p>The tragedy should have pushed stronger fire codes and enforcement.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Ethical accountability includes learning from disaster and preventing recurrence.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="gulf-quiz" class="study-card quiz-card gulf-quiz-card">
+        <div class="quiz-heading">
+          <div>
+            <p class="section-kicker">Case Drill</p>
+            <h3>4. Exam-Style MCQs</h3>
+            <p class="quiz-note">One Gulf Hotel question appears at a time. Submit to reveal the result inside the same card, then continue.</p>
+          </div>
+          <p class="score-pill" data-score-for="case-7">Quiz Score: Not started</p>
+        </div>
+        <p class="quiz-warning" data-warning-for="case-7" aria-live="polite"></p>
+        <div class="quiz-list" data-quiz-for="case-7"></div>
+        <div class="quiz-actions">
+          <button type="button" class="primary-button" data-submit-quiz="case-7">Submit Answer</button>
+          <button type="button" class="primary-button" data-next-question="case-7" hidden>Next Question</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-7">Restart Quiz</button>
+        </div>
+      </article>
+
+      <article id="gulf-written" class="study-card">
+        <p class="section-kicker">Written Questions</p>
+        <h3>5. Written Questions</h3>
+        <ol class="written-list">
+          <li class="written-question important-question gulf-written-question">
+            <h4>Explain the Gulf Hotel fire and why it is an engineering ethics case. <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>The Gulf Hotel fire happened in Houston in 1943 after a smoking-related mattress fire was believed to be extinguished but later reignited. The mattress had been placed in a closet near the main stairway, close to flammable supplies. The building was old, unsafe, lacked proper fire protection, had poor emergency exit conditions, and no working lighted exit sign. Many vulnerable occupants could not escape, causing 55 deaths and 30 injuries. It is an ethics case because building safety, code enforcement, and public welfare were neglected.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Mattress reignited</li><li>Old unsafe hotel</li><li>Poor exits and signage</li><li>Vulnerable occupants</li><li>Public safety failure</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not describe it as only an accidental fire.</p></div></div>
+          </li>
+          <li class="written-question important-question gulf-written-question">
+            <h4>What ethical principles were violated in the Gulf Hotel fire? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>The main violation was public safety, because a building full of occupants was allowed to operate with serious fire hazards. Professional responsibility was also violated because known safety problems, such as the exit light, were not corrected quickly. Accountability and risk management were weak because the owner and city failed to act on foreseeable dangers. The case also raises justice concerns because poor and vulnerable occupants were exposed to unsafe living conditions.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Public safety</li><li>Professional responsibility</li><li>Accountability</li><li>Risk management</li><li>Vulnerable people</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not only list principles without explaining the connection.</p></div></div>
+          </li>
+          <li class="written-question important-question gulf-written-question">
+            <h4>How did poor fire safety and code enforcement contribute to the tragedy? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>The tragedy was worsened by poor fire safety and weak enforcement. The hotel had unsafe exit conditions, no working lighted exit sign, no sprinkler system, limited escape routes, and flammable materials stored near the reigniting mattress. Inspectors had cited the hotel before the fire, but the hazard was not fixed in time. Code enforcement matters because safety rules only protect the public when they are actually followed and corrected.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Exit light citation</li><li>No sprinklers</li><li>Poor escape routes</li><li>Flammable storage</li><li>Weak follow-up</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not blame only the person who smoked.</p></div></div>
+          </li>
+          <li class="written-question important-question gulf-written-question">
+            <h4>Why is public safety the most important ethical issue in this case? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Public safety is the most important issue because the Gulf Hotel housed many people who depended on the owner and city to provide safe shelter. The occupants included working-class, transient, elderly, disabled, intoxicated, or homeless men, many of whom were less able to escape quickly. Allowing known fire hazards in such a building violated the duty to protect life, health, and welfare.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Occupants depended on building safety</li><li>Vulnerable people</li><li>Known hazards</li><li>Safety, health, welfare</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not say poor people deserve lower safety standards.</p></div></div>
+          </li>
+          <li class="written-question important-question gulf-written-question">
+            <h4>What should have been done to prevent the Gulf Hotel fire disaster? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>The hotel should have enforced smoking controls, ensured the mattress was completely extinguished or removed, stored flammable materials safely, installed sprinklers or extinguishers, maintained working exit signs, and provided clear emergency exits. City inspectors should have followed up quickly and required safety violations to be corrected before the building continued housing tenants.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Smoking control</li><li>Mattress removal</li><li>Flammable storage</li><li>Sprinklers and extinguishers</li><li>Exit signs</li><li>Code enforcement</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not give only one prevention. The disaster had multiple causes.</p></div></div>
+          </li>
+          <li class="written-question important-question gulf-written-question">
+            <h4>How did accountability fail before and after the Gulf Hotel fire? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Accountability failed before the fire because known hazards were not corrected, including the non-working exit light. Hotel management also mishandled the mattress and allowed unsafe conditions near the main stairway. After the fire, the city did some inspections, but the video suggests stronger fire codes and enforcement were not developed quickly enough. Accountability means acting before disaster and learning after disaster to prevent repeat harm.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Known hazards</li><li>Poor management decision</li><li>Weak follow-up</li><li>Need for stronger codes</li><li>Learning from failure</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not define accountability only. Apply it to the owner and city response.</p></div></div>
+          </li>
+          <li class="written-question gulf-written-question">
+            <h4>Who were the stakeholders affected by the Gulf Hotel fire?</h4>
+            <p>The stakeholders included the hotel tenants, victims' families, hotel owner and staff, fire inspectors, city authorities, firefighters, the Red Cross, taxpayers, and the wider public. The tenants were most directly harmed, especially because many were vulnerable and had limited ability to protect themselves. The disaster also affected public trust in building safety and city enforcement.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Tenants and victims</li><li>Families</li><li>Owner and staff</li><li>Inspectors and city</li><li>Public trust</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not mention only the hotel owner.</p></div></div>
+          </li>
+          <li class="written-question gulf-written-question">
+            <h4>What is the main lesson of the Gulf Hotel fire?</h4>
+            <p>The main lesson is that foreseeable safety hazards must be corrected before disaster, especially in public buildings that house vulnerable people. Fire safety depends on multiple layers: prevention, safe storage, alarms, exits, signs, sprinklers, inspections, and enforcement. Engineering ethics requires holding public safety above cost, neglect, or convenience.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Foreseeable hazards</li><li>Multiple safety layers</li><li>Vulnerable occupants</li><li>Public welfare</li></ul></div><div><h5>Mistake to avoid</h5><p>Do not reduce the lesson to do not smoke.</p></div></div>
+          </li>
+        </ol>
+      </article>
     </section>
 
     <section id="case-8" class="case-section coming-soon-section" data-case-id="case-8" aria-labelledby="case-8-title">

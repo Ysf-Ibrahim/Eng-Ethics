@@ -1453,9 +1453,901 @@ const quizData = [
       }
     ]
   },
-  { caseId: "case-5", questions: [] },
-  { caseId: "case-6", questions: [] },
-  { caseId: "case-7", questions: [] },
+  {
+    caseId: "case-5",
+    questions: [
+      {
+        question: "In the Therac-25 case, why is the machine considered a major engineering ethics case?",
+        options: [
+          "It was expensive and used in hospitals, which by itself made it an ethics case.",
+          "Software and design failures directly harmed patients.",
+          "It was larger than modern treatment machines and difficult to transport.",
+          "Radiation therapy was new and unknown to medical professionals."
+        ],
+        correctAnswer: 1,
+        explanation: "The ethical issue is that a medical device's software and safety design caused patient injury and death."
+      },
+      {
+        question: "What made Therac-25 more dangerous than older designs?",
+        options: [
+          "It used only manual controls and no software checks at all.",
+          "It had no treatment settings that operators could configure during use.",
+          "It relied heavily on software instead of physical interlocks.",
+          "It was used only for non-medical factory testing."
+        ],
+        correctAnswer: 2,
+        explanation: "Removing or reducing hardware interlocks made software faults more dangerous."
+      },
+      {
+        question: "In terms of patient safety, what was the central failure?",
+        options: [
+          "Patients had to wait too long for routine appointments.",
+          "Operators used too much paperwork before treatment.",
+          "Hospitals used different treatment rooms, which made every setup process unsafe.",
+          "Patients received radiation overdoses due to unsafe system behavior."
+        ],
+        correctAnswer: 3,
+        explanation: "The direct harm was massive unintended radiation exposure."
+      },
+      {
+        question: "Why were vague malfunction messages ethically problematic?",
+        options: [
+          "They were unclear and did not tell operators the danger level.",
+          "They only appeared after every treatment ended safely.",
+          "They were too detailed for trained operators to interpret during treatment.",
+          "They were mostly a formatting issue in the user manual."
+        ],
+        correctAnswer: 0,
+        explanation: "Operators could not judge whether an error was minor or deadly."
+      },
+      {
+        question: "Which answer best describes AECL's accountability failure?",
+        options: [
+          "AECL immediately removed all machines forever after the first concern.",
+          "AECL gave operators perfect information about every malfunction.",
+          "AECL denied or minimized reports and acted too slowly.",
+          "AECL had no role after selling devices to hospitals."
+        ],
+        correctAnswer: 2,
+        explanation: "Accountability required stronger response after early injuries and warnings."
+      },
+      {
+        question: "Why is \"software worked in older models\" not a strong defense?",
+        options: [
+          "Old software is always illegal in every medical device context.",
+          "Software cannot affect medical devices that use radiation.",
+          "Hospitals are responsible for all code after a machine is purchased.",
+          "Reused software must still be tested in the new system."
+        ],
+        correctAnswer: 3,
+        explanation: "Old code can fail under new design conditions or workflows."
+      },
+      {
+        question: "What was Malfunction 54 connected to?",
+        options: [
+          "A dangerous timing/editing issue during treatment setup.",
+          "A harmless spelling error in the operator manual.",
+          "A patient scheduling conflict between two hospital departments.",
+          "A billing code unrelated to the machine's treatment state."
+        ],
+        correctAnswer: 0,
+        explanation: "It was linked to an operator editing settings while machine parts were moving, causing mismatch and overdose risk."
+      },
+      {
+        question: "In terms of fail-safe design, what should Therac-25 have included?",
+        options: [
+          "More marketing material explaining machine speed to hospitals.",
+          "Hardware protection that stops unsafe radiation even if software fails.",
+          "Faster proceed keys so operators could clear errors more quickly.",
+          "Less documentation so error-code lists would not overwhelm users during treatment."
+        ],
+        correctAnswer: 1,
+        explanation: "Hardware interlocks or monitors could prevent software faults from reaching patients."
+      },
+      {
+        question: "Why was operator behavior important in this case?",
+        options: [
+          "Operators intentionally harmed patients during normal treatment despite clear device warnings.",
+          "Operators never saw error messages before treatment accidents.",
+          "Operators used the machine in realistic ways the designers did not fully consider.",
+          "Operators wrote the original safety-critical software for AECL."
+        ],
+        correctAnswer: 2,
+        explanation: "Experienced operators made quick edits, and the system was not designed safely for that behavior."
+      },
+      {
+        question: "What does the Therac-25 case teach about automation in medicine?",
+        options: [
+          "Software should never be used in hospitals or treatment machines.",
+          "Operators should ignore machine errors if treatment is urgent and the patient is waiting.",
+          "Automation removes manufacturer responsibility after installation.",
+          "Automated medical systems need clear safeguards and human-centered design."
+        ],
+        correctAnswer: 3,
+        explanation: "Automation can help, but it must be safe, understandable, and fail-safe."
+      },
+      {
+        question: "Which statement best explains the transparency problem?",
+        options: [
+          "AECL did not clearly explain error codes or disclose accident patterns quickly.",
+          "Hospitals received too much safety data about every incident and could not identify useful warnings.",
+          "Patients designed the treatment software and understood every fault.",
+          "Regulators caused the original software bug during normal operation."
+        ],
+        correctAnswer: 0,
+        explanation: "Operators and hospitals lacked clear information about dangerous errors and similar incidents."
+      },
+      {
+        question: "Why did repeated accidents make the case more serious ethically?",
+        options: [
+          "They proved no one was harmed by the machine.",
+          "They showed AECL failed to learn quickly from early harm.",
+          "They showed the machine was safe under normal operation.",
+          "They made software testing unnecessary after first release."
+        ],
+        correctAnswer: 1,
+        explanation: "Repeated accidents show weak learning, accountability, and corrective action."
+      },
+      {
+        question: "What was wrong with allowing operators to press proceed after unclear errors?",
+        options: [
+          "It made the machine slower during every treatment session.",
+          "It forced patients to leave the room before treatment began and created scheduling delays.",
+          "It allowed treatment to continue without understanding the risk.",
+          "It removed all software from the device during operation."
+        ],
+        correctAnswer: 2,
+        explanation: "Proceeding after vague errors can turn unknown faults into patient harm."
+      },
+      {
+        question: "Which principle is most connected to missing hardware interlocks?",
+        options: [
+          "Public relations after medical-device accidents.",
+          "Price fairness between hospitals and manufacturers.",
+          "Staff scheduling across treatment departments.",
+          "Fail-safe design."
+        ],
+        correctAnswer: 3,
+        explanation: "Hardware interlocks are physical safeguards that prevent dangerous states."
+      },
+      {
+        question: "Why was AECL's safety analysis ethically weak?",
+        options: [
+          "It did not properly interrogate the software controlling the device.",
+          "It included too much independent software review.",
+          "It stopped all sales immediately after the first warning.",
+          "It focused only on patient comfort surveys and general scheduling rather than software hazards."
+        ],
+        correctAnswer: 0,
+        explanation: "Software was safety-critical, but it was not deeply analyzed."
+      },
+      {
+        question: "What is the strongest written-answer sentence about Therac-25?",
+        options: [
+          "Therac-25 was unlucky because all devices fail randomly, so engineers cannot reasonably learn from repeated patient injuries.",
+          "Therac-25 shows that software in medical devices must be tested, documented, and backed by fail-safes.",
+          "Therac-25 failed only because patients misunderstood treatment.",
+          "Therac-25 proves hospitals should never use technology."
+        ],
+        correctAnswer: 1,
+        explanation: "This links software, testing, documentation, and fail-safe design."
+      },
+      {
+        question: "Which answer best describes the role of the FDA?",
+        options: [
+          "It wrote the original treatment software for AECL.",
+          "It ignored all accidents and avoided corrective requirements despite repeated injury reports.",
+          "It declared the device defective and demanded corrective action.",
+          "It operated the machine during each patient's treatment."
+        ],
+        correctAnswer: 2,
+        explanation: "The FDA became involved after repeated accidents and required fixes."
+      },
+      {
+        question: "Why is documentation important in this case?",
+        options: [
+          "Documentation only matters for advertisements and hospital sales teams, not for safety review.",
+          "Operators should never read manuals for medical equipment.",
+          "Documentation cannot affect safety once software is installed.",
+          "Independent review and investigation need clear software documentation."
+        ],
+        correctAnswer: 3,
+        explanation: "Poor documentation makes investigation and safe use harder."
+      },
+      {
+        question: "Which option best explains the race/timing problem?",
+        options: [
+          "Fast edits could occur while machine components were still moving.",
+          "The machine only failed after total power outages.",
+          "Patients moved the magnets themselves during treatment.",
+          "The treatment room clock was wrong during every incident and misled the operators."
+        ],
+        correctAnswer: 0,
+        explanation: "The software did not correctly handle quick operator edits during physical movement."
+      },
+      {
+        question: "What was the arithmetic overflow problem later discovered?",
+        options: [
+          "A patient received too much paperwork before treatment.",
+          "A counter could roll back to zero and hide an error.",
+          "The monitor was too bright for operators to read comfortably.",
+          "A hospital lost the manual during a treatment session."
+        ],
+        correctAnswer: 1,
+        explanation: "The software counter overflowed, making the system treat an error state as safe."
+      },
+      {
+        question: "Which stakeholder group was most directly harmed?",
+        options: [
+          "AECL marketing staff responsible for hospital sales.",
+          "Hospital parking employees working near the clinic.",
+          "Cancer patients receiving treatment.",
+          "Software textbook authors studying the case later."
+        ],
+        correctAnswer: 2,
+        explanation: "Patients received the dangerous overdoses."
+      },
+      {
+        question: "Why was saying overdose is impossible ethically dangerous?",
+        options: [
+          "It made the machine easier to repair after every treatment.",
+          "It warned all users clearly before they continued using the machine after early reports.",
+          "It stopped treatments immediately until all faults were removed.",
+          "It discouraged urgent investigation and continued exposing patients."
+        ],
+        correctAnswer: 3,
+        explanation: "Denial delayed safety action and allowed repeated harm."
+      },
+      {
+        question: "What should AECL have done after the first suspicious overdose?",
+        options: [
+          "Stop use, investigate fully, inform users, and add safeguards.",
+          "Deny the event and keep devices running normally while waiting for another report.",
+          "Tell operators to ignore error codes during treatment.",
+          "Blame patients without evidence of misuse or movement."
+        ],
+        correctAnswer: 0,
+        explanation: "Early action could have prevented repeated injuries."
+      },
+      {
+        question: "Why is Therac-25 important for software engineering ethics?",
+        options: [
+          "It shows software is only theoretical and has no physical effect.",
+          "Code controlled physical radiation and harmed real people.",
+          "It proves hardware is always unsafe in medical settings.",
+          "It was only a business failure involving hospital purchasing."
+        ],
+        correctAnswer: 1,
+        explanation: "The case shows software can directly control dangerous physical energy."
+      },
+      {
+        question: "Which answer best explains the main cause?",
+        options: [
+          "One patient complaint with no technical or design issue.",
+          "A hospital scheduling mistake unrelated to software, hardware interlocks, warnings, or user interface design.",
+          "Overreliance on software, poor testing, vague errors, weak fail-safes, and slow response.",
+          "A normal treatment side effect with no ethical concern."
+        ],
+        correctAnswer: 2,
+        explanation: "The case involved technical, human-factor, and organizational failures."
+      },
+      {
+        question: "Which option best explains why hardware interlocks matter?",
+        options: [
+          "They make software unnecessary in every medical-device case after installation.",
+          "They increase patient dose intentionally during treatment.",
+          "They only help with hospital billing and equipment records.",
+          "They provide independent protection if software behaves incorrectly."
+        ],
+        correctAnswer: 3,
+        explanation: "Hardware interlocks are a layer of defense independent from software."
+      },
+      {
+        question: "Which statement is weakest in a written answer?",
+        options: [
+          "The problem was only operator error.",
+          "AECL needed stronger software testing.",
+          "Hardware fail-safes were important.",
+          "Vague errors contributed to unsafe operation."
+        ],
+        correctAnswer: 0,
+        explanation: "Blaming only operators ignores software, design, and company response."
+      },
+      {
+        question: "What is the best lesson about safety-critical medical devices?",
+        options: [
+          "They should rely only on operator intuition during normal treatment.",
+          "They require independent testing, clear errors, fail-safes, and fast reporting.",
+          "They need no documentation if the technology is advanced and hospitals have trained operators.",
+          "They should continue operating after unexplained injuries."
+        ],
+        correctAnswer: 1,
+        explanation: "Medical devices need strong safety engineering and accountability."
+      },
+      {
+        question: "In terms of accountability, what made the Therac case worse?",
+        options: [
+          "The first accident was investigated perfectly and solved completely.",
+          "AECL immediately admitted all faults before any other incident.",
+          "Similar accidents continued after warnings and partial fixes.",
+          "Operators never reported any issues with the machine."
+        ],
+        correctAnswer: 2,
+        explanation: "Repeated harm after warnings shows accountability failure."
+      },
+      {
+        question: "Which answer best explains the ethical difference between theory and practice in Therac-25?",
+        options: [
+          "Practice never matters in medical systems once software is approved, because certification predicts every workflow.",
+          "The theory was mainly about hospital finance and purchasing.",
+          "Operators always used the machine exactly as imagined by designers.",
+          "The machine was designed for ideal use, but real operators edited quickly and faced vague errors."
+        ],
+        correctAnswer: 3,
+        explanation: "Real-world use revealed unsafe assumptions in the design."
+      }
+    ]
+  },
+  {
+    caseId: "case-6",
+    questions: [
+      {
+        question: "Why is Tacoma Narrows an engineering ethics case?",
+        options: [
+          "A public bridge failed under real wind conditions.",
+          "The bridge was located near water, which made the story memorable but not ethical by itself.",
+          "The bridge was visually unusual and later became a famous engineering video.",
+          "The collapse was filmed, which helped people study it later."
+        ],
+        correctAnswer: 0,
+        explanation: "It is ethical because engineering decisions affected public infrastructure and safety."
+      },
+      {
+        question: "What is the strongest explanation of the failure?",
+        options: [
+          "The bridge collapsed only because it was old and poorly maintained.",
+          "The bridge failed because gravity loads were ignored entirely.",
+          "The design was too slender and aerodynamically unstable.",
+          "The bridge failed because traffic loads were heavier than expected."
+        ],
+        correctAnswer: 2,
+        explanation: "The key issue was wind-induced instability in a flexible slender bridge."
+      },
+      {
+        question: "Which phrase should you avoid as the full explanation?",
+        options: [
+          "Wind loading was underestimated.",
+          "It was only resonance.",
+          "Torsional flutter mattered.",
+          "The deck was too flexible."
+        ],
+        correctAnswer: 1,
+        explanation: "The video says resonance occurred, but final collapse was mainly torsional flutter."
+      },
+      {
+        question: "In terms of public safety, what was the ethical concern?",
+        options: [
+          "The bridge needed stronger branding to reassure nearby drivers.",
+          "The bridge should have been more expensive to prove safety.",
+          "The bridge needed more traffic before engineers could judge it.",
+          "The bridge had to be stable under expected environmental loads."
+        ],
+        correctAnswer: 3,
+        explanation: "Public infrastructure must protect users under realistic conditions."
+      },
+      {
+        question: "Why did cost-saving matter ethically?",
+        options: [
+          "It reduced stiffness and increased vulnerability to wind.",
+          "It made the bridge impossible for drivers to see in bad weather.",
+          "It removed the need for calculations by making the design simpler.",
+          "It made the main span too short to behave like a suspension bridge."
+        ],
+        correctAnswer: 0,
+        explanation: "Saving material can be acceptable, but not if it weakens safety."
+      },
+      {
+        question: "What did the nickname Galloping Gertie indicate?",
+        options: [
+          "The bridge was designed for horse traffic rather than cars.",
+          "The bridge was completed late and rushed into service.",
+          "The bridge showed unusual movement before collapse.",
+          "The bridge had no cables supporting the main span."
+        ],
+        correctAnswer: 2,
+        explanation: "The nickname reflected visible movement in wind."
+      },
+      {
+        question: "Which answer best describes torsional flutter?",
+        options: [
+          "Twisting motion amplified by wind.",
+          "Static bending from gravity loads.",
+          "Rusting of steel cables over many years.",
+          "Traffic vibration from vehicles only."
+        ],
+        correctAnswer: 0,
+        explanation: "Flutter is a self-amplifying aerodynamic motion."
+      },
+      {
+        question: "What should engineers have done differently?",
+        options: [
+          "Ignore early movement until a full collapse proved the cause.",
+          "Focus only on reducing material because the design was elegant.",
+          "Avoid studying the collapse so public confidence stayed high.",
+          "Test wind behavior and improve stiffness or aerodynamics."
+        ],
+        correctAnswer: 3,
+        explanation: "Better testing and design changes could reduce wind instability."
+      },
+      {
+        question: "Which responsibility was most directly involved?",
+        options: [
+          "Advertising responsibility.",
+          "Professional responsibility.",
+          "Entertainment responsibility.",
+          "Customer service only."
+        ],
+        correctAnswer: 1,
+        explanation: "Engineers must evaluate loads, risks, and safety."
+      },
+      {
+        question: "Which answer best connects innovation to ethics?",
+        options: [
+          "Innovation removes safety duties once the calculation looks efficient.",
+          "New designs are always unsafe and should never be attempted.",
+          "New efficient designs can create new risks.",
+          "Old designs are always perfect because they already exist."
+        ],
+        correctAnswer: 2,
+        explanation: "Innovation requires more careful testing because unknown risks may appear."
+      },
+      {
+        question: "What was underestimated?",
+        options: [
+          "Wind-induced dynamic behavior.",
+          "The weight of paint on the deck surface.",
+          "The number of cameras watching the bridge.",
+          "Water depth under the bridge only."
+        ],
+        correctAnswer: 0,
+        explanation: "Wind effects were more important than expected."
+      },
+      {
+        question: "Which statement is the best written-answer claim?",
+        options: [
+          "Tacoma Narrows was just unlucky, so there is little to learn.",
+          "Tacoma Narrows has no ethics lesson because no fraud occurred.",
+          "Tacoma Narrows failed because all bridges are unsafe.",
+          "Tacoma Narrows shows that real-world loads must guide design."
+        ],
+        correctAnswer: 3,
+        explanation: "This connects the case to engineering responsibility."
+      },
+      {
+        question: "What is the ethical problem with ignoring visible movement?",
+        options: [
+          "It improves public confidence by proving the bridge is flexible.",
+          "It normalizes a warning sign.",
+          "It proves the bridge is safe under all wind conditions.",
+          "It removes the need for further testing."
+        ],
+        correctAnswer: 1,
+        explanation: "Repeated abnormal behavior should trigger investigation."
+      },
+      {
+        question: "Which design choice contributed to the problem?",
+        options: [
+          "Too many towers.",
+          "No water below the span.",
+          "Narrow plate girders.",
+          "Excessive deep trusses."
+        ],
+        correctAnswer: 2,
+        explanation: "Plate girders made the deck less open to wind and less stiff than deeper trusses."
+      },
+      {
+        question: "Why is saying \"wind caused it\" incomplete?",
+        options: [
+          "The design's response to wind caused the collapse.",
+          "Wind is not a real load engineers can reasonably consider.",
+          "Wind only affects buildings, not bridge decks.",
+          "Engineers cannot design for wind in public infrastructure."
+        ],
+        correctAnswer: 0,
+        explanation: "Engineers must design structures to resist expected wind behavior."
+      },
+      {
+        question: "What is the strongest lesson for future bridge design?",
+        options: [
+          "Build all bridges heavy so they cannot move at all.",
+          "Ignore cost completely in every public project.",
+          "Avoid suspension bridges forever after one failure.",
+          "Include aerodynamic behavior in long-span bridge design."
+        ],
+        correctAnswer: 3,
+        explanation: "The lesson is better wind/aerodynamic design, not banning bridges."
+      },
+      {
+        question: "Which principle is linked to better wind testing?",
+        options: [
+          "Decoration.",
+          "Marketing.",
+          "Testing and validation.",
+          "Scheduling."
+        ],
+        correctAnswer: 2,
+        explanation: "Testing helps verify the design before public use."
+      },
+      {
+        question: "Which option best describes accountability after the collapse?",
+        options: [
+          "Learn from failure and improve future standards.",
+          "Hide the cause so the public does not worry.",
+          "Repeat the same design to show confidence.",
+          "Blame only the weather and avoid design review."
+        ],
+        correctAnswer: 0,
+        explanation: "Accountability includes correction and learning."
+      },
+      {
+        question: "Which stakeholder group matters most directly?",
+        options: [
+          "Only photographers who recorded the collapse.",
+          "Bridge users and the public.",
+          "Only bridge historians studying old failures.",
+          "Only advertisers promoting the bridge."
+        ],
+        correctAnswer: 1,
+        explanation: "Public infrastructure affects users, taxpayers, and public agencies."
+      },
+      {
+        question: "What does the case say about elegant design?",
+        options: [
+          "Elegant designs are always unethical in public infrastructure.",
+          "Elegant designs cannot fail if calculations look clean.",
+          "Appearance is the only design goal when cost is low.",
+          "Elegance must still satisfy safety."
+        ],
+        correctAnswer: 3,
+        explanation: "A beautiful design is not enough if unsafe."
+      },
+      {
+        question: "What is the best meaning of pushing the envelope?",
+        options: [
+          "Removing safety factors to save material and time.",
+          "Avoiding engineering judgment once standards exist.",
+          "Using innovative limits requires extra caution.",
+          "Copying old designs only and avoiding all innovation."
+        ],
+        correctAnswer: 2,
+        explanation: "New limits can reveal new failure modes."
+      },
+      {
+        question: "Which answer best explains vortex shedding?",
+        options: [
+          "Alternating wind vortices create periodic forces.",
+          "Gravity pulls the bridge downward under static weight.",
+          "Cables gradually lose strength in sunlight and rain.",
+          "Vehicles create all bridge motion through repeated traffic pulses."
+        ],
+        correctAnswer: 0,
+        explanation: "Vortex shedding can create oscillating wind forces."
+      },
+      {
+        question: "What finally overstressed the bridge?",
+        options: [
+          "Too many pedestrians crossing at once.",
+          "The bridge's age after decades of use.",
+          "Rainwater alone collecting on the deck.",
+          "Wind-amplified twisting motion."
+        ],
+        correctAnswer: 3,
+        explanation: "Torsional flutter produced excessive stress."
+      },
+      {
+        question: "What makes this case different from fraud cases?",
+        options: [
+          "It involved intentional cheating by engineers.",
+          "It is mainly about design judgment and underestimated risk.",
+          "It involved hidden software controlling a public system.",
+          "It involved medical overdose from unsafe equipment."
+        ],
+        correctAnswer: 1,
+        explanation: "Tacoma is about technical judgment, not deception."
+      },
+      {
+        question: "Best final exam sentence?",
+        options: [
+          "Economical design is ethical only when safe under real conditions.",
+          "Wind cannot be predicted, so bridge collapse is never an engineering concern.",
+          "Suspension bridges should not exist after Tacoma Narrows.",
+          "Public safety is less important than cost if a design is visually elegant."
+        ],
+        correctAnswer: 0,
+        explanation: "This captures cost, safety, and real-world design."
+      }
+    ]
+  },
+  {
+    caseId: "case-7",
+    questions: [
+      {
+        question: "Why is the Gulf Hotel fire an engineering ethics case?",
+        options: [
+          "It involved a building where safety failures caused public harm.",
+          "It happened in a city during wartime, which made it historically important.",
+          "It involved only personal bad luck by a few tenants.",
+          "It was only a newspaper story about an old hotel fire."
+        ],
+        correctAnswer: 0,
+        explanation: "The case involves unsafe building conditions and failure to protect occupants."
+      },
+      {
+        question: "What was the immediate cause of the fire spreading again?",
+        options: [
+          "A sprinkler system failed after a small fire was fully controlled.",
+          "A power plant exploded nearby and reignited the building.",
+          "A mattress believed to be extinguished reignited.",
+          "Firefighters accidentally started a second fire in the hallway."
+        ],
+        correctAnswer: 2,
+        explanation: "The mattress was placed in a closet before being fully safe."
+      },
+      {
+        question: "What made the mattress storage decision unethical?",
+        options: [
+          "It made the room look untidy to future guests.",
+          "It placed a fire risk near the main escape path.",
+          "It reduced hotel profit by damaging the mattress.",
+          "It delayed cleaning until the next shift started."
+        ],
+        correctAnswer: 1,
+        explanation: "Storing a not-fully-extinguished mattress near the stairway created serious escape danger."
+      },
+      {
+        question: "Which ethical principle is most central in this case?",
+        options: [
+          "Advertising honesty for low-cost accommodation.",
+          "Patent ownership of building materials.",
+          "Product branding for the hotel operator.",
+          "Public safety."
+        ],
+        correctAnswer: 3,
+        explanation: "The main issue is protection of human life in a public building."
+      },
+      {
+        question: "Why was the broken exit light important ethically?",
+        options: [
+          "It affected hotel decoration and appearance more than evacuation.",
+          "It made the building more expensive to maintain over time.",
+          "It made escape harder during smoke and panic.",
+          "It caused the mattress itself to burn more intensely."
+        ],
+        correctAnswer: 2,
+        explanation: "Emergency signs guide people to safety during crisis."
+      },
+      {
+        question: "What does the inspector citation before the fire show?",
+        options: [
+          "There were known hazards before the disaster.",
+          "The hotel had no significant safety issues by that point.",
+          "The fire was impossible to prevent even with strong codes.",
+          "The building was newly built and not yet fully inspected."
+        ],
+        correctAnswer: 0,
+        explanation: "A known issue existed but was not corrected in time."
+      },
+      {
+        question: "In terms of accountability, what was the failure?",
+        options: [
+          "The victims did not inspect the hotel before staying there.",
+          "Warnings were not followed by timely correction.",
+          "The fire department was too close to the building to help effectively.",
+          "The mattress was too new to burn the way investigators expected."
+        ],
+        correctAnswer: 1,
+        explanation: "Accountability means fixing known safety defects before harm."
+      },
+      {
+        question: "Why does the vulnerability of hotel guests matter?",
+        options: [
+          "Vulnerability makes fire less ethically important because outcomes are harder to control.",
+          "Vulnerable people remove owner responsibility because they choose the building.",
+          "It only affects hotel pricing and room availability, not engineering ethics.",
+          "Vulnerable occupants need stronger protection."
+        ],
+        correctAnswer: 3,
+        explanation: "Elderly, disabled, intoxicated, and poor occupants may struggle to escape quickly."
+      },
+      {
+        question: "Which condition increased fire risk?",
+        options: [
+          "Too many exit signs confusing the occupants.",
+          "A modern sprinkler system suppressing flames too early.",
+          "Flammable items stored with the mattress.",
+          "Wide protected stairs guiding smoke away from rooms."
+        ],
+        correctAnswer: 2,
+        explanation: "Cleaning supplies and insecticides could help fire spread."
+      },
+      {
+        question: "Which answer best explains risk management failure?",
+        options: [
+          "The fire was completely unforeseeable because old buildings rarely burn fast.",
+          "The building had too many safety systems, so staff relied on them too much.",
+          "The victims created all risk through personal behavior alone.",
+          "Multiple foreseeable hazards were allowed to exist together."
+        ],
+        correctAnswer: 3,
+        explanation: "Smoking, flammables, poor exits, no sprinklers, and vulnerable occupants combined."
+      },
+      {
+        question: "What should have been done after the first mattress fire?",
+        options: [
+          "Remove or fully extinguish it in a safe location.",
+          "Store it near the stairway until it cooled on its own.",
+          "Place it beside chemicals so the area stayed supervised.",
+          "Ignore it after visible smoke stopped and normal business resumed."
+        ],
+        correctAnswer: 0,
+        explanation: "A mattress fire can reignite if not fully extinguished."
+      },
+      {
+        question: "Why was lack of sprinklers or extinguishers important?",
+        options: [
+          "It improved evacuation because people were not delayed by equipment.",
+          "It reduced the building's ability to stop the fire early.",
+          "It made exit signs unnecessary during smoke and panic.",
+          "It prevented smoke from spreading through upper floors."
+        ],
+        correctAnswer: 1,
+        explanation: "Early suppression could have reduced spread."
+      },
+      {
+        question: "What is the strongest written-answer claim?",
+        options: [
+          "The fire was only unavoidable fate in an old building.",
+          "The victims were mainly responsible for not escaping faster.",
+          "The tragedy resulted from foreseeable fire hazards and weak safety enforcement.",
+          "Engineering ethics does not apply to hotels because they are private businesses."
+        ],
+        correctAnswer: 2,
+        explanation: "This answer links cause, ethics, and responsibility."
+      },
+      {
+        question: "Which NSPE idea fits the case best?",
+        options: [
+          "Maximize building occupancy at any cost during economic pressure.",
+          "Avoid reporting safety defects until the owner approves repairs.",
+          "Ignore public authorities if the building is low cost and old.",
+          "Hold paramount public safety, health, and welfare."
+        ],
+        correctAnswer: 3,
+        explanation: "The video directly connects the case to public safety."
+      },
+      {
+        question: "Why was poor code enforcement ethically serious?",
+        options: [
+          "Safety rules do not protect people unless enforced.",
+          "Codes only affect rich buildings and commercial towers.",
+          "Enforcement is optional once a disaster has already occurred.",
+          "Codes are unrelated to fire exits and emergency lighting."
+        ],
+        correctAnswer: 0,
+        explanation: "A code without follow-up cannot protect occupants."
+      },
+      {
+        question: "What was the ethical issue with the hotel being old and run-down?",
+        options: [
+          "Old buildings have no safety duties if they house poor tenants.",
+          "It still had to meet basic life-safety standards.",
+          "Poor guests need fewer protections because costs must stay low.",
+          "Age makes fire impossible to prevent through design or enforcement."
+        ],
+        correctAnswer: 1,
+        explanation: "Low-cost housing still requires safe exits and fire protection."
+      },
+      {
+        question: "Which prevention measure best targets escape failure?",
+        options: [
+          "More beds in each room so occupants stayed together.",
+          "Fewer inspections to reduce management burden.",
+          "Working exit signs and clear emergency routes.",
+          "Storing chemicals near stairs so staff could access them quickly."
+        ],
+        correctAnswer: 2,
+        explanation: "Clear exits help people escape during smoke and panic."
+      },
+      {
+        question: "Which prevention measure best targets fire spread?",
+        options: [
+          "More guests to increase awareness during the night shift.",
+          "Darker hallways to reduce panic while people evacuate.",
+          "Locked exits to control movement during emergency response.",
+          "Sprinklers, extinguishers, and safe storage."
+        ],
+        correctAnswer: 3,
+        explanation: "These reduce ignition growth and spread."
+      },
+      {
+        question: "Which statement is weakest?",
+        options: [
+          "The hotel had no ethical responsibility because guests were poor.",
+          "The city should enforce safety codes.",
+          "The owner should provide safe exits.",
+          "Fire risk was foreseeable."
+        ],
+        correctAnswer: 0,
+        explanation: "Vulnerable or poor occupants deserve protection."
+      },
+      {
+        question: "How did the fire become a wider public lesson?",
+        options: [
+          "It proved codes are useless once a building is already occupied.",
+          "It showed the need for stronger fire codes and enforcement.",
+          "It showed hotels should avoid exits because crowds create risk.",
+          "It only affected one mattress and not public safety systems."
+        ],
+        correctAnswer: 1,
+        explanation: "Disasters often reveal gaps in public safety systems."
+      },
+      {
+        question: "What was wrong with relying on one crowded fire escape?",
+        options: [
+          "It created bottlenecks during panic.",
+          "It made evacuation faster because everyone used the same path.",
+          "It stopped smoke completely from entering upper floors.",
+          "It replaced all signs and alarms by itself during the fire."
+        ],
+        correctAnswer: 0,
+        explanation: "Emergency egress must handle real occupant needs."
+      },
+      {
+        question: "Why does the fire department delay matter in the risk chain?",
+        options: [
+          "It made prevention unnecessary because outside response would arrive eventually.",
+          "It caused the original cigarette and mattress ignition.",
+          "It eliminated hotel responsibility once the alarm was raised.",
+          "Delayed response increased reliance on building safety systems."
+        ],
+        correctAnswer: 3,
+        explanation: "If response is delayed, internal fire safety systems become even more important."
+      },
+      {
+        question: "What is the best ethical lesson?",
+        options: [
+          "Known safety hazards must be corrected before disaster.",
+          "Cheap hotels do not need safety systems if tenants understand the risk.",
+          "Fire safety is only a personal issue, not a building or policy issue.",
+          "Public welfare applies only to bridges, vehicles, and industrial plants."
+        ],
+        correctAnswer: 0,
+        explanation: "The case is about preventable harm from ignored hazards."
+      },
+      {
+        question: "If asked what should have been done, which answer is strongest?",
+        options: [
+          "Only blame smokers and focus on personal behavior.",
+          "Close all hotels permanently because old buildings are unsafe.",
+          "Wait for another fire before acting so the pattern is clearer.",
+          "Fix exits and signs, install protection, enforce codes, and safely handle flammables."
+        ],
+        correctAnswer: 3,
+        explanation: "It covers building, management, and enforcement controls."
+      },
+      {
+        question: "Which answer best describes the responsibility of engineers or inspectors?",
+        options: [
+          "Focus only on appearance so the public remains calm.",
+          "Ignore hazards until someone complains in writing.",
+          "Approve unsafe buildings if they serve low-income occupants.",
+          "Report and correct safety violations that threaten public welfare."
+        ],
+        correctAnswer: 3,
+        explanation: "Professionals must act when safety is at risk."
+      }
+    ]
+  },
   { caseId: "case-8", questions: [] },
   { caseId: "case-9", questions: [] },
   { caseId: "case-10", questions: [] }
@@ -1599,6 +2491,92 @@ const quizTopics = {
     "Hardware vs software",
     "Professional responsibility",
     "Final lesson"
+  ],
+  "case-5": [
+    "Medical device ethics",
+    "Fail-safe design",
+    "Patient safety",
+    "Human factors",
+    "Accountability",
+    "Code reuse",
+    "Malfunction 54",
+    "Hardware interlocks",
+    "Operator behavior",
+    "Medical automation",
+    "Transparency",
+    "Repeated harm",
+    "Error handling",
+    "Fail-safe design",
+    "Safety analysis",
+    "Written answer",
+    "Regulation",
+    "Documentation",
+    "Race condition",
+    "Arithmetic overflow",
+    "Stakeholders",
+    "Denial",
+    "First response",
+    "Software ethics",
+    "Root causes",
+    "Defense in depth",
+    "Weak answer",
+    "Medical-device lesson",
+    "Accountability",
+    "Real-world use"
+  ],
+  "case-6": [
+    "Public safety",
+    "Aerodynamic instability",
+    "Resonance vs flutter",
+    "Public safety",
+    "Cost vs safety",
+    "Warning signs",
+    "Torsional flutter",
+    "Prevention",
+    "Professional responsibility",
+    "Innovation risk",
+    "Dynamic loads",
+    "Written answer",
+    "Risk management",
+    "Design choice",
+    "Design responsibility",
+    "Future standards",
+    "Testing",
+    "Accountability",
+    "Stakeholders",
+    "Elegant design",
+    "Pushing limits",
+    "Vortex shedding",
+    "Final collapse",
+    "Case comparison",
+    "Conclusion"
+  ],
+  "case-7": [
+    "Public harm",
+    "Immediate cause",
+    "Storage decision",
+    "Core principle",
+    "Exit lighting",
+    "Known hazards",
+    "Accountability",
+    "Vulnerable occupants",
+    "Flammable storage",
+    "Risk chain",
+    "First response",
+    "Fire suppression",
+    "Written answer",
+    "NSPE safety",
+    "Code enforcement",
+    "Old building duty",
+    "Escape routes",
+    "Fire spread",
+    "Weak claim",
+    "Public lesson",
+    "Emergency egress",
+    "Defense in depth",
+    "Ethical lesson",
+    "Best prevention",
+    "Professional duty"
   ]
 };
 
@@ -1740,6 +2718,92 @@ const quizExamTips = {
     "System safety includes hardware and software.",
     "For Ariane 5, professional responsibility is the key.",
     "Final answer = reused software + changed conditions + validation."
+  ],
+  "case-5": [
+    "Medical device cases usually center on patient safety.",
+    "In safety-critical systems, software should not be the only protection.",
+    "Link patient safety to actual harm.",
+    "Bad error messages are a human-factor and transparency issue.",
+    "Accountability means acting on warning signs.",
+    "Reuse requires validation.",
+    "Malfunction 54 = real use timing problem.",
+    "Fail-safe means failure should move to a safe state.",
+    "Human factors = design for real use, not ideal use.",
+    "Do not say software is bad. Say unsafe software is bad.",
+    "Transparency includes clear warnings and shared safety information.",
+    "Repetition after warning signs increases responsibility.",
+    "Error handling must prevent unsafe continuation.",
+    "Safety-critical systems need layers of protection.",
+    "Safety analysis must include software.",
+    "Strong answers connect technical issue and ethics.",
+    "Regulators step in when manufacturer control fails.",
+    "Documentation is a safety tool.",
+    "Theory vs practice matters in interfaces.",
+    "Overflow can be deadly in safety-critical code.",
+    "Identify direct harm first.",
+    "Denial after harm is an accountability issue.",
+    "First warning sign requires protective action.",
+    "Software can have physical consequences.",
+    "Use multi-cause answers.",
+    "Defense in depth is key.",
+    "Avoid blaming users alone.",
+    "Final lesson should protect patients.",
+    "Repeated failures strengthen the accountability argument.",
+    "Design must match real human behavior."
+  ],
+  "case-6": [
+    "Public structure failure usually connects to public safety.",
+    "Do not focus only on gravity.",
+    "\"Only resonance\" is incomplete.",
+    "Public safety means real-use safety.",
+    "Cost-saving is not automatically unethical.",
+    "Warning signs are important in ethics questions.",
+    "Torsional = twisting.",
+    "Prevention must match the failure cause.",
+    "Professional responsibility = competent design judgment.",
+    "Innovation and caution go together.",
+    "Dynamic loads are high-yield here.",
+    "Use \"real-world loads\" in written answers.",
+    "Warning signs ignored = risk management issue.",
+    "Plate-girder/slender deck is important.",
+    "Natural force does not remove design responsibility.",
+    "Avoid extreme answers.",
+    "Testing is evidence before trust.",
+    "Accountability is not only blame.",
+    "Stakeholders are not only engineers.",
+    "Balance aesthetics, cost, and safety.",
+    "New design = new responsibility.",
+    "It explains motion, but not the full final collapse.",
+    "Final failure = twisting.",
+    "Do not force every case into fraud.",
+    "Strong conclusion = safety limits economy."
+  ],
+  "case-7": [
+    "Public harm from unsafe infrastructure is an ethics issue.",
+    "Know the trigger: smoking-related mattress fire, then reignition.",
+    "Link storage decision to foreseeable risk.",
+    "For fire and building cases, start with safety.",
+    "Exit signs are life-safety systems.",
+    "Known hazard plus no action = accountability problem.",
+    "Accountability includes action, not just awareness.",
+    "Vulnerable stakeholders increase ethical responsibility.",
+    "Fire risk increases when ignition meets fuel.",
+    "Risk is often a chain of failures.",
+    "Prevention begins with safe handling of the first incident.",
+    "Fire protection systems break the accident chain.",
+    "Use foreseeable hazards in written answers.",
+    "NSPE safety canon is high-yield.",
+    "Compliance means action, not paperwork.",
+    "Poverty does not reduce safety rights.",
+    "Match prevention to the failure mode.",
+    "Fire prevention includes suppression and storage control.",
+    "Never reduce safety duty based on social status.",
+    "Accountability includes future prevention.",
+    "Exits must be usable under emergency conditions.",
+    "Multiple defenses are needed.",
+    "Best lesson = foreseeability plus prevention.",
+    "Prevention answers need multiple controls.",
+    "Reporting hazards is part of ethical responsibility."
   ]
 };
 
@@ -1815,6 +2879,49 @@ function highlightTerms(text, caseId) {
       .replaceAll("redundancy", "<strong>redundancy</strong>")
       .replaceAll("safety-critical", "<strong>safety-critical</strong>")
       .replaceAll("boundary", "<strong>boundary</strong>");
+  }
+
+  if (caseId === "case-5") {
+    return sharedText
+      .replaceAll("Therac-25", "<strong>Therac-25</strong>")
+      .replaceAll("patient safety", "<strong>patient safety</strong>")
+      .replaceAll("radiation", "<strong>radiation</strong>")
+      .replaceAll("hardware interlocks", "<strong>hardware interlocks</strong>")
+      .replaceAll("fail-safe", "<strong>fail-safe</strong>")
+      .replaceAll("Malfunction 54", "<strong>Malfunction 54</strong>")
+      .replaceAll("accountability", "<strong>accountability</strong>")
+      .replaceAll("human factors", "<strong>human factors</strong>")
+      .replaceAll("overflow", "<strong>overflow</strong>");
+  }
+
+  if (caseId === "case-6") {
+    return sharedText
+      .replaceAll("Tacoma Narrows", "<strong>Tacoma Narrows</strong>")
+      .replaceAll("torsional flutter", "<strong>torsional flutter</strong>")
+      .replaceAll("Torsional flutter", "<strong>Torsional flutter</strong>")
+      .replaceAll("resonance", "<strong>resonance</strong>")
+      .replaceAll("wind-induced", "<strong>wind-induced</strong>")
+      .replaceAll("public safety", "<strong>public safety</strong>")
+      .replaceAll("cost-saving", "<strong>cost-saving</strong>")
+      .replaceAll("warning signs", "<strong>warning signs</strong>")
+      .replaceAll("warning sign", "<strong>warning sign</strong>")
+      .replaceAll("real-world", "<strong>real-world</strong>")
+      .replaceAll("aerodynamic", "<strong>aerodynamic</strong>");
+  }
+
+  if (caseId === "case-7") {
+    return sharedText
+      .replaceAll("Gulf Hotel", "<strong>Gulf Hotel</strong>")
+      .replaceAll("public safety", "<strong>public safety</strong>")
+      .replaceAll("public welfare", "<strong>public welfare</strong>")
+      .replaceAll("exit light", "<strong>exit light</strong>")
+      .replaceAll("exit signs", "<strong>exit signs</strong>")
+      .replaceAll("sprinklers", "<strong>sprinklers</strong>")
+      .replaceAll("extinguishers", "<strong>extinguishers</strong>")
+      .replaceAll("foreseeable", "<strong>foreseeable</strong>")
+      .replaceAll("vulnerable", "<strong>vulnerable</strong>")
+      .replaceAll("flammables", "<strong>flammables</strong>")
+      .replaceAll("code", "<strong>code</strong>");
   }
 
   if (caseId !== "case-2") {
