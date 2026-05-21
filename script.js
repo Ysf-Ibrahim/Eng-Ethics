@@ -1122,334 +1122,334 @@ const quizData = [
     caseId: "case-4",
     questions: [
       {
-        question: "In the Ariane 5 case, why is the failure an engineering ethics issue rather than only a coding mistake?",
+        question: "Ariane 5 Flight 501 failed shortly after launch because the flight computer received invalid guidance data. From an engineering ethics perspective, why is this more than just a programming error?",
         options: [
-          "The mission failed after launch, but ethics only applies if people are on board.",
-          "The software was reused without enough validation in a safety-critical system.",
-          "The main issue was that the launch happened in the 1990s.",
-          "The payload owner changed the mission purpose during flight."
-        ],
-        correctAnswer: 1,
-        explanation: "The ethical issue is the failure to validate safety-critical reused software under new conditions."
-      },
-      {
-        question: "What was the central technical problem in Ariane 5 Flight 501?",
-        options: [
-          "The payload sent commands that directly overrode the guidance system.",
-          "The launch site lost communication before the rocket left the pad.",
-          "A data conversion overflow corrupted guidance information.",
-          "The backup computer was removed before final launch approval."
-        ],
-        correctAnswer: 2,
-        explanation: "A large floating-point value was converted into a smaller integer type, causing invalid data."
-      },
-      {
-        question: "Why was reusing Ariane 4 software risky?",
-        options: [
-          "Ariane 5 operated under different conditions.",
-          "Ariane 4 software had never worked in any previous mission.",
-          "Software reuse is always forbidden in engineering projects.",
-          "Ariane 5 had no guidance computer or flight-control software."
+          "The software was safety-critical and was reused without enough validation for the new rocket.",
+          "The payload was expensive and therefore automatically unethical.",
+          "Rockets should never use software.",
+          "The failure happened too quickly to analyze."
         ],
         correctAnswer: 0,
-        explanation: "Old software can become unsafe when the new system produces different values or behavior."
+        explanation: "The ethical issue is that safety-critical reused software was trusted without proper validation under Ariane 5 conditions."
       },
       {
-        question: "Which answer best explains the professional responsibility failure?",
+        question: "What was the key technical failure in the Ariane 5 case?",
         options: [
-          "Engineers should have focused only on payload ownership and mission branding.",
-          "Engineers should have ignored boundary values because Ariane 4 had flown before.",
-          "Engineers should have trusted the old code completely once hardware checks passed.",
-          "Engineers should have retested Ariane 4 code under Ariane 5 conditions."
-        ],
-        correctAnswer: 3,
-        explanation: "Professional responsibility requires checking assumptions in a new safety-critical system."
-      },
-      {
-        question: "Why was the backup system ethically weak?",
-        options: [
-          "It was reviewed by a different team but not connected to launch telemetry.",
-          "It used the same software and repeated the same failure.",
-          "It was intended to test payload performance rather than guidance data.",
-          "It failed because backup systems are never useful in software engineering."
-        ],
-        correctAnswer: 1,
-        explanation: "A backup that repeats the same software bug does not protect against that bug."
-      },
-      {
-        question: "Which principle is most directly connected to missed overflow and boundary cases?",
-        options: [
-          "Mission communication with satellite owners.",
-          "Budget planning after the launch failure.",
-          "Testing and validation.",
-          "Public relations after an engineering failure."
-        ],
-        correctAnswer: 2,
-        explanation: "The overflow should have been tested using realistic and boundary values."
-      },
-      {
-        question: "What made Ariane 4's past success dangerous in this case?",
-        options: [
-          "It created overconfidence.",
-          "It proved software never fails in safety-critical systems.",
-          "It made Ariane 5 identical in hardware and flight behavior.",
-          "It removed all testing needs once the old system had succeeded."
+          "A 64-bit floating-point value was converted into a 16-bit signed integer, causing overflow.",
+          "The rocket's paint affected the sensors.",
+          "The payload sent wrong commands to the rocket.",
+          "The software was used only for communication."
         ],
         correctAnswer: 0,
-        explanation: "Past success caused the team to trust old assumptions too much."
+        explanation: "The overflow created invalid guidance data in the SRI."
       },
       {
-        question: "Which answer best explains why the failure was not only one programmer's fault?",
+        question: "Why was reusing Ariane 4 software risky in Ariane 5?",
         options: [
-          "It happened too quickly to analyze and therefore has no process lesson.",
-          "It only involved the launch weather and not the software process.",
-          "It was caused by the satellite payload rather than guidance decisions.",
-          "It involved code reuse, testing, redundancy, and culture."
-        ],
-        correctAnswer: 3,
-        explanation: "The failure resulted from technical and organizational decisions."
-      },
-      {
-        question: "In terms of risk management, what risk was missed?",
-        options: [
-          "The launch broadcast might fail to explain the mission clearly.",
-          "Ariane 5 values could exceed Ariane 4 software limits.",
-          "The payload might become the only stakeholder after liftoff.",
-          "The team might document too many software assumptions."
-        ],
-        correctAnswer: 1,
-        explanation: "The new rocket could produce values outside the old software's safe range."
-      },
-      {
-        question: "Why is exception or overflow handling important here?",
-        options: [
-          "Invalid values should not control a rocket.",
-          "It improves public announcements after the mission.",
-          "It shortens software documentation for later projects.",
-          "It helps satellite owners communicate with viewers."
+          "Ariane 5 had different hardware and flight conditions.",
+          "Ariane 4 software had never worked before.",
+          "Reusing code is always illegal.",
+          "Ariane 5 had no guidance system."
         ],
         correctAnswer: 0,
-        explanation: "In safety-critical control software, invalid data must be handled safely."
+        explanation: "Old software assumptions may fail when the new system behaves differently."
       },
       {
-        question: "Which phrase is strongest for a written answer?",
+        question: "In terms of professional responsibility, what should the engineering team have done?",
         options: [
-          "Ariane 5 was simply unlucky because software failures cannot be predicted.",
-          "The backup system solved the fault before guidance was affected.",
-          "Reused software was not validated for the new rocket's real conditions.",
-          "Satellites caused the guidance problem during the launch phase."
-        ],
-        correctAnswer: 2,
-        explanation: "This connects the technical issue to ethical responsibility."
-      },
-      {
-        question: "What does common-mode software failure mean in this case?",
-        options: [
-          "The rocket failed because of two different unrelated software issues.",
-          "The backup was stronger than the primary system during failure.",
-          "The software worked only after the rocket had already failed.",
-          "Primary and backup systems failed from the same software bug."
-        ],
-        correctAnswer: 3,
-        explanation: "Identical software caused both systems to fail in the same way."
-      },
-      {
-        question: "How did the failure become visible?",
-        options: [
-          "Engineers discovered the issue years later in a classroom exercise.",
-          "The rocket deviated and was destroyed shortly after launch.",
-          "The system completed the mission and reported a warning afterward.",
-          "Mission reports showed a minor documentation issue after launch."
-        ],
-        correctAnswer: 1,
-        explanation: "The failure became visible through the launch failure itself."
-      },
-      {
-        question: "Why was testing insufficient?",
-        options: [
-          "It did not include realistic Ariane 5 values.",
-          "It was performed so many times that new risks became irrelevant.",
-          "It proved overflow could not happen under any mission conditions.",
-          "It focused too much on boundary values and exception behavior."
+          "Revalidate the reused software under Ariane 5's real operating conditions.",
+          "Trust the old code because Ariane 4 had worked.",
+          "Test only the payload and ignore software.",
+          "Use identical backup software without review."
         ],
         correctAnswer: 0,
-        explanation: "The tests did not reproduce the conditions that triggered overflow."
+        explanation: "Professional responsibility required testing the reused software for the new rocket."
       },
       {
-        question: "Which answer best describes the cultural failure?",
+        question: "Why did testing fail to catch the overflow problem?",
         options: [
-          "The team refused to use any old software even when it was validated.",
-          "The organization focused too much on boundary testing and review.",
-          "Overconfidence made the team undervalue software failure risks.",
-          "The organization avoided all assumptions about hardware reliability."
-        ],
-        correctAnswer: 2,
-        explanation: "The culture trusted past success and hardware reliability too much."
-      },
-      {
-        question: "Why does public trust matter even without deaths?",
-        options: [
-          "Public trust only matters in passenger aircraft, not space missions.",
-          "Public trust is unrelated to rockets because no users directly operate them.",
-          "Public trust increases after preventable failure if the system is complex.",
-          "Public confidence depends on reliable engineering and responsible use of funds."
-        ],
-        correctAnswer: 3,
-        explanation: "Expensive public or institutional projects depend on trust."
-      },
-      {
-        question: "Which option best explains the integrity issue?",
-        options: [
-          "The team should have honestly questioned old assumptions.",
-          "The team should have hidden all reused software from reviewers.",
-          "The team should have ignored Ariane 5 differences after success elsewhere.",
-          "The team should have blamed the payload for guidance behavior."
+          "The tests did not use realistic Ariane 5 values or boundary cases.",
+          "The software had no variables.",
+          "Testing was performed only after the explosion.",
+          "The payload prevented all testing."
         ],
         correctAnswer: 0,
-        explanation: "Integrity requires honest evaluation of whether old software still fits."
+        explanation: "The old tests used values too small to reveal the overflow."
       },
       {
-        question: "What should have been done before launching Ariane 5?",
+        question: "What made the backup SRI ethically weak?",
         options: [
-          "Launch first and test software behavior after mission completion.",
-          "Revalidate old code with Ariane 5 flight data.",
-          "Use the same backup without review because redundancy always works.",
-          "Remove overflow checks to simplify safety-critical software."
-        ],
-        correctAnswer: 1,
-        explanation: "The reused code should have been tested against the new rocket's conditions."
-      },
-      {
-        question: "Which answer best explains the role of the SRI?",
-        options: [
-          "It stored the satellites after launch until they reached orbit.",
-          "It replaced the rocket engines during the early launch phase.",
-          "It provided inertial reference data used for guidance.",
-          "It existed only to report final mission costs after launch."
-        ],
-        correctAnswer: 2,
-        explanation: "The SRI generated data that the flight computer used."
-      },
-      {
-        question: "Why was the payload not the main focus?",
-        options: [
-          "The failure came from guidance software, not the satellites.",
-          "The payload controlled the SRI during launch and caused the overflow.",
-          "The payload was the only stakeholder affected by the failure.",
-          "The payload was responsible for all prelaunch software testing."
+          "It used the same software and failed from the same bug.",
+          "It was not installed in the rocket.",
+          "It was used only for decoration.",
+          "It made the rocket too heavy."
         ],
         correctAnswer: 0,
-        explanation: "The video says the payload was not important to the disaster's cause."
+        explanation: "Identical backup software created common-mode failure."
       },
       {
-        question: "If asked 'What caused the failure?', which answer is strongest?",
+        question: "Which ethical principle is most central in the Ariane 5 case?",
         options: [
-          "The satellites alone caused the explosion shortly after launch.",
-          "The weather created all software errors during the mission.",
-          "The rocket had no safety-critical software in the guidance system.",
-          "Unsafe code reuse, overflow, weak testing, identical backup, and overconfidence."
-        ],
-        correctAnswer: 3,
-        explanation: "The cause was a combination of technical and organizational failures."
-      },
-      {
-        question: "What is the ethical lesson about code reuse?",
-        options: [
-          "Reused code is always safer because it has already flown once.",
-          "Reused code must be reviewed and validated when the system changes.",
-          "Reused code removes the need for boundary testing and review.",
-          "Reused code is always illegal in safety-critical engineering."
-        ],
-        correctAnswer: 1,
-        explanation: "Reuse is acceptable only when assumptions still hold."
-      },
-      {
-        question: "Which answer best describes accountability after Ariane 5?",
-        options: [
-          "Blame only the rocket and avoid reviewing engineering assumptions.",
-          "Ignore the software because the mission was unmanned.",
-          "Review assumptions, improve testing, and prevent repeated failure.",
-          "Repeat the same launch conditions to prove the failure was random."
-        ],
-        correctAnswer: 2,
-        explanation: "Accountability requires learning and correction."
-      },
-      {
-        question: "Why is boundary testing important?",
-        options: [
-          "The failure happened when a value exceeded the safe range.",
-          "Boundary testing replaces all validation and review steps.",
-          "Boundary testing only matters in user-interface websites.",
-          "Boundary testing prevents every possible hardware failure."
-        ],
-        correctAnswer: 0,
-        explanation: "Boundary testing could have exposed the overflow risk."
-      },
-      {
-        question: "Which answer best explains redundancy responsibility?",
-        options: [
-          "A backup is always enough if it is present in the system design.",
-          "A backup should always be identical to make validation simpler.",
-          "A backup removes the need for testing the primary software.",
-          "A backup should protect against software faults, not copy them."
-        ],
-        correctAnswer: 3,
-        explanation: "Identical backup software repeated the same error."
-      },
-      {
-        question: "What is the strongest prevention strategy?",
-        options: [
-          "Trust old software because it once worked on a successful rocket.",
-          "Test real Ariane 5 conditions and improve fail-safe handling.",
-          "Avoid reviewing type conversions because they are small details.",
-          "Ignore backup design because the primary system should be enough."
-        ],
-        correctAnswer: 1,
-        explanation: "Prevention targets realistic testing and safe failure handling."
-      },
-      {
-        question: "Which claim would be weakest in a written answer?",
-        options: [
-          "The issue was only a random explosion with no software cause.",
-          "Testing should include realistic values and boundary conditions.",
-          "Reused code requires validation when the system context changes.",
-          "Identical backup software can repeat the same design failure."
-        ],
-        correctAnswer: 0,
-        explanation: "The failure had a clear software and validation cause."
-      },
-      {
-        question: "Which answer best explains why hardware reliability was not enough?",
-        options: [
-          "Reliable hardware prevents every possible software error.",
-          "Hardware reliability replaces testing when old software has succeeded.",
-          "Software can fail even when hardware is reliable.",
-          "Software cannot affect hardware in a physical rocket system."
-        ],
-        correctAnswer: 2,
-        explanation: "The video emphasizes that reliable hardware does not guarantee software safety."
-      },
-      {
-        question: "What is the most important ethical violation in this case?",
-        options: [
-          "Marketing strategy.",
           "Professional responsibility.",
-          "Airline scheduling.",
-          "Mission publicity."
+          "Advertising honesty.",
+          "Customer entertainment.",
+          "Product branding."
         ],
-        correctAnswer: 1,
-        explanation: "Engineers failed to fully validate safety-critical reused software."
+        correctAnswer: 0,
+        explanation: "Engineers had responsibility to validate safety-critical software before launch."
       },
       {
-        question: "What is the best final lesson?",
+        question: "Why is saying it worked before a weak ethical defense in this case?",
         options: [
-          "Old software always works if it has succeeded on a previous project.",
-          "Backup systems always prevent safety-critical software failure.",
-          "Rockets should never use computers in guidance systems.",
-          "Reused software is not automatically safe in a changed safety-critical system."
+          "Past success does not prove safety in a changed system.",
+          "Past success makes testing unnecessary.",
+          "Old code is always safer than new code.",
+          "Hardware changes never affect software."
         ],
-        correctAnswer: 3,
-        explanation: "The failure shows that changed context requires new validation."
+        correctAnswer: 0,
+        explanation: "Ariane 5 produced conditions Ariane 4 did not."
+      },
+      {
+        question: "Which answer best describes the risk management failure in Ariane 5?",
+        options: [
+          "The team did not control the risk that Ariane 5 values would exceed old software limits.",
+          "The team tested too many boundary values.",
+          "The team focused too much on software failure.",
+          "The rocket had no known risks."
+        ],
+        correctAnswer: 0,
+        explanation: "The changed operating range was a foreseeable software risk."
+      },
+      {
+        question: "In terms of integrity, what was the main issue in Ariane 5?",
+        options: [
+          "The team accepted old assumptions without fully verifying them for the new mission.",
+          "The team used software, which is always dishonest.",
+          "The rocket was launched publicly.",
+          "The payload was not the main failure."
+        ],
+        correctAnswer: 0,
+        explanation: "Integrity requires honest verification, not overconfidence."
+      },
+      {
+        question: "What is common-mode failure in the Ariane 5 case?",
+        options: [
+          "Primary and backup systems failed because they used the same flawed software.",
+          "Two different unrelated failures happened at once.",
+          "The payload failed before launch.",
+          "The rocket lost power only in one sensor."
+        ],
+        correctAnswer: 0,
+        explanation: "Both SRI systems repeated the same software error."
+      },
+      {
+        question: "Why is identical redundancy not always safe in safety-critical systems?",
+        options: [
+          "It may repeat the same design or software fault.",
+          "It always improves safety completely.",
+          "It removes the need for testing.",
+          "It makes software failures impossible."
+        ],
+        correctAnswer: 0,
+        explanation: "Redundancy must reduce shared failure modes."
+      },
+      {
+        question: "Which answer best explains the organizational culture problem in Ariane 5?",
+        options: [
+          "The organization trusted past success and hardware reliability too much.",
+          "The organization tested too many software failures.",
+          "The organization avoided all code reuse.",
+          "The organization had no launch pressure."
+        ],
+        correctAnswer: 0,
+        explanation: "The video emphasizes overconfidence and undervaluing software failure testing."
+      },
+      {
+        question: "Why is the SRI important in understanding the Ariane 5 failure?",
+        options: [
+          "It produced inertial reference data used by the flight computer.",
+          "It controlled ticket sales for the launch.",
+          "It stored the satellites.",
+          "It replaced the rocket engines."
+        ],
+        correctAnswer: 0,
+        explanation: "Invalid SRI data led the flight computer to make wrong corrections."
+      },
+      {
+        question: "Which written-answer claim about Ariane 5 would be weakest?",
+        options: [
+          "The failure was only random bad luck.",
+          "Reused code required validation.",
+          "Boundary testing was insufficient.",
+          "Identical backup software repeated the failure."
+        ],
+        correctAnswer: 0,
+        explanation: "The failure had identifiable technical and ethical causes."
+      },
+      {
+        question: "What should have happened before the Ariane 5 launch to prevent failure?",
+        options: [
+          "Review assumptions, test real Ariane 5 values, and handle overflow safely.",
+          "Launch first and test after failure.",
+          "Disable all software checks.",
+          "Trust Ariane 4 results without analysis."
+        ],
+        correctAnswer: 0,
+        explanation: "Prevention required validation under the actual Ariane 5 context."
+      },
+      {
+        question: "Which answer best connects the Ariane 5 case to public trust?",
+        options: [
+          "A preventable software failure damaged confidence in space engineering and safety-critical systems.",
+          "Public trust was irrelevant because no passengers were onboard.",
+          "Public trust depends only on advertising.",
+          "The public trusts rockets more after unexplained failures."
+        ],
+        correctAnswer: 0,
+        explanation: "Even without passengers, public and institutional trust is affected by major failures."
+      },
+      {
+        question: "Why was the Ariane 5 failure not only one programmer's mistake?",
+        options: [
+          "It involved testing, reuse assumptions, redundancy, and organizational culture.",
+          "The code had no role in the failure.",
+          "The backup solved the problem.",
+          "The payload caused the failure."
+        ],
+        correctAnswer: 0,
+        explanation: "The failure came from system-level engineering decisions."
+      },
+      {
+        question: "Which principle is most connected to boundary and overflow testing in Ariane 5?",
+        options: [
+          "Testing and validation.",
+          "Product design aesthetics.",
+          "Marketing fairness.",
+          "Customer comfort."
+        ],
+        correctAnswer: 0,
+        explanation: "Overflow failures are exactly what boundary testing should catch."
+      },
+      {
+        question: "What does the Ariane 5 case teach about safety-critical software?",
+        options: [
+          "Software can physically destroy systems when it controls real hardware.",
+          "Software errors only affect screens.",
+          "Software never needs redundancy.",
+          "Hardware reliability guarantees software safety."
+        ],
+        correctAnswer: 0,
+        explanation: "Invalid software data caused the rocket to fail."
+      },
+      {
+        question: "In terms of accountability, what should ESA and engineers learn from Ariane 5?",
+        options: [
+          "Responsibility includes correcting assumptions, improving testing, and preventing repeat failures.",
+          "Accountability only means blaming the rocket.",
+          "Accountability does not apply without injuries.",
+          "Accountability ends after launch."
+        ],
+        correctAnswer: 0,
+        explanation: "Accountability means learning and correcting the process."
+      },
+      {
+        question: "Why was Ariane 5 different from Ariane 4 in a way that mattered for the software?",
+        options: [
+          "It could produce values outside the old software's safe range.",
+          "It had the same exact flight conditions.",
+          "It did not use software.",
+          "It could not generate sensor values."
+        ],
+        correctAnswer: 0,
+        explanation: "The new rocket context made old assumptions unsafe."
+      },
+      {
+        question: "Which option best explains why exception and overflow handling mattered in Ariane 5?",
+        options: [
+          "Invalid values should not be allowed to guide a rocket.",
+          "Overflow only affects accounting software.",
+          "Exception handling is unnecessary in rockets.",
+          "The backup makes all error handling useless."
+        ],
+        correctAnswer: 0,
+        explanation: "Safety-critical systems must handle invalid data safely."
+      },
+      {
+        question: "What ethical issue appears when a backup system is trusted without considering software faults?",
+        options: [
+          "Risk is underestimated because redundancy may not cover common software errors.",
+          "The system becomes too transparent.",
+          "Testing becomes unnecessary.",
+          "Public trust automatically increases."
+        ],
+        correctAnswer: 0,
+        explanation: "Redundancy is weak if it protects only against hardware failure."
+      },
+      {
+        question: "Which answer best summarizes the cause of the Ariane 5 failure?",
+        options: [
+          "Unsafe code reuse, overflow, poor testing, identical backup software, and overconfidence.",
+          "A payload communication error only.",
+          "A random explosion with no engineering cause.",
+          "Weather and public pressure only."
+        ],
+        correctAnswer: 0,
+        explanation: "The case had technical and organizational causes."
+      },
+      {
+        question: "Why is the Ariane 5 case important for engineering ethics education?",
+        options: [
+          "It shows how assumptions in software engineering can create catastrophic physical failure.",
+          "It proves all code reuse is unethical.",
+          "It shows rockets should avoid all computers.",
+          "It is only about launch videos."
+        ],
+        correctAnswer: 0,
+        explanation: "The case connects software assumptions to real-world consequences."
+      },
+      {
+        question: "What role did hardware reliability assumptions play in the Ariane 5 disaster?",
+        options: [
+          "The team focused too much on hardware reliability and not enough on software failure modes.",
+          "Hardware reliability prevented the failure.",
+          "Hardware reliability means software testing is optional.",
+          "Hardware reliability caused the payload to fail."
+        ],
+        correctAnswer: 0,
+        explanation: "The culture assumed reliable hardware meant software would work."
+      },
+      {
+        question: "Which answer best explains ethical prevention in the Ariane 5 context?",
+        options: [
+          "Revalidate reused software, test boundary cases, handle overflow, and design better redundancy.",
+          "Reuse old software exactly because it worked before.",
+          "Remove all backups.",
+          "Launch faster to discover problems."
+        ],
+        correctAnswer: 0,
+        explanation: "These actions target the actual failure chain."
+      },
+      {
+        question: "Which statement best captures the integrity lesson from Ariane 5?",
+        options: [
+          "Engineers must question old assumptions when system conditions change.",
+          "Engineers should never reuse code.",
+          "If code worked once, it is permanently safe.",
+          "Integrity only matters after public complaints."
+        ],
+        correctAnswer: 0,
+        explanation: "Integrity requires honest checking of assumptions."
+      },
+      {
+        question: "Which is the best final conclusion for a 5-mark ethics answer about Ariane 5?",
+        options: [
+          "Ariane 5 shows that reused safety-critical software must be revalidated when the system changes.",
+          "Ariane 5 shows that all rockets fail randomly.",
+          "Ariane 5 shows that backups always solve software problems.",
+          "Ariane 5 shows that testing is less important than past success."
+        ],
+        correctAnswer: 0,
+        explanation: "This conclusion connects the case to professional responsibility and software validation."
       }
     ]
   },
@@ -2909,32 +2909,32 @@ const quizTopics = {
     "Data conversion",
     "Code reuse",
     "Professional responsibility",
-    "Redundancy",
-    "Testing",
-    "Overconfidence",
-    "System causes",
-    "Risk management",
-    "Overflow handling",
-    "Written answer",
-    "Common-mode failure",
-    "Failure visibility",
     "Realistic testing",
-    "Organizational culture",
-    "Public trust",
-    "Integrity",
-    "Prevention",
-    "SRI role",
-    "Payload focus",
-    "Root causes",
-    "Code reuse",
-    "Accountability",
-    "Boundary testing",
     "Redundancy",
+    "Core principle",
+    "Past success",
+    "Risk management",
+    "Integrity",
+    "Common-mode failure",
+    "Identical redundancy",
+    "Organizational culture",
+    "SRI role",
+    "Weak claim",
     "Prevention",
-    "Weak answer",
-    "Hardware vs software",
-    "Professional responsibility",
-    "Final lesson"
+    "Public trust",
+    "System causes",
+    "Testing",
+    "Safety-critical software",
+    "Accountability",
+    "Changed conditions",
+    "Overflow handling",
+    "Backup trust",
+    "Root causes",
+    "Ethics education",
+    "Hardware reliability",
+    "Ethical prevention",
+    "Integrity lesson",
+    "Final conclusion"
   ],
   "case-5": [
     "Medical device ethics",
@@ -3174,36 +3174,36 @@ const quizExamTips = {
     "Ethics case = decisions affect people."
   ],
   "case-4": [
-    "Connect technical bugs to professional responsibility.",
-    "Remember the concept: overflow during conversion.",
-    "Reuse requires revalidation.",
+    "Connect the technical bug to professional responsibility and public trust.",
+    "Ariane 5 technical core = 64-bit to 16-bit conversion overflow.",
+    "Reused code must be revalidated when context changes.",
     "New system means new validation.",
-    "Identical backup can cause common-mode failure.",
-    "Boundary cases matter in safety-critical software.",
-    "Past success does not prove future safety.",
-    "Complex failures usually have multiple causes.",
+    "Testing must match real operating conditions.",
+    "Redundancy must protect against shared software faults.",
+    "For Ariane 5, professional responsibility is the main principle.",
+    "Past success does not replace verification.",
     "Risk management means checking changed assumptions.",
-    "Fail-safe behavior matters.",
-    "Strong answers link reuse, validation, and safety.",
-    "Same design can mean same failure.",
-    "Ariane visibility = deviation and destruction.",
-    "Ask whether testing matched real use.",
-    "Culture = assumptions the organization accepts.",
-    "No deaths does not mean no ethical issue.",
-    "Integrity includes not relying on false confidence.",
-    "Prevention begins before launch.",
-    "Know the SRI role generally, not excessive technical detail.",
-    "Focus on software, not payload.",
-    "Use combined causes.",
-    "Reuse is not the problem. Unvalidated reuse is.",
-    "Accountability includes prevention.",
-    "Overflow failures require boundary testing.",
-    "Redundancy must reduce shared failure modes.",
-    "Prevention answers should match root causes.",
-    "Avoid vague random-accident explanations.",
-    "System safety includes hardware and software.",
-    "For Ariane 5, professional responsibility is the key.",
-    "Final answer = reused software + changed conditions + validation."
+    "Integrity includes not pretending assumptions are verified.",
+    "Same software can mean same failure.",
+    "True redundancy must consider software diversity.",
+    "Culture questions ask what the organization normalized.",
+    "Know SRI generally, not excessive details.",
+    "Avoid 'random accident' explanations.",
+    "Prevention = validate, test, handle failure.",
+    "Public trust can apply without direct human death.",
+    "Ethics answers should avoid one-person blame.",
+    "Boundary testing is high-yield for Ariane 5.",
+    "Software ethics matters when software controls physical systems.",
+    "Accountability is responsibility plus prevention.",
+    "Changed conditions are the central case fact.",
+    "Fail-safe behavior is part of software ethics.",
+    "Ask whether the backup fails differently.",
+    "Use a multi-cause answer.",
+    "The lesson is responsible software engineering, not no software.",
+    "System safety includes both hardware and software.",
+    "Prevention should match cause.",
+    "Use 'question assumptions' in written answers.",
+    "End with revalidation, safety-critical systems, and responsibility."
   ],
   "case-5": [
     "Medical-device cases usually begin with patient safety.",
