@@ -1906,6 +1906,125 @@ h5 {
   background: rgba(251, 191, 36, 0.08);
 }
 
+.piper-story-card {
+  background: rgba(24, 12, 18, 0.82);
+}
+
+.piper-final-line {
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+.piper-core-card {
+  background: rgba(12, 16, 27, 0.84);
+}
+
+.piper-one-idea {
+  display: grid;
+  gap: 8px;
+  padding: 18px 20px;
+  margin: 0 0 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(239, 68, 68, 0.34);
+  background: rgba(127, 29, 29, 0.12);
+}
+
+.piper-one-idea span,
+.piper-final-sentence-box span {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fca5a5;
+}
+
+.piper-one-idea p,
+.piper-final-sentence-box p,
+.piper-core-block p {
+  margin: 0;
+}
+
+.piper-core-flow,
+.piper-must-know,
+.piper-meaning-list {
+  display: grid;
+  gap: 12px;
+}
+
+.piper-core-block,
+.piper-final-sentence-box {
+  display: grid;
+  gap: 8px;
+  padding: 14px 15px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(239, 68, 68, 0.18);
+  background: rgba(20, 28, 42, 0.7);
+}
+
+.piper-core-block h4,
+.piper-must-know h4 {
+  margin: 0;
+  color: #fda4af;
+}
+
+.piper-must-know ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.piper-must-know li {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(239, 68, 68, 0.18);
+  background: rgba(14, 18, 30, 0.76);
+  font-size: 0.95rem;
+}
+
+.piper-meaning-card {
+  background: rgba(10, 15, 24, 0.82);
+}
+
+.piper-meaning-item {
+  display: grid;
+  gap: 8px;
+  padding: 14px 15px;
+  border-left: 3px solid rgba(244, 63, 94, 0.72);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: rgba(24, 31, 46, 0.68);
+}
+
+.piper-meaning-item h4,
+.piper-meaning-item p {
+  margin: 0;
+}
+
+.piper-meaning-item h4 {
+  color: #fda4af;
+}
+
+.piper-meaning-item.priority-item {
+  border-left-color: rgba(251, 113, 133, 0.92);
+  background:
+    linear-gradient(90deg, rgba(127, 29, 29, 0.24), transparent 42%),
+    rgba(24, 31, 46, 0.72);
+}
+
+.piper-quiz-card {
+  border-color: rgba(244, 63, 94, 0.24);
+}
+
+.piper-written-question {
+  border-left-color: #f43f5e;
+}
+
+.piper-written-question.important-question {
+  border-color: rgba(244, 63, 94, 0.34);
+  background: rgba(127, 29, 29, 0.08);
+}
+
 .coming-soon-section {
   padding-top: 24px;
   padding-bottom: 30px;

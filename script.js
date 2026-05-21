@@ -2694,7 +2694,275 @@ const quizData = [
       }
     ]
   },
-  { caseId: "case-9", questions: [] },
+  {
+    caseId: "case-9",
+    questions: [
+      {
+        question: "The case video argues that safety culture often fails before the accident itself. If managers dismiss repeated technical warnings because responding may delay production or upset shareholders, which ethical interpretation is strongest?",
+        options: [
+          "Management may set aside technical warnings until losses become financially measurable.",
+          "Technical warnings matter only when they already prove that a law was broken.",
+          "Ignoring technical warnings turns business pressure into a public-safety risk.",
+          "Safety data should be handled later so managers can focus on strategic goals first."
+        ],
+        correctAnswer: 2,
+        explanation: "When warning data concerns serious hazard, ignoring it lets business pressure override safety-critical judgment."
+      },
+      {
+        question: "In Piper Alpha, a North Sea platform fire on July 6, 1988 became far worse when operators wanted shutdown, supervisors refused, and connected platforms kept sending gas. Which principle was most directly violated?",
+        options: [
+          "Protect confidentiality inside the organization even during an emergency.",
+          "Hold public safety and human welfare paramount when life-threatening conditions appear.",
+          "Avoid criticizing co-workers in front of others during stressful events.",
+          "Respect management hierarchy even if a dangerous operation is still continuing."
+        ],
+        correctAnswer: 1,
+        explanation: "When lives are at stake, safety must override hierarchy and continued production."
+      },
+      {
+        question: "Which explanation of Piper Alpha is too narrow for an Engineering Ethics answer?",
+        options: [
+          "Miscommunication helped create the disaster.",
+          "Continuing to pump gas made the fire worse.",
+          "Shutdown authority and safety culture were central issues.",
+          "It was only an offshore fire, so ethics is secondary to accident investigation."
+        ],
+        correctAnswer: 3,
+        explanation: "The fire is the technical event, but ethics concerns responsibility, communication, authority, and public safety."
+      },
+      {
+        question: "A senior manager receives a technical report showing that a connected facility may be feeding energy into a hazardous situation, but shutdown would be expensive and publicly visible. What should the manager do first if acting ethically?",
+        options: [
+          "Treat the report as a safety decision, ask for immediate technical clarification, and prioritize stopping the hazard if the risk is serious.",
+          "Delay action until finance confirms the cost of interruption and lost production.",
+          "Wait for absolute certainty before authorizing any shutdown that affects output.",
+          "Keep the discussion informal so written records do not create legal exposure later."
+        ],
+        correctAnswer: 0,
+        explanation: "Managers in high-risk systems must respond to credible danger as a safety issue, not a public-relations issue."
+      },
+      {
+        question: "Why was the continued gas flow from sister platforms ethically significant in Piper Alpha?",
+        options: [
+          "It mattered mainly because it complicated later insurance claims and cost allocation.",
+          "It showed that offshore systems are naturally too complex to be meaningfully controlled.",
+          "It increased the severity of a known hazard by feeding energy into a burning platform.",
+          "It proved only that operators on nearby platforms lacked enough technical skill."
+        ],
+        correctAnswer: 2,
+        explanation: "Continuing to feed gas into a fire showed a failure to stop a known escalating hazard."
+      },
+      {
+        question: "What is the strongest ethical lesson about shutdown authority from this case?",
+        options: [
+          "Shutdown power should remain only with distant executives because they see the whole business picture.",
+          "People closest to a serious hazard should have clear authority to stop unsafe operations.",
+          "Shutdown should happen only after the financial impact is approved by senior leadership.",
+          "Operators should recommend shutdown, but production should continue until investigation is complete."
+        ],
+        correctAnswer: 1,
+        explanation: "When danger is immediate, people nearest the hazard need authority to stop conditions from getting worse."
+      },
+      {
+        question: "An organization says it has a strong safety culture because it has written policies, annual training slides, and a slogan about zero harm. Which answer is weakest?",
+        options: [
+          "A strong safety culture also depends on whether technical warnings are heard in real decisions.",
+          "Real culture is shown by whether risky operations can actually be stopped.",
+          "Written policy matters, but it is not enough if production pressure dominates conduct.",
+          "Once safety policies exist on paper, the culture problem is mostly solved."
+        ],
+        correctAnswer: 3,
+        explanation: "Culture is revealed by actual decisions under pressure, not by slogans or paperwork alone."
+      },
+      {
+        question: "An engineer believes an unresolved safety issue could endanger workers or the public, but worries that pushing the issue may damage promotion chances. Which response best fits the course principle discussed in the video?",
+        options: [
+          "Public safety should come before personal career development, so the concern should be documented and raised.",
+          "Career protection should come first until another engineer agrees with the concern in writing.",
+          "The engineer should stay silent unless already legally required to speak up.",
+          "Personal risk means the concern is now mainly a management issue rather than an engineering one."
+        ],
+        correctAnswer: 0,
+        explanation: "The course message is that career pressure does not excuse silence when serious safety risk may exist."
+      },
+      {
+        question: "A process engineer and an operations supervisor disagree about whether an abnormal condition is serious, and the situation is getting worse. Which response best matches good communication ethics in a high-risk system?",
+        options: [
+          "Let each department keep its own view until the event is over so confusion does not spread.",
+          "Avoid technical language so decision makers are not overwhelmed by operational detail.",
+          "Make the risk explicit, clarify who has authority, and communicate the consequence of not shutting down.",
+          "Focus on avoiding blame during the emergency and leave technical disagreement for later."
+        ],
+        correctAnswer: 2,
+        explanation: "Safety-critical communication must connect the condition, the consequence, and the required decision."
+      },
+      {
+        question: "If internal safety concerns have been reported through normal channels and leaders keep dismissing them while serious public harm remains possible, what is the best ethical next step?",
+        options: [
+          "Say nothing further because continued reporting will look disloyal.",
+          "Keep documented evidence, continue authorized escalation, and go beyond internal channels if necessary to prevent serious harm.",
+          "Post accusations publicly right away even if the evidence is incomplete.",
+          "Withdraw from the project quietly and assume others will deal with the danger."
+        ],
+        correctAnswer: 1,
+        explanation: "Whistle-blowing becomes stronger when serious harm is possible, internal channels have been tried, and evidence is documented."
+      },
+      {
+        question: "Why is the statement 'management decided, so the engineers are no longer accountable' ethically insufficient?",
+        options: [
+          "Because management decisions are never relevant in engineering ethics.",
+          "Because only the final executive can ever be responsible for a safety failure.",
+          "Because accountability matters only after a court decides who is liable.",
+          "Because engineers still have duties to communicate danger, document concerns, and resist unsafe approval."
+        ],
+        correctAnswer: 3,
+        explanation: "Professional accountability includes what engineers say, document, and challenge before harm occurs."
+      },
+      {
+        question: "Deborah Grubbe suggests asking whether you would let your own family use a product or be exposed to a system when you know a safety problem is unresolved. What is the main ethical purpose of that test?",
+        options: [
+          "It forces engineers to reconnect technical work to real human consequences.",
+          "It replaces formal risk analysis with personal intuition about danger.",
+          "It proves that only family-oriented products need higher safety standards.",
+          "It means a design is ethical whenever the engineer feels personally comfortable."
+        ],
+        correctAnswer: 0,
+        explanation: "The question helps engineers stop treating users as abstractions and focus on real human harm."
+      },
+      {
+        question: "Which answer best applies risk management to Piper Alpha?",
+        options: [
+          "Treat the fire as a rare emergency that could not have been influenced once it began.",
+          "Focus only on the initial ignition source, because later system responses are secondary.",
+          "Identify how miscommunication, delayed shutdown, and continued gas flow combined into escalating danger.",
+          "Assume offshore platforms are so hazardous that detailed prevention planning has limited value."
+        ],
+        correctAnswer: 2,
+        explanation: "Risk management looks at how interacting failures turn a bad event into a catastrophe."
+      },
+      {
+        question: "Which statement about safety culture is weakest from an Engineering Ethics perspective?",
+        options: [
+          "Safety culture depends on whether managers ask technical teams for input before risk grows.",
+          "Safety culture mainly means avoiding bad publicity after an incident.",
+          "Safety culture is shown by whether unsafe operations can actually be stopped.",
+          "Safety culture is tested when technical warnings conflict with business pressure."
+        ],
+        correctAnswer: 1,
+        explanation: "Safety culture is about protecting people before harm, not only managing reputation afterward."
+      },
+      {
+        question: "A manager in a high-risk operation does not fully understand the significance of abnormal safety data but still dismisses the technical team's concern as overcautious. What is the strongest ethical criticism?",
+        options: [
+          "The manager's main duty is to protect schedule certainty, not to interpret technical detail.",
+          "Managers are entitled to ignore technical disagreement if they hold broader business authority.",
+          "The team should stop raising concerns until the manager requests a clearer financial summary.",
+          "Competence and humility require leaders to ask what the data means and listen when experts warn of danger."
+        ],
+        correctAnswer: 3,
+        explanation: "Leaders in hazardous systems must know enough to recognize their limits and rely on technical expertise."
+      },
+      {
+        question: "During a worsening emergency, an operator closest to the hazard believes continued operation may kill people, but the chain of command is hesitating. What action best fits the ethics of high-risk engineering?",
+        options: [
+          "Raise the danger clearly, seek shutdown through responsible channels, and keep pressing because delay can increase harm.",
+          "Keep operating normally until written authorization arrives even if conditions deteriorate.",
+          "Avoid repeating the concern so management does not think the operator is emotional.",
+          "Wait for outside investigators, because operators should not influence production decisions."
+        ],
+        correctAnswer: 0,
+        explanation: "Operators closest to danger have a duty to communicate urgent risk clearly and persistently."
+      },
+      {
+        question: "Why did the Piper Alpha disaster, which killed 168 people, damage public trust so deeply?",
+        options: [
+          "Public trust was damaged mainly because offshore accidents receive unusual media coverage.",
+          "Trust fell only because oil and gas companies are usually unpopular with the public.",
+          "People expect engineering organizations to control known risks and stop deadly operations before lives are lost.",
+          "Public trust depends mostly on how much compensation is paid after a disaster."
+        ],
+        correctAnswer: 2,
+        explanation: "Trust depends on whether dangerous systems are operated responsibly before disaster happens."
+      },
+      {
+        question: "Which answer about whistle-blowing is most incomplete in a case like Piper Alpha?",
+        options: [
+          "Whistle-blowing becomes stronger ethically when serious harm is at stake and evidence is documented.",
+          "Whistle-blowing is always disloyal, so engineers should avoid it even if internal channels fail.",
+          "Internal reporting is usually the first step before outside escalation.",
+          "The moral goal of escalation is preventing harm, not punishing an employer."
+        ],
+        correctAnswer: 1,
+        explanation: "Treating whistle-blowing as automatic disloyalty ignores the public-safety reasons that can justify escalation."
+      },
+      {
+        question: "Which stakeholder list is strongest for ethical reasoning in Case 9?",
+        options: [
+          "Only platform supervisors and executives, because they made the final operational decisions.",
+          "Only the operators on Piper Alpha, because they were physically nearest to the fire.",
+          "Only shareholders and regulators, because they influence organizational policy.",
+          "Operators, engineers, supervisors, nearby platforms, victims' families, company leaders, regulators, and the public."
+        ],
+        correctAnswer: 3,
+        explanation: "The case affected direct victims, decision makers, connected operations, and wider public trust."
+      },
+      {
+        question: "A company argues that stopping production whenever engineers raise a serious safety concern will hurt profit, schedule, and shareholder confidence. Which ethical judgment is strongest?",
+        options: [
+          "Business goals matter, but they lose priority when they conflict with credible life-safety risk.",
+          "Profit should always be ignored completely in engineering decisions.",
+          "Engineers should avoid raising concerns unless they can prove disaster is certain.",
+          "Shareholder pressure justifies continuing operations until an executive review is complete."
+        ],
+        correctAnswer: 0,
+        explanation: "Engineering ethics does not reject business goals, but it does require safety to set the limit."
+      },
+      {
+        question: "Which answer is too narrow for a full written explanation of Piper Alpha?",
+        options: [
+          "The case involved miscommunication and weak shutdown authority.",
+          "Technical teams should have been heard more seriously.",
+          "The disaster can be explained fully by saying that a fire occurred on an oil platform.",
+          "Safety culture and accountability were central to the ethical failure."
+        ],
+        correctAnswer: 2,
+        explanation: "A complete ethics answer must connect the event to decisions, authority, warnings, and public safety."
+      },
+      {
+        question: "What should a high-risk organization decide in advance if it wants safety to be the 'showstopper' rather than a slogan?",
+        options: [
+          "That shutdown decisions should always wait for the highest possible level of financial approval.",
+          "That clear stop-work authority, reporting routes, and escalation rules will apply when serious danger appears.",
+          "That operators should avoid interrupting production unless media attention is likely.",
+          "That safety decisions can remain informal as long as experienced people are on shift."
+        ],
+        correctAnswer: 1,
+        explanation: "Real safety culture requires preplanned authority and escalation rules before an emergency begins."
+      },
+      {
+        question: "Which answer best explains accountability in Case 9?",
+        options: [
+          "Accountability means mainly identifying which individual is easiest to blame after the disaster.",
+          "Accountability begins only once regulators or courts decide whether rules were broken.",
+          "Accountability is satisfied if management can show that someone else made the last operational call.",
+          "Accountability means taking responsibility for warnings, decisions, and failures to act before harm grows."
+        ],
+        correctAnswer: 3,
+        explanation: "Accountability includes what people do and fail to do when known danger is building."
+      },
+      {
+        question: "What is the strongest final engineering ethics lesson from Piper Alpha and Deborah Grubbe's safety-culture discussion?",
+        options: [
+          "Safety must be the showstopper: organizations must listen to technical warnings, empower shutdown, and put human life above production pressure.",
+          "The main lesson is that managers should make all safety decisions alone so responsibility stays clear.",
+          "The most important reform is to reduce documentation so emergency decisions can be made faster.",
+          "The case proves that accidents are unavoidable whenever complex systems depend on human communication."
+        ],
+        correctAnswer: 0,
+        explanation: "The enduring lesson is that technical warning, authority, and human life must outrank production pressure."
+      }
+    ]
+  },
   { caseId: "case-10", questions: [] }
 ];
 
@@ -2955,6 +3223,32 @@ const quizTopics = {
     "Professional competence",
     "Public trust",
     "Final conclusion"
+  ],
+  "case-9": [
+    "Ignored technical warnings",
+    "Public safety first",
+    "Too narrow explanation",
+    "Manager's first duty",
+    "Continued gas flow",
+    "Shutdown authority",
+    "Weak safety culture claim",
+    "Career pressure",
+    "Communication in emergency",
+    "Escalation",
+    "Accountability",
+    "Family-use test",
+    "Risk management",
+    "Weak safety culture answer",
+    "Competence and humility",
+    "Operator action",
+    "Public trust",
+    "Incomplete whistle-blowing claim",
+    "Stakeholders",
+    "Profit vs safety",
+    "Too narrow written answer",
+    "Stop-work rules",
+    "Accountability meaning",
+    "Final lesson"
   ]
 };
 
@@ -3215,6 +3509,32 @@ const quizExamTips = {
     "Competence includes recognizing when assumptions no longer hold.",
     "Public trust depends on responsible verification, not appearance alone.",
     "End with public safety, communication, and accountable approval."
+  ],
+  "case-9": [
+    "Safety culture is tested before the accident, when warnings first meet business pressure.",
+    "When lives are at stake, hierarchy does not outrank public safety.",
+    "Do not stop at the fire; explain the ethical failure behind it.",
+    "Managers must treat credible hazard reports as safety decisions, not public-relations problems.",
+    "Risk grows when energy keeps feeding a known hazard.",
+    "Shutdown authority is a high-yield public-safety theme in this case.",
+    "Policies on paper do not prove a real safety culture.",
+    "Career pressure never removes the duty to raise a serious safety concern.",
+    "Strong emergency communication names the risk, the consequence, and the needed action.",
+    "Escalation is strongest when evidence exists, internal channels were tried, and harm may be serious.",
+    "Engineers cannot hand away accountability by pointing only to management.",
+    "The family-use test helps connect technical work to human harm.",
+    "Risk management rewards multi-factor thinking, not one-cause blame.",
+    "Reputation management is not the same as safety culture.",
+    "Competence includes knowing when to listen instead of dismissing experts.",
+    "People closest to the hazard should keep pressing when delay increases danger.",
+    "Public trust depends on stopping deadly risk before it becomes mass harm.",
+    "Whistle-blowing is not automatically disloyal when the goal is preventing serious harm.",
+    "Stakeholder answers should include direct victims, decision makers, and the wider public.",
+    "Business goals matter, but safety sets the ethical limit.",
+    "A full ethics answer links facts, duties, stakeholders, and safer alternatives.",
+    "Showstopper means stop-work authority and escalation are decided before the emergency.",
+    "Accountability includes inaction, not only visible decisions.",
+    "Best conclusions combine safety culture, shutdown authority, and public trust."
   ]
 };
 
@@ -3365,6 +3685,28 @@ function highlightTerms(text, caseId) {
       .replaceAll("communication", "<strong>communication</strong>")
       .replaceAll("independent review", "<strong>independent review</strong>")
       .replaceAll("accountability", "<strong>accountability</strong>");
+  }
+
+  if (caseId === "case-9") {
+    return sharedText
+      .replaceAll("Piper Alpha", "<strong>Piper Alpha</strong>")
+      .replaceAll("public safety", "<strong>public safety</strong>")
+      .replaceAll("public trust", "<strong>public trust</strong>")
+      .replaceAll("safety culture", "<strong>safety culture</strong>")
+      .replaceAll("technical warnings", "<strong>technical warnings</strong>")
+      .replaceAll("shutdown authority", "<strong>shutdown authority</strong>")
+      .replaceAll("whistle-blowing", "<strong>whistle-blowing</strong>")
+      .replaceAll("escalation", "<strong>escalation</strong>")
+      .replaceAll("risk management", "<strong>risk management</strong>")
+      .replaceAll("production pressure", "<strong>production pressure</strong>")
+      .replaceAll("professional responsibility", "<strong>professional responsibility</strong>")
+      .replaceAll("accountability", "<strong>accountability</strong>")
+      .replaceAll("operators", "<strong>operators</strong>")
+      .replaceAll("supervisors", "<strong>supervisors</strong>")
+      .replaceAll("shut down", "<strong>shut down</strong>")
+      .replaceAll("continued gas flow", "<strong>continued gas flow</strong>")
+      .replaceAll("miscommunication", "<strong>miscommunication</strong>")
+      .replaceAll("showstopper", "<strong>showstopper</strong>");
   }
 
   if (caseId !== "case-2") {
