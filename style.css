@@ -1980,7 +1980,63 @@ h5 {
   border-radius: var(--radius-sm);
   border: 1px solid rgba(239, 68, 68, 0.18);
   background: rgba(14, 18, 30, 0.76);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.piper-exam-core {
+  display: grid;
+  gap: 12px;
+}
+
+.piper-exam-block {
+  display: grid;
+  gap: 8px;
+  padding: 16px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  background: rgba(20, 28, 42, 0.7);
+}
+
+.piper-exam-block .block-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #fca5a5;
+}
+
+.piper-exam-block h4 {
+  margin: 0;
+  color: #fda4af;
+  font-size: 1rem;
+}
+
+.piper-exam-block p,
+.piper-exam-block ul {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.piper-exam-block ul {
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.piper-exam-block li {
+  padding: 9px 13px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  background: rgba(14, 18, 30, 0.76);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.piper-final-quote {
+  border-color: rgba(239, 68, 68, 0.36);
+  background: rgba(127, 29, 29, 0.12);
 }
 
 .piper-meaning-card {
