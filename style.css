@@ -2121,6 +2121,131 @@ h5 {
   color: var(--muted);
 }
 
+/* =========================================
+   Case 10 — Theranos / Medical Technology Fraud
+   ========================================= */
+
+.theranos-case .case-heading {
+  background:
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    linear-gradient(135deg, rgba(20, 184, 166, 0.52), rgba(99, 102, 241, 0.22), rgba(148, 163, 184, 0.28)) border-box;
+}
+
+.theranos-case .study-card {
+  border-color: rgba(20, 184, 166, 0.16);
+}
+
+.theranos-status {
+  border-color: rgba(20, 184, 166, 0.46);
+  background: rgba(20, 184, 166, 0.11);
+  color: #99f6e4;
+}
+
+.theranos-story-card {
+  background:
+    linear-gradient(90deg, rgba(20, 184, 166, 0.07), transparent 44%),
+    rgba(10, 22, 32, 0.86);
+}
+
+.theranos-final-line {
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+.theranos-core-card {
+  background:
+    linear-gradient(180deg, rgba(99, 102, 241, 0.07), transparent 44%),
+    rgba(10, 16, 28, 0.86);
+}
+
+.theranos-top-issues-card {
+  background: rgba(10, 20, 30, 0.82);
+}
+
+.theranos-issues-lead {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.theranos-issues-list {
+  display: grid;
+  gap: 10px;
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 18px;
+}
+
+.theranos-issues-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(20, 184, 166, 0.18);
+  background: rgba(14, 28, 38, 0.72);
+  line-height: 1.65;
+}
+
+.theranos-issue-num {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #5eead4;
+  min-width: 22px;
+  padding-top: 2px;
+}
+
+.theranos-issues-list li h4 {
+  margin: 0 0 5px;
+  color: #99f6e4;
+  font-size: 1rem;
+}
+
+.theranos-issues-list li p {
+  margin: 0;
+  font-size: 0.97rem;
+  color: var(--text);
+}
+
+.theranos-short-sentence {
+  display: grid;
+  gap: 8px;
+  padding: 16px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  background: rgba(20, 184, 166, 0.07);
+}
+
+.theranos-short-sentence span {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #5eead4;
+}
+
+.theranos-short-sentence p {
+  margin: 0;
+  line-height: 1.68;
+}
+
+.theranos-meaning-card {
+  background: rgba(8, 18, 28, 0.84);
+}
+
+.theranos-quiz-card {
+  border-color: rgba(20, 184, 166, 0.22);
+}
+
+.theranos-written-question {
+  border-left-color: #14b8a6;
+}
+
+.theranos-written-question.important-question {
+  border-color: rgba(20, 184, 166, 0.32);
+  background: rgba(20, 184, 166, 0.06);
+}
+
 @media (max-width: 900px) {
   .study-dashboard,
   .module-snapshot {

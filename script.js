@@ -2963,7 +2963,297 @@ const quizData = [
       }
     ]
   },
-  { caseId: "case-10", questions: [] }
+  {
+    caseId: "case-10",
+    questions: [
+      {
+        question: "A medical technology company claims its device can run many blood tests from a finger-prick sample, but engineers inside the company know the device cannot produce reliable results for most of those tests. Which ethical issue is most directly raised?",
+        options: [
+          "The company may face a patent dispute if competitors copy its device.",
+          "Honesty and patient safety are both violated because false medical claims can affect real health decisions.",
+          "The main issue is only financial: investors may lose money if the technology does not work.",
+          "The ethical duty to maintain secrecy about proprietary technology outweighs the duty to disclose limitations."
+        ],
+        correctAnswer: 1,
+        explanation: "False medical claims are both an honesty violation and a patient-safety risk, because inaccurate results can affect diagnosis and treatment."
+      },
+      {
+        question: "Theranos used existing commercial third-party laboratory machines for many tests while giving partners, patients, and investors the impression that its own Edison device was producing the results. Which answer best describes the ethical failure?",
+        options: [
+          "Theranos misled stakeholders about the true method and capability of its technology, which is a violation of transparency and honesty.",
+          "Using third-party machines was ethical because all laboratory services use commercial equipment.",
+          "The failure was only technical — using different machines does not raise ethical concerns.",
+          "Transparency applies only to investors, not to patients or partners."
+        ],
+        correctAnswer: 0,
+        explanation: "The problem was the deliberate impression that Theranos machines were doing the work when they were not — a clear transparency and honesty violation."
+      },
+      {
+        question: "Which of the following is the weakest explanation of the Theranos case as an engineering ethics failure?",
+        options: [
+          "Theranos promoted medical technology beyond what its engineering and science could reliably support.",
+          "Theranos misled patients, partners, investors, and regulators about the accuracy and capability of its device.",
+          "Theranos was simply a failed startup that needed more funding and development time before going public.",
+          "Theranos violated professional responsibility by using unvalidated technology in a healthcare setting."
+        ],
+        correctAnswer: 2,
+        explanation: "The case was not only about insufficient time or money — it involved deliberate deception and patient-safety risks that distinguish it from an ordinary failed startup."
+      },
+      {
+        question: "A Theranos employee discovers that blood tests being reported to patients are being run on commercial third-party machines, while company communications imply the Edison device is producing all results. The employee raises the concern internally but is told to stay quiet and reminded of their confidentiality agreement. What is the most ethical next step?",
+        options: [
+          "Accept management's decision because confidentiality agreements have legal force.",
+          "Report the concern to a supervisor once more and then permanently drop it.",
+          "Destroy the evidence to prevent personal legal risk.",
+          "Document the evidence, exhaust internal channels, and escalate to a regulator or appropriate authority if patients remain at risk."
+        ],
+        correctAnswer: 3,
+        explanation: "When serious patient-safety risk is involved and internal channels are blocked, documented escalation to regulators is ethically justified."
+      },
+      {
+        question: "A medical device company asks its engineers to begin patient testing for a blood-testing product whose accuracy has not been independently validated. Engineers know that the device cannot reliably perform several of the tests claimed. Which principle of engineering ethics most directly applies?",
+        options: [
+          "Engineers should protect intellectual property by proceeding quietly.",
+          "Professional responsibility requires that medical devices be validated before use on real patients, and known limitations must be disclosed.",
+          "Engineers must follow management directives unless the device is formally recalled.",
+          "Validation is a regulatory requirement but not an engineering ethics duty."
+        ],
+        correctAnswer: 1,
+        explanation: "Engineering ethics requires honest claims about what technology can do, especially when patient welfare is at stake. Products should not be released if known to be unsafe."
+      },
+      {
+        question: "After the Wall Street Journal published its investigation and the FDA inspected Theranos, the company responded by publicly defending its technology and minimizing the reported problems rather than correcting them. Which ethical principle most directly applies?",
+        options: [
+          "The company had a right to defend itself under freedom of speech.",
+          "Transparency was violated only because the FDA was not informed earlier.",
+          "Accountability was violated because leadership protected the company image instead of correcting patient-safety risks.",
+          "The company was within its rights because no criminal charges had yet been filed."
+        ],
+        correctAnswer: 2,
+        explanation: "Accountability means accepting responsibility and correcting harm, not defending reputation when safety problems are confirmed."
+      },
+      {
+        question: "Theranos required employees to sign confidentiality agreements that prevented them from discussing the technology's limitations, even with family members. Former employees who raised concerns faced pressure, retaliation, or termination. Which answer best applies engineering ethics to this situation?",
+        options: [
+          "Confidentiality becomes unethical when it is used to hide serious safety risks from patients and regulators.",
+          "Confidentiality agreements are always ethical because companies have the right to protect trade secrets.",
+          "Employees who signed agreements have no ethical obligation to report safety concerns.",
+          "Confidentiality only creates ethical problems if it prevents disclosure to investors."
+        ],
+        correctAnswer: 0,
+        explanation: "Confidentiality is legitimate for trade secrets but loses ethical standing when used to suppress information that places patients at serious risk."
+      },
+      {
+        question: "Inside Theranos, employees who questioned the technology or raised safety concerns were fired, pressured, or intimidated. Which answer best explains why this represents an engineering ethics failure beyond the technical problems?",
+        options: [
+          "The work culture was only a management issue unrelated to engineering ethics.",
+          "Fear and retaliation are expected in competitive technology startups.",
+          "The culture was unethical only if employees were required to falsify written records.",
+          "A culture of fear and retaliation prevented honest technical communication, allowing deception to continue and patient risk to grow."
+        ],
+        correctAnswer: 3,
+        explanation: "Engineering ethics requires a culture where concerns can be raised safely. Suppressing technical truth is an ethical failure that compounds the original deception."
+      },
+      {
+        question: "Tyler Shultz, a Theranos employee, chose to expose the company's deceptive practices despite legal risk from his confidentiality agreement. He provided information to the Wall Street Journal investigation. Which statement best describes whether his action was ethically justified?",
+        options: [
+          "It was not justified because he violated his contract.",
+          "It was partially justified, but he should have waited for formal criminal charges first.",
+          "It was ethically justified because he documented concerns, faced ignored internal channels, and acted to prevent serious harm to patients.",
+          "It was justified only if he had medical credentials to evaluate blood-testing accuracy."
+        ],
+        correctAnswer: 2,
+        explanation: "Whistle-blowing is ethically justified when serious harm is possible, evidence is documented, and internal channels are exhausted or ignored."
+      },
+      {
+        question: "Which statement best explains why patient safety is the central ethical concern in the Theranos case?",
+        options: [
+          "Patient safety matters only if the FDA has formally approved the product.",
+          "Blood-test results can directly influence diagnosis, medication dosage, and urgent treatment decisions, making accuracy an ethical requirement.",
+          "Patient safety is important but less urgent than investor protection in technology fraud cases.",
+          "The central ethical concern is investor deception, because patients were not required to use Theranos tests."
+        ],
+        correctAnswer: 1,
+        explanation: "Medical data directly affects treatment decisions — inaccurate results can lead to misdiagnosis, wrong medication, or delayed care."
+      },
+      {
+        question: "What should a responsible executive team have done when multiple medical experts expressed doubts about whether Theranos technology was scientifically validated for the claimed range of blood tests?",
+        options: [
+          "Commission independent validation studies, delay commercial partnerships until reliability was confirmed, and disclose limitations to partners and patients.",
+          "Dismiss expert skepticism as bias from competitors who feared disruption.",
+          "Continue partnership negotiations because investors and board members were already committed.",
+          "Ask marketing to present the technology more carefully without changing the device."
+        ],
+        correctAnswer: 0,
+        explanation: "Responsible oversight requires independent evidence before expanding patient-facing services — reputation and investor confidence cannot replace technical validation."
+      },
+      {
+        question: "Walgreens and Safeway agreed to major partnerships with Theranos based on claims about the Edison device's capabilities. Later investigations revealed that many tests were not performed as described. Which answer best applies professional ethics to this situation?",
+        options: [
+          "Walgreens and Safeway should have been more skeptical before partnering.",
+          "The misleading information was acceptable because no formal written guarantees were made.",
+          "Business partners cannot expect full technical transparency before signing agreements.",
+          "Providing exaggerated or false impressions about product capability to business partners violates honesty and professional integrity."
+        ],
+        correctAnswer: 3,
+        explanation: "Honest and realistic claims about capability are an engineering ethics requirement that extends to all stakeholders, including commercial partners."
+      },
+      {
+        question: "A student writes the following explanation: 'Theranos failed because Elizabeth Holmes was overconfident about her vision.' Which answer correctly identifies the weakness of this explanation?",
+        options: [
+          "The explanation is too long.",
+          "The explanation focuses on personality rather than the systematic ethical failures: false claims, patient-safety risks, suppressed concerns, and deception of stakeholders.",
+          "The explanation is correct and complete.",
+          "The explanation is only wrong because it does not mention the FDA."
+        ],
+        correctAnswer: 1,
+        explanation: "An engineering ethics explanation must focus on duties, failures, and impacts — not on the personal characteristics of one leader."
+      },
+      {
+        question: "Theranos continued to expand partnerships, launch in retail pharmacies, and attract investor funding even after employees and early testers knew the Edison device had serious accuracy problems. Which answer best identifies the ethical failure?",
+        options: [
+          "The ethical failure was poor strategic timing.",
+          "The failure was technical, not ethical, because the team continued to work on improvements.",
+          "Integrity was violated because the company continued promoting and deploying technology it knew was not performing as claimed.",
+          "The failure was limited to investor relations, because patients were not directly informed of the problems."
+        ],
+        correctAnswer: 2,
+        explanation: "Integrity means not hiding known defects. Expanding commercial use while knowing the technology was inaccurate is a clear violation of this principle."
+      },
+      {
+        question: "Theranos repeatedly claimed its technology could run hundreds of tests from a single finger-prick sample. Medical specialists in blood testing had long argued this was scientifically implausible for many test types. Which engineering ethics principle was most directly violated?",
+        options: [
+          "Engineers and professionals must be honest and realistic in claims and estimates, and must understand and acknowledge the limits of their technology.",
+          "Engineers must protect shareholder value by supporting bold product claims.",
+          "Medical specialists outside the company have no standing to challenge a startup's internal claims.",
+          "The company's duty was only to patent its technology, not to validate it independently."
+        ],
+        correctAnswer: 0,
+        explanation: "Claiming capability beyond what technology can reliably achieve violates the duty to be honest and realistic in professional claims and estimates."
+      },
+      {
+        question: "Which answer is the most incomplete explanation of why Theranos is an engineering ethics case?",
+        options: [
+          "Theranos violated the principle that medical devices must be validated before use on real patients.",
+          "Theranos shows that honesty and transparency are essential in medical technology.",
+          "Theranos demonstrates that whistle-blowing can be ethically justified when internal concerns are suppressed.",
+          "Theranos was unethical only because it eventually went bankrupt and investors lost money."
+        ],
+        correctAnswer: 3,
+        explanation: "Financial failure is not the source of the ethical problem — the deception, patient-safety risks, and suppressed concerns are the real ethical failures."
+      },
+      {
+        question: "The FDA receives reports that a medical blood-testing company's results may be inaccurate and that several patients received incorrect health information. What is the most important first step the regulator should take?",
+        options: [
+          "Wait for the company to self-report, because companies are responsible for their own compliance.",
+          "Inspect the company's laboratory processes, demand documentation of test validation, and assess whether patient-safety risks require immediate action.",
+          "Issue a public warning before investigating, to protect the media's right to know.",
+          "Defer to investors to determine whether the company's technology is reliable."
+        ],
+        correctAnswer: 1,
+        explanation: "Regulatory oversight exists to protect public safety — investigations should follow evidence of risk, not wait for voluntary disclosure."
+      },
+      {
+        question: "Patients who used Theranos blood-testing services at Walgreens pharmacies were not told that many of their test results were produced using commercial third-party machines rather than the company's own Edison device. Which ethical principle is most directly violated?",
+        options: [
+          "Professional competence, because Theranos engineers lacked sufficient training.",
+          "Accountability, because patients had no legal basis to challenge the results.",
+          "Transparency, because patients were not given accurate information about the method and reliability of their test results.",
+          "Whistle-blowing, because patients should have reported the problem to regulators."
+        ],
+        correctAnswer: 2,
+        explanation: "Transparency requires that people affected by a technology — especially in healthcare — know how it works and what its limitations are."
+      },
+      {
+        question: "When Theranos voided thousands of lab results after the FDA inspection and the Wall Street Journal investigation, many patients and partners lost confidence in health-technology startups as a category. Which answer best explains this as an ethics consequence?",
+        options: [
+          "Public trust in medical technology is harmed when a company presents itself as safe and life-changing while hiding serious accuracy and safety problems.",
+          "Public trust was only affected for investors, not patients.",
+          "Public trust is not an engineering ethics concern — it is a marketing and public-relations matter.",
+          "The damage was limited because only a small number of patients were directly affected."
+        ],
+        correctAnswer: 0,
+        explanation: "Public trust in engineering and medical technology depends on genuine honesty and safety. Deception erodes the trust that makes innovation possible."
+      },
+      {
+        question: "An engineer at a medical diagnostics company discovers that internal validation data shows the device's results are unreliable for 30% of the test types advertised. Senior management says the company will improve accuracy after the product launches. What is the most ethical response for the engineer?",
+        options: [
+          "Proceed with launch because management has the final decision authority.",
+          "Trust management's promise and document nothing, to avoid creating a paper trail.",
+          "Resign quietly to avoid personal legal liability.",
+          "Formally document the concern in writing, refuse to certify the device as safe, and escalate to senior ethics or compliance channels if ignored."
+        ],
+        correctAnswer: 3,
+        explanation: "Engineers must not approve products they know are unsafe or inaccurate. Formal documentation creates accountability and is a core professional duty."
+      },
+      {
+        question: "Theranos financial projections shown to investors forecast revenues that were never achievable given the actual performance of the technology. Which answer best connects this to engineering ethics?",
+        options: [
+          "Inflated projections are standard practice in startups and raise no ethical concerns.",
+          "The ethical issue was only financial fraud, not engineering ethics.",
+          "Honesty requires that claims — including financial forecasts based on technology performance — be realistic and consistent with what the technology can actually achieve.",
+          "Honesty applies only to technical specifications, not to financial presentations."
+        ],
+        correctAnswer: 2,
+        explanation: "When financial projections depend on technology capability, exaggerating that capability to investors is an honesty violation under engineering ethics."
+      },
+      {
+        question: "Which statement is the strongest and most complete for a 5-mark engineering ethics exam answer about the main lesson of the Theranos case?",
+        options: [
+          "Theranos proves that medical startups should not be allowed to operate without a CFO.",
+          "Theranos demonstrates that in medical technology, innovation is ethical only when claims are truthful, results are validated, patients are protected, and employees can report safety concerns without fear.",
+          "Theranos shows that the FDA needs more funding to inspect all health-technology companies.",
+          "Theranos proves that investors must never trust startup projections without detailed audits."
+        ],
+        correctAnswer: 1,
+        explanation: "A strong exam conclusion connects multiple ethical principles and case evidence without reducing the lesson to one institutional fix."
+      },
+      {
+        question: "A student argues: 'Theranos failed only because the FDA did not inspect it early enough.' Which ethical principle does this explanation most overlook?",
+        options: [
+          "Honesty and professional responsibility, because the company itself had a duty to be truthful about limitations and not deploy unvalidated technology, regardless of regulatory timing.",
+          "Public trust, because regulators are the only true protectors of public trust.",
+          "Accountability, because the FDA was ultimately responsible for all medical technology approvals.",
+          "Transparency, because the FDA should have published all inspection results in real time."
+        ],
+        correctAnswer: 0,
+        explanation: "Regulatory oversight is one system layer, but companies have their own independent ethical duties of honesty and safety that exist with or without enforcement."
+      },
+      {
+        question: "A startup tells its engineers that any concerns about product accuracy must be communicated only through internal confidential channels and may not be shared with regulators, medical professionals, or the public without company approval. Which answer best evaluates this policy from an engineering ethics perspective?",
+        options: [
+          "The policy is ethical because companies must protect their intellectual property.",
+          "The policy is acceptable until a regulatory body issues a formal complaint.",
+          "The policy is ethical as long as the company has a legal compliance team.",
+          "The policy is ethically problematic because it suppresses engineers' duty to disclose serious risks that could harm patients or the public."
+        ],
+        correctAnswer: 3,
+        explanation: "Internal policies cannot override an engineer's ethical duty to protect public safety. Requiring silence about patient-safety risks conflicts with core engineering ethics duties."
+      },
+      {
+        question: "A student says: 'Theranos violated transparency because the company never published its full validation data.' Another student says: 'Theranos violated honesty because it made claims its technology could not support.' Which answer best evaluates both statements?",
+        options: [
+          "Only the transparency statement is correct.",
+          "Only the honesty statement is correct.",
+          "Both statements are correct; the case involved both honesty violations (false claims) and transparency failures (hidden limitations), and these are distinct ethical principles.",
+          "Neither statement is correct because the case was primarily about regulatory compliance, not ethics."
+        ],
+        correctAnswer: 2,
+        explanation: "Honesty concerns truthfulness of claims; transparency concerns whether limitations and methods were disclosed to stakeholders. Both were violated in the Theranos case."
+      },
+      {
+        question: "Which statement best describes why public safety must be held paramount in engineering decisions, and how Theranos violated that principle?",
+        options: [
+          "Public safety is paramount only in physical engineering products, not in software or data-based medical services.",
+          "Public safety must be the primary concern in engineering decisions; Theranos violated this because unreliable blood-test results could affect real medical decisions, placing patients at direct risk.",
+          "Public safety was not directly violated because Theranos only provided information, not physical treatment.",
+          "Public safety is paramount only after formal regulatory approval has been refused."
+        ],
+        correctAnswer: 1,
+        explanation: "Medical data is part of patient care — inaccurate results can affect treatment as directly as a faulty device, so public safety applies fully."
+      }
+    ]
+  }
 ];
 
 const quizTopics = {
@@ -3249,6 +3539,34 @@ const quizTopics = {
     "Stop-work rules",
     "Accountability meaning",
     "Final lesson"
+  ],
+  "case-10": [
+    "Honesty and patient safety",
+    "Transparency and false claims",
+    "Too narrow explanation",
+    "Employee duty",
+    "Professional responsibility",
+    "Accountability",
+    "Confidentiality limits",
+    "Toxic work culture",
+    "Whistle-blowing justification",
+    "Patient safety central",
+    "Responsible oversight",
+    "Misleading partners",
+    "Weakest explanation",
+    "Integrity",
+    "Competence and limits",
+    "Weakest — narrow answer",
+    "Regulatory action",
+    "Transparency to patients",
+    "Public trust",
+    "Engineer discovers problem",
+    "Honesty in claims",
+    "Best final conclusion",
+    "Too narrow — regulatory blame",
+    "Confidentiality vs escalation",
+    "Honesty vs transparency",
+    "Public safety paramount"
   ]
 };
 
@@ -3535,6 +3853,34 @@ const quizExamTips = {
     "Showstopper means stop-work authority and escalation are decided before the emergency.",
     "Accountability includes inaction, not only visible decisions.",
     "Best conclusions combine safety culture, shutdown authority, and public trust."
+  ],
+  "case-10": [
+    "In medical technology, accuracy is a patient-safety issue, not only a product-quality issue.",
+    "Transparency means stakeholders know the real method and real limitations.",
+    "Do not confuse a failed startup with an ethical fraud case.",
+    "Confidentiality does not override the duty to protect patients from serious harm.",
+    "Professional responsibility includes not releasing products known to be unsafe or inaccurate.",
+    "Accountability includes choosing correction over reputation defense.",
+    "Confidentiality has limits when public safety is at stake.",
+    "Work culture affects whether technical truth reaches decision-makers — culture is an ethics issue.",
+    "Whistle-blowing is strongest when evidence is documented, channels are exhausted, and public harm is possible.",
+    "Medical data is a patient-safety issue, not just a product-quality question.",
+    "Reputation and funding cannot replace validated technical evidence.",
+    "Misleading partners and misleading patients are both honesty violations.",
+    "Ethics explanations should focus on duties, failures, and impacts, not only character traits.",
+    "Integrity is tested when a problem is known — not after it becomes public.",
+    "Competence includes recognizing and communicating limitations, not only technical skill.",
+    "Engineering ethics is not about financial outcomes; it is about duties, honesty, and harm.",
+    "Regulatory accountability is part of the broader engineering ethics system.",
+    "Transparency is not only about investors; it applies to anyone who depends on the information.",
+    "Public trust depends on actual ethical behavior, not only on marketing messages.",
+    "Management decisions do not remove an engineer's professional responsibility.",
+    "All claims — technical and financial — must be realistic and evidence-based.",
+    "Best conclusions name the principles, case evidence, and lesson without oversimplifying.",
+    "Engineers' duties exist even without regulatory enforcement.",
+    "Internal policies cannot override the ethical duty to protect public safety.",
+    "Honesty is about claims; transparency is about disclosure — both were violated.",
+    "Public safety applies to any engineering work where failure can harm people, including health data."
   ]
 };
 
@@ -3707,6 +4053,24 @@ function highlightTerms(text, caseId) {
       .replaceAll("continued gas flow", "<strong>continued gas flow</strong>")
       .replaceAll("miscommunication", "<strong>miscommunication</strong>")
       .replaceAll("showstopper", "<strong>showstopper</strong>");
+  }
+
+  if (caseId === "case-10") {
+    return sharedText
+      .replaceAll("Theranos", "<strong>Theranos</strong>")
+      .replaceAll("honesty", "<strong>honesty</strong>")
+      .replaceAll("patient safety", "<strong>patient safety</strong>")
+      .replaceAll("public safety", "<strong>public safety</strong>")
+      .replaceAll("transparency", "<strong>transparency</strong>")
+      .replaceAll("accountability", "<strong>accountability</strong>")
+      .replaceAll("professional responsibility", "<strong>professional responsibility</strong>")
+      .replaceAll("whistle-blowing", "<strong>whistle-blowing</strong>")
+      .replaceAll("confidentiality", "<strong>confidentiality</strong>")
+      .replaceAll("validation", "<strong>validation</strong>")
+      .replaceAll("public trust", "<strong>public trust</strong>")
+      .replaceAll("integrity", "<strong>integrity</strong>")
+      .replaceAll("Edison device", "<strong>Edison device</strong>")
+      .replaceAll("third-party machines", "<strong>third-party machines</strong>");
   }
 
   if (caseId !== "case-2") {
