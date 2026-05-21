@@ -1466,144 +1466,124 @@
 
       <article id="therac-story" class="study-card therac-story-card">
         <p class="section-kicker">Medical-device safety</p>
-        <h3>1. Story</h3>
+        <h3>1. The Case Story</h3>
         <p>
-          Therac-25 was a radiation therapy machine made by AECL Medical. It was designed to treat cancer patients
-          using high-energy electron beams or x-rays. Unlike older machines, Therac-25 relied heavily on software
-          instead of physical hardware interlocks. This made the software safety-critical because wrong software
-          behavior could directly expose patients to dangerous radiation.
+          Therac-25 was a radiation therapy machine produced by AECL Medical to treat cancer patients using
+          high-energy electron beams and x-rays. Unlike earlier machines, Therac-25 depended heavily on software
+          instead of physical hardware interlocks. This made the software safety-critical because a software error
+          could directly expose a patient to dangerous radiation.
         </p>
         <p>
-          The first major victim discussed in the video was Katie Yarborough. She went for a normal cancer treatment
-          expecting a small prescribed dose, but during treatment she felt a burning sensation and told the technician,
-          "You burned me." The technician believed this was impossible. Later, her injuries showed that she had
-          received a massive overdose, not the intended safe dose.
+          The accidents began when patients reported burning sensations, electric shocks, pain, and severe injuries
+          during treatment. One patient, Katie Yarborough, expected a normal dose but felt a red-hot burning
+          sensation and later developed devastating radiation injuries. Similar accidents happened in different
+          hospitals. Some patients were severely injured and some died.
         </p>
         <p>
-          The problem did not stop after one patient. Similar accidents happened in different hospitals. Patients
-          reported burning, electric shocks, pain, or strange sensations during treatment. Some suffered severe
-          injuries and some died. Doctors, physicists, and operators became suspicious because the injuries looked
-          like radiation overdoses, but AECL repeatedly claimed that such overdoses were impossible.
+          The ethical problem was not just that a software bug existed. The deeper problem was that AECL trusted the
+          software too much, did not properly analyze or document it, reused older code, removed or reduced hardware
+          protection, and did not design the system safely for real operator behavior. Operators often saw vague
+          error messages such as "malfunction" followed by a number, but the manuals did not clearly explain what
+          the numbers meant. Because these errors happened frequently, operators became used to pressing proceed
+          without knowing if the error was harmless or deadly.
         </p>
         <p>
-          A major issue was the machine's error handling. Operators often saw vague error messages such as
-          "malfunction" followed by a number. The meanings of these codes were not clearly explained in manuals.
-          Operators became used to these errors and could press a key to proceed without understanding whether the
-          error was harmless or deadly.
+          One major fault was <strong>Malfunction 54</strong>. It was eventually reproduced when staff discovered
+          that fast editing of treatment settings during machine setup could create a mismatch between what the
+          screen showed and what the machine was physically ready to deliver. This allowed unfiltered high-energy
+          radiation to reach patients. Another later fault involved arithmetic overflow, where a counter rolled back
+          to zero and made the system treat an unsafe state as safe.
         </p>
         <p>
-          One famous error was <strong>Malfunction 54</strong>. It was eventually reproduced by Dr. Fritz Hager and
-          staff after a serious accident. They discovered that if an operator quickly edited the treatment settings
-          within the few seconds while magnets were physically moving into position, the software did not properly
-          detect the change. The screen could show one treatment setup while the machine was physically configured
-          differently, allowing an unfiltered high-energy beam to hit the patient.
+          AECL repeatedly denied or minimized the possibility of overdoses, even after hospitals and medical staff
+          reported suspicious injuries. This delayed proper corrective action. Eventually, the FDA declared the
+          device defective and required a corrective action plan. Later fixes included software changes and hardware
+          safety features, especially a dose-per-pulse monitor that could shut down dangerous radiation even if
+          software checks failed.
         </p>
         <p>
-          Another later problem involved arithmetic overflow in a software task that checked the turntable position.
-          The counter could overflow back to zero, making the system think there was no error and allowing treatment
-          to proceed incorrectly.
-        </p>
-        <p>
-          The deeper ethical issue is that Therac-25 trusted software too much and removed or reduced hardware safety
-          interlocks used in earlier machines. AECL's safety analysis did not properly examine the software, even
-          though the software controlled a life-critical medical device. The software was based on older code, written
-          by one unidentified programmer, and lacked strong independent documentation and review.
-        </p>
-        <p>
-          The case became visible through repeated patient injuries, doctors and physicists reporting suspicious
-          radiation burns, operators comparing incidents, and finally the reproduction of Malfunction 54. The FDA
-          declared the device defective and demanded corrective action. Later fixes included software changes and
-          hardware safety features, such as a dose-per-pulse monitor that could stop dangerous doses even if software
-          failed.
-        </p>
-        <p>
-          The main lesson is that in medical and safety-critical systems, software must never be trusted blindly.
-          Engineers must design for real user behavior, clear error messages, independent software review, hardware
-          fail-safes, proper testing, and fast accountability when patients report harm.
+          Therac-25 is an engineering ethics case because it shows that software can be life-critical. Engineers
+          must design medical devices with testing, documentation, fail-safes, clear warnings, human-centered
+          interfaces, and fast accountability when harm is reported.
         </p>
       </article>
 
       <article id="therac-summary" class="study-card therac-super-summary">
         <p class="section-kicker">High Yield</p>
-        <h3>2. Super Summary</h3>
-        <p>
-          Therac-25 was a cancer radiation therapy machine that relied heavily on software instead of older hardware
-          safety interlocks. Several patients received massive radiation overdoses because software errors, unclear
-          machine states, and poor fail-safe design allowed powerful unfiltered beams to be delivered. The problem
-          became visible through repeated patient injuries, doctors noticing radiation-like burns, operators sharing
-          similar incidents, and finally the reproduction of "Malfunction 54." AECL repeatedly denied that overdoses
-          were possible, which delayed proper corrective action.
+        <h3>2. What I Must Know for the Exam</h3>
+        <p class="therac-one-idea">
+          <strong>If you remember only one idea:</strong> Therac-25 shows that software in medical devices can kill
+          when testing, hardware fail-safes, transparency, human factors, and accountability are weak.
         </p>
         <ul class="study-list therac-summary-list">
-          <li><strong>Main ethical issue:</strong> Patient safety was put at risk because a life-critical medical device relied on poorly tested software without enough independent hardware protection.</li>
-          <li><strong>How it became visible:</strong> Patients felt burning/shocks, developed severe radiation injuries, doctors reported suspicious overdose signs, and Malfunction 54 was later reproduced.</li>
-          <li><strong>Most important violation, patient safety:</strong> The machine directly harmed patients because software faults could deliver deadly radiation doses.</li>
-          <li><strong>Software responsibility violation:</strong> AECL did not properly analyze, document, test, or independently review the software even though it controlled radiation delivery.</li>
-          <li><strong>Fail-safe violation:</strong> Older hardware interlocks were reduced or removed, so software errors did not have enough physical protection to stop dangerous beams.</li>
-          <li><strong>Transparency violation:</strong> Error messages were vague, manuals did not explain malfunction codes, and AECL denied or minimized overdose reports.</li>
-          <li><strong>Accountability violation:</strong> AECL responded too slowly, rejected early warnings, claimed overdoses were impossible, and allowed use to continue after similar accidents.</li>
-          <li><strong>Human-factor issue:</strong> Operators were expected to work with unclear errors and could press proceed without knowing if the fault was harmless or dangerous.</li>
-          <li><strong>Main causes:</strong> Overreliance on software, poor testing, reused older code, unclear error messages, lack of hardware interlocks, race-condition/timing bugs, arithmetic overflow, and weak response to incidents.</li>
-          <li><strong>Stakeholders affected:</strong> Patients, families, operators, hospitals, AECL, regulators, medical physicists, and public trust in medical technology.</li>
-          <li><strong>Consequences:</strong> Severe injuries, patient deaths, lawsuits, FDA action, corrective action plans, hardware/software fixes, and loss of trust in Therac-25.</li>
-          <li><strong>What should have been done:</strong> Keep hardware interlocks, test software thoroughly, document code, explain errors clearly, design fail-safe shutdowns, investigate early accidents seriously, inform users, and stop using the machine until proven safe.</li>
-          <li><strong>Final lesson:</strong> In medical devices, software failure can kill. Safety-critical systems need testing, transparency, hardware fail-safes, human-centered design, and accountability before and after harm occurs.</li>
+          <li>Therac-25 was a radiation therapy machine for cancer treatment.</li>
+          <li>It relied heavily on software and reduced the hardware interlocks used in older machines.</li>
+          <li>Patients received massive radiation overdoses, causing severe injuries and deaths.</li>
+          <li>AECL's safety analysis did not properly examine the software.</li>
+          <li>Operators received vague "malfunction" codes and could press proceed without understanding the danger.</li>
+          <li><strong>Malfunction 54</strong> involved a timing/race-condition problem caused by fast editing during setup.</li>
+          <li>Another fault involved <strong>arithmetic overflow</strong>, where a counter returned to zero and hid an unsafe state.</li>
+          <li>AECL denied or minimized overdose reports instead of acting quickly.</li>
+          <li>The FDA later declared the device defective and required corrective action.</li>
+          <li>Final fixes included software changes and hardware protections such as a <strong>dose-per-pulse monitor</strong>.</li>
+          <li><strong>Main ethics violated:</strong> patient safety, professional responsibility, testing/validation, fail-safe design, transparency, accountability, and human factors.</li>
+          <li><strong>Best final sentence:</strong> "Therac-25 proves that in safety-critical medical devices, software must be tested, documented, fail-safe, transparent, and designed around patient safety."</li>
         </ul>
       </article>
 
       <article id="therac-ethics" class="study-card">
         <p class="section-kicker">Principle Map</p>
-        <h3>3. Ethics Violated</h3>
+        <h3>3. Ethics Analysis</h3>
         <div class="ethics-grid">
           <div class="ethics-card priority-card">
             <h4>Patient Safety / Public Welfare</h4>
             <span class="most-important-badge">⭐ Most Important</span>
-            <p>Therac-25 delivered massive radiation overdoses to patients who trusted the machine for cancer treatment.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Patient safety was violated because software and design failures exposed patients to deadly radiation.</p>
+            <p>Therac-25 was supposed to treat cancer patients, but software and design failures caused massive radiation overdoses.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Patient safety was violated because a medical device exposed patients to deadly radiation instead of protecting them.</p>
           </div>
           <div class="ethics-card">
             <h4>Professional Responsibility</h4>
-            <p>AECL had a duty to fully test, document, review, and validate software used in a life-critical medical device.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Professional responsibility was violated because safety-critical software was not treated with enough engineering discipline.</p>
+            <p>AECL had a duty to fully test, document, review, and validate software that controlled radiation delivery.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Professional responsibility was violated because safety-critical software was not handled with enough engineering discipline.</p>
           </div>
           <div class="ethics-card">
-            <h4>Fail-Safe Design</h4>
-            <p>The machine relied too much on software and lacked enough hardware interlocks to stop unsafe radiation delivery.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Fail-safe design was violated because a software mistake could reach the patient without physical protection.</p>
-          </div>
-          <div class="ethics-card">
-            <h4>Transparency</h4>
-            <p>Error codes were vague, manuals did not explain them clearly, and AECL denied that overdoses were possible.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Transparency was violated because users and hospitals did not receive clear safety information.</p>
-          </div>
-          <div class="ethics-card">
-            <h4>Accountability</h4>
-            <p>AECL responded slowly to repeated accidents and minimized early reports instead of immediately accepting risk and protecting patients.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Accountability was violated because the company did not act quickly enough after warning signs and repeated harm.</p>
-          </div>
-          <div class="ethics-card">
-            <h4>Human Factors</h4>
-            <p>Operators worked with confusing interfaces, unclear errors, and workflows where quick edits could trigger dangerous states.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Human factors were ignored because the system was not designed for real operator behavior under routine work.</p>
+            <h4>Poor Software Engineering</h4>
+            <p>The software was reused from older code, written by one unidentified programmer, poorly documented, and not independently reviewed enough.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Poor software engineering practices became an ethical failure because code directly controlled patient safety.</p>
           </div>
           <div class="ethics-card">
             <h4>Testing and Validation</h4>
-            <p>The software was not tested enough under realistic use, fast editing, timing conditions, and failure cases.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Testing was violated because the device was not validated for the way operators actually used it.</p>
+            <p>The machine was not tested enough under realistic operator behavior, fast editing, timing errors, race conditions, and overflow cases.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Testing was insufficient because the device was not validated for the way it was actually used.</p>
           </div>
           <div class="ethics-card">
-            <h4>Risk Management</h4>
-            <p>AECL underestimated the risk of software faults in a radiation machine.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Risk management was weak because the company did not properly control foreseeable software and overdose hazards.</p>
+            <h4>Fail-Safe Design and Redundancy</h4>
+            <p>Therac-25 relied too much on software and lacked enough independent hardware interlocks.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Safety redundancy failed because software errors could reach the patient without physical protection stopping the beam.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Transparency</h4>
+            <p>Operators saw vague malfunction codes, and AECL did not clearly disclose risks or similar accidents.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Transparency was violated because users did not receive clear information about dangerous faults.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Accountability</h4>
+            <p>AECL denied or minimized overdose reports and responded too slowly while accidents continued.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Accountability was violated because AECL failed to act quickly after warning signs and repeated patient harm.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Human Factors</h4>
+            <p>Operators worked with unclear errors and could press proceed after warnings because the interface did not safely guide real user behavior.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Human factors were ignored because the machine was not designed for how operators actually worked.</p>
           </div>
           <div class="ethics-card">
             <h4>Regulatory Responsibility</h4>
-            <p>The FDA eventually had to declare the machine defective and require corrective action.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Regulatory responsibility became critical because manufacturer controls were insufficient to protect patients.</p>
+            <p>The FDA had to intervene, declare the device defective, and require corrective action.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Regulation became necessary because internal manufacturer controls were not enough to protect patients.</p>
           </div>
           <div class="ethics-card">
             <h4>Public Trust</h4>
-            <p>The repeated accidents damaged trust in medical technology and software-controlled treatment machines.</p>
+            <p>The accidents damaged trust in medical technology, software-controlled devices, and manufacturer safety claims.</p>
             <p class="exam-sentence"><strong>Exam sentence:</strong> Public trust was harmed because a device meant to heal patients instead injured and killed them.</p>
           </div>
         </div>
@@ -1632,54 +1612,54 @@
         <h3>5. Written Questions</h3>
         <ol class="written-list">
           <li class="written-question important-question therac-written-question">
-            <h4>Explain the Therac-25 accidents. <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>Therac-25 was a radiation therapy machine used to treat cancer patients, but several patients received massive radiation overdoses because of software and design failures. The machine relied heavily on software instead of hardware interlocks, and its safety analysis did not properly examine the software. Patients reported burning, shocks, and severe injuries, but AECL repeatedly claimed overdoses were impossible. The case shows how unsafe software, poor testing, unclear errors, and weak accountability can turn a medical device into a danger to patients.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Radiation therapy machine</li><li>Software-controlled</li><li>Overdoses</li><li>Missing hardware interlocks</li><li>AECL denial</li></ul></div><div><h5>Best keywords</h5><p>Therac-25, radiation overdose, software failure, patient safety, hardware interlocks</p></div><div><h5>Mistake to avoid</h5><p>Do not describe it as only operator error.</p></div></div>
+            <h4>What ethical principles were violated in the Therac-25 accidents, and how did these violations affect public trust in medical technology? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>The Therac-25 accidents violated patient safety, professional responsibility, testing and validation, transparency, accountability, fail-safe design, and risk management. Patient safety was violated because patients received massive radiation overdoses from a device meant to treat them. Professional responsibility was violated because AECL did not adequately analyze, document, test, or independently review safety-critical software. Transparency and accountability were violated because AECL denied that overdoses were possible and did not respond quickly enough to repeated warnings. These failures damaged public trust because patients and hospitals expect medical technology to be safe, tested, and honestly monitored.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Patient safety</li><li>Poor software testing</li><li>Lack of hardware interlocks</li><li>AECL denial</li><li>Public trust damaged</li></ul></div><div><h5>Best keywords</h5><p>patient safety, professional responsibility, transparency, accountability, fail-safe</p></div><div><h5>Mistake to avoid</h5><p>Do not only say "software failed." Explain which ethical duties were violated.</p></div></div>
           </li>
           <li class="written-question important-question therac-written-question">
-            <h4>What ethical principles were violated in the Therac-25 case? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>The main principles violated were patient safety, professional responsibility, transparency, accountability, testing and validation, risk management, and fail-safe design. Patient safety was the most important because patients received dangerous radiation overdoses from a medical device. Professional responsibility was violated because AECL did not properly test or document safety-critical software. Transparency and accountability were violated because AECL denied overdose claims and did not respond quickly enough to repeated warnings.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Patient safety most important</li><li>Software testing</li><li>Fail-safe design</li><li>Transparency</li><li>Accountability</li></ul></div><div><h5>Best keywords</h5><p>patient safety, professional responsibility, transparency, accountability, fail-safe</p></div><div><h5>Mistake to avoid</h5><p>Do not only list principles. Explain how each was violated.</p></div></div>
+            <h4>What was the role of poor software engineering practices in the Therac-25 disaster? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Poor software engineering practices were central to the Therac-25 disaster. AECL relied heavily on software to control a dangerous radiation machine but did not properly analyze, test, document, or independently review the code. The software was based on older Therac-20 code and written by one unidentified programmer. The system had vague error messages, timing/race-condition problems, arithmetic overflow, and weak handling of unsafe states. Because hardware interlocks were reduced, software errors could directly reach patients and cause radiation overdoses.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Software controlled radiation</li><li>Poor testing and review</li><li>Reused old code</li><li>Vague errors</li><li>Race condition and overflow</li><li>Missing hardware protection</li></ul></div><div><h5>Best keywords</h5><p>software engineering, race condition, overflow, documentation, safety-critical software</p></div><div><h5>Mistake to avoid</h5><p>Do not treat software as a minor side issue.</p></div></div>
           </li>
           <li class="written-question important-question therac-written-question">
-            <h4>What role did poor software engineering practices play in the Therac-25 disaster? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>Poor software engineering practices were central to the Therac-25 disaster. AECL relied on software to control a dangerous radiation machine but did not properly analyze, test, document, or independently review the software. The code was based on older software and written by one unidentified programmer. The system had unclear error messages, race-condition/timing problems, arithmetic overflow, and weak handling of unsafe states. Because hardware interlocks were reduced, software errors could directly harm patients.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Poor software review</li><li>Old code</li><li>Weak documentation</li><li>Race/timing bug</li><li>Arithmetic overflow</li><li>No hardware backup</li></ul></div><div><h5>Best keywords</h5><p>software engineering, testing, documentation, race condition, overflow, safety-critical</p></div><div><h5>Mistake to avoid</h5><p>Do not say the software was a small side issue.</p></div></div>
+            <h4>How does the Therac-25 case illustrate the importance of safety redundancy in engineering? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Therac-25 illustrates the importance of redundancy because the machine relied too much on software and lacked enough independent hardware interlocks. In earlier machines, physical safety mechanisms could prevent unsafe radiation delivery even if there was an operator or software error. In Therac-25, software faults could allow unfiltered radiation to reach patients. Later fixes included hardware safety features such as a dose-per-pulse monitor, showing that safety-critical systems need independent layers of protection.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Overreliance on software</li><li>Missing hardware interlocks</li><li>Unfiltered radiation reached patients</li><li>Dose monitor added later</li><li>Independent protection needed</li></ul></div><div><h5>Best keywords</h5><p>redundancy, hardware interlocks, fail-safe, dose monitor, patient safety</p></div><div><h5>Mistake to avoid</h5><p>Do not say redundancy means only adding more software.</p></div></div>
           </li>
           <li class="written-question important-question therac-written-question">
-            <h4>How does the Therac-25 case illustrate the importance of safety redundancy? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>Therac-25 shows that safety redundancy is essential because the machine relied too much on software and lacked enough independent hardware interlocks. In older machines, hardware mechanisms could prevent unsafe radiation delivery even if an operator or software error occurred. In Therac-25, software faults could allow unfiltered high-energy beams to reach patients. Proper redundancy, such as hardware interlocks and dose monitors, would provide backup protection if software safety checks failed.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Software relied on too much</li><li>Hardware interlocks missing</li><li>Unfiltered beam reached patients</li><li>Dose monitor later added</li></ul></div><div><h5>Best keywords</h5><p>redundancy, hardware interlocks, fail-safe, dose monitor, patient safety</p></div><div><h5>Mistake to avoid</h5><p>Do not say redundancy means only having more software.</p></div></div>
+            <h4>What responsibility do engineers have when designing safety-critical medical systems like Therac-25? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Engineers designing safety-critical medical systems have a responsibility to prioritize patient safety, test the system thoroughly, document the software, design clear error messages, include fail-safe mechanisms, and account for real operator behavior. In Therac-25, patients were harmed because the system trusted software too much, gave unclear malfunction codes, allowed treatment to continue after unsafe states, and lacked enough hardware protection. Engineers must assume that software can fail and design medical devices so one failure does not injure or kill patients.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Patient safety first</li><li>Thorough testing</li><li>Clear documentation</li><li>Human factors</li><li>Fail-safe design</li><li>Hardware protection</li></ul></div><div><h5>Best keywords</h5><p>safety-critical systems, medical devices, patient safety, human factors, fail-safe</p></div><div><h5>Mistake to avoid</h5><p>Do not write only "engineers should be careful." Be specific about what they must do.</p></div></div>
           </li>
           <li class="written-question important-question therac-written-question">
-            <h4>How was the Therac-25 problem discovered or made visible? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>The problem became visible through repeated patient injuries and suspicious overdose symptoms. Patients reported burning, shocks, and severe pain during treatment, and doctors/physicists noticed injuries that looked like radiation overdoses. Operators and hospitals began comparing similar incidents. Later, Dr. Fritz Hager and staff reproduced Malfunction 54 by recreating the fast editing sequence, proving that the machine could enter a dangerous state. The FDA then declared the device defective and required corrective action.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Patient complaints</li><li>Radiation-like injuries</li><li>Similar incidents</li><li>Malfunction 54 reproduced</li><li>FDA action</li></ul></div><div><h5>Best keywords</h5><p>Malfunction 54, patient injuries, overdose, reproduction, FDA</p></div><div><h5>Mistake to avoid</h5><p>Do not say AECL discovered and fixed it immediately.</p></div></div>
+            <h4>How did AECL's handling of the Therac-25 accidents violate accountability? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>AECL violated accountability because it repeatedly denied or minimized early overdose reports instead of immediately accepting the possibility of failure and protecting patients. The company claimed overdoses were impossible, while similar accidents continued. Accountability required stopping unsafe use, warning hospitals, investigating the software deeply, cooperating with regulators, and adding strong software and hardware safeguards. The repeated accidents made the accountability failure more serious because early warnings were not acted on quickly enough.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Denial of overdose possibility</li><li>Repeated accidents</li><li>Slow response</li><li>Need to warn users</li><li>Corrective action required</li></ul></div><div><h5>Best keywords</h5><p>accountability, AECL, denial, warning signs, corrective action</p></div><div><h5>Mistake to avoid</h5><p>Do not define accountability generally. Apply it to AECL's response.</p></div></div>
           </li>
           <li class="written-question important-question therac-written-question">
-            <h4>How did AECL's handling of the accidents violate accountability? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>AECL violated accountability because it repeatedly denied or minimized early overdose reports and claimed such events were impossible. Instead of immediately stopping use, informing all users, and fully investigating the software, the company responded slowly while similar accidents continued. Accountability required accepting the possibility of failure, protecting patients first, cooperating with hospitals and regulators, issuing clear warnings, and implementing strong software and hardware fixes.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Denial</li><li>Slow response</li><li>Repeated accidents</li><li>Need to warn users</li><li>Corrective action</li></ul></div><div><h5>Best keywords</h5><p>accountability, denial, corrective action, patient protection, AECL</p></div><div><h5>Mistake to avoid</h5><p>Do not define accountability generally without applying it to AECL's response.</p></div></div>
+            <h4>What role did transparency play in the Therac-25 disaster? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Transparency was a major issue because operators and hospitals did not receive clear safety information. Error messages appeared only as vague malfunction numbers, and manuals did not clearly explain their meaning or danger level. AECL also did not clearly disclose similar accidents and continued to claim overdoses were impossible. This lack of transparency prevented operators and hospitals from understanding the real risk and delayed proper protective action.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Vague malfunction codes</li><li>Poor manuals</li><li>Hidden accident patterns</li><li>Operators lacked risk information</li><li>Delayed action</li></ul></div><div><h5>Best keywords</h5><p>transparency, error codes, manuals, disclosure, risk communication</p></div><div><h5>Mistake to avoid</h5><p>Do not only say "AECL lied." Explain how unclear information affected safety decisions.</p></div></div>
           </li>
           <li class="written-question important-question therac-written-question">
-            <h4>Why were vague error messages dangerous in Therac-25? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>Vague error messages were dangerous because operators often saw "malfunction" codes without clear explanations. Since manuals did not explain the codes properly, operators became used to errors and could press proceed without knowing whether the fault was harmless or deadly. In a medical device, error messages must be clear, meaningful, and designed to stop unsafe operation when patient safety is uncertain.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Unclear malfunction codes</li><li>Operators normalized errors</li><li>Pressed proceed</li><li>No danger explanation</li></ul></div><div><h5>Best keywords</h5><p>error messages, human factors, operator interface, transparency, fail-safe</p></div><div><h5>Mistake to avoid</h5><p>Do not blame operators only. The interface design was unsafe.</p></div></div>
+            <h4>How did human factors contribute to the Therac-25 accidents? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Human factors contributed because the machine was not designed for how operators actually worked. Experienced operators sometimes edited treatment settings quickly, but the system did not safely handle fast changes during machine setup. Operators also saw frequent vague malfunction messages and became used to pressing proceed without knowing the danger. A safe medical device should guide users clearly, prevent unsafe continuation, and assume realistic human behavior rather than ideal behavior.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Real operator behavior</li><li>Fast editing triggered faults</li><li>Vague errors normalized</li><li>Pressing proceed without understanding</li><li>Poor interface design</li></ul></div><div><h5>Best keywords</h5><p>human factors, operator interface, Malfunction 54, proceed, real use</p></div><div><h5>Mistake to avoid</h5><p>Do not blame operators only. The design made unsafe operation possible.</p></div></div>
           </li>
           <li class="written-question important-question therac-written-question">
-            <h4>What should AECL have done differently? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>AECL should have treated Therac-25 as a safety-critical medical device and performed deep software safety analysis, independent code review, realistic testing, and full documentation. It should have kept hardware interlocks, designed clear error messages, prevented treatment from continuing after unknown faults, investigated early injuries seriously, informed hospitals and regulators, and removed machines from service until proven safe.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Software analysis</li><li>Hardware interlocks</li><li>Clear error messages</li><li>Stop after faults</li><li>Inform users/regulators</li></ul></div><div><h5>Best keywords</h5><p>software safety, hardware interlocks, testing, transparency, accountability</p></div><div><h5>Mistake to avoid</h5><p>Do not only say "fix the bug." The whole safety process had to change.</p></div></div>
+            <h4>How did testing and validation fail in the Therac-25 case? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Testing and validation failed because the system was not adequately tested under realistic operating conditions, fast editing, timing issues, error states, and software overflow conditions. The safety analysis did not properly examine the software even though it controlled radiation delivery. If realistic testing had been done, problems like Malfunction 54, race conditions, and arithmetic overflow might have been found before patients were harmed. Safety-critical medical devices must be validated for real use, not only ideal use.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Realistic testing missing</li><li>Software not deeply analyzed</li><li>Timing and race condition</li><li>Arithmetic overflow</li><li>Safety-critical validation needed</li></ul></div><div><h5>Best keywords</h5><p>testing, validation, race condition, overflow, safety analysis</p></div><div><h5>Mistake to avoid</h5><p>Do not say testing was useless. The issue is insufficient testing for real conditions.</p></div></div>
           </li>
-          <li class="written-question therac-written-question">
-            <h4>Who were the stakeholders affected by the Therac-25 accidents?</h4>
-            <p>The stakeholders included patients, patients' families, operators, hospitals, doctors, medical physicists, AECL, regulators, and the public. Patients were directly harmed by radiation overdoses. Families suffered from injury and death. Operators and hospitals had to use a dangerous and unclear system. Regulators became involved to protect future patients, and public trust in medical technology was damaged.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Patients and families</li><li>Operators/hospitals</li><li>AECL</li><li>Regulators</li><li>Public trust</li></ul></div><div><h5>Best keywords</h5><p>stakeholders, patients, hospitals, FDA, public trust</p></div><div><h5>Mistake to avoid</h5><p>Do not mention only AECL and hospitals.</p></div></div>
+          <li class="written-question important-question therac-written-question">
+            <h4>Evaluate the role of regulators in the Therac-25 case. How can engineers collaborate with regulators to promote ethical practice? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>Regulators such as the FDA became important after repeated accidents because AECL's internal response was not enough to protect patients. The FDA declared the device defective and required corrective action. Engineers can collaborate with regulators by reporting safety problems honestly, providing documentation, sharing incident data, cooperating with investigations, and implementing corrective actions quickly. Regulation supports ethical practice by adding independent oversight when public safety is at risk.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>FDA declared device defective</li><li>Corrective action required</li><li>Honest reporting</li><li>Documentation and cooperation</li><li>Independent oversight</li></ul></div><div><h5>Best keywords</h5><p>regulation, FDA, corrective action, documentation, public safety</p></div><div><h5>Mistake to avoid</h5><p>Do not say regulators alone are responsible. Manufacturers and engineers remain responsible.</p></div></div>
           </li>
-          <li class="written-question therac-written-question">
-            <h4>What is the main engineering ethics lesson from Therac-25?</h4>
-            <p>The main lesson is that software in medical devices can be life-critical and must be engineered with the same seriousness as physical safety systems. Engineers must test software thoroughly, document it clearly, design for real user behavior, use hardware fail-safes, investigate incidents quickly, and prioritize patient safety over confidence in technology. Advanced technology is not ethical unless it is safe, transparent, and accountable.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Software can kill</li><li>Patient safety</li><li>Testing/documentation</li><li>Real user behavior</li><li>Fail-safes</li><li>Accountability</li></ul></div><div><h5>Best keywords</h5><p>safety-critical software, medical device, patient safety, fail-safe, accountability</p></div><div><h5>Mistake to avoid</h5><p>Do not say "advanced technology is always safe."</p></div></div>
+          <li class="written-question important-question therac-written-question">
+            <h4>What is the main engineering ethics lesson from the Therac-25 accidents? <span class="important-badge">&#11088; Highly Important</span></h4>
+            <p>The main lesson is that software in safety-critical medical devices can kill if it is not engineered with strong testing, documentation, fail-safe design, transparency, and accountability. Therac-25 showed that advanced technology is not automatically safe. Engineers must design for software failure, real operator behavior, clear error communication, and independent hardware protection. Patient safety must come before confidence in technology, cost, or convenience.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Software can kill</li><li>Patient safety</li><li>Testing and documentation</li><li>Human factors</li><li>Hardware fail-safes</li><li>Accountability</li></ul></div><div><h5>Best keywords</h5><p>safety-critical software, medical device, patient safety, fail-safe, accountability</p></div><div><h5>Mistake to avoid</h5><p>Do not say the lesson is "do not use software." The lesson is to use software responsibly and safely.</p></div></div>
           </li>
         </ol>
       </article>
