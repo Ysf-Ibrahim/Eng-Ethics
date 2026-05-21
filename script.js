@@ -2429,367 +2429,268 @@ const quizData = [
     caseId: "case-8",
     questions: [
       {
-        question: "During a crowded dance event at the Hyatt Regency Hotel, two suspended walkways collapsed into the atrium. From an engineering ethics perspective, what makes this event more than just a structural accident?",
+        question: "During a crowded hotel event, two suspended walkways collapsed into the atrium and killed 114 people. From an Engineering Ethics perspective, what makes the Hyatt Regency case more than only a structural failure?",
         options: [
-          "It involved a public space where design and review failures directly harmed people.",
-          "It happened inside a hotel rather than outdoors.",
-          "It involved a modern architectural lobby.",
-          "It happened during a social event."
-        ],
-        correctAnswer: 0,
-        explanation: "The ethical issue is that professional engineering decisions affected public safety and caused mass harm."
-      },
-      {
-        question: "The original walkway concept used continuous hanger rods, but the final constructed version used split rods. Why was this change critical?",
-        options: [
-          "It changed the load path and doubled the load on the upper connection.",
-          "It made the walkways look less symmetrical.",
-          "It reduced the number of hotel guests allowed in the lobby.",
-          "It changed the architectural style but not the structure."
-        ],
-        correctAnswer: 0,
-        explanation: "The split-rod detail made the upper connection carry both the upper and lower walkway loads."
-      },
-      {
-        question: "Which statement best explains why the rod change became an ethical issue?",
-        options: [
-          "It was a safety-critical change that was not properly recalculated.",
-          "It was proposed by a fabricator, so it was automatically unethical.",
-          "It changed the visual appearance of the walkway.",
-          "It made the construction documents longer and more complex."
-        ],
-        correctAnswer: 0,
-        explanation: "The issue was not who suggested the change, but that its structural impact was not verified."
-      },
-      {
-        question: "If an exam asks why communication mattered in the Hyatt case, which answer is strongest?",
-        options: [
-          "The load-changing detail moved through the project without clear responsibility and verification.",
-          "The hotel failed to communicate the dance schedule clearly to guests.",
-          "The architect and owner had different aesthetic preferences.",
-          "The public did not understand how suspension rods work."
-        ],
-        correctAnswer: 0,
-        explanation: "Communication failure allowed a critical structural change to be treated as if it had been checked."
-      },
-      {
-        question: "The engineer's professional seal appeared on structural documents. Ethically, what does that seal mean?",
-        options: [
-          "The engineer accepts professional responsibility for approved engineering work unless limits are clearly stated.",
-          "The engineer only approves the drawing format.",
-          "The engineer transfers all responsibility to the fabricator.",
-          "The seal means no further checking is ever needed."
-        ],
-        correctAnswer: 0,
-        explanation: "A professional seal is tied to accountability and responsibility for engineering adequacy."
-      },
-      {
-        question: "Which answer best describes the role of professional responsibility in this case?",
-        options: [
-          "Engineers had a duty to calculate and verify critical connections before public use.",
-          "Engineers only needed to create a general structural concept.",
-          "Engineers were responsible only for the overall appearance of the atrium.",
-          "Engineers had no further role once shop drawings were created."
-        ],
-        correctAnswer: 0,
-        explanation: "Safety-critical structural connections require engineering verification."
-      },
-      {
-        question: "The connection was already weak before the rod change and became much worse after. Which ethical principle does this most directly involve?",
-        options: [
-          "Code compliance and public safety.",
-          "Advertising honesty.",
-          "Environmental sustainability.",
-          "Intellectual property."
-        ],
-        correctAnswer: 0,
-        explanation: "Minimum strength requirements exist to protect the public from structural failure."
-      },
-      {
-        question: "Why is it incomplete to blame only the fabricator for the collapse?",
-        options: [
-          "The engineer still had a duty to review and verify safety-critical changes.",
-          "The fabricator had no involvement in the project.",
-          "The fabricator was responsible for hotel crowd control only.",
-          "The architect personally calculated all connections."
-        ],
-        correctAnswer: 0,
-        explanation: "The fabricator proposed a change, but the engineer had professional responsibility to check it."
-      },
-      {
-        question: "Which statement best describes fast-track construction in this case?",
-        options: [
-          "It saved time but increased the risk of missed coordination and unchecked details.",
-          "It was automatically illegal in all engineering projects.",
-          "It caused the rods to physically break by itself.",
-          "It removed the need for structural calculations."
-        ],
-        correctAnswer: 0,
-        explanation: "Fast-track construction is not always unethical, but it creates risk if safety review is rushed."
-      },
-      {
-        question: "What was the ethical problem with treating the rod change as a simple fabrication issue?",
-        options: [
-          "It ignored the fact that the change affected the structural load path.",
-          "It made the project more expensive.",
-          "It required more workers on site.",
-          "It changed the hotel's business model."
-        ],
-        correctAnswer: 0,
-        explanation: "The rod change was not merely practical, it changed how forces were transferred through the structure."
-      },
-      {
-        question: "In terms of accountability, what should have happened before approving the changed shop drawings?",
-        options: [
-          "The changed connection should have been recalculated and formally verified.",
-          "The drawings should have been approved because construction was already moving.",
-          "The change should have been accepted if it was easier to fabricate.",
-          "The responsibility should have been left unclear until after construction."
-        ],
-        correctAnswer: 0,
-        explanation: "Accountability requires checking work before approval, not after failure."
-      },
-      {
-        question: "Which choice best connects the case facts to the principle of integrity?",
-        options: [
-          "Approving or accepting unchecked work created a false appearance of safety.",
-          "Integrity was not involved because no one used software.",
-          "Integrity only applies if someone admits criminal intent.",
-          "Integrity means the hotel lobby should look honest."
-        ],
-        correctAnswer: 0,
-        explanation: "Integrity means not approving safety-critical work without proper verification."
-      },
-      {
-        question: "The roof collapse during construction was a warning sign. Why does that matter ethically?",
-        options: [
-          "It should have triggered deeper review of structural safety.",
-          "It proved the walkway connections were safe.",
-          "It removed responsibility from the engineers.",
-          "It showed that the hotel should cancel dances only."
-        ],
-        correctAnswer: 0,
-        explanation: "Warning signs should prompt investigation, especially in public structures."
-      },
-      {
-        question: "Which answer best explains how public trust was affected by the collapse?",
-        options: [
-          "A new public building failed, making people question whether engineers properly protect safety.",
-          "Public trust increased because the collapse was investigated.",
-          "Public trust was unrelated because only technical experts understood the rods.",
-          "Public trust depends only on whether the hotel reopened."
-        ],
-        correctAnswer: 0,
-        explanation: "Public trust depends on confidence that engineered spaces are safe."
-      },
-      {
-        question: "Which statement is the strongest case-understanding answer about the Hyatt collapse?",
-        options: [
-          "The split rods made the upper connection support both walkways.",
-          "The lower walkway carried the weight of the ceiling.",
-          "The rods failed because the lobby was too bright.",
-          "The walkways collapsed because of an earthquake."
-        ],
-        correctAnswer: 0,
-        explanation: "This captures the key technical mechanism behind the collapse."
-      },
-      {
-        question: "Why is the crowd caused the collapse a weak answer?",
-        options: [
-          "The crowd exposed an unsafe connection, but the design and review failure caused the danger.",
-          "Crowds never add load to structures.",
-          "The hotel was empty during the collapse.",
-          "The walkways were not meant to carry any weight."
-        ],
-        correctAnswer: 0,
-        explanation: "The crowd load mattered, but the ethical failure was unsafe design and review."
-      },
-      {
-        question: "What role did professional bodies play after the collapse?",
-        options: [
-          "They disciplined engineers and strengthened practice expectations.",
-          "They ignored the case because it was only civil law.",
-          "They removed all structural codes.",
-          "They blamed only hotel guests."
-        ],
-        correctAnswer: 0,
-        explanation: "Professional bodies responded with discipline and improved standards."
-      },
-      {
-        question: "Which answer best describes the difference between legal and ethical responsibility in this case?",
-        options: [
-          "Ethical responsibility can exist even if criminal guilt is not proven.",
-          "If no one is criminally guilty, no ethics were violated.",
-          "Legal responsibility only matters for architects.",
-          "Ethics only begins after a court decision."
-        ],
-        correctAnswer: 0,
-        explanation: "Professional negligence can be ethically serious even without criminal conviction."
-      },
-      {
-        question: "Why was the walkway location important to the risk?",
-        options: [
-          "It was suspended over a crowded public atrium.",
-          "It was outside the building.",
-          "It was unused by guests.",
-          "It was underground."
-        ],
-        correctAnswer: 0,
-        explanation: "A failure above a crowd creates severe life-safety risk."
-      },
-      {
-        question: "Which answer best describes the professional communication duty when a design change is proposed?",
-        options: [
-          "Clarify who checks the change and document approval.",
-          "Assume the change is safe if it saves time.",
-          "Approve it verbally without review.",
-          "Wait until construction is complete to calculate it."
-        ],
-        correctAnswer: 0,
-        explanation: "Safety-critical changes require clear responsibility and documentation."
-      },
-      {
-        question: "The Hyatt collapse led to license revocations and stronger professional standards. How do these consequences serve ethics?",
-        options: [
-          "They deter careless approval and reinforce professional accountability.",
-          "They prove the collapse was not serious.",
-          "They replace the need for engineering education.",
-          "They remove all future risk automatically."
-        ],
-        correctAnswer: 0,
-        explanation: "Professional consequences warn engineers that public safety duties are serious."
-      },
-      {
-        question: "What was the most direct technical reason the upper connection failed?",
-        options: [
-          "It carried more load than it was designed to carry.",
-          "It was damaged by fire.",
-          "It was overloaded by wind only.",
-          "It was intentionally removed before the event."
-        ],
-        correctAnswer: 0,
-        explanation: "The split-rod configuration doubled the load on an already weak connection."
-      },
-      {
-        question: "Which answer best explains the ethical problem with schedule pressure?",
-        options: [
-          "Time pressure cannot justify skipping safety verification.",
-          "Time pressure removes engineering responsibility.",
-          "Fast schedules always improve communication.",
-          "Deadlines are more important than code compliance."
-        ],
-        correctAnswer: 0,
-        explanation: "Engineers may face deadlines, but safety cannot be sacrificed."
-      },
-      {
-        question: "Which option best describes shop drawings in this ethical context?",
-        options: [
-          "Construction-detail drawings that may include safety-critical changes.",
-          "Decorative drawings used only for marketing purposes.",
-          "Drawings unrelated to the final structure.",
-          "Sketches that engineers should never review."
-        ],
-        correctAnswer: 0,
-        explanation: "Shop drawings translate design into buildable details, so safety changes must be checked."
-      },
-      {
-        question: "Which statement is most accurate about the designer and fabricator relationship?",
-        options: [
-          "Fabricators can suggest changes, but engineers must verify structural safety.",
-          "Fabricators become the only responsible party after suggesting a change.",
-          "Engineers must accept any change that improves constructability.",
-          "Architects alone check all steel connections."
-        ],
-        correctAnswer: 0,
-        explanation: "Constructability changes must still satisfy safety and code requirements."
-      },
-      {
-        question: "Which answer best identifies the ethics failure chain in the Hyatt case?",
-        options: [
-          "Schedule pressure, unclear communication, unchecked rod change, weak connection, public harm.",
-          "Dance music, hotel lighting, public excitement, unclear seating, guest behavior.",
-          "Too many windows, modern lobby style, high ceilings, expensive hotel services.",
-          "Fire alarms, evacuation signs, medical response, weather conditions."
-        ],
-        correctAnswer: 0,
-        explanation: "This sequence connects organizational pressure to technical failure and public harm."
-      },
-      {
-        question: "If asked what should engineers have done differently, which answer is strongest?",
-        options: [
-          "Recalculate the changed connection, clarify responsibility, and verify code compliance.",
-          "Cancel all public events permanently.",
-          "Build no atriums in hotels.",
-          "Allow the contractor to decide structural adequacy."
-        ],
-        correctAnswer: 0,
-        explanation: "This answer targets the actual ethical and technical causes of the collapse."
-      },
-      {
-        question: "Why is this case commonly used in engineering ethics education?",
-        options: [
-          "It shows how small unchecked decisions in professional practice can cause mass casualties.",
-          "It proves all building designs are unsafe.",
-          "It is mainly about hotel marketing failure.",
-          "It shows that calculations are less important than aesthetics."
-        ],
-        correctAnswer: 0,
-        explanation: "The case teaches communication, responsibility, checking, and public safety."
-      },
-      {
-        question: "Which written-answer claim would be weakest?",
-        options: [
-          "The collapse was only caused by people dancing.",
-          "The rod change doubled the load on the upper connection.",
-          "Communication failure contributed to the collapse.",
-          "Public safety was violated."
-        ],
-        correctAnswer: 0,
-        explanation: "Dancing was normal use. The unsafe connection was the real issue."
-      },
-      {
-        question: "Best final conclusion for a 5-mark ethics answer about the Hyatt collapse?",
-        options: [
-          "The Hyatt collapse shows that public safety depends on verified design changes, clear communication, and accountable engineers.",
-          "The Hyatt collapse shows that beautiful buildings are impossible to make safe.",
-          "The Hyatt collapse shows that criminal conviction is required before ethics matters.",
-          "The Hyatt collapse shows that shop drawings never affect safety."
-        ],
-        correctAnswer: 0,
-        explanation: "This conclusion combines the main case facts with ethics principles."
-      },
-      {
-        question: "An engineer notices that a shop-drawing change may double the load on a walkway connection, but the project team is under schedule pressure and wants to proceed. What should the engineer do first?",
-        options: [
-          "Stay silent because schedule pressure is a management issue rather than an engineering responsibility.",
-          "Document the concern, report it through responsible project channels, and require recalculation before approval.",
-          "Approve the change because it came from the fabricator, who better understands constructability details.",
-          "Wait until construction is complete and then raise the issue if visible performance problems appear."
+          "The event happened in a hotel rather than on a bridge or highway, so public expectations were different.",
+          "Professional decisions about design review, approval, and communication exposed the public to preventable harm.",
+          "The collapse was unusually dramatic, which is why ethics became part of the discussion afterward.",
+          "Any structural failure in a modern building automatically becomes an ethics case, even without responsibility issues."
         ],
         correctAnswer: 1,
-        explanation: "A safety-critical design concern must be documented and addressed before the public is exposed to danger."
+        explanation: "The case is ethical because professional judgment and approval decisions affected public safety in a crowded space."
       },
       {
-        question: "Suppose an engineer has already raised concern internally several times about an unchecked load-path change, but project leaders dismiss it to avoid delay while the public opening approaches. Which answer best fits whistle-blowing ethics?",
+        question: "Why was the change from continuous hanger rods to split rods ethically important in the Hyatt case, not just technically different?",
         options: [
-          "External disclosure is automatically unethical if the engineer still works for the project team.",
-          "The engineer should drop the issue because management, not engineering staff, owns the final decision.",
-          "If serious public harm is possible, internal channels have been tried, and documented evidence is persuasive, stronger escalation beyond the project may become ethically justified.",
-          "Once drawings have moved forward, it is better to avoid conflict and revisit the issue after the event."
+          "It made the final construction drawings longer and more difficult to coordinate across firms.",
+          "It changed the appearance of the suspended walkways, which affected architectural expectations.",
+          "It changed the load path and doubled the load on the upper walkway connection.",
+          "It shifted the project from ordinary engineering into experimental architecture."
         ],
         correctAnswer: 2,
-        explanation: "When grave public harm is possible and internal response fails, escalation beyond the organization can become morally justified."
+        explanation: "The change mattered because it affected how load was carried through a critical connection that should have been recalculated."
       },
       {
-        question: "Project managers say that reporting an unsafe design change outside the team would be disloyal and damaging to the firm's reputation. Which response is ethically strongest?",
+        question: "Which explanation of the Hyatt Regency collapse is too narrow for a good Engineering Ethics exam answer?",
         options: [
-          "Loyalty to the firm should come before disclosure whenever the evidence is technical rather than visible to the public.",
-          "Engineers should avoid outside reporting because public criticism is usually worse than the original technical risk.",
-          "Protecting a company's reputation is normally more important than reporting unresolved hazards that might still be corrected later.",
-          "Loyalty does not require silence when public safety is endangered; whistle-blowing can show that internal ethical response has failed."
+          "The case involved communication, review, and approval failures as well as a technical design problem.",
+          "The disaster violated public safety because unsafe work reached a crowded public space.",
+          "The change in rod arrangement should have triggered new checking of the connection strength.",
+          "The collapse was only the fabricator's fault because the fabricator suggested the final detail."
         ],
         correctAnswer: 3,
-        explanation: "Whistle-blowing is not disloyal when the goal is preventing serious public harm after internal channels fail."
+        explanation: "The fabricator proposed the change, but engineers still had a duty to verify the safety-critical connection."
+      },
+      {
+        question: "What is the clearest ethical meaning of the engineer's seal on structural documents in a case like Hyatt Regency?",
+        options: [
+          "It signals professional responsibility for approved engineering work unless limits are clearly stated.",
+          "It shows that the engineer reviewed the drawing format and general presentation only.",
+          "It transfers responsibility to the contractor once construction begins in the field.",
+          "It means that later design changes do not need additional engineering verification."
+        ],
+        correctAnswer: 0,
+        explanation: "A professional seal carries accountability for the adequacy of approved engineering work."
+      },
+      {
+        question: "A fabricator proposes a connection detail that is easier to build, but the project is under fast-track schedule pressure and the revised detail may affect structural load. What should the responsible engineer do first?",
+        options: [
+          "Accept the change if it helps the schedule, because constructability is usually the contractor's issue.",
+          "Document the change, recalculate the connection, and verify safety before approval.",
+          "Treat the detail as field-level paperwork and leave it to be checked after installation.",
+          "Approve the change verbally and request written confirmation only if visible concerns appear later."
+        ],
+        correctAnswer: 1,
+        explanation: "A safety-critical design change must be checked before approval, even when schedule pressure is intense."
+      },
+      {
+        question: "Which answer best applies the course principle of 'approve work only if safe' to the Hyatt Regency case?",
+        options: [
+          "Approval was acceptable because the original walkway concept had already been reviewed earlier in the project.",
+          "Approval was acceptable if the revised connection looked buildable and the opening date was close.",
+          "The revised connection should not have been approved until the changed load path and strength were verified.",
+          "Approval was mainly the owner's concern because the owner would be responsible for public occupancy."
+        ],
+        correctAnswer: 2,
+        explanation: "Ethical approval depends on the safety of the final built detail, not only the safety of the original concept."
+      },
+      {
+        question: "A project manager realizes no one can clearly explain who checked a revised walkway detail that may affect the load path. Which response best reflects the engineer's communication duty?",
+        options: [
+          "Stop the assumption chain, identify who is responsible, and document verification before work proceeds.",
+          "Treat the uncertainty as normal because fast-track projects rarely have perfectly clear review paths.",
+          "Let the fabricator continue because shop drawings mainly belong to the construction side of the project.",
+          "Wait for an inspector to discover the problem later, since inspection exists for that purpose."
+        ],
+        correctAnswer: 0,
+        explanation: "Safety-critical communication means responsibility must be clear before people are exposed to the result."
+      },
+      {
+        question: "Which answer is weakest if someone explains the Hyatt collapse by focusing on the crowd in the atrium?",
+        options: [
+          "Normal public use should have been expected in a hotel atrium and designed for safely.",
+          "A crowded event increased the stakes because many people were exposed to the same structural risk.",
+          "The crowd revealed whether the final built connection could handle expected public use.",
+          "People dancing were the true cause, so design review and approval failures were secondary."
+        ],
+        correctAnswer: 3,
+        explanation: "The crowd was normal use. The ethical failure was letting an unsafe connection reach the public."
+      },
+      {
+        question: "A reviewer says shop drawings are basically construction paperwork and do not deserve deep engineering attention. What is the strongest ethical response?",
+        options: [
+          "That is reasonable if the original design concept was mathematically sound and professionally sealed.",
+          "Shop drawings can contain safety-critical load-path changes, so treating them as paperwork is dangerous.",
+          "Shop drawings belong to the fabricator, so only fabrication staff should assess their safety implications.",
+          "Shop drawings matter ethically only when the architect, not the engineer, requests a visual change."
+        ],
+        correctAnswer: 1,
+        explanation: "In Hyatt, the critical change appeared in the shop-drawing process, which is why review could not be superficial."
+      },
+      {
+        question: "If an engineer allows a safety-critical detail to move forward because someone else probably checked it, which ethical principle is most directly violated?",
+        options: [
+          "Confidentiality to the client, because uncertainty should stay inside the project team.",
+          "Cost efficiency, because duplicated checking can slow progress unnecessarily.",
+          "Innovation, because engineering progress requires tolerance for uncertain details.",
+          "Integrity in professional judgment, because approval creates a false appearance of safety."
+        ],
+        correctAnswer: 3,
+        explanation: "Integrity means not allowing uncertain safety-critical work to appear verified when it has not been."
+      },
+      {
+        question: "Which answer is too narrow for explaining the Hyatt Regency collapse in an ethics course?",
+        options: [
+          "The collapse occurred in a crowded public space where public safety should have been paramount.",
+          "The split-rod detail changed the load path and should have been recalculated before approval.",
+          "The rods failed, so the case is mainly about metal strength rather than professional judgment.",
+          "Communication and approval failures helped let an unsafe design detail reach the public."
+        ],
+        correctAnswer: 2,
+        explanation: "The technical mechanism matters, but the ethics lesson is about why an unsafe mechanism was approved."
+      },
+      {
+        question: "From an accountability perspective, why did the Hyatt case become professionally serious after the collapse?",
+        options: [
+          "Accountability required identifying approval failures, disciplining misconduct, and improving future practice.",
+          "The case became serious only because civil lawsuits made the event financially expensive.",
+          "It became serious mainly because the hotel's reputation suffered in the national press.",
+          "Accountability meant only proving which individual first suggested the split-rod detail."
+        ],
+        correctAnswer: 0,
+        explanation: "Accountability includes responsibility, correction, discipline, and learning after failure."
+      },
+      {
+        question: "A reviewer cannot tell whether final calculations still match a revised shop-drawing connection detail. What should the reviewer do before fabrication continues?",
+        options: [
+          "Assume the original design calculations still control unless the contractor reports a visible problem.",
+          "Pause approval and require explicit recalculation or documented confirmation before proceeding.",
+          "Let field crews decide whether the connection looks strong enough during installation.",
+          "Approve the detail with a note that it should be watched after the hotel opens."
+        ],
+        correctAnswer: 1,
+        explanation: "If the final detail may change load behavior, approval must stop until the safety check is explicit."
+      },
+      {
+        question: "Why is blaming only the fabricator incomplete in the Hyatt Regency case?",
+        options: [
+          "Because the fabricator had no role in proposing any practical changes to the structure.",
+          "Because hotel ownership always carries exclusive responsibility for public safety in occupied spaces.",
+          "Because engineers still had a duty to review and verify safety-critical changes before approval.",
+          "Because once a shop drawing exists, legal responsibility automatically shifts away from the design engineer."
+        ],
+        correctAnswer: 2,
+        explanation: "The fabricator suggested the change, but engineering responsibility for checking structural safety remained."
+      },
+      {
+        question: "Suppose an engineer has raised concern internally several times about an unchecked load-path change, but project leaders dismiss it to avoid delay while the public opening approaches. Which answer best fits whistle-blowing ethics?",
+        options: [
+          "Go public immediately even if the concern is undocumented, because urgency matters more than evidence.",
+          "Drop the issue because management, not engineering staff, owns the final project schedule.",
+          "Wait until after opening because actual use will show whether the concern was worth raising.",
+          "If serious public harm is possible, internal channels have been tried, and evidence is persuasive, stronger escalation may become ethically justified."
+        ],
+        correctAnswer: 3,
+        explanation: "When grave public harm is at stake and internal channels fail, escalation beyond the project may become a moral duty."
+      },
+      {
+        question: "Which stakeholder list is strongest for the Hyatt Regency case?",
+        options: [
+          "Hotel guests, workers, engineers, fabricators, contractors, owners, regulators, victims' families, and the public.",
+          "Only the structural engineer and the fabricator, because they touched the critical connection detail directly.",
+          "Only the people standing on or below the walkways at the time of the event.",
+          "Only the hotel owner and the legal teams who dealt with the aftermath of the collapse."
+        ],
+        correctAnswer: 0,
+        explanation: "Engineering decisions affected direct victims and a wider network of people who relied on the structure's safety."
+      },
+      {
+        question: "Which statement about fast-track construction pressure is weakest from an Engineering Ethics perspective?",
+        options: [
+          "Fast-track delivery can increase the risk of unclear review responsibility and missed coordination.",
+          "Cost and time matter, but they do not justify skipping safety-critical verification.",
+          "If a project is behind schedule, recalculation can wait until after installation if the detail looks reasonable.",
+          "Schedule pressure makes clear communication and documented checking more important, not less important."
+        ],
+        correctAnswer: 2,
+        explanation: "Schedule pressure never removes the duty to verify a safety-critical change before it reaches the public."
+      },
+      {
+        question: "The course emphasizes realistic judgments and estimates. How does that idea apply most directly to Hyatt Regency?",
+        options: [
+          "Engineers mainly needed to estimate cost accurately, since the construction detail itself was secondary.",
+          "Engineers had to judge realistically how the revised connection affected load, capacity, and public risk.",
+          "Once the original concept was reviewed, later estimates about the detail were mostly fabrication concerns.",
+          "Realistic judgment mattered more to the owner's budget than to the final structural approval."
+        ],
+        correctAnswer: 1,
+        explanation: "Ethical judgment includes realistic assessment of how a changed detail affects safety, not only how it affects cost or speed."
+      },
+      {
+        question: "Why is code compliance ethically important in the Hyatt case?",
+        options: [
+          "Public structures should not rely on underchecked details that may fall below required strength.",
+          "Codes matter mainly because they help divide legal blame after a collapse has already happened.",
+          "If a detail looks stable enough to experienced workers, safety margins are less ethically important.",
+          "Code compliance is mostly an administrative issue once the building owner has accepted the project."
+        ],
+        correctAnswer: 0,
+        explanation: "Code strength requirements protect the public, so ignoring them or failing to verify them is an ethical failure."
+      },
+      {
+        question: "The Hyatt project had also experienced a roof collapse during construction. What should responsible engineers have done with that warning sign?",
+        options: [
+          "Treat it as unrelated because one structural issue rarely says anything about another one in the same project.",
+          "Focus only on keeping the schedule intact because extra review would delay the hotel opening further.",
+          "Assume the roof problem was already isolated and therefore no broader review of safety practice was needed.",
+          "Treat it as a reason for deeper structural review and sharper attention to safety-critical details."
+        ],
+        correctAnswer: 3,
+        explanation: "A warning sign in the same project should trigger more caution, not less, especially where public safety is involved."
+      },
+      {
+        question: "Which answer is too narrow for a full exam response about Hyatt Regency?",
+        options: [
+          "Once the original design was conceptually sound, later detail changes were secondary.",
+          "The changed load path should have been recalculated before the connection was approved.",
+          "Public safety was violated because an unsafe detail reached a crowded public space.",
+          "Communication and approval failures mattered as much as the technical change itself."
+        ],
+        correctAnswer: 0,
+        explanation: "Later detail changes were exactly where the safety-critical failure entered the project."
+      },
+      {
+        question: "From the perspective of professional competence, what is the strongest lesson from the Hyatt Regency case?",
+        options: [
+          "Engineers should avoid all large atrium designs because unusual public spaces are too difficult to review safely.",
+          "Contractors and fabricators should carry the main burden for judging constructability-based safety changes.",
+          "Professional competence means checking the original design carefully and trusting later shop details to follow it closely.",
+          "Engineers must understand the limits of their assumptions and seek recalculation when a changed detail alters the load path."
+        ],
+        correctAnswer: 3,
+        explanation: "Competence includes recognizing when a change falls outside the safety assumptions of the original design."
+      },
+      {
+        question: "Why was public trust damaged so deeply by the Hyatt collapse?",
+        options: [
+          "Technical details rarely affect trust unless the public can see the failed connection directly.",
+          "People expect public structures to be safe under normal use and to have design changes verified responsibly.",
+          "Public trust depends mainly on whether the hotel reopened quickly after the disaster.",
+          "Trust was damaged only because the news media focused heavily on the event."
+        ],
+        correctAnswer: 1,
+        explanation: "People rely on engineers to keep public spaces safe, especially when the spaces are designed for crowds."
+      },
+      {
+        question: "Which final conclusion best matches the Engineering Ethics lesson of the Hyatt Regency collapse?",
+        options: [
+          "Hyatt shows that beautiful public buildings are too risky to justify the engineering effort they require.",
+          "The main lesson is that shop drawings should never be changed once the first design concept exists.",
+          "Hyatt shows that public safety depends on verified design changes, clear communication, competent review, and accountable approval.",
+          "The case proves ethics matters only when criminal guilt is established after a disaster."
+        ],
+        correctAnswer: 2,
+        explanation: "The strongest conclusion connects the technical change to professional duties of communication, review, and public protection."
       }
     ]
   },
@@ -3030,39 +2931,30 @@ const quizTopics = {
     "Inspector escalation"
   ],
   "case-8": [
-    "Public space failure",
+    "Public safety failure",
     "Load path change",
-    "Ethics of change",
-    "Communication failure",
+    "Too narrow blame",
     "Engineer's seal",
-    "Professional responsibility",
-    "Code compliance",
-    "Shared responsibility",
-    "Fast-track construction",
-    "Load path ignored",
-    "Accountability",
-    "Integrity",
-    "Warning signs",
-    "Public trust",
-    "Load path mechanism",
-    "User vs design",
-    "Professional bodies",
-    "Legal vs ethical",
-    "Location risk",
+    "Fast-track response",
+    "Approve only if safe",
     "Communication duty",
-    "Consequences",
-    "Technical cause",
-    "Schedule pressure",
-    "Shop drawings",
-    "Fabricator-engineer",
-    "Failure chain",
-    "Prevention",
-    "Ethics education",
-    "Weak claim",
-    "Final conclusion",
-    "Unchecked design change",
-    "Escalation after rebuff",
-    "Loyalty vs safety"
+    "Weak crowd answer",
+    "Shop drawing review",
+    "Integrity",
+    "Too narrow mechanism",
+    "Accountability",
+    "Reviewer action",
+    "Fabricator blame",
+    "Whistle-blowing",
+    "Stakeholders",
+    "Weak schedule claim",
+    "Realistic judgment",
+    "Code compliance",
+    "Warning sign",
+    "Too narrow response",
+    "Professional competence",
+    "Public trust",
+    "Final conclusion"
   ]
 };
 
@@ -3299,39 +3191,30 @@ const quizExamTips = {
     "Bad publicity is never a good reason to leave known public hazards uncorrected."
   ],
   "case-8": [
-    "When a public structure fails, connect the case to public safety and professional duty.",
-    "Hyatt technical core: continuous rods to split rods to doubled load.",
-    "A design change becomes ethically important when it affects public safety.",
-    "Communication in engineering means safety-critical information reaches the right people.",
-    "Engineer's seal = high-yield accountability point.",
-    "Do not say the engineer's responsibility ended at the concept stage.",
-    "Codes are not just paperwork, they protect lives.",
-    "Complex failures often involve shared responsibility.",
-    "Say pressure increased risk, not fast-track is always wrong.",
-    "Load path changes must be recalculated.",
-    "Accountability is prevention plus responsibility.",
-    "Integrity is broader than not lying.",
-    "Warning sign plus no full review = risk management issue.",
-    "Public trust questions need impact on society, not only case facts.",
-    "Know the load path change clearly.",
-    "Do not blame users for normal public use.",
-    "Professional consequences are not the same as criminal consequences.",
-    "Legal and ethical responsibility overlap, but are not identical.",
-    "Risk = probability plus consequence.",
-    "In ethics MCQs, assuming someone else checked it is usually wrong.",
-    "Consequences deter unethical or careless practice.",
-    "Keep the technical cause simple and accurate.",
-    "Public safety is the limit on cost and time pressure.",
-    "Shop drawings are high-yield in Hyatt.",
-    "Practical changes still need engineering review.",
-    "Great written answers often explain the failure chain.",
-    "Prevention must match the cause.",
-    "Why studied questions ask for the broader lesson.",
-    "Avoid blaming normal users.",
-    "End with public safety, communication, and accountability.",
-    "Safety-critical design changes must be documented and recalculated before approval.",
+    "Ethics in Hyatt means technical decisions must be tied to public harm and responsibility.",
+    "Continuous rods to split rods to doubled load is the core Hyatt mechanism.",
+    "Avoid one-person blame in complex engineering failures.",
+    "Engineer's seal means responsibility unless limits are clearly stated.",
+    "Schedule pressure never removes verification duty.",
+    "Safe approval means verifying the final built detail, not only the original concept.",
+    "If no one can say who checked it, review has already failed.",
+    "Normal public use must be designed for safely, not blamed afterward.",
+    "Shop drawings are not paperwork if they change the structure.",
+    "Integrity includes not approving what you have not verified.",
+    "Connect technical cause to professional duty for strong ethics answers.",
+    "Accountability includes discipline, correction, and future prevention.",
+    "Pause approval when safety checking is unclear.",
+    "A fabricator's proposal does not remove the engineer's duty to verify safety.",
     "DeGeorge-style questions reward evidence, internal reporting, and serious public risk.",
-    "Loyalty does not require silence when unresolved hazards threaten the public."
+    "Stakeholders include direct victims and the wider public.",
+    "Time pressure is not an excuse for underchecking safety.",
+    "Realistic judgments include load, capacity, and consequences.",
+    "Code margins protect human life, not just paperwork.",
+    "Warning signs should trigger deeper review, not normalization.",
+    "Later details can be the most important part of safety.",
+    "Competence includes recognizing when assumptions no longer hold.",
+    "Public trust depends on responsible verification, not appearance alone.",
+    "End with public safety, communication, and accountable approval."
   ]
 };
 
