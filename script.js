@@ -787,334 +787,334 @@ const quizData = [
     caseId: "case-3",
     questions: [
       {
-        question: "In the Boeing 737 MAX crisis, what made MCAS ethically significant?",
+        question: "Boeing developed the 737 MAX under pressure to compete with Airbus while keeping the aircraft similar to older 737 models. Why did this become an engineering ethics issue?",
         options: [
-          "It was a cockpit display feature with no direct safety effect during flight.",
-          "It was safety-critical software that could affect aircraft control.",
-          "It was mainly an airline scheduling tool used after landing.",
-          "It permanently removed pilot authority from every flight decision."
-        ],
-        correctAnswer: 1,
-        explanation: "MCAS was ethically significant because it could push the aircraft nose down, affecting control and safety."
-      },
-      {
-        question: "Boeing wanted the 737 MAX to be viewed as similar to older 737s. Why did this matter ethically?",
-        options: [
-          "It helped justify limited pilot retraining.",
-          "It made the aircraft appear modern without changing any safety duties.",
-          "It meant regulators no longer had any role in approving aircraft systems.",
-          "It made MCAS unnecessary because similarity claims solved the flight behavior."
+          "Similarity goals helped reduce training while hiding important safety-critical changes.",
+          "Competition between companies is always unethical.",
+          "Larger aircraft engines are automatically unsafe.",
+          "Airlines should never buy updated aircraft."
         ],
         correctAnswer: 0,
-        explanation: "Presenting the aircraft as similar helped reduce training requirements, even though the aircraft had important new behavior."
+        explanation: "The ethical issue was not competition itself, but allowing business goals to reduce transparency and training around safety-critical changes."
       },
       {
-        question: "In terms of transparency, which answer best describes Boeing's failure?",
+        question: "What was MCAS designed to do in the Boeing 737 MAX?",
         options: [
-          "Boeing used too many technical words in public statements.",
-          "Boeing gave full MCAS information, but pilots chose not to read it.",
-          "Boeing failed to clearly communicate MCAS behavior to key users.",
-          "Boeing made pilots read long manuals unrelated to safety.",
-        ],
-        correctAnswer: 2,
-        explanation: "The transparency issue was that pilots and stakeholders were not clearly informed about MCAS."
-      },
-      {
-        question: "What is the strongest explanation of \"profit over safety\" in the Boeing case?",
-        options: [
-          "Boeing competed with Airbus and tried to avoid costly retraining, influencing safety-related decisions.",
-          "Boeing wanted unsafe aircraft because unsafe aircraft would automatically create more profit, which oversimplifies the ethics issue.",
-          "Boeing ignored money completely and focused only on regulation.",
-          "Boeing's only problem was that pilots disliked learning new cockpit software."
+          "Automatically push the aircraft nose down under certain conditions.",
+          "Control passenger entertainment.",
+          "Replace all pilot decision-making permanently.",
+          "Improve airport ticketing systems."
         ],
         correctAnswer: 0,
-        explanation: "The issue is not that profit exists, but that business pressure affected safety-critical decisions."
+        explanation: "MCAS could command nose-down trim when the system believed the aircraft angle was too high."
       },
       {
-        question: "Why is blaming only the pilots an ethically weak explanation?",
+        question: "Why was MCAS ethically significant?",
         options: [
-          "Pilots had no role in flying the aircraft or responding to emergencies, so design and training cannot matter.",
-          "Pilots always cause software failures when automation is included.",
-          "Pilots were responsible for aircraft certification and software design.",
-          "Pilots faced a confusing emergency involving a system they were not fully trained on."
+          "It could affect aircraft control, but many pilots were not clearly informed or trained enough.",
+          "It was only a cosmetic cockpit feature.",
+          "It was unrelated to flight behavior.",
+          "It was designed only for ground maintenance."
         ],
-        correctAnswer: 3,
-        explanation: "The pilots were dealing with hidden or poorly explained automation under severe time pressure."
+        correctAnswer: 0,
+        explanation: "A system that affects flight control must be transparent and understood by pilots."
       },
       {
-        question: "How did the problem become visible?",
+        question: "In terms of transparency, what was Boeing's main failure?",
         options: [
-          "Through routine post-delivery paperwork that did not compare accident patterns.",
-          "Through two similar crashes and later investigations.",
-          "Through a maintenance note about noncritical cockpit documentation.",
-          "Through a planned software demo that Boeing scheduled before service."
+          "MCAS behavior and risk were not clearly communicated to key stakeholders.",
+          "Boeing gave pilots too much useful safety information.",
+          "Boeing disclosed all details perfectly.",
+          "Transparency only applied to ticket prices."
         ],
-        correctAnswer: 1,
-        explanation: "The similar crashes triggered grounding and deeper investigation."
+        correctAnswer: 0,
+        explanation: "Pilots, airlines, and regulators needed clear information about MCAS."
       },
       {
-        question: "Which principle is most directly connected to the two fatal crashes?",
+        question: "Why is blaming only the pilots ethically weak?",
         options: [
-          "Brand identity and aircraft marketing consistency.",
-          "Market variety for airlines buying different aircraft.",
+          "Pilots faced hidden or poorly explained automation during an emergency.",
+          "Pilots had no role in flying the aircraft.",
+          "Pilots designed MCAS themselves.",
+          "Pilots controlled Boeing's certification strategy."
+        ],
+        correctAnswer: 0,
+        explanation: "The case involves system design, training, automation, and communication, not only pilot action."
+      },
+      {
+        question: "Which ethical principle is most directly connected to two fatal crashes involving passengers and crew?",
+        options: [
           "Public safety.",
-          "Market confidence, certification paperwork, and airline purchasing strategy."
-        ],
-        correctAnswer: 2,
-        explanation: "Fatal crashes are directly connected to public safety and welfare."
-      },
-      {
-        question: "Which option best describes the MCAS design concern?",
-        options: [
-          "MCAS could act based on faulty sensor input and push the nose down.",
-          "MCAS was only a fuel-saving label used in airline advertising materials.",
-          "MCAS prevented all aircraft motion whenever the aircraft left the ground.",
-          "MCAS worked only after landing and therefore had no flight-control effect."
+          "Product branding.",
+          "Interior design.",
+          "Intellectual property."
         ],
         correctAnswer: 0,
-        explanation: "Faulty sensor input could trigger dangerous automated behavior."
+        explanation: "Loss of life makes public safety the central principle."
       },
       {
-        question: "In terms of accountability, what should Boeing have done after early warning signs and the first crash?",
+        question: "What made the larger engine placement important in the case?",
         options: [
-          "Wait until public attention disappeared.",
-          "Blame only foreign airlines.",
-          "Continue unchanged because certification ended all responsibility.",
-          "Act faster with disclosure, fixes, training, and cooperation."
-        ],
-        correctAnswer: 3,
-        explanation: "Accountability requires taking responsibility and preventing repeated harm."
-      },
-      {
-        question: "Why was minimal pilot training ethically problematic?",
-        options: [
-          "Training is only useful for pilots transferring between airlines.",
-          "Pilots needed full understanding of safety-critical aircraft behavior.",
-          "Pilots never need software information.",
-          "Training would remove all business competition between aircraft makers."
-        ],
-        correctAnswer: 1,
-        explanation: "Pilots needed to understand MCAS because it could affect emergency flight control."
-      },
-      {
-        question: "Which answer is strongest for a written exam about Boeing's transparency?",
-        options: [
-          "Boeing's communication about MCAS was insufficient for a safety-critical system.",
-          "Boeing used aircraft software, which is always unethical in modern aviation.",
-          "Boeing's transparency issue was only about public relations after the accidents.",
-          "Boeing explained everything perfectly, so transparency was not relevant."
+          "It changed the aircraft behavior and contributed to the need for MCAS.",
+          "It only changed the aircraft color.",
+          "It removed the need for all software.",
+          "It made pilot training impossible."
         ],
         correctAnswer: 0,
-        explanation: "The best answer connects transparency to MCAS and safety-critical information."
+        explanation: "The larger engines changed flight characteristics, leading Boeing to add MCAS."
       },
       {
-        question: "What made the two crashes strong evidence of a systemic issue?",
+        question: "Which answer best explains the conflict between profit and safety?",
         options: [
-          "They happened in different countries, so they were unrelated.",
-          "They proved pilots never matter in aviation safety, emergency response, training, or system design.",
-          "They involved similar aircraft behavior under similar early-flight conditions.",
-          "They showed that weather and passenger behavior were the only likely causes."
-        ],
-        correctAnswer: 2,
-        explanation: "Similar failures suggest a repeated system-level problem."
-      },
-      {
-        question: "Which stakeholder group was directly exposed to the highest physical risk?",
-        options: [
-          "Shareholders and market analysts reviewing delivery performance.",
-          "Passengers and pilots.",
-          "Marketing departments preparing aircraft launch material.",
-          "Airport ground-service contractors working after completed flights."
-        ],
-        correctAnswer: 1,
-        explanation: "Passengers and pilots were physically on the aircraft."
-      },
-      {
-        question: "Which statement best explains the ethical risk of hidden automation?",
-        options: [
-          "Automation always makes aircraft systems illegal regardless of design, testing, training, or pilot awareness.",
-          "Hidden automation only affects visual design and dashboard labels.",
-          "Pilots prefer hidden systems in emergencies because they reduce information.",
-          "Users may not understand what the system is doing during a critical emergency."
-        ],
-        correctAnswer: 3,
-        explanation: "Hidden automation is dangerous when users must respond quickly."
-      },
-      {
-        question: "Which answer best describes Boeing's professional responsibility?",
-        options: [
-          "Ensure design changes are tested, disclosed, documented, and trained.",
-          "Sell aircraft as quickly as possible after any design change is approved.",
-          "Leave all safety understanding to pilots after aircraft delivery.",
-          "Treat certification paperwork as a replacement for engineering judgment."
+          "Avoiding costly retraining and competing quickly influenced safety-related decisions.",
+          "Profit is always illegal in engineering.",
+          "Safety is only important after certification.",
+          "Competition removes professional responsibility."
         ],
         correctAnswer: 0,
-        explanation: "Professional responsibility requires active safety protection."
+        explanation: "Business pressure became ethically problematic when it affected training and disclosure."
       },
       {
-        question: "Why is FAA oversight part of the ethical discussion?",
+        question: "In terms of accountability, what should Boeing have done after early warnings and the first crash?",
         options: [
-          "FAA oversight is only about airline schedules and route approvals.",
-          "Regulators are part of the safety system that certifies public aircraft.",
-          "Regulators have no role after aircraft are designed.",
-          "Oversight only matters for airline competition and paperwork."
+          "Act faster with disclosure, fixes, training, and cooperation.",
+          "Wait for public pressure before investigating.",
+          "Blame only pilots and airlines.",
+          "Continue unchanged because certification ended responsibility."
         ],
-        correctAnswer: 1,
-        explanation: "Certification and oversight are important because they affect public safety."
+        correctAnswer: 0,
+        explanation: "Accountability means taking responsibility and preventing repeated harm."
       },
       {
-        question: "Which option best explains the safety-culture issue?",
+        question: "Why was faulty sensor input important?",
         options: [
-          "Safety culture means publishing general safety slogans after accidents.",
-          "Safety culture only matters after a company permanently closes.",
-          "Safety culture is unrelated to managers if engineers write code.",
-          "Business and schedule pressures appeared to weaken safety communication and risk handling."
+          "Bad data could trigger MCAS and cause dangerous nose-down commands.",
+          "Sensors only affected cabin temperature.",
+          "Sensor input was unrelated to MCAS.",
+          "Bad sensors make pilot training unnecessary."
         ],
-        correctAnswer: 3,
+        correctAnswer: 0,
+        explanation: "Automation acting on faulty data can create serious risk."
+      },
+      {
+        question: "Which statement best explains why Boeing's similarity claim mattered ethically?",
+        options: [
+          "It supported limited training even though the MAX had safety-relevant differences.",
+          "It proved the MAX was exactly the same as older planes.",
+          "It removed the need for safety analysis.",
+          "It only affected marketing posters."
+        ],
+        correctAnswer: 0,
+        explanation: "Similarity claims are ethical issues when they reduce training or hide risk."
+      },
+      {
+        question: "What role did pilot training play in the ethical failure?",
+        options: [
+          "Pilots were not adequately prepared for MCAS behavior in an emergency.",
+          "Pilots received too much simulator practice.",
+          "Training was irrelevant because pilots never use automation.",
+          "Training matters only for maintenance staff."
+        ],
+        correctAnswer: 0,
+        explanation: "Pilots need to understand safety-critical systems that can affect control."
+      },
+      {
+        question: "Which answer best describes the public trust impact?",
+        options: [
+          "The crashes made people question Boeing's safety culture and regulatory oversight.",
+          "Public trust increased because the plane was grounded.",
+          "Public trust was unrelated to aviation safety.",
+          "Public trust depends only on ticket prices."
+        ],
+        correctAnswer: 0,
+        explanation: "The crisis damaged trust in Boeing, FAA oversight, and aircraft certification."
+      },
+      {
+        question: "Why is FAA oversight ethically relevant?",
+        options: [
+          "Certification is part of the public safety system.",
+          "FAA oversight only affects airline food.",
+          "Regulators have no relationship to safety.",
+          "Certification removes company responsibility."
+        ],
+        correctAnswer: 0,
+        explanation: "Public safety depends on careful, independent regulatory oversight."
+      },
+      {
+        question: "What is the strongest explanation of the Boeing case as an ethics case?",
+        options: [
+          "Design, software, training, business pressure, and oversight decisions affected human life.",
+          "Boeing used aircraft software, and software is always unethical.",
+          "The case was only about airline branding.",
+          "The crashes were unrelated to engineering."
+        ],
+        correctAnswer: 0,
+        explanation: "The case combines technical and organizational decisions with public harm."
+      },
+      {
+        question: "Which answer best describes professional responsibility in this case?",
+        options: [
+          "Engineers and managers had to ensure MCAS was safe, disclosed, tested, and trained.",
+          "Engineers only needed to make the aircraft profitable.",
+          "Managers could ignore technical risk after certification.",
+          "Pilots alone were responsible for software design."
+        ],
+        correctAnswer: 0,
+        explanation: "Safety-critical design requires engineering and management responsibility."
+      },
+      {
+        question: "Which written-answer claim would be weakest?",
+        options: [
+          "The crisis was only pilot error.",
+          "Transparency about MCAS was weak.",
+          "Training was a major issue.",
+          "Public safety was affected."
+        ],
+        correctAnswer: 0,
+        explanation: "Reducing the crisis to pilot error ignores design, training, and communication failures."
+      },
+      {
+        question: "What makes MCAS an automation ethics issue?",
+        options: [
+          "It could act automatically in a way pilots did not fully expect or understand.",
+          "It replaced all aircraft hardware.",
+          "It operated only after landing.",
+          "It was used only for entertainment."
+        ],
+        correctAnswer: 0,
+        explanation: "Automation must be predictable, understandable, and controllable by humans."
+      },
+      {
+        question: "Which answer best explains risk management failure?",
+        options: [
+          "Boeing did not sufficiently control the danger of MCAS acting on faulty sensor data.",
+          "Boeing removed every sensor from the aircraft.",
+          "MCAS had no relationship to safety.",
+          "Risk management applies only after crashes."
+        ],
+        correctAnswer: 0,
+        explanation: "A safety-critical system should not become dangerous from one bad input."
+      },
+      {
+        question: "Why did two similar crashes make the case more serious ethically?",
+        options: [
+          "They suggested a systemic problem and slow corrective action.",
+          "They proved the aircraft was safe.",
+          "They made training unnecessary.",
+          "They showed public safety was unrelated."
+        ],
+        correctAnswer: 0,
+        explanation: "Repeated similar harm after warnings strengthens accountability concerns."
+      },
+      {
+        question: "Which answer best describes what Boeing should have done before launch?",
+        options: [
+          "Clearly disclose MCAS, require training, test sensor failure cases, and improve redundancy.",
+          "Hide system behavior to avoid confusing pilots.",
+          "Focus only on selling the aircraft quickly.",
+          "Treat pilot training as unrelated to safety."
+        ],
+        correctAnswer: 0,
+        explanation: "These actions directly address transparency, training, and risk management."
+      },
+      {
+        question: "What was ethically wrong with minimizing pilot retraining?",
+        options: [
+          "It reduced preparation for safety-critical aircraft behavior.",
+          "It made aircraft cheaper to paint.",
+          "It improved emergency response.",
+          "It had no safety effect."
+        ],
+        correctAnswer: 0,
+        explanation: "Less training becomes unethical when pilots need knowledge to manage risk."
+      },
+      {
+        question: "Which answer best connects accountability and victims?",
+        options: [
+          "Accountability includes responsibility to victims, correction, compensation, and prevention.",
+          "Accountability only means protecting the company image.",
+          "Accountability ends when lawsuits begin.",
+          "Accountability has no role after fatalities."
+        ],
+        correctAnswer: 0,
+        explanation: "Accountability includes response to harm and preventing recurrence."
+      },
+      {
+        question: "What is the best ethical interpretation of Boeing's business pressure?",
+        options: [
+          "It became dangerous when it influenced communication and training about a safety-critical system.",
+          "It was ethical because profit always comes first.",
+          "It was irrelevant because engineering has no business context.",
+          "It proves all competition is immoral."
+        ],
+        correctAnswer: 0,
+        explanation: "Business pressure must not compromise safety duties."
+      },
+      {
+        question: "Which answer best describes Boeing's safety-culture issue?",
+        options: [
+          "Safety communication and risk handling appeared weakened by business priorities.",
+          "Safety culture only means wearing helmets in factories.",
+          "Safety culture is unrelated to managers.",
+          "Safety culture improved because pilots had less training."
+        ],
+        correctAnswer: 0,
         explanation: "Safety culture is about what risks an organization takes seriously."
       },
       {
-        question: "What should Boeing have prioritized?",
+        question: "Why is 'certification was completed, so Boeing was ethical' a weak answer?",
         options: [
-          "Competition only, because business speed controls safety outcomes.",
-          "Minimal disclosure only, to reduce confusion about system behavior.",
-          "Certification paperwork only, without extra safety communication.",
-          "Safety, training, transparency, and reliable design."
-        ],
-        correctAnswer: 3,
-        explanation: "In safety-critical engineering, protecting people comes first."
-      },
-      {
-        question: "Which answer best explains why sensor redundancy mattered?",
-        options: [
-          "A single faulty input should not trigger dangerous repeated behavior.",
-          "Sensors are only for noncritical monitoring, airline schedules, and paperwork.",
-          "Redundancy makes pilots unnecessary in every emergency situation.",
-          "Redundancy only affects documentation and certification language."
+          "Certification does not remove professional responsibility for safety.",
+          "Certification means no aircraft can fail.",
+          "Certification is unrelated to aviation.",
+          "Certification replaces transparency and training."
         ],
         correctAnswer: 0,
-        explanation: "Safety-critical systems should not fail dangerously from one bad input."
+        explanation: "Engineers remain responsible even after regulatory approval."
       },
       {
-        question: "Which answer is most accurate about competition in this case?",
+        question: "Which answer best describes the stakeholder impact?",
         options: [
-          "Competition is always illegal in engineering.",
-          "Competition removes the need for pilot training, regulatory scrutiny, safety communication, and design review.",
-          "Competition is normal, but it becomes unethical if it pressures a company to reduce safety transparency.",
-          "Competition means regulators cannot question design decisions."
-        ],
-        correctAnswer: 2,
-        explanation: "Competition itself is not unethical, but safety must not be compromised."
-      },
-      {
-        question: "If a written question asks \"What caused the crisis?\", which answer is strongest?",
-        options: [
-          "One pilot mistake with no other factors.",
-          "Competition pressure, design changes, MCAS, weak training, poor transparency, and oversight concerns.",
-          "Passenger behavior during takeoff.",
-          "An unrelated aircraft configuration update combined with normal airline scheduling."
-        ],
-        correctAnswer: 1,
-        explanation: "The crisis had technical, organizational, and ethical causes."
-      },
-      {
-        question: "What was ethically wrong with minimizing MCAS in training material?",
-        options: [
-          "Pilots prefer less knowledge in critical situations because less information always improves emergency response.",
-          "Training material should never mention software.",
-          "MCAS had no effect on control.",
-          "Pilots could not fully prepare for how the aircraft might behave in an emergency."
-        ],
-        correctAnswer: 3,
-        explanation: "Training must include safety-critical system behavior."
-      },
-      {
-        question: "What does accountability require after harm has occurred?",
-        options: [
-          "Admit responsibility, fix the system, compensate victims, cooperate, and prevent recurrence.",
-          "Only change advertising and wait for public attention to decrease without reviewing training or design.",
-          "Hide the cause until lawsuits finish and regulators lose interest.",
-          "Blame users and avoid reviewing design, training, or oversight."
+          "Passengers, pilots, victims' families, airlines, Boeing, regulators, employees, shareholders, and the public were affected.",
+          "Only Boeing shareholders were affected.",
+          "Only pilots were affected.",
+          "No stakeholders were affected because aircraft are private products."
         ],
         correctAnswer: 0,
-        explanation: "Accountability includes corrective and preventive action."
+        explanation: "The crisis affected direct victims and many wider stakeholders."
       },
       {
-        question: "Why did the Boeing case damage public trust?",
+        question: "How did the consequences serve as a lesson or deterrent?",
         options: [
-          "People dislike all aircraft engines and therefore distrust every aircraft.",
-          "People questioned whether safety was placed below business pressure.",
-          "Public trust only depends on official certification statements.",
-          "Trust increased because two crashes made the issue more visible."
+          "Grounding, investigations, settlements, and trust loss showed the cost of weak safety ethics.",
+          "Consequences proved the issue was minor.",
+          "Consequences affected only marketing.",
+          "Consequences removed the need for future regulation."
         ],
-        correctAnswer: 1,
-        explanation: "Trust fell because safety culture and regulatory oversight were questioned."
+        correctAnswer: 0,
+        explanation: "Consequences warn organizations that safety shortcuts can create major harm."
       },
       {
-        question: "Which answer best explains the core lesson of the Boeing case?",
+        question: "Which answer best explains transparency in one sentence?",
         options: [
-          "Aircraft should never use software.",
-          "Certification makes all ethical questions irrelevant.",
-          "Safety-critical systems must be transparent, tested, trained, and designed with public safety first.",
-          "Pilots should solve hidden automation alone while companies focus only on delivery schedules."
+          "Safety-critical information about MCAS should have been clearly shared with pilots, airlines, and regulators.",
+          "Transparency means showing passengers the aircraft logo.",
+          "Transparency only applies to finances.",
+          "Transparency means hiding complexity from users."
         ],
-        correctAnswer: 2,
-        explanation: "The key lesson combines safety, transparency, training, and design responsibility."
+        correctAnswer: 0,
+        explanation: "Transparency requires clear communication of safety-relevant information."
       },
       {
-        question: "Which of the following would be the weakest written-answer claim?",
+        question: "What is the best final conclusion for a 5-mark ethics answer about the Boeing case?",
         options: [
-          "Boeing should have provided clearer MCAS training.",
-          "Boeing should have improved redundancy and testing.",
-          "The crisis was only pilot error.",
-          "Boeing should have been more transparent with regulators."
+          "The Boeing 737 MAX case shows that safety-critical automation must be transparent, tested, trained, and accountable.",
+          "The Boeing case proves all automation is unethical.",
+          "The Boeing case was only about pilot mistakes.",
+          "The Boeing case shows profit is always illegal."
         ],
-        correctAnswer: 2,
-        explanation: "The crisis cannot be reduced to pilot error because system design, training, and transparency were major factors."
-      },
-      {
-        question: "Which action would best show improved transparency?",
-        options: [
-          "Keep MCAS hidden to avoid confusion and rely on pilots to infer system behavior during emergencies.",
-          "Clearly explain MCAS to pilots, airlines, and regulators.",
-          "Mention MCAS only after another crash.",
-          "Tell pilots that all 737s are identical."
-        ],
-        correctAnswer: 1,
-        explanation: "Stakeholders need safety-critical information before operation."
-      },
-      {
-        question: "Which action would best show improved accountability?",
-        options: [
-          "Delay any response until forced by courts, regulators, media pressure, and public criticism.",
-          "Blame pilots without reviewing design.",
-          "Treat the crashes as unrelated without evidence.",
-          "Publicly accept responsibility, support victims, fix the system, and reform safety practices."
-        ],
-        correctAnswer: 3,
-        explanation: "Accountability requires responsibility and correction."
-      },
-      {
-        question: "Which option is the best \"profit over safety\" sentence?",
-        options: [
-          "Boeing wanted profit, and profit is always illegal even when companies follow safety rules.",
-          "Boeing's effort to reduce retraining costs and compete quickly contributed to minimizing safety-critical changes.",
-          "Boeing used engines, so the company was unethical.",
-          "Boeing avoided profit and focused only on pilots."
-        ],
-        correctAnswer: 1,
-        explanation: "This is balanced and exam-appropriate."
-      },
-      {
-        question: "Which answer best explains why this is an engineering ethics case?",
-        options: [
-          "It involved a well-known manufacturer.",
-          "It involved corporate reputation and certification paperwork only.",
-          "It happened in more than one country only, which by itself proves an ethics violation.",
-          "Design, software, training, regulation, and business decisions affected human life and public trust."
-        ],
-        correctAnswer: 3,
-        explanation: "Engineering ethics applies because technical and managerial decisions affected safety."
+        correctAnswer: 0,
+        explanation: "This conclusion captures the ethical lesson without exaggeration."
       }
     ]
   },
@@ -2873,36 +2873,36 @@ const quizTopics = {
     "Prevention"
   ],
   "case-3": [
-    "MCAS",
-    "Similarity claims",
-    "Transparency",
-    "Profit vs safety",
+    "Similarity and ethics",
+    "MCAS function",
+    "MCAS ethics",
+    "Transparency failure",
     "Operator blame",
-    "Failure visibility",
     "Public safety",
-    "Sensor failure",
-    "Accountability",
-    "Pilot training",
-    "Written answer",
-    "Systemic risk",
-    "Stakeholders",
-    "Automation ethics",
-    "Professional responsibility",
-    "FAA oversight",
-    "Safety culture",
-    "Safety priority",
-    "Redundancy",
-    "Competition pressure",
-    "Root causes",
-    "Training material",
-    "Accountability",
-    "Public trust",
-    "Final lesson",
-    "Weak answer",
-    "Transparency",
-    "Accountability",
+    "Engine placement",
     "Profit vs safety",
-    "Engineering ethics"
+    "Accountability",
+    "Sensor risk",
+    "Similarity claim",
+    "Pilot training",
+    "Public trust",
+    "FAA oversight",
+    "Ethics case",
+    "Professional responsibility",
+    "Weak answer",
+    "Automation ethics",
+    "Risk management",
+    "Two crashes",
+    "Prevention",
+    "Retraining ethics",
+    "Accountability and victims",
+    "Business pressure",
+    "Safety culture",
+    "Certification limit",
+    "Stakeholders",
+    "Consequences",
+    "Transparency",
+    "Final conclusion"
   ],
   "case-4": [
     "Software ethics",
@@ -3142,36 +3142,36 @@ const quizExamTips = {
     "Prevention answer = phased rollout + training + testing + risk plan + communication."
   ],
   "case-3": [
-    "Safety-critical software must be disclosed, tested, and trained.",
-    "Similarity claims become ethical issues when they hide meaningful risk.",
-    "Transparency means safety-relevant information is not hidden or minimized.",
     "Do not say profit is always unethical. Say safety must not be compromised for profit.",
-    "In ethics, look at system design, training, and information, not only operator action.",
-    "Boeing discovery/visibility = similar crashes + investigation.",
+    "MCAS = automatic nose-down control under certain flight conditions.",
+    "Safety-critical automation requires training and clear disclosure.",
+    "Transparency means safety-critical information reaches the right people.",
+    "In ethics, look at system design, training, and information — not only operator action.",
     "Death or injury risk usually means public safety is central.",
-    "Bad input in automation can create dangerous output.",
-    "Accountability = responsibility plus corrective action.",
-    "Training is ethical when users must respond to risk.",
-    "Strong answer = principle + case-specific fact.",
-    "Similar accidents often point to systemic risk.",
-    "Stakeholders include direct and indirect groups.",
-    "Automation ethics = predictability, training, control, and transparency.",
+    "Technical chain: larger engines → changed behavior → MCAS added.",
+    "Business goals are acceptable only if safety remains first.",
+    "Accountability = responsibility + corrective action + prevention.",
+    "Automation acting on bad data is a high-yield risk management fact.",
+    "Similarity claim + reduced training = high-yield exam combination.",
+    "Training is an ethical duty when users must respond to safety-critical behavior.",
+    "Public trust = confidence in safety systems and regulatory oversight.",
+    "Regulation is part of public protection, but does not replace manufacturer responsibility.",
+    "Strong ethics answers connect case facts to human consequences.",
+    "Responsibility is shared across technical and organizational decisions.",
+    "Avoid one-cause blame. The crisis had multiple contributing factors.",
+    "Automation ethics = predictability + training + transparency + control.",
+    "Single-point sensor failure triggering dangerous behavior = risk management failure.",
+    "Repetition after warning = stronger accountability failure.",
+    "Prevention answers should match root causes.",
+    "Less training becomes unethical when safety-critical behavior is involved.",
+    "Accountability includes victims, correction, and prevention.",
+    "Explain business pressure without excusing it.",
+    "Culture questions ask what the organization tolerated or prioritized.",
     "Certification does not remove engineering responsibility.",
-    "Regulation is part of public protection.",
-    "Culture = what the organization rewards, ignores, or tolerates.",
-    "When in doubt, choose public safety.",
-    "Single-point failure is a major risk issue.",
-    "Explain pressure without excusing it.",
-    "Avoid one-cause answers.",
-    "If users must respond, they must be trained.",
-    "Accountability is more than apology.",
-    "Trust depends on safety, honesty, and accountability.",
-    "Final lesson should not blame only one person.",
-    "Avoid simplistic blame.",
-    "Transparency is proactive.",
-    "Add victims and prevention in accountability answers.",
-    "Say business pressure influenced safety decisions, not that business itself is unethical.",
-    "Ethics case = decisions affect people."
+    "Stakeholders include direct and indirect groups.",
+    "Consequences deter future unethical decisions.",
+    "Transparency is proactive, not reactive.",
+    "End with safety, transparency, training, and accountability."
   ],
   "case-4": [
     "Connect the technical bug to professional responsibility and public trust.",
