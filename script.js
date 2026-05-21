@@ -3,393 +3,272 @@
 // correctAnswer, and explanation. correctAnswer is zero-based: 0 = first option.
 
 const quizData = [
-  {
+    {
     caseId: "case-1",
     questions: [
       {
-        question: "In the Volkswagen emissions scandal, why is the use of defeat-device software considered a serious violation of engineering ethics rather than only a technical problem?",
+        question: "A software team designs code that recognizes official emissions-test conditions and changes engine behavior only during the test. Which ethical judgment is strongest?",
         options: [
-          "Because the software made the vehicles more expensive to repair",
-          "Because the software was intentionally designed to mislead emissions testing and hide real-world pollution",
-          "Because the software reduced customer comfort during testing",
-          "Because the software was installed without changing the car's appearance"
-        ],
-        correctAnswer: 1,
-        explanation: "The ethical issue is not simply that software was used. The problem is that the software was intentionally designed to deceive regulators and hide the vehicle's real emissions behavior."
-      },
-      {
-        question: "In terms of transparency, what was Volkswagen's main failure?",
-        options: [
-          "It gave regulators and consumers complete information about how the vehicles behaved",
-          "It failed to clearly reveal that the vehicles behaved differently during laboratory tests and normal road driving",
-          "It used too many technical terms in its advertisements",
-          "It allowed customers to choose diesel vehicles"
-        ],
-        correctAnswer: 1,
-        explanation: "Transparency requires truthful disclosure. Volkswagen hid the difference between test behavior and real-world behavior from regulators, testers, and consumers."
-      },
-      {
-        question: "Which statement best explains how Volkswagen violated honesty in this case?",
-        options: [
-          "It sold vehicles in a competitive market",
-          "It promoted vehicles as environmentally friendly while hiding their real emissions performance",
-          "It used diesel technology instead of only electric vehicles",
-          "It followed laboratory testing procedures exactly as intended"
-        ],
-        correctAnswer: 1,
-        explanation: "Honesty was violated because Volkswagen's claims gave a false impression of environmental performance."
-      },
-      {
-        question: "The cars appeared compliant during laboratory testing but produced much higher emissions during real road driving. Why is this ethically important?",
-        options: [
-          "Because ethics only applies inside laboratories",
-          "Because passing a test is the only responsibility of engineers",
-          "Because the company satisfied the test format while failing the real purpose of the regulation",
-          "Because road driving is not related to public welfare"
+          "The software only changes performance in a legal testing environment, so the main issue is efficiency rather than ethics.",
+          "The software mainly creates a branding risk because consumers usually prefer simpler technology.",
+          "Engineering knowledge is being used to deceive regulators and hide real-world emissions.",
+          "The issue is only mechanical because the vehicle still functions during normal driving."
         ],
         correctAnswer: 2,
-        explanation: "The purpose of emissions regulation is to protect people and the environment, not merely to pass a lab procedure."
+        explanation: "The software was intentionally designed to create a false appearance of compliance rather than honest environmental performance."
       },
       {
-        question: "Which ethical principle is most directly connected to the harm caused by higher real-world emissions?",
+        question: "Which answer is too narrow for a full Engineering Ethics explanation of the Volkswagen scandal?",
         options: [
-          "Public welfare",
-          "Product styling",
-          "Employee convenience",
-          "Market segmentation"
+          "Volkswagen used defeat-device software to manipulate emissions behavior.",
+          "The scandal involved deception of regulators, customers, governments, and the public.",
+          "Public trust in engineering claims and environmental promises was damaged.",
+          "The case was only about cars producing pollution."
+        ],
+        correctAnswer: 3,
+        explanation: "Pollution matters, but the deeper ethical issue is deliberate deception using software and engineering knowledge."
+      },
+      {
+        question: "An engineer is asked to help write code that makes a vehicle pass emissions testing without meeting the same standard in real driving. What is the strongest ethical first response?",
+        options: [
+          "Refuse to create deceptive software, document the concern, and report it through proper channels.",
+          "Write the code because the product still passes the official test procedure.",
+          "Stay silent because business strategy belongs to managers rather than engineers.",
+          "Complete the work first and raise concerns only if regulators later discover the problem."
         ],
         correctAnswer: 0,
-        explanation: "Public welfare is connected to air quality, public health, and environmental protection."
+        explanation: "Professional responsibility requires engineers to refuse deceptive work and act before public or environmental harm continues."
       },
       {
-        question: "Which answer best describes why Volkswagen's sustainability image made the scandal worse?",
+        question: "Why is transparency central in the Volkswagen case rather than only a secondary communication issue?",
         options: [
-          "The company had no environmental reputation before the scandal",
-          "The company's public promise of sustainability conflicted with its hidden deceptive behavior",
-          "Sustainability claims are never relevant in engineering ethics",
-          "The scandal only affected advertising departments"
+          "Because transparency only means explaining fuel economy in advertising language.",
+          "Because regulators, customers, and the public were not told that emissions behavior changed between testing and real driving.",
+          "Because transparency applies mainly to financial statements, not to product behavior.",
+          "Because the cars still operated, so hidden emissions behavior did not really affect stakeholder judgment."
         ],
         correctAnswer: 1,
-        explanation: "The contradiction between Volkswagen's public image and actual conduct increased the ethical seriousness of the case."
+        explanation: "Stakeholders needed truthful information about real emissions behavior, not a carefully managed testing image."
       },
       {
-        question: "In terms of professional responsibility, what should engineers have done if they knew the software was designed to cheat emissions testing?",
+        question: "Why did real-world emissions testing matter ethically in this case, not only technically?",
         options: [
-          "Continue because managers are always responsible for ethics",
-          "Refuse participation, document concerns, and report the issue through proper channels",
-          "Improve the deception so it would be harder to detect",
-          "Ignore the issue because software decisions do not affect society"
+          "It gave competitors a better chance to criticize diesel vehicles in public.",
+          "It showed that laboratory procedures are always unreliable and should be abandoned completely.",
+          "It exposed the gap between official claims and actual environmental performance.",
+          "It proved that regulators were mainly responsible for Volkswagen's design choices."
         ],
-        correctAnswer: 1,
-        explanation: "Engineers are responsible for refusing deceptive work and protecting the public."
+        correctAnswer: 2,
+        explanation: "The mismatch between lab and road results revealed that the company's apparent compliance was deceptive."
       },
       {
-        question: "Which of the following best shows that the Volkswagen case was intentional misconduct?",
+        question: "A manager learns that a vehicle appears compliant only when testing conditions are detected by software. What should that manager do if acting ethically?",
         options: [
-          "The vehicles were tested in laboratories",
-          "The software detected testing conditions and changed the vehicle's behavior during the test",
-          "The company sold cars internationally",
-          "Consumers liked fuel-efficient cars"
-        ],
-        correctAnswer: 1,
-        explanation: "The software's ability to detect tests shows deliberate design, not accidental failure."
-      },
-      {
-        question: "From an accountability perspective, which response is most ethically appropriate after such a scandal?",
-        options: [
-          "Deny the issue and blame the testing equipment",
-          "Accept responsibility, compensate affected consumers, cooperate with regulators, and reform internal culture",
-          "Focus only on new advertisements",
-          "Treat the issue as a minor public relations problem"
-        ],
-        correctAnswer: 1,
-        explanation: "Accountability means accepting responsibility and correcting the harm, not just protecting reputation."
-      },
-      {
-        question: "Which stakeholder group was most directly misled by Volkswagen's false emissions behavior?",
-        options: [
-          "Regulators, governments, testers, and consumers",
-          "Only competitors",
-          "Only car designers",
-          "Only future employees"
+          "Stop approval, investigate the software honestly, disclose the risk, and require genuine compliance before release.",
+          "Protect the launch schedule first and return to the emissions concern after the next quarter.",
+          "Wait for a public relations problem before deciding whether the issue is serious.",
+          "Approve the product because the official lab result is the only result regulators will initially see."
         ],
         correctAnswer: 0,
-        explanation: "These groups relied on truthful emissions information and were deceived by the defeat-device strategy."
+        explanation: "Managers share responsibility for stopping deceptive products before they reach the public and environment."
       },
       {
-        question: "Which statement best connects the scandal to corporate culture?",
+        question: "Which statement about legal compliance is weakest in the Volkswagen case?",
         options: [
-          "The scandal was only about one car model and had no organizational meaning",
-          "The scandal suggests that the organization tolerated or encouraged results over ethical conduct",
-          "Corporate culture is only about uniforms and office design",
-          "Corporate culture has no effect on engineering decisions"
+          "Emissions rules exist to protect air quality and public welfare in real use, not only in a lab procedure.",
+          "Passing the laboratory test is enough even if real driving defeats the purpose of the emissions law.",
+          "Using a defeat device bypasses the intent of environmental regulation even if the paperwork initially looks compliant.",
+          "Ethical compliance requires honest performance, not manipulated compliance signals."
         ],
         correctAnswer: 1,
-        explanation: "When misconduct involves multiple people and continues over time, it indicates a deeper cultural problem."
+        explanation: "Engineering ethics rejects compliance theater when the real behavior defeats the rule's protective purpose."
       },
       {
-        question: "Why is \"short-term profit over long-term sustainability\" a useful way to explain this case?",
+        question: "Why did the scandal damage public trust beyond Volkswagen itself?",
         options: [
-          "Volkswagen chose immediate business success and market image over honest environmental responsibility",
-          "Volkswagen stopped caring about customers forever",
-          "Sustainability is unrelated to engineering ethics",
-          "Short-term profit is always illegal"
+          "Because the scandal proved that all diesel engines everywhere were technically identical.",
+          "Because it showed that regulators should stop testing vehicles entirely.",
+          "Because consumers care only about vehicle price and not about environmental claims.",
+          "Because it made people more skeptical of emissions testing, diesel technology, and engineering promises across the industry."
+        ],
+        correctAnswer: 3,
+        explanation: "Large deception cases damage trust not only in one company but also in the systems and claims people rely on."
+      },
+      {
+        question: "Which stakeholder list is strongest for analyzing the Volkswagen scandal ethically?",
+        options: [
+          "Customers, regulators, governments, the public, the environment, employees, shareholders, and the automobile industry.",
+          "Only Volkswagen executives and shareholders, because they carried the main financial risk.",
+          "Only vehicle owners, because they were the direct purchasers.",
+          "Only emissions-test laboratories, because the test procedure was where the mismatch first appeared."
         ],
         correctAnswer: 0,
-        explanation: "The company appeared to prioritize market success and reputation instead of truthful long-term environmental responsibility."
+        explanation: "The scandal affected many direct and indirect stakeholders, including the public and environment."
       },
       {
-        question: "In terms of legal compliance, what was unethical about Volkswagen's behavior?",
+        question: "If regulators or independent testers discover a large mismatch between road emissions and laboratory results, what is the strongest ethical next step?",
         options: [
-          "The company designed vehicles to genuinely satisfy environmental goals",
-          "The company appeared compliant during tests while hiding non-compliant real-world behavior",
-          "The company asked regulators to perform more tests",
-          "The company avoided selling vehicles"
+          "Treat the issue as mainly a branding problem until the company confirms the cause itself.",
+          "Investigate the discrepancy, demand accurate disclosure, expand testing, and require correction before treating the vehicles as compliant.",
+          "Assume the difference is normal because real-world driving is always somewhat unpredictable.",
+          "Delay action until the company voluntarily explains whether software was involved."
         ],
         correctAnswer: 1,
-        explanation: "Legal compliance must be real, not manipulated. Volkswagen engineered the vehicles to appear compliant without truly meeting the purpose of the law."
+        explanation: "Oversight must protect the public by verifying real behavior when evidence shows the official story may be false."
       },
       {
-        question: "Which answer best explains the difference between an engineering mistake and the Volkswagen defeat device?",
+        question: "What made software engineering central to the ethical failure rather than just a supporting technical detail?",
         options: [
-          "A mistake is intentional, while the defeat device was accidental",
-          "A mistake is unexpected failure, while the defeat device was designed to deceive",
-          "There is no difference",
-          "A defeat device is ethical if it uses advanced technology"
+          "Software became central only because drivers could not see it directly.",
+          "Software reduced the amount of physical hardware needed in the emissions system.",
+          "Software was used to create a false appearance of compliance while hiding real-world emissions.",
+          "Software matters ethically only when it causes a crash or immediate physical malfunction."
         ],
-        correctAnswer: 1,
-        explanation: "The defeat device worked as designed. The ethical problem was the purpose of the design."
+        correctAnswer: 2,
+        explanation: "The code did not merely fail; it was used as the tool of deception."
       },
       {
-        question: "Why might regulators demand stronger on-road testing after this scandal?",
+        question: "Which answer is most incomplete in a written exam response about Volkswagen?",
         options: [
-          "Because laboratory tests always show the full truth",
-          "Because Volkswagen showed that lab results can be manipulated and may not reflect real-world behavior",
-          "Because consumers no longer buy cars",
-          "Because environmental claims are never important"
+          "The scandal involved defeat-device software and a mismatch between lab and road emissions.",
+          "The case damaged public trust because claims about clean diesel did not match real behavior.",
+          "Engineers should not use technical knowledge to mislead regulators or the public.",
+          "The main problem was simply that diesel engines are difficult to optimize."
         ],
-        correctAnswer: 1,
-        explanation: "The scandal showed that laboratory compliance alone may not prove real-world environmental performance."
+        correctAnswer: 3,
+        explanation: "That answer hides the ethical core of the case by treating intentional deception like an ordinary design challenge."
       },
       {
-        question: "Which option best describes the public trust issue in the case?",
+        question: "Suppose employees reported concerns internally and the company kept hiding deceptive emissions behavior. What should engineers do next if serious public and environmental harm remains possible?",
         options: [
-          "Public trust was damaged because Volkswagen's actual behavior contradicted its public environmental claims",
-          "Public trust was not affected because only engineers understood the issue",
-          "Public trust increased because the company used advanced software",
-          "Public trust depends only on vehicle price"
+          "Maintain documentation, continue authorized escalation, and consider whistle-blowing if internal channels fail.",
+          "Stop raising the issue because repeating the concern may look disloyal to the employer.",
+          "Wait until the public discovers the problem before deciding whether the risk was serious enough.",
+          "Delete technical records so the concern cannot be misinterpreted by outsiders."
         ],
         correctAnswer: 0,
-        explanation: "Trust is damaged when stakeholders discover that a company's promises do not match its actions."
+        explanation: "Escalation becomes ethically stronger when serious harm is at stake, internal channels fail, and evidence is documented."
       },
       {
-        question: "In terms of environmental responsibility, what should Volkswagen have done instead of using defeat devices?",
+        question: "Which answer best connects honesty and integrity to Volkswagen's actions?",
         options: [
-          "Design vehicles that genuinely reduce emissions during real driving",
-          "Make the defeat device harder to discover",
-          "Stop sharing emissions information with regulators",
-          "Focus only on laboratory performance"
+          "The company pursued ambitious engineering goals in a competitive market.",
+          "The company used advanced software to coordinate test performance efficiently.",
+          "The company's clean-diesel claims did not match the vehicles' real environmental performance.",
+          "The company's main error was underestimating how curious regulators might become."
+        ],
+        correctAnswer: 2,
+        explanation: "Honesty and integrity require that real performance match what stakeholders are led to believe."
+      },
+      {
+        question: "What does accountability require after a scandal like Volkswagen?",
+        options: [
+          "Mainly paying fines and then returning to normal business operations as soon as possible.",
+          "Explaining that competition pressure made difficult choices unavoidable in the market.",
+          "Waiting for individual employees to confess before making any broader changes.",
+          "Accepting responsibility, correcting the vehicles, compensating affected parties, cooperating with regulators, and reforming culture and oversight."
+        ],
+        correctAnswer: 3,
+        explanation: "Accountability is broader than punishment; it includes correction, compensation, reform, and prevention."
+      },
+      {
+        question: "A company argues that if a product passes the official lab procedure, it has met its ethical duty. Which response best matches engineering ethics?",
+        options: [
+          "That is enough because ethical questions end once documented procedures are passed.",
+          "Ethical compliance requires meeting the real purpose of the standard, not manipulating the test.",
+          "That argument is acceptable unless a competitor complains publicly.",
+          "Real-world performance matters only if customers report a noticeable driving problem."
+        ],
+        correctAnswer: 1,
+        explanation: "Engineering ethics asks whether the product honestly meets the protective purpose of the standard in real use."
+      },
+      {
+        question: "Before approving a compliance claim for a system that behaves differently during test conditions than in normal use, what should a responsible engineer or reviewer do?",
+        options: [
+          "Require evidence of safe and compliant real-world performance and refuse approval until it is verified.",
+          "Treat the difference as a normal optimization choice if the test data still looks acceptable.",
+          "Approve the claim and ask legal staff to handle any questions that arise later.",
+          "Assume the test condition is the more important reality because regulators designed it."
         ],
         correctAnswer: 0,
-        explanation: "Environmental responsibility requires real-world harm reduction, not only test performance."
+        explanation: "Products should be approved only when their real behavior is safe, lawful, and honestly represented."
       },
       {
-        question: "Which answer best explains why consumers were harmed ethically even if they were not physically injured immediately?",
+        question: "Which corporate-culture explanation is weakest from an Engineering Ethics perspective?",
         options: [
-          "They made purchasing decisions based on misleading environmental claims",
-          "They were given too many vehicle choices",
-          "They were asked to drive only in laboratories",
-          "They were not stakeholders"
+          "Pressure to protect market share and reputation can encourage people to rationalize bad decisions.",
+          "A culture problem can exist when employees feel results matter more than honest compliance.",
+          "If sales and targets are met, the ethical process used to reach them matters less.",
+          "Culture shapes whether people feel safe reporting concerns about deceptive practices."
+        ],
+        correctAnswer: 2,
+        explanation: "That view is exactly the kind of culture failure that helps deception survive."
+      },
+      {
+        question: "An employee knows defeat-device software exists and fears retaliation for speaking up. When does outside escalation become ethically stronger?",
+        options: [
+          "Whenever the employee feels personally uncomfortable, even without evidence.",
+          "Only after the employee has resigned and is no longer connected to the organization.",
+          "Only if the deception already caused a visible public health crisis in court.",
+          "When serious harm is possible, internal channels were tried or ignored, and persuasive evidence is documented."
+        ],
+        correctAnswer: 3,
+        explanation: "Whistle-blowing is strongest when public or environmental harm is serious and internal correction has failed."
+      },
+      {
+        question: "What role did regulators and independent testing play in uncovering Volkswagen?",
+        options: [
+          "They mainly confirmed the company's own explanation after the deception had already been admitted.",
+          "They compared real-road emissions with lab results and exposed a mismatch that pointed to deliberate manipulation.",
+          "They proved that all environmental regulation was too complex for the auto industry to follow honestly.",
+          "They discovered the issue because the cars stopped functioning in ordinary driving."
+        ],
+        correctAnswer: 1,
+        explanation: "Independent testing mattered because it showed the difference between the official appearance and the real behavior."
+      },
+      {
+        question: "A marketing or compliance professional learns that environmental claims do not match real-world emissions data. What is the strongest ethical action?",
+        options: [
+          "Stop the misleading claims, raise the issue immediately, and push for truthful correction rather than continued promotion.",
+          "Keep using the claims until regulators formally order the language to change.",
+          "Focus only on whether customers are still satisfied with the vehicle's performance.",
+          "Treat the mismatch as a technical issue that does not affect public-facing statements."
         ],
         correctAnswer: 0,
-        explanation: "Consumers have a right to truthful information, especially when environmental responsibility is part of the product claim."
+        explanation: "Once claims are known to be misleading, continuing them deepens the deception."
       },
       {
-        question: "Which of the following is the strongest exam answer if asked \"What is the main ethical lesson of the Volkswagen scandal?\"",
+        question: "Which answer best applies environmental responsibility and public welfare to Volkswagen?",
         options: [
-          "Companies should avoid diesel vehicles in all cases",
-          "Engineers and companies must not use technical knowledge to deceive regulators or the public",
-          "Laboratory testing should never be used",
-          "Marketing is more important than compliance"
+          "Environmental responsibility was secondary because the software itself was not a physical pollutant.",
+          "Environmental responsibility was violated because higher real-world emissions could harm air quality and public health while being marketed as clean.",
+          "Public welfare was not involved because drivers were not immediately injured by the software.",
+          "Environmental responsibility applies mainly to factories, not to vehicle design or software behavior."
         ],
         correctAnswer: 1,
-        explanation: "The main lesson is that technical ability must be controlled by ethical responsibility."
+        explanation: "Software decisions can create real environmental and public-health consequences when they control emissions behavior."
       },
       {
-        question: "Which situation best matches the ethical problem in Volkswagen's case?",
+        question: "Which statement about honesty and integrity is weakest in the Volkswagen case?",
         options: [
-          "A company discovers an accidental defect and reports it immediately",
-          "A company designs a system to pass inspection while hiding unsafe or harmful real-world behavior",
-          "A company improves a product after customer feedback",
-          "A company follows regulations and verifies its claims independently"
+          "Honesty requires that emissions claims match what vehicles actually do in normal use.",
+          "Integrity means engineers should not use technical skill to create false compliance.",
+          "Misleading regulators and customers about real emissions violates both honesty and professional duty.",
+          "If the code is technically clever, shaping test performance is mainly a business choice rather than an integrity issue."
         ],
-        correctAnswer: 1,
-        explanation: "This captures the core ethical issue: passing inspection by hiding the real problem."
+        correctAnswer: 3,
+        explanation: "Technical cleverness does not remove the ethical problem when the purpose is deception."
       },
       {
-        question: "If a written question asks how Volkswagen could recover, which answer is strongest?",
+        question: "What is the strongest final engineering ethics lesson from Volkswagen?",
         options: [
-          "Increase advertising and wait until the public forgets",
-          "Accept responsibility, compensate affected people, cooperate with regulators, change culture, and prove future claims",
-          "Blame only customers and suppliers",
-          "Stop discussing sustainability forever"
+          "Engineering is too closely linked to business pressure to ever be fully trustworthy.",
+          "The real lesson is simply that regulators should design more difficult laboratory tests.",
+          "Technical success is unethical if software is used to deceive instead of protect public welfare, legal compliance, and public trust.",
+          "Environmental cases matter less than safety cases because the harm is harder to see immediately."
         ],
-        correctAnswer: 1,
-        explanation: "Recovery requires real ethical reform, not only image repair."
-      },
-      {
-        question: "What does the discovery of the scandal through on-road testing show about ethical evaluation?",
-        options: [
-          "Claims should be accepted if the company is famous",
-          "Real behavior must be checked, not only official claims or controlled tests",
-          "Testing is unnecessary when a company has a good reputation",
-          "Regulators should trust all sustainability statements"
-        ],
-        correctAnswer: 1,
-        explanation: "The scandal shows the importance of verifying what companies promise against what they actually do."
-      },
-      {
-        question: "Which ethical principle is most connected to hiding information from regulators and testers?",
-        options: [
-          "Transparency",
-          "Product variety",
-          "Comfort",
-          "Speed"
-        ],
-        correctAnswer: 0,
-        explanation: "Hiding relevant information from authorities violates transparency."
-      },
-      {
-        question: "Which option best explains why multiple employees or executives knowing about the defeat devices matters ethically?",
-        options: [
-          "It shows that the scandal may reflect an organizational culture problem, not only one individual mistake",
-          "It proves that no one was responsible",
-          "It makes the deception acceptable",
-          "It means the technology was harmless"
-        ],
-        correctAnswer: 0,
-        explanation: "Shared knowledge of misconduct suggests weak ethical culture and poor accountability."
-      },
-      {
-        question: "In a general engineering ethics exam, which principle-based explanation is strongest for Volkswagen?",
-        options: [
-          "Volkswagen made a marketing mistake with no engineering relevance",
-          "Volkswagen used engineering software to create a false appearance of compliance, violating honesty, transparency, public welfare, and environmental responsibility",
-          "Volkswagen only had a financial problem",
-          "Volkswagen was ethical because the vehicles passed lab tests"
-        ],
-        correctAnswer: 1,
-        explanation: "This answer connects the technical action to multiple ethical principles, which is exactly what written and MCQ ethics questions usually test."
-      },
-      {
-        question: "If a written exam asks \"How was the Volkswagen scandal discovered?\", which answer is strongest?",
-        options: [
-          "Customers noticed the cars were uncomfortable",
-          "On-road emissions testing showed emissions were much higher than laboratory results",
-          "Volkswagen announced it before anyone tested the cars",
-          "The cars stopped working during lab testing"
-        ],
-        correctAnswer: 1,
-        explanation: "The scandal became clear when road testing showed that real emissions did not match lab emissions."
-      },
-      {
-        question: "Why does the discovery method matter ethically in the Volkswagen case?",
-        options: [
-          "It showed that the cars had too many features",
-          "It proved there was a gap between Volkswagen's claims and real vehicle behavior",
-          "It showed that diesel cars are always illegal",
-          "It proved that testing is useless"
-        ],
-        correctAnswer: 1,
-        explanation: "The discovery exposed the difference between promise and reality, which is central to public trust."
-      },
-      {
-        question: "Which phrase would be best in a 5-mark written answer about Volkswagen?",
-        options: [
-          "Volkswagen was unlucky",
-          "Volkswagen used engineering software to create a false appearance of compliance",
-          "Volkswagen only had a marketing problem",
-          "Volkswagen had no stakeholders"
-        ],
-        correctAnswer: 1,
-        explanation: "This sentence connects the technical action to the ethical violation."
-      },
-      {
-        question: "In terms of consumer rights, why was Volkswagen's behavior unethical?",
-        options: [
-          "Consumers received too much information",
-          "Consumers were misled when buying cars based on environmental claims",
-          "Consumers were responsible for emissions testing",
-          "Consumers designed the defeat device"
-        ],
-        correctAnswer: 1,
-        explanation: "Consumers relied on claims that did not match actual vehicle performance."
-      },
-      {
-        question: "If an engineer says, \"I only wrote the software, management made the decision,\" what is the best ethical response?",
-        options: [
-          "Engineers have no responsibility for software consequences",
-          "Engineers still have professional responsibility when their work deceives or harms the public",
-          "Only customers are responsible",
-          "Software is never part of ethics"
-        ],
-        correctAnswer: 1,
-        explanation: "Engineers cannot ignore the social and legal effects of their technical work."
-      },
-      {
-        question: "Which option best explains why Volkswagen damaged trust beyond only its own company?",
-        options: [
-          "It made consumers more skeptical of environmental claims in the whole automobile industry",
-          "It made all cars impossible to test",
-          "It proved sustainability is unimportant",
-          "It only affected one customer"
-        ],
-        correctAnswer: 0,
-        explanation: "Major scandals can reduce trust in similar claims from other companies."
-      },
-      {
-        question: "Which answer best describes the ethical failure in Volkswagen's corporate culture?",
-        options: [
-          "The company had too many employees",
-          "The organization appeared to tolerate deception to protect market share and reputation",
-          "The company had too many written policies",
-          "The organization focused too much on transparency"
-        ],
-        correctAnswer: 1,
-        explanation: "The case suggests a culture where results were prioritized over ethical conduct."
-      },
-      {
-        question: "Which principle is most connected to Volkswagen's duty to prove future sustainability claims?",
-        options: [
-          "Verification and transparency",
-          "Decoration",
-          "Speed",
-          "Entertainment"
-        ],
-        correctAnswer: 0,
-        explanation: "After trust is damaged, claims must be supported by clear evidence and independent testing."
-      },
-      {
-        question: "Which answer best explains why this case is important for engineering ethics students?",
-        options: [
-          "It shows that technical solutions are always ethical",
-          "It shows that software and engineering design can be misused to deceive society",
-          "It shows that regulations are unnecessary",
-          "It shows that consumers should not trust any technology"
-        ],
-        correctAnswer: 1,
-        explanation: "The case teaches that technical ability must be guided by ethical judgment."
-      },
-      {
-        question: "If asked \"What should Volkswagen have done instead?\", which answer is best?",
-        options: [
-          "Hide the software more carefully",
-          "Truly reduce emissions, disclose problems, follow regulations, and protect public welfare",
-          "Stop all communication with regulators",
-          "Blame consumers"
-        ],
-        correctAnswer: 1,
-        explanation: "Ethical action requires solving the real problem honestly."
+        correctAnswer: 2,
+        explanation: "The case shows that technical ability must be governed by honesty, compliance, environmental responsibility, and public trust."
       }
     ]
   },
@@ -3258,41 +3137,30 @@ const quizData = [
 
 const quizTopics = {
   "case-1": [
-    "Engineering ethics",
+    "Deceptive software",
+    "Too narrow answer",
+    "Engineer refusal",
     "Transparency",
-    "Honesty",
-    "Lab vs road",
-    "Public welfare",
-    "Sustainability claims",
-    "Professional responsibility",
-    "Intentional misconduct",
-    "Accountability",
-    "Stakeholders",
-    "Corporate culture",
-    "Profit pressure",
-    "Legal compliance",
-    "Technical vs ethical",
-    "Regulation",
-    "Public trust",
-    "Environmental responsibility",
-    "Consumer rights",
-    "Engineering lesson",
-    "Inspection ethics",
-    "Accountability",
-    "Verification",
-    "Transparency",
-    "Corporate culture",
-    "Principle-based answer",
-    "Discovery",
-    "Discovery ethics",
-    "Written answer",
-    "Consumer rights",
-    "Professional responsibility",
+    "Real-world testing",
+    "Manager action",
+    "Weak compliance claim",
     "Industry trust",
-    "Corporate culture",
-    "Verification",
-    "Engineering ethics",
-    "Ethical action"
+    "Stakeholders",
+    "Regulator response",
+    "Software ethics",
+    "Incomplete explanation",
+    "Escalation",
+    "Honesty and integrity",
+    "Accountability",
+    "Ethical compliance",
+    "Safe approval",
+    "Weak culture claim",
+    "Whistle-blowing threshold",
+    "Oversight and testing",
+    "Correcting claims",
+    "Environmental responsibility",
+    "Weak integrity claim",
+    "Final lesson"
   ],
   "case-2": [
     "Project ethics",
@@ -3572,41 +3440,30 @@ const quizTopics = {
 
 const quizExamTips = {
   "case-1": [
-    "If the question asks why this is unethical, mention intentional deception and misuse of engineering knowledge.",
-    "Transparency means stakeholders are not kept in the dark.",
-    "Honesty means the company's claims must match the real behavior of the product.",
-    "Strong written phrase: \"They passed the test but violated the purpose of the test.\"",
-    "When pollution or safety is involved, connect it to public welfare.",
-    "Use the phrase \"gap between promise and action.\"",
-    "Engineers cannot say \"I was only following orders\" when public welfare and law are involved.",
-    "Intentional misconduct = designed deception, not unexpected malfunction.",
-    "Accountability answers should include responsibility plus corrective action.",
-    "For stakeholder questions, list who depended on the truth.",
-    "Corporate culture = what behavior the organization rewards, tolerates, or ignores.",
-    "Do not say profit is always unethical. The issue is profit gained through deception.",
-    "Compliance is not only about appearance, it must reflect real behavior.",
-    "Excellent written phrase: \"The system worked technically, but failed ethically.\"",
-    "Connect this to verification and public trust.",
-    "Public trust = consistency between promise and behavior.",
-    "Environmental ethics focuses on real impact, not appearance.",
-    "Consumer rights include truthful and non-misleading information.",
-    "Use \"technical knowledge must be guided by ethics.\"",
-    "Any \"hide real behavior during inspection\" scenario is a deception case.",
-    "Recovery answer = responsibility + compensation + culture change + verification.",
-    "Strong phrase: \"Compare promises with actual behavior.\"",
-    "If information is hidden, think transparency.",
-    "Multiple people knowing = culture and accountability issue.",
-    "Best answers connect the action, the principle, the stakeholder, and the consequence.",
-    "Discovery answer = road emissions did not match lab emissions.",
-    "Link discovery to \"promise vs actual behavior.\"",
-    "Strong answers connect action + principle + consequence.",
-    "Consumer rights include truthful information.",
-    "\"Following orders\" is not a full defense.",
-    "Some cases affect industry-wide trust.",
-    "Corporate culture = what behavior is rewarded or tolerated.",
-    "Recovery requires proof, not only promises.",
-    "Engineering ethics controls how technical power is used.",
-    "\"What should have been done?\" = honesty + compliance + public welfare."
+    "In Volkswagen, the software worked technically, but the purpose was unethical.",
+    "Do not reduce this case to pollution only; explain the deception.",
+    "Professional responsibility can require refusal, documentation, and escalation.",
+    "Transparency means real product behavior is truthfully disclosed to stakeholders.",
+    "Real-world testing mattered because it exposed the gap between promise and reality.",
+    "Managers share responsibility when they allow deceptive compliance to continue.",
+    "Legal compliance includes the real purpose of the rule, not just the test format.",
+    "Public trust questions often extend beyond one company to whole systems and industries.",
+    "Include the public and environment when pollution is involved.",
+    "Oversight matters when official claims and real behavior do not match.",
+    "Software ethics is high-yield here because code became the tool of deception.",
+    "Incomplete answers usually ignore the intentional use of engineering knowledge to mislead.",
+    "Escalation becomes stronger when serious harm is possible and internal channels fail.",
+    "Honesty and integrity ask whether claims match real-world performance.",
+    "Accountability is broader than fines; it includes correction, compensation, and reform.",
+    "Passing a test is not enough if the test itself is being manipulated.",
+    "Approve only if real-world performance is safe, compliant, and honestly represented.",
+    "Culture questions ask what the organization rewarded, tolerated, or ignored.",
+    "Whistle-blowing is strongest when evidence is documented and harm is serious.",
+    "Regulators and independent testers helped reveal the truth through comparison and verification.",
+    "Once claims are known to be misleading, continuing them deepens the deception.",
+    "Digital or software choices can still create environmental and public-health harm.",
+    "Technical cleverness never turns deception into integrity.",
+    "Best conclusions connect software, deception, public welfare, compliance, and trust."
   ],
   "case-2": [
     "Ethics applies when engineering/project decisions affect people.",
@@ -3935,6 +3792,24 @@ function highlightTerms(text, caseId) {
     .replaceAll("public welfare", "<strong>public welfare</strong>")
     .replaceAll("public trust", "<strong>public trust</strong>")
     .replaceAll("transparent testing", "<strong>transparent testing</strong>");
+
+  if (caseId === "case-1") {
+    return sharedText
+      .replaceAll("Volkswagen", "<strong>Volkswagen</strong>")
+      .replaceAll("honesty", "<strong>honesty</strong>")
+      .replaceAll("integrity", "<strong>integrity</strong>")
+      .replaceAll("transparency", "<strong>transparency</strong>")
+      .replaceAll("legal compliance", "<strong>legal compliance</strong>")
+      .replaceAll("environmental responsibility", "<strong>environmental responsibility</strong>")
+      .replaceAll("professional responsibility", "<strong>professional responsibility</strong>")
+      .replaceAll("accountability", "<strong>accountability</strong>")
+      .replaceAll("whistle-blowing", "<strong>whistle-blowing</strong>")
+      .replaceAll("real-world emissions", "<strong>real-world emissions</strong>")
+      .replaceAll("lab results", "<strong>lab results</strong>")
+      .replaceAll("real-world testing", "<strong>real-world testing</strong>")
+      .replaceAll("regulators", "<strong>regulators</strong>")
+      .replaceAll("customers", "<strong>customers</strong>");
+  }
 
   if (caseId === "case-3") {
     return sharedText
@@ -4464,3 +4339,4 @@ document.addEventListener("DOMContentLoaded", () => {
   renderAllQuizzes();
   bindQuizButtons();
 });
+
