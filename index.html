@@ -804,92 +804,178 @@
           <p class="case-count">Case 4 of 10</p>
           <h2 id="case-4-title">Ariane 5 Flight 501 Software Failure</h2>
           <p class="case-theme">
-            <strong>Main theme:</strong> Software failure in a safety-critical system, code reuse without proper
-            validation, insufficient testing, overconfidence, poor redundancy, and professional responsibility in
-            software engineering.
+            <strong>Main theme:</strong> Software reuse without validation, unsafe software in safety-critical systems, insufficient testing, common-mode failure, overconfidence, and professional responsibility in software engineering.
           </p>
         </div>
         <p class="case-status completed ariane-status" data-status-for="case-4" data-default-status="Lesson ready">Lesson ready</p>
       </div>
 
-      <article id="ariane-about" class="study-card ariane-story-card">
+      <article id="ariane-story" class="study-card ariane-story-card">
         <p class="section-kicker">Safety-critical software</p>
         <h3>1. The Case Story</h3>
-        <p>Ariane 5 Flight 501 was launched by the European Space Agency in 1996. Shortly after liftoff, the rocket began receiving invalid guidance data, deviated from its intended path, experienced severe stress, and was destroyed. The payload was not the real cause. The failure came from software inside the rocket's inertial reference system, called the SRI.</p>
-        <p>The important background is that Ariane 4 had worked successfully for many years. Because of that success, parts of the Ariane 4 software were reused in Ariane 5. The ethical and engineering problem is that Ariane 5 was not the same system. It had different hardware and flight behavior, meaning it could produce values outside the safe range expected by the old Ariane 4 software.</p>
-        <p>The technical failure happened when a large 64-bit floating-point value was converted into a 16-bit signed integer. The number was too large for the smaller data type, causing overflow and invalid data. The flight computer treated this invalid data as real guidance information and attempted to correct the rocket's trajectory. This caused the rocket to tilt, deviate, and fail.</p>
-        <p>Testing did not catch the problem because the tests did not use realistic Ariane 5 flight values. The old software seemed safe because Ariane 4 did not produce values large enough to trigger the overflow. But Ariane 5 did. The team relied too much on past success and did not fully revalidate the software for the new system.</p>
-        <p>The backup system also failed because it used the same identical software as the primary SRI. When the primary SRI failed, the backup repeated the same software fault. This is a common-mode software failure. A backup is not truly protective if it fails from the same cause.</p>
-        <p>This is an engineering ethics case because software controlled a safety-critical physical system. The failure was not only one programmer's mistake. It reflected poor testing, unsafe code reuse, weak risk management, insufficient redundancy, overconfidence, and weak professional responsibility. The main lesson is that reused software is not automatically safe when the hardware, environment, or mission changes.</p>
+        <p>
+          <strong>Launch and failure:</strong> Ariane 5 Flight 501 was launched by the European Space Agency in 1996. Shortly after liftoff, the rocket began receiving invalid guidance data, moved away from its intended flight path, experienced severe stress, and was destroyed.
+        </p>
+        <p>
+          <strong>Software fault:</strong> The failure came from software inside the rocket's inertial reference system, called the SRI. The software attempted to convert a large 64-bit floating-point value into a 16-bit signed integer. The value was too large for the smaller data type, causing overflow. This produced invalid data, but the flight computer treated it as real guidance information and attempted to correct the rocket's trajectory.
+        </p>
+        <p>
+          <strong>Software reuse:</strong> Ariane 4 software was reused in Ariane 5 because Ariane 4 had worked successfully for years. However, Ariane 5 was not the same system. It had different flight behavior and could produce values outside the safe range expected by the old software. Testing failed to catch the problem because it did not properly test realistic Ariane 5 flight conditions or enough overflow and boundary cases.
+        </p>
+        <p>
+          <strong>Common-mode failure:</strong> The backup system also failed because it used the same software as the primary SRI. When the primary SRI failed, the backup repeated the same fault. This is called common-mode failure. A backup is not truly protective if it fails for the same reason as the original system.
+        </p>
+        <p class="ariane-final-line">
+          <strong>Main lesson:</strong> This is an engineering ethics case because software controlled a safety-critical physical system. The failure was not only a programming error. It reflected unsafe software reuse, weak validation, poor risk management, overconfidence in previous success, and inadequate redundancy. The main lesson is that reused software must be revalidated whenever the system, hardware, mission, or operating conditions change.
+        </p>
       </article>
 
-      <article id="ariane-summary" class="study-card ariane-super-summary">
-        <p class="section-kicker">High Yield</p>
+      <article id="ariane-core" class="study-card ariane-core-card">
+        <p class="section-kicker">Exam Core</p>
         <h3>2. What I Must Know for the Exam</h3>
-        <p class="therac-one-idea"><strong>If you remember only one idea:</strong> Ariane 5 failed because safety-critical Ariane 4 software was reused without proper validation for Ariane 5's new flight conditions.</p>
-        <ul class="study-list ariane-summary-list">
-          <li>Ariane 5 failed shortly after launch because of software failure in the SRI.</li>
-          <li>A 64-bit floating-point value was converted into a 16-bit signed integer.</li>
-          <li>The conversion caused overflow and invalid guidance data.</li>
-          <li>Ariane 4 software was reused because it had worked successfully before.</li>
-          <li>Ariane 5 had different hardware/flight behavior and produced values outside the old software's safe range.</li>
-          <li>Testing failed because it did not use realistic Ariane 5 values or boundary/overflow cases.</li>
-          <li>The backup SRI used identical software, so it failed in the same way as the primary system.</li>
-          <li>The failure was cultural and ethical, not just technical: overconfidence, poor testing, weak validation, and unsafe assumptions.</li>
-          <li><strong>Main ethics violated:</strong> professional responsibility, testing and validation, risk management, software safety, redundancy responsibility, accountability, and public trust.</li>
-          <li><strong>Best final sentence:</strong> "Ariane 5 shows that reused software in safety-critical systems must be revalidated whenever the system, hardware, or operating conditions change."</li>
-        </ul>
+        <div class="piper-exam-core">
+          <div class="piper-exam-block">
+            <span class="block-label">A — Core Idea</span>
+            <p>Ariane 5 shows that reused software in safety-critical systems is not automatically safe when the system or operating conditions change.</p>
+          </div>
+          <div class="piper-exam-block">
+            <span class="block-label">B — What Happened</span>
+            <p>Ariane 5 reused software from Ariane 4. During launch, a 64-bit floating-point value was converted into a 16-bit signed integer, causing overflow. The SRI produced invalid guidance data, and the flight computer responded incorrectly. The rocket deviated from its path and was destroyed.</p>
+          </div>
+          <div class="piper-exam-block">
+            <span class="block-label">C — Why It Is Ethics</span>
+            <p>This case is not only about a software bug. It is about professional responsibility, testing, validation, software reuse, redundancy, risk management, and public trust. Engineers trusted old software because it worked before, but they did not fully validate it for Ariane 5's different flight conditions.</p>
+          </div>
+          <div class="piper-exam-block">
+            <span class="block-label">D — Must Memorize</span>
+            <ul>
+              <li>Ariane 5 Flight 501 failed shortly after launch in 1996.</li>
+              <li>The failure came from the inertial reference system, SRI.</li>
+              <li>A 64-bit floating-point value was converted into a 16-bit signed integer.</li>
+              <li>The conversion caused overflow and invalid guidance data.</li>
+              <li>Ariane 4 software was reused in Ariane 5.</li>
+              <li>Ariane 5 had different flight behavior and produced values outside old assumptions.</li>
+              <li>Testing failed to include realistic Ariane 5 values and boundary/overflow cases.</li>
+              <li>The backup SRI used identical software, causing common-mode failure.</li>
+              <li><strong>Main ethics:</strong> professional responsibility, testing and validation, software safety, risk management, redundancy, accountability, competence, and public trust.</li>
+              <li>Engineers should have revalidated reused software, tested boundary cases, handled overflow safely, and designed better redundancy.</li>
+            </ul>
+          </div>
+          <div class="piper-exam-block piper-final-quote">
+            <span class="block-label">E — Best Final Sentence</span>
+            <p>"Ariane 5 shows that in safety-critical systems, reused software must be revalidated under the new system's real operating conditions before approval."</p>
+          </div>
+        </div>
       </article>
 
-      <article id="ariane-ethics" class="study-card">
-        <p class="section-kicker">Principle Map</p>
-        <h3>3. Ethics Analysis</h3>
+      <article id="ariane-top-issues" class="study-card ariane-top-issues-card">
+        <p class="section-kicker">Key Ethics</p>
+        <h3>3. Top Related Ethical Issues</h3>
+        <p class="ariane-issues-lead">These are the most important ethics to mention first in exam answers:</p>
+        <ol class="ariane-issues-list">
+          <li>
+            <span class="ariane-issue-num">1.</span>
+            <div>
+              <h4>Professional Responsibility</h4>
+              <p>Engineers had a duty to verify that reused Ariane 4 software was safe for Ariane 5.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ariane-issue-num">2.</span>
+            <div>
+              <h4>Testing and Validation</h4>
+              <p>The software was not tested enough under realistic Ariane 5 flight values and overflow conditions.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ariane-issue-num">3.</span>
+            <div>
+              <h4>Software Safety</h4>
+              <p>A software fault created invalid data that physically destroyed the rocket.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ariane-issue-num">4.</span>
+            <div>
+              <h4>Risk Management</h4>
+              <p>Changed flight conditions created predictable risks that were not controlled.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ariane-issue-num">5.</span>
+            <div>
+              <h4>Redundancy Failure</h4>
+              <p>The backup SRI used the same software and failed from the same cause.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ariane-issue-num">6.</span>
+            <div>
+              <h4>Public Trust</h4>
+              <p>The failure damaged trust in space engineering, software-controlled systems, and major public/institutional projects.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="ariane-short-sentence">
+          <span>Short exam sentence</span>
+          <p>"The most important ethical issue in Ariane 5 is professional responsibility, because safety-critical reused software was not fully validated for the new rocket's operating conditions."</p>
+        </div>
+      </article>
+
+      <article id="ariane-ethics" class="study-card ariane-meaning-card">
+        <p class="section-kicker">Ethics Analysis</p>
+        <h3>4. Full Ethics Analysis</h3>
         <div class="ethics-grid">
           <div class="ethics-card priority-card">
             <h4>Professional Responsibility</h4>
             <span class="most-important-badge">⭐ Most Important</span>
-            <p>Engineers had a duty to verify that reused Ariane 4 software was safe for Ariane 5's different hardware and flight conditions. Reusing code without revalidation in a safety-critical system is a direct failure of professional responsibility.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Professional responsibility was violated because engineers reused safety-critical software in a new system without fully validating it under the new conditions.</p>
+            <p>Engineers had a duty to verify that Ariane 4 software was safe for Ariane 5's new flight conditions.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Professional responsibility was violated because safety-critical reused software was not fully validated for the new rocket.</p>
           </div>
           <div class="ethics-card">
             <h4>Testing and Validation</h4>
-            <p>Testing did not use realistic Ariane 5 flight values or include boundary and overflow cases, so the overflow problem was never detected before launch.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Testing responsibility was violated because the reused software was not tested under Ariane 5's actual operating conditions.</p>
+            <p>Tests did not sufficiently cover realistic Ariane 5 values, boundary cases, or overflow conditions.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Testing failed because the software was not validated under the actual conditions of the new system.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Software Safety</h4>
+            <p>The SRI software produced invalid data that affected physical rocket control.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Software safety failed because invalid software output was allowed to influence a safety-critical physical system.</p>
           </div>
           <div class="ethics-card">
             <h4>Risk Management</h4>
-            <p>The team did not reassess the risk that Ariane 5 could produce values outside the safe range of the old Ariane 4 software. Changed conditions require updated risk analysis.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Risk management failed because the team did not identify or control the new risks created by changed flight conditions.</p>
+            <p>The risk that Ariane 5 could exceed Ariane 4 software assumptions was not controlled.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Risk management failed because changed operating conditions created software hazards that were not properly addressed.</p>
           </div>
           <div class="ethics-card">
-            <h4>Software Safety Responsibility</h4>
-            <p>Software controlling a physical safety-critical system must handle overflow, invalid data, and failure modes safely. Allowing invalid data to reach the flight computer was a design failure.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Software safety responsibility was violated because corrupted guidance data was allowed to control the rocket without safe failure handling.</p>
+            <h4>Redundancy / Common-Mode Failure</h4>
+            <p>The backup SRI used identical software and failed for the same reason as the primary system.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Redundancy failed because the backup repeated the same software fault instead of protecting the system.</p>
           </div>
           <div class="ethics-card">
-            <h4>Redundancy Responsibility</h4>
-            <p>The backup SRI used the same software as the primary, so it failed in the same way. A backup that fails from the same cause does not reduce risk.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Redundancy responsibility was violated because the backup system repeated the primary failure instead of protecting against it.</p>
+            <h4>Competence and Limits</h4>
+            <p>Engineers needed to understand the limits of old assumptions and reused software.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Competence required recognizing that previous success in Ariane 4 did not prove safety in Ariane 5.</p>
+          </div>
+          <div class="ethics-card">
+            <h4>Integrity in Engineering Judgment</h4>
+            <p>"Worked before" was treated as stronger evidence than proper revalidation.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Integrity required questioning old assumptions instead of accepting past success as proof of safety.</p>
           </div>
           <div class="ethics-card">
             <h4>Accountability</h4>
-            <p>Accountability in safety-critical engineering means owning the consequences of design decisions, including the decision to reuse unvalidated software.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Accountability requires taking responsibility for testing and validation decisions that contributed to the failure, not only explaining what went wrong afterward.</p>
+            <p>The organization was responsible for the validation process and design decisions that led to failure.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Accountability means learning from the failure, correcting processes, and preventing repeat software-safety mistakes.</p>
           </div>
           <div class="ethics-card">
-            <h4>Integrity</h4>
-            <p>Past success with Ariane 4 was treated as sufficient evidence of safety, rather than honestly questioning whether the old software would work in the new system.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Integrity was violated because the team relied on past success instead of honestly evaluating the new system's requirements.</p>
-          </div>
-          <div class="ethics-card">
-            <h4>Organizational Culture</h4>
-            <p>The organization normalized trust in old software and hardware reliability without equally valuing software failure testing and assumption review.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> The cultural failure was overconfidence from prior success and insufficient attention to software risks in a changed system.</p>
+            <h4>Safe Approval / Launch Readiness</h4>
+            <p>A safety-critical system should be approved only after realistic validation.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Safe approval failed because the launch relied on software behavior that had not been proven safe for Ariane 5.</p>
           </div>
           <div class="ethics-card">
             <h4>Public Trust</h4>
-            <p>A preventable rocket failure caused by software negligence damaged public and stakeholder confidence in space engineering and safety-critical software.</p>
-            <p class="exam-sentence"><strong>Exam sentence:</strong> Public trust was harmed because an expensive mission failed from a preventable software fault that proper validation would have caught.</p>
+            <p>The failure damaged confidence in software-controlled space systems and engineering judgment.</p>
+            <p class="exam-sentence"><strong>Exam sentence:</strong> Public trust was harmed because a preventable software-validation failure destroyed a major mission.</p>
           </div>
         </div>
       </article>
@@ -897,9 +983,9 @@
       <article id="ariane-quiz" class="study-card quiz-card ariane-quiz-card">
         <div class="quiz-heading">
           <div>
-            <p class="section-kicker">MCQ Practice</p>
-            <h3>4. MCQ Practice</h3>
-            <p class="quiz-note">One Ariane 5 question appears at a time. Submit your answer to reveal feedback, then move to the next question.</p>
+            <p class="section-kicker">Exam Drill</p>
+            <h3>5. Exam-Style MCQs</h3>
+            <p class="quiz-note">One Ariane 5 question appears at a time. Submit to reveal the result inside the same card, then continue.</p>
           </div>
           <p class="score-pill" data-score-for="case-4">Quiz Score: Not started</p>
         </div>
@@ -913,58 +999,48 @@
       </article>
 
       <article id="ariane-written" class="study-card">
-        <p class="section-kicker">Written Answers</p>
-        <h3>5. Written Questions</h3>
+        <p class="section-kicker">Written Questions</p>
+        <h3>6. Written Questions</h3>
         <ol class="written-list">
           <li class="written-question important-question ariane-written-question">
-            <h4>What ethical principles were violated in the Ariane 5 case, and how did the failure affect public trust? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>The main ethical principles violated were professional responsibility, testing and validation, risk management, software safety, redundancy responsibility, accountability, and public trust. Professional responsibility was the most important violation because engineers reused safety-critical software without validating it for a new system. The failure damaged public and stakeholder confidence in space engineering and in software-controlled safety-critical systems.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Professional responsibility</li><li>Testing and validation</li><li>Risk management</li><li>Redundancy failure</li><li>Public trust harmed</li></ul></div><div><h5>Best keywords</h5><p>professional responsibility, validation, reuse, public trust, safety-critical system</p></div><div><h5>Mistake to avoid</h5><p>Do not list principles without explaining how each was violated in this case.</p></div></div>
+            <h4>What ethical principles were violated in the Ariane 5 Flight 501 failure, and how did these violations affect public trust? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>The Ariane 5 failure involved professional responsibility, testing and validation, software safety, risk management, redundancy, accountability, competence, and public trust. Professional responsibility was weakened because safety-critical Ariane 4 software was reused without full validation for Ariane 5's different flight conditions. Testing failed because realistic Ariane 5 values, boundary cases, and overflow conditions were not adequately covered. Redundancy failed because the backup SRI used identical software and failed in the same way. These failures damaged public trust because people expect major aerospace systems to be validated before launch.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Professional responsibility</li><li>Reused software</li><li>Testing and validation</li><li>Overflow</li><li>Common-mode failure</li><li>Public trust</li></ul></div><div><h5>Best keywords</h5><p>professional responsibility, validation, software safety, redundancy, public trust</p></div><div><h5>Mistake to avoid</h5><p>Do not only say "there was overflow." Explain the ethical duties that failed.</p></div></div>
           </li>
           <li class="written-question important-question ariane-written-question">
-            <h4>What poor software engineering practices contributed to the Ariane 5 failure? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>The main poor practices were: reusing Ariane 4 software without revalidating it for Ariane 5's new conditions, testing with values that did not represent real Ariane 5 flight behavior, failing to include boundary and overflow test cases, not handling the conversion overflow safely, and using identical software in both the primary and backup SRI. Each of these practices reflects a failure to treat the software as safety-critical in a changed environment.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Unvalidated code reuse</li><li>Unrealistic testing</li><li>No overflow handling</li><li>Identical backup software</li><li>Unchecked assumptions</li></ul></div><div><h5>Best keywords</h5><p>code reuse, validation, overflow, testing, common-mode failure</p></div><div><h5>Mistake to avoid</h5><p>Do not reduce it to one mistake. The failure had multiple contributing practices.</p></div></div>
+            <h4>How did software reuse create an ethical problem in Ariane 5? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Software reuse became an ethical problem because Ariane 4 software was reused in Ariane 5 without sufficient validation for the new rocket's conditions. The old software had worked in Ariane 4, but Ariane 5 had different flight behavior and produced values outside old assumptions. Reuse is not unethical by itself, but reused safety-critical software must be tested in the new context. The ethical failure was trusting past success instead of proving safety under Ariane 5 conditions.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Ariane 4 software reused</li><li>Ariane 5 different conditions</li><li>Old assumptions failed</li><li>Reuse needs validation</li><li>Safety-critical context</li></ul></div><div><h5>Best keywords</h5><p>software reuse, Ariane 4, Ariane 5, assumptions, validation</p></div><div><h5>Mistake to avoid</h5><p>Do not say all software reuse is wrong. Unvalidated reuse is the problem.</p></div></div>
           </li>
           <li class="written-question important-question ariane-written-question">
-            <h4>Why is safety redundancy important, and how did Ariane 5 fail to provide it? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>Safety redundancy means having a backup that can protect the system when the primary fails. True redundancy requires the backup to fail differently from the primary. In Ariane 5, the backup SRI used the same identical software as the primary. When the primary failed from a software overflow, the backup failed the same way. This is a common-mode software failure. Redundancy that uses the same software does not protect against software faults.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Redundancy purpose</li><li>Identical software in backup</li><li>Common-mode failure</li><li>No independent protection</li></ul></div><div><h5>Best keywords</h5><p>redundancy, common-mode failure, backup SRI, software fault, diverse redundancy</p></div><div><h5>Mistake to avoid</h5><p>Do not say any backup system guarantees safety. It depends on whether it fails differently.</p></div></div>
+            <h4>Explain how poor testing and validation contributed to the Ariane 5 failure. <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Testing and validation failed because the software was not adequately tested using realistic Ariane 5 flight values and boundary conditions. A 64-bit floating-point value was converted into a 16-bit signed integer, causing overflow. This type of failure should have been considered through range analysis, boundary testing, and safe exception handling. Ethical engineering requires testing software under the conditions it will actually face, especially when it controls a safety-critical system.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Realistic flight values</li><li>Boundary testing</li><li>Overflow</li><li>64-bit to 16-bit conversion</li><li>Safety-critical software</li></ul></div><div><h5>Best keywords</h5><p>testing, validation, boundary cases, overflow, real conditions</p></div><div><h5>Mistake to avoid</h5><p>Do not say testing was unnecessary because Ariane 4 worked.</p></div></div>
           </li>
           <li class="written-question important-question ariane-written-question">
-            <h4>What is the responsibility of an engineer when reusing software in a new system? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>An engineer who reuses software in a new system has a professional responsibility to revalidate that software under the new system's conditions. Past success in a different system does not prove safety in a new one. The engineer must check whether the new hardware, environment, or operating conditions create risks that the old software was not designed to handle. For safety-critical systems, this responsibility is especially strict.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Revalidation is required</li><li>Past success is not proof</li><li>New conditions create new risks</li><li>Safety-critical systems demand more</li></ul></div><div><h5>Best keywords</h5><p>professional responsibility, code reuse, revalidation, changed conditions, safety-critical</p></div><div><h5>Mistake to avoid</h5><p>Do not say reusing code is wrong. Unvalidated reuse in a changed system is the problem.</p></div></div>
+            <h4>How does Ariane 5 show the importance of redundancy in safety-critical systems? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Ariane 5 shows that redundancy only improves safety when the backup does not fail from the same cause as the primary system. In this case, both the primary and backup SRI used identical software. When the primary system failed because of the overflow problem, the backup repeated the same failure. This is common-mode failure. Ethical design requires redundancy that protects against shared faults, including software faults.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Primary SRI failed</li><li>Backup SRI failed</li><li>Identical software</li><li>Common-mode failure</li><li>Independent protection</li></ul></div><div><h5>Best keywords</h5><p>redundancy, backup system, common-mode failure, software fault, safety</p></div><div><h5>Mistake to avoid</h5><p>Do not assume any backup automatically guarantees safety.</p></div></div>
           </li>
           <li class="written-question important-question ariane-written-question">
-            <h4>How did testing and validation fail in the Ariane 5 case? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>Testing failed because it did not use realistic Ariane 5 flight values. The software had been safe under Ariane 4 conditions because Ariane 4 did not produce values large enough to cause overflow. Ariane 5 produced larger values that exceeded the safe range of the old software, but this was never tested. Boundary and overflow cases were not included. In safety-critical software, testing must match the real conditions of the system being built, not the system from which code was borrowed.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Realistic values not used</li><li>Boundary cases missed</li><li>Overflow not detected</li><li>Old system conditions assumed</li></ul></div><div><h5>Best keywords</h5><p>testing, boundary values, overflow, realistic conditions, validation</p></div><div><h5>Mistake to avoid</h5><p>Do not say testing was skipped entirely — it was done but was insufficient for the new system.</p></div></div>
+            <h4>What professional responsibility do engineers have when software controls physical systems? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Engineers have a responsibility to treat software as safety-critical when it controls physical systems. In Ariane 5, software output affected rocket guidance and caused physical destruction. Engineers should validate assumptions, test realistic conditions, handle invalid data safely, design fail-safe behavior, and ensure redundancy does not repeat the same fault. Software may be invisible, but its consequences can be physical and catastrophic.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Software controls physical system</li><li>Validate assumptions</li><li>Test real conditions</li><li>Safe handling</li><li>Fail-safe behavior</li></ul></div><div><h5>Best keywords</h5><p>software safety, physical systems, professional responsibility, fail-safe, validation</p></div><div><h5>Mistake to avoid</h5><p>Do not treat software as less important than hardware.</p></div></div>
           </li>
           <li class="written-question important-question ariane-written-question">
-            <h4>How did organizational culture contribute to the Ariane 5 disaster? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>The organizational culture contributed by normalizing overconfidence based on Ariane 4's success. The team assumed that software which had worked before would continue to work in the new system. This culture undervalued rigorous software testing, boundary case analysis, and the questioning of old assumptions when the system changed. In safety-critical engineering, culture must actively challenge past assumptions rather than treat prior success as sufficient evidence of future safety.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Overconfidence from Ariane 4</li><li>Assumptions not questioned</li><li>Software risks undervalued</li><li>Past success normalized</li></ul></div><div><h5>Best keywords</h5><p>organizational culture, overconfidence, assumptions, software testing, safety culture</p></div><div><h5>Mistake to avoid</h5><p>Do not blame only one person or one programmer for a cultural failure.</p></div></div>
+            <h4>How did risk management fail in the Ariane 5 case? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Risk management failed because the team did not adequately control the risk that Ariane 5's different flight behavior would exceed the assumptions of reused Ariane 4 software. The overflow hazard, invalid guidance data, and identical backup software were not sufficiently managed before launch. Good risk management would identify changed conditions, test critical ranges, handle overflow safely, and ensure independent redundancy.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Changed flight behavior</li><li>Old assumptions</li><li>Overflow hazard</li><li>Identical backup</li><li>Need risk controls</li></ul></div><div><h5>Best keywords</h5><p>risk management, changed conditions, overflow, validation, redundancy</p></div><div><h5>Mistake to avoid</h5><p>Do not treat the failure as random. It came from unmanaged assumptions.</p></div></div>
           </li>
           <li class="written-question important-question ariane-written-question">
-            <h4>How does the Ariane 5 case illustrate a conflict between past success and accountability? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>The case shows that relying on past success can become a substitute for accountability. Ariane 4's record gave the team confidence that the old software was safe, which reduced the motivation to revalidate it. Accountability in engineering means questioning whether prior decisions still hold in new conditions, not assuming that previous success covers future risk. The failure reveals that accountability requires active verification, not passive confidence.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Past success reduces scrutiny</li><li>Accountability requires active verification</li><li>New system = new responsibilities</li><li>Confidence is not validation</li></ul></div><div><h5>Best keywords</h5><p>accountability, past success, verification, professional responsibility, assumption</p></div><div><h5>Mistake to avoid</h5><p>Do not say the team intended to cut corners — the failure came from misplaced confidence, not bad intent.</p></div></div>
+            <h4>What should engineers have done differently to prevent the Ariane 5 failure? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>Engineers should have revalidated the reused Ariane 4 software under Ariane 5's actual flight conditions, tested boundary and overflow cases, improved exception handling, checked all old assumptions, and designed redundancy that would not fail from the same software fault. The launch review should have required evidence that the reused software was safe in the new mission. Prevention required both technical testing and stronger professional judgment.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Revalidate reused software</li><li>Test real Ariane 5 values</li><li>Boundary/overflow testing</li><li>Better exception handling</li><li>Independent redundancy</li></ul></div><div><h5>Best keywords</h5><p>prevention, revalidation, boundary testing, exception handling, redundancy</p></div><div><h5>Mistake to avoid</h5><p>Do not only say "fix the bug." The process and assumptions also needed correction.</p></div></div>
           </li>
           <li class="written-question important-question ariane-written-question">
-            <h4>What is the engineer's responsibility toward public trust in the Ariane 5 case? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>Engineers working on publicly funded safety-critical systems have a responsibility to protect the interests of the public and stakeholders who depend on those systems. In Ariane 5, the mission was funded by ESA on behalf of European governments and scientific stakeholders. The failure damaged trust in space engineering and software safety. Engineers must ensure that their systems are properly validated because the consequences of failure extend far beyond the technical team.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Public funding</li><li>Stakeholder trust</li><li>ESA and scientific community</li><li>Validation protects public interest</li></ul></div><div><h5>Best keywords</h5><p>public trust, stakeholders, accountability, validation, professional responsibility</p></div><div><h5>Mistake to avoid</h5><p>Do not argue that public trust is irrelevant because no one died. The financial and mission impact still constitutes harm.</p></div></div>
-          </li>
-          <li class="written-question important-question ariane-written-question">
-            <h4>What should have been done differently to prevent the Ariane 5 failure? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>Engineers should have revalidated the Ariane 4 software specifically for Ariane 5 flight conditions, tested with realistic Ariane 5 values including boundary and overflow cases, added safe failure handling for conversion errors, questioned the assumption that old software remained valid in the new system, and designed the backup SRI with different software to avoid common-mode failure. Each of these steps corresponds directly to a violated principle.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Revalidate for new conditions</li><li>Boundary and overflow testing</li><li>Safe failure handling</li><li>Question old assumptions</li><li>Diverse redundancy</li></ul></div><div><h5>Best keywords</h5><p>prevention, revalidation, boundary testing, diverse redundancy, safe failure</p></div><div><h5>Mistake to avoid</h5><p>Do not only say "fix the overflow bug." Prevention should address all violated principles.</p></div></div>
-          </li>
-          <li class="written-question important-question ariane-written-question">
-            <h4>What is the main engineering ethics lesson from the Ariane 5 case? <span class="important-badge">⭐ Highly Important</span></h4>
-            <p>The main lesson is that reused software in safety-critical systems must be revalidated whenever the system, hardware, or operating conditions change. Past success does not replace verification. Engineers must test under real conditions, handle failure cases safely, design redundancy that actually protects against software faults, and take professional responsibility for the assumptions behind their decisions. The Ariane 5 case shows that ethical software engineering is not only about writing code correctly but about validating it responsibly in context.</p>
-            <div class="answer-support"><div><h5>Key points</h5><ul><li>Reuse requires revalidation</li><li>Past success is not safety proof</li><li>Test real conditions</li><li>Diverse redundancy</li><li>Professional responsibility</li></ul></div><div><h5>Best keywords</h5><p>safety-critical software, revalidation, code reuse, professional responsibility, changed conditions</p></div><div><h5>Mistake to avoid</h5><p>Do not treat the lesson as purely technical. The ethics dimension is professional responsibility and accountability.</p></div></div>
+            <h4>What is the main engineering ethics lesson from Ariane 5 Flight 501? <span class="important-badge">⭐ Highly Important</span></h4>
+            <p>The main lesson is that safety-critical software must be validated for the actual system where it will be used. Ariane 5 shows that previous success in one system does not prove safety in a new system. Engineers must question assumptions, test realistic conditions, control overflow and invalid data, and design redundancy that protects against common software faults. Public trust depends on engineering decisions based on evidence, not overconfidence.</p>
+            <div class="answer-support"><div><h5>Key points</h5><ul><li>Safety-critical software</li><li>Reused code</li><li>New system conditions</li><li>Assumptions</li><li>Evidence-based validation</li><li>Public trust</li></ul></div><div><h5>Best keywords</h5><p>safety-critical software, revalidation, assumptions, evidence, public trust</p></div><div><h5>Mistake to avoid</h5><p>Do not write only "software should be tested." Explain why new conditions matter.</p></div></div>
           </li>
         </ol>
       </article>
