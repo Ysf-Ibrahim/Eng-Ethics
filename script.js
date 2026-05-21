@@ -1792,334 +1792,356 @@ const quizData = [
     caseId: "case-6",
     questions: [
       {
-        question: "Tacoma Narrows Bridge moved noticeably in moderate wind before it collapsed. From an engineering ethics perspective, what should this movement have been treated as?",
+        question: "A public bridge begins moving noticeably in moderate wind before any collapse occurs. Which response best reflects engineering ethics?",
         options: [
-          "A warning sign requiring deeper investigation.",
-          "A harmless feature because the bridge was new.",
-          "Proof that the bridge was flexible and therefore safe.",
-          "A public entertainment effect unrelated to engineering."
+          "Treat the motion as a warning sign and investigate the bridge's wind behavior.",
+          "Ignore the movement if traffic can still cross the bridge.",
+          "Use the movement as evidence that the structure is flexible and therefore safe.",
+          "Wait for a collapse or formal complaint before doing technical review."
         ],
         correctAnswer: 0,
-        explanation: "Unusual movement in a public bridge is risk evidence, not something to normalize."
+        explanation: "Visible abnormal behavior in a public bridge is risk evidence, not something to normalize."
       },
       {
         question: "Why is Tacoma Narrows an engineering ethics case rather than only a physics case?",
         options: [
-          "Engineering decisions about design, testing, and risk affected public safety.",
-          "The collapse was filmed and became famous.",
-          "The bridge was located in a windy area.",
-          "The bridge was visually attractive."
+          "Because it happened in a windy region where bridge motion was always expected.",
+          "Because it became famous and changed public interest in bridge design.",
+          "Because design, testing, and risk judgment affected public safety.",
+          "Because resonance and flutter are difficult concepts in structural mechanics."
         ],
-        correctAnswer: 0,
-        explanation: "The physics explains the failure, but ethics asks whether engineers properly protected public safety."
+        correctAnswer: 2,
+        explanation: "The technical cause matters, but the ethics issue is whether engineers protected the public through competent judgment."
       },
       {
-        question: "What was the main design feature that made Tacoma Narrows vulnerable?",
+        question: "Which explanation of the Tacoma Narrows collapse is too narrow?",
         options: [
-          "A slender, flexible plate-girder deck with low stiffness.",
-          "A very heavy truss design.",
-          "A design with no suspension cables.",
-          "A bridge deck designed only for pedestrians."
+          "The bridge was slender and flexible.",
+          "Wind-induced instability was important.",
+          "Engineers should have considered dynamic effects more carefully.",
+          "The collapse was just resonance, so design judgment did not matter."
         ],
-        correctAnswer: 0,
-        explanation: "The slender deck reduced stiffness and made the bridge vulnerable to wind-induced motion."
-      },
-      {
-        question: "Which answer best explains why \"the bridge collapsed only because of resonance\" is incomplete?",
-        options: [
-          "The final collapse was mainly caused by torsional flutter, a twisting instability.",
-          "Resonance never has any relation to bridges.",
-          "Wind did not affect Tacoma Narrows.",
-          "The bridge collapsed only from gravity loads."
-        ],
-        correctAnswer: 0,
-        explanation: "Vertical motion occurred, but the destructive final motion was twisting from torsional flutter."
-      },
-      {
-        question: "In ethics terms, why does correct failure diagnosis matter?",
-        options: [
-          "Future prevention depends on understanding the real failure mechanism.",
-          "It only matters for exam memorization.",
-          "It removes all professional responsibility.",
-          "It makes the collapse acceptable."
-        ],
-        correctAnswer: 0,
-        explanation: "If engineers misunderstand the cause, future designs may repeat the danger."
-      },
-      {
-        question: "What does torsional flutter mean in this case?",
-        options: [
-          "Wind amplified twisting motion until the bridge failed.",
-          "Traffic created only vertical static load.",
-          "Gravity pulled the towers downward.",
-          "The deck expanded because of heat."
-        ],
-        correctAnswer: 0,
-        explanation: "Torsional flutter is twisting motion that grows due to wind-structure interaction."
-      },
-      {
-        question: "Which ethical principle is most central when designing a public bridge?",
-        options: [
-          "Public safety.",
-          "Brand competition.",
-          "Patent secrecy.",
-          "Advertising fairness."
-        ],
-        correctAnswer: 0,
-        explanation: "Bridges are public infrastructure and must protect users."
+        correctAnswer: 3,
+        explanation: "The final collapse was mainly torsional flutter, so reducing the case to only resonance is incomplete."
       },
       {
         question: "Why was cost-saving ethically sensitive in Tacoma Narrows?",
         options: [
-          "Saving material reduced stiffness and increased wind vulnerability.",
-          "Cost-saving is always unethical.",
-          "Public projects should ignore budgets completely.",
-          "Cost-saving had no effect on the design."
+          "Because economy is always unethical in public projects.",
+          "Because the slender plate-girder design reduced stiffness and increased wind risk.",
+          "Because cost-saving meant the bridge could not carry normal traffic loads.",
+          "Because public projects should be designed without any concern for material efficiency."
         ],
-        correctAnswer: 0,
-        explanation: "Cost-saving becomes ethically risky when it weakens safety or stability."
+        correctAnswer: 1,
+        explanation: "Cost-saving becomes ethically important when it increases risk without enough testing or safety margin."
       },
       {
-        question: "Which answer best describes the professional responsibility failure?",
+        question: "Which statement best corrects a common misunderstanding about Tacoma Narrows?",
         options: [
-          "Engineers did not adequately account for wind-induced dynamic behavior.",
-          "Engineers forgot that bridges carry cars.",
-          "Engineers focused too much on wind testing.",
-          "Engineers made the bridge too stiff."
+          "Vertical motion occurred, but twisting caused the final collapse.",
+          "The bridge never experienced any oscillation before collapse.",
+          "Resonance and flutter are identical, so the distinction is unimportant.",
+          "The bridge failed from gravity loads rather than wind behavior."
         ],
         correctAnswer: 0,
-        explanation: "Professional responsibility required evaluating all relevant loads, including wind dynamics."
+        explanation: "Students often remember resonance, but the ethically important engineering lesson is the real failure mechanism."
       },
       {
-        question: "The bridge was strong enough in some ordinary structural senses, but still collapsed. What does this teach?",
+        question: "What did public safety require in the Tacoma Narrows case?",
         options: [
-          "Static strength does not guarantee dynamic stability.",
-          "Gravity loads are the only real loads.",
-          "Wind loads are impossible to study.",
-          "Flexible bridges are always safer."
+          "That the bridge look stable enough to reassure drivers.",
+          "That it be economical enough for taxpayers to accept it.",
+          "That it pass ordinary gravity-load checks before opening.",
+          "That it stay safe under real wind and dynamic conditions."
         ],
-        correctAnswer: 0,
-        explanation: "A structure can pass static assumptions but fail dynamically."
+        correctAnswer: 3,
+        explanation: "A public bridge must be safe under the actual environmental forces it will experience."
       },
       {
-        question: "Which answer best applies risk management to this case?",
+        question: "Which design fact mattered most ethically in this case?",
         options: [
-          "Known movement should have triggered investigation, testing, or corrective action.",
-          "Risk management begins only after collapse.",
-          "Risk management applies only to software.",
-          "If a bridge is open, risk no longer exists."
+          "The bridge used unusually thick trusses that made aerodynamic study unnecessary.",
+          "The bridge used narrow plate girders instead of deeper, stiffer trusses.",
+          "The bridge carried cars instead of trains, which changed its ethical category.",
+          "The bridge was located over water, which made any failure impossible to predict."
         ],
-        correctAnswer: 0,
-        explanation: "Risk management requires acting on warning signs before public harm."
+        correctAnswer: 1,
+        explanation: "The slender plate-girder choice was efficient, but it also reduced stiffness and changed wind behavior."
       },
       {
-        question: "Why is \"wind caused the collapse\" not enough as an ethics answer?",
+        question: "An engineer says, \"The bridge passed gravity-load calculations, so the design was ethically acceptable.\" What is the strongest response?",
         options: [
-          "Engineers must design structures to handle foreseeable wind conditions.",
-          "Wind is not a real load.",
-          "Wind removes all engineering responsibility.",
-          "Wind only affects aircraft."
+          "That is enough, because bridges are judged mainly by static strength.",
+          "That would be true only if the bridge had no moving parts or wind exposure.",
+          "Static strength alone does not prove dynamic stability under wind.",
+          "Ethics begins only after a visible structural crack appears."
         ],
-        correctAnswer: 0,
-        explanation: "Natural forces do not remove engineering responsibility for foreseeable conditions."
+        correctAnswer: 2,
+        explanation: "Ethical engineering requires considering all relevant loads, not only the ones easiest to calculate."
       },
       {
-        question: "Which answer best explains testing and validation failure?",
+        question: "What should engineers do when they use a slender, innovative form for public infrastructure?",
         options: [
-          "The slender design was not validated enough against realistic wind behavior.",
-          "Testing was unnecessary because the bridge looked elegant.",
-          "Testing should only happen after public use.",
-          "Testing is not part of civil engineering ethics."
+          "Rely on older assumptions because proven design rules already exist.",
+          "Test new aerodynamic failure modes and validate the design realistically.",
+          "Prioritize elegance first and correct problems later if they appear.",
+          "Assume public use itself will reveal whether the design is safe enough over time."
         ],
-        correctAnswer: 0,
-        explanation: "Innovative slender designs require stronger validation under real conditions."
+        correctAnswer: 1,
+        explanation: "Innovation creates a greater duty to test, question assumptions, and validate uncertain behavior before public exposure."
       },
       {
-        question: "Which answer best explains innovation responsibility?",
+        question: "Why was the nickname Galloping Gertie ethically important?",
         options: [
-          "New efficient designs can create new risks that require extra caution.",
-          "Innovation removes the need for safety review.",
-          "Old designs are always safer.",
-          "Innovative designs are always unethical."
+          "It showed that abnormal motion was visible before collapse.",
+          "It proved the public misunderstood all bridge engineering.",
+          "It meant the bridge was designed mainly for visual drama.",
+          "It showed that engineers had already solved the movement problem."
         ],
         correctAnswer: 0,
-        explanation: "Innovation is valuable, but it increases the duty to test and question assumptions."
+        explanation: "The nickname reflected known abnormal behavior, which should have been treated as risk evidence."
       },
       {
-        question: "What did the nickname \"Galloping Gertie\" indicate ethically?",
+        question: "Which written-answer claim is weakest?",
         options: [
-          "The bridge had visible abnormal behavior before collapse.",
-          "The bridge was designed for horse traffic.",
-          "The public had no concern about movement.",
-          "The bridge had already been fully corrected."
+          "The bridge moved unusually before collapse, so warning signs existed.",
+          "Public safety was central because the bridge was public infrastructure.",
+          "Wind and dynamic behavior mattered as much as ordinary structural strength.",
+          "The collapse was mainly bad luck, so responsibility was limited."
         ],
-        correctAnswer: 0,
-        explanation: "The nickname showed the movement was known before collapse."
+        correctAnswer: 3,
+        explanation: "Calling the collapse bad luck ignores the known movement, design choices, and duty to investigate risk."
       },
       {
-        question: "Which written-answer claim would be weakest?",
+        question: "Why is saying \"the wind caused it\" incomplete?",
         options: [
-          "The bridge collapsed only because it was unlucky.",
-          "The bridge was too flexible under wind.",
-          "Warning signs existed before collapse.",
-          "Public safety was involved."
+          "Wind is too unpredictable to include in engineering ethics analysis.",
+          "Wind matters only for aircraft and tall buildings, not bridges.",
+          "The design's response to foreseeable wind was the real issue.",
+          "If weather is involved, professional responsibility becomes secondary."
         ],
-        correctAnswer: 0,
-        explanation: "The failure had identifiable design and risk-management causes. Attributing it to bad luck ignores professional responsibility."
+        correctAnswer: 2,
+        explanation: "Engineers are responsible for designing structures that remain safe under expected environmental loads."
       },
       {
-        question: "What should engineers have done differently?",
+        question: "A county engineer is told that a newly opened bridge shows dramatic motion in ordinary wind. What is the most ethical first step?",
         options: [
-          "Consider wind dynamics, improve stiffness/aerodynamics, test realistically, and respond to warning signs.",
-          "Ignore oscillations because the bridge was new.",
-          "Focus only on saving material.",
-          "Blame drivers for using the bridge."
+          "Investigate the motion immediately and restrict use if necessary.",
+          "Leave the bridge open and wait for public complaints to confirm the problem.",
+          "Explain that flexibility is modern and should not worry the public.",
+          "Treat the behavior as a public-relations issue rather than a technical one."
         ],
         correctAnswer: 0,
-        explanation: "These actions target the real failure chain."
+        explanation: "Known abnormal behavior in public infrastructure should trigger immediate technical review, not casual observation."
       },
       {
-        question: "Which answer best explains the public trust issue?",
+        question: "Which answer best explains professional responsibility in the Tacoma case?",
         options: [
-          "A dramatic bridge failure made people question whether public infrastructure was properly designed and tested.",
-          "Public trust increased because the collapse was famous.",
-          "Public trust only matters in medical devices.",
-          "Public trust depends only on bridge appearance."
+          "Engineers only had to prove the bridge could support its own weight and traffic.",
+          "Professional responsibility was mainly about preserving the bridge's elegant appearance.",
+          "Engineers had a duty to evaluate dynamic wind effects, not only gravity strength.",
+          "Professional responsibility begins only after a failure mechanism is completely understood."
         ],
-        correctAnswer: 0,
-        explanation: "A public structure collapse damages confidence in engineering judgment."
+        correctAnswer: 2,
+        explanation: "Competent design judgment includes identifying relevant loads and failure modes before opening a public structure."
       },
       {
-        question: "Which ethical principle is connected to learning from the collapse and improving future standards?",
+        question: "What did torsional flutter mean in this case?",
         options: [
-          "Accountability.",
-          "Product branding.",
-          "Patent ownership.",
-          "Entertainment value."
+          "A purely vertical vibration caused by vehicle traffic.",
+          "A twisting motion amplified by wind.",
+          "A slow settlement of the towers into the ground.",
+          "A heavy-deck condition that increased static weight."
         ],
-        correctAnswer: 0,
-        explanation: "Accountability includes learning from failure and preventing recurrence."
+        correctAnswer: 1,
+        explanation: "Torsional flutter is twisting instability, which is why it matters more than a simplified resonance story."
       },
       {
-        question: "Which answer best describes the difference between vertical oscillation and torsional flutter?",
+        question: "The public found the bridge's movement dramatic and memorable. What is the most ethical interpretation of that reaction?",
         options: [
-          "Vertical oscillation is up-down motion, while torsional flutter is twisting motion amplified by wind.",
-          "Both mean the same thing and caused the same exact failure.",
-          "Vertical oscillation is caused by traffic only.",
-          "Torsional flutter means the bridge becomes heavier."
+          "Public fascination proved the bridge was still safe enough for use.",
+          "The motion became acceptable because it did not cause collapse immediately.",
+          "Public attention mattered mainly for tourism and bridge publicity.",
+          "Public curiosity did not remove the duty to investigate the danger."
         ],
-        correctAnswer: 0,
-        explanation: "The final collapse involved twisting, not only vertical movement."
+        correctAnswer: 3,
+        explanation: "Unusual motion can be interesting to watch and still be a serious warning sign."
       },
       {
-        question: "In terms of cost vs safety, which statement is most ethical?",
+        question: "Which statement about cost versus safety is strongest?",
         options: [
-          "Economy is important, but not when it sacrifices safety under real conditions.",
-          "Cost-saving always proves unethical intent.",
-          "Expensive designs are automatically safe.",
-          "Public safety matters only if the project is profitable."
+          "Economy should always override engineering caution in public projects.",
+          "Expensive designs are automatically safer than efficient ones.",
+          "Cost-saving is acceptable only if safety under real conditions is preserved.",
+          "Aesthetics and economy together are enough to justify innovative structures."
         ],
-        correctAnswer: 0,
-        explanation: "Engineers balance cost, but safety is the limit."
+        correctAnswer: 2,
+        explanation: "Economy is part of engineering, but it becomes unethical when it weakens safety or ignores foreseeable risk."
       },
       {
-        question: "What does the case teach about engineering assumptions?",
+        question: "A new bridge behaves differently from older, stiffer bridges. What should engineers conclude?",
         options: [
-          "Assumptions must be rechecked when designs become longer, lighter, or more flexible.",
-          "Old assumptions always fit new designs.",
-          "Assumptions are unrelated to safety.",
-          "Assumptions only matter in software."
+          "The difference proves innovation is inherently unethical.",
+          "Older assumptions may not fit the new slender design.",
+          "The difference can be ignored if standard calculations were completed.",
+          "The public should adapt to the new behavior instead of engineers redesigning."
         ],
-        correctAnswer: 0,
-        explanation: "New design forms may create new failure modes."
+        correctAnswer: 1,
+        explanation: "New forms can introduce new failure modes, which means assumptions must be rechecked."
       },
       {
-        question: "Which statement best connects the case to professional responsibility?",
+        question: "Why does correct failure diagnosis matter ethically?",
         options: [
-          "Engineers must consider all relevant loads, including dynamic wind effects.",
-          "Engineers only need to consider gravity.",
-          "Engineers are responsible only if fraud occurs.",
-          "Engineers can ignore motion if no collapse has happened yet."
+          "Future prevention depends on understanding the real mechanism.",
+          "It matters mainly for historical trivia, not public safety.",
+          "Once a bridge collapses, diagnosis does not affect accountability.",
+          "It allows engineers to avoid revisiting their original assumptions."
         ],
         correctAnswer: 0,
-        explanation: "Professional responsibility requires complete safety analysis."
+        explanation: "If engineers misdiagnose a failure, future designs may solve the wrong problem."
       },
       {
-        question: "Why is \"make the bridge heavier\" an incomplete prevention answer?",
+        question: "Which answer is too narrow for a written exam response about Tacoma Narrows?",
         options: [
-          "The real issue was aerodynamic stability and dynamic behavior, not weight alone.",
-          "Weight never affects structures.",
-          "Heavy bridges are always unsafe.",
-          "The bridge failed because it was too heavy."
+          "The bridge used a slender and unusually flexible design.",
+          "Wind-induced torsional flutter drove the final failure.",
+          "Warning signs appeared before collapse.",
+          "Foreseeable wind still had to be engineered against."
         ],
-        correctAnswer: 0,
-        explanation: "Prevention needed stiffness, aerodynamic design, and testing."
+        correctAnswer: 3,
+        explanation: "This answer wrongly treats foreseeable wind behavior as outside engineering responsibility."
       },
       {
-        question: "Which answer best describes the stakeholder impact?",
+        question: "What should engineers have done after the bridge showed obvious movement before collapse?",
         options: [
-          "Bridge users, taxpayers, engineers, public authorities, and public trust were affected.",
-          "Only the camera operator was affected.",
-          "No stakeholders were affected because nobody used bridges.",
-          "Only the original designer was affected."
+          "Use the motion as proof that the structure could absorb wind energy safely.",
+          "Investigate the wind behavior and consider design changes or restrictions.",
+          "Assume the behavior was normal because the bridge remained open to traffic.",
+          "Wait for a full failure so the cause could be studied more clearly."
         ],
-        correctAnswer: 0,
-        explanation: "Public infrastructure affects users, funders, authorities, and the profession."
+        correctAnswer: 1,
+        explanation: "Risk management means responding to evidence of danger before public harm occurs."
       },
       {
-        question: "What is the strongest ethical interpretation of the visible bridge movement before collapse?",
+        question: "Which exam answer is weakest?",
         options: [
-          "It was a warning sign that should have been investigated, not normalized.",
-          "It proved the bridge was safe because it moved freely.",
-          "It was only useful for publicity.",
-          "It had no relationship to future failure."
+          "Tacoma Narrows was mainly a random accident, so professional responsibility is limited.",
+          "The bridge's visible movement is relevant to risk management.",
+          "Cost-saving becomes ethically risky when it reduces safety.",
+          "Correct diagnosis matters because future prevention and design standards depend on it."
         ],
         correctAnswer: 0,
-        explanation: "Repeated abnormal behavior should trigger engineering review."
+        explanation: "Ethics questions reward foreseeable risk, warning signs, and professional responsibility, not bad-luck explanations."
       },
       {
-        question: "Which answer best explains why Tacoma Narrows is not mainly a fraud case?",
+        question: "A design saves material and creates an elegant bridge, but it also introduces poorly understood wind behavior. What is the best ethical judgment?",
         options: [
-          "The issue was underestimated risk and design judgment, not intentional deception.",
-          "No engineering decisions were involved.",
-          "Public safety was not affected.",
-          "The collapse had no technical cause."
+          "The design should be accepted if the public likes its appearance.",
+          "Economical design is automatically unethical in public works.",
+          "It is acceptable only if testing shows public safety is protected.",
+          "Innovation removes the need for comparison with older, stiffer designs."
         ],
-        correctAnswer: 0,
-        explanation: "It is an ethics case about competence, risk, and responsibility rather than fraud."
+        correctAnswer: 2,
+        explanation: "The ethical issue is not innovation itself, but whether the risk was tested and controlled before public use."
       },
       {
-        question: "Which answer best connects testing to public safety?",
+        question: "What should future bridge engineers include because of the Tacoma lesson?",
         options: [
-          "Testing uncertain designs before public use protects people from unknown failure modes.",
-          "Testing matters only after the public complains.",
-          "Testing is only for software and medical devices.",
-          "Testing replaces the need for engineering judgment."
+          "A rule that all flexible bridges should be banned permanently.",
+          "A requirement that bridges be designed mainly for appearance and economy.",
+          "A policy of ignoring moderate movement unless the structure cracks visibly.",
+          "Stronger aerodynamic analysis and validation in long-span bridge design."
         ],
-        correctAnswer: 0,
-        explanation: "Testing helps reveal risks before people are exposed."
+        correctAnswer: 3,
+        explanation: "The lasting lesson is better dynamic and aerodynamic understanding, not blanket bans or exaggerated rules."
       },
       {
-        question: "Which answer best summarizes the failure chain?",
+        question: "Which answer best explains the public trust issue in Tacoma Narrows?",
         options: [
-          "Slender cost-saving design, low stiffness, known movement, wind-induced torsional flutter, collapse.",
-          "Software error, vague malfunction code, radiation overdose, FDA action.",
-          "Split rods, doubled load, walkway collapse, license revocation.",
-          "Mattress fire, blocked stairway, exit light failure, mass casualties."
+          "Public trust matters only if a bridge collapse causes injury or death on site.",
+          "Public trust increases whenever engineers experiment with elegant forms.",
+          "Public trust is unrelated to engineering judgment if the design was economical.",
+          "The collapse made people question whether bold designs were tested enough."
         ],
-        correctAnswer: 0,
-        explanation: "This is the Tacoma Narrows failure chain."
+        correctAnswer: 3,
+        explanation: "Public trust depends on the expectation that engineers have tested public infrastructure against real risks."
       },
       {
-        question: "Which is the best final conclusion for a 5-mark ethics answer about Tacoma Narrows?",
+        question: "Which fact most strongly supports the claim that risk management failed?",
         options: [
-          "Tacoma Narrows shows that elegant and economical public designs must still be validated against real-world dynamic loads.",
-          "Tacoma Narrows proves that bridges should never be innovative.",
-          "Tacoma Narrows shows that wind cannot be studied.",
-          "Tacoma Narrows proves public safety is less important than cost."
+          "The bridge opened in Washington state rather than in a calmer region.",
+          "Noticeable movement before collapse was treated too casually.",
+          "The bridge used cables, which always introduce uncertainty in suspension systems.",
+          "The bridge was photographed and discussed publicly after its failure."
+        ],
+        correctAnswer: 1,
+        explanation: "Risk management failed because clear warning signs existed before the disaster and were not treated urgently enough."
+      },
+      {
+        question: "Which statement about innovation responsibility is best?",
+        options: [
+          "Innovation is ethically neutral only after a full-scale failure occurs and lessons are learned.",
+          "Innovation matters less than cost in public infrastructure ethics.",
+          "Innovative forms create extra responsibility to test and question assumptions.",
+          "Innovation is mainly an architectural issue, not an engineering ethics issue."
+        ],
+        correctAnswer: 2,
+        explanation: "Pushing design limits does not remove responsibility; it increases the duty to validate new risks."
+      },
+      {
+        question: "Which explanation is incomplete?",
+        options: [
+          "Passing static calculations was treated as enough.",
+          "A slender design can be efficient and still unsafe under dynamic loads.",
+          "Warning signs should influence engineering judgment before failure happens.",
+          "Cost-saving becomes problematic when safety and testing are not strong enough."
         ],
         correctAnswer: 0,
-        explanation: "This conclusion connects the case facts to ethics: safety, testing, cost, and real-world conditions."
+        explanation: "Static calculations alone do not settle whether a public structure is safe under real-world dynamic conditions."
+      },
+      {
+        question: "A bridge manager says, \"The bridge is still standing, so we can just keep monitoring casually.\" What is the strongest response?",
+        options: [
+          "That is enough as long as drivers are still willing to cross it.",
+          "Visible movement mainly affects public image, not engineering ethics.",
+          "Standing does not remove risk when abnormal motion is already visible.",
+          "Casual monitoring is acceptable because wind failures are too rare to justify intervention."
+        ],
+        correctAnswer: 2,
+        explanation: "A structure can remain standing and still show clear signs that public safety is being put at risk."
+      },
+      {
+        question: "What should engineers prioritize when cost-saving reduces stiffness in a public bridge design?",
+        options: [
+          "Public safety and realistic validation over economy alone.",
+          "The visual elegance of the final structure if the public approves it.",
+          "Rapid construction so the project meets deadlines and budget targets.",
+          "Traditional gravity calculations even if wind behavior is uncertain."
+        ],
+        correctAnswer: 0,
+        explanation: "Economy is part of engineering judgment, but it cannot override safety under real operating conditions."
+      },
+      {
+        question: "Which answer best connects Tacoma Narrows to accountability?",
+        options: [
+          "Accountability means identifying a single person to blame and stopping there.",
+          "Engineers had to study the collapse and improve future standards.",
+          "Accountability applies only when fraud or deliberate deception is proven.",
+          "Once the bridge collapsed, accountability ended because the structure no longer existed."
+        ],
+        correctAnswer: 1,
+        explanation: "Ethical accountability includes learning from failure, correcting assumptions, and preventing recurrence."
+      },
+      {
+        question: "Which is the best final conclusion for an engineering ethics answer about Tacoma Narrows?",
+        options: [
+          "Tacoma Narrows proves that flexible bridges should never be built.",
+          "Tacoma Narrows shows that appearance and innovation matter more than conservative testing.",
+          "Tacoma Narrows teaches that engineers should avoid all cost-saving in public projects.",
+          "Tacoma Narrows shows that public safety must limit cost-saving when dynamic risks are uncertain."
+        ],
+        correctAnswer: 3,
+        explanation: "This conclusion captures the ethics lesson: real-world loads, testing, safety, and the limits on economy and innovation."
       }
     ]
   },
@@ -2969,36 +2991,38 @@ const quizTopics = {
     "Final conclusion"
   ],
   "case-6": [
-    "Warning signs",
-    "Ethics vs physics",
-    "Design weakness",
-    "Resonance vs flutter",
-    "Failure diagnosis",
-    "Torsional flutter",
+    "Warning sign",
+    "Ethics case",
+    "Too narrow answer",
+    "Cost vs safety",
+    "Resonance confusion",
     "Public safety",
-    "Cost-saving ethics",
-    "Professional responsibility",
+    "Plate-girder design",
     "Static vs dynamic",
-    "Risk management",
-    "Natural forces",
-    "Testing/validation",
     "Innovation responsibility",
     "Galloping Gertie",
     "Weak claim",
-    "Prevention",
+    "Wind response",
+    "Response to warning",
+    "Professional responsibility",
+    "Torsional flutter",
+    "Public reaction",
+    "Cost-safety balance",
+    "Design assumptions",
+    "Failure diagnosis",
+    "Too narrow exam answer",
+    "Corrective action",
+    "Weakest answer",
+    "Scenario judgment",
+    "Future design",
     "Public trust",
+    "Risk management",
+    "Innovation risk",
+    "Static calculations",
+    "Ongoing monitoring",
+    "Safety priority",
     "Accountability",
-    "Oscillation vs flutter",
-    "Cost vs safety",
-    "Engineering assumptions",
-    "Professional duty",
-    "Prevention specifics",
-    "Stakeholders",
-    "Warning interpretation",
-    "Not a fraud case",
-    "Testing and safety",
-    "Failure chain",
-    "Final conclusion"
+    "Final lesson"
   ],
   "case-7": [
     "Foreseeable hazard",
@@ -3239,34 +3263,36 @@ const quizExamTips = {
   ],
   "case-6": [
     "Warning signs are high-yield in risk management questions.",
-    "Technical cause + public impact = engineering ethics.",
-    "Remember: slender + flexible + wind = Tacoma core.",
+    "Technical cause plus public impact equals engineering ethics.",
     "Do not write resonance only. Mention torsional flutter.",
-    "Correct diagnosis is part of accountability.",
-    "Torsional = twisting.",
-    "Public infrastructure = public safety.",
-    "Do not say cost-saving is always wrong. Say safety must control it.",
-    "Static strength alone is not enough.",
-    "Use dynamic stability in written answers.",
-    "Abnormal behavior is risk data.",
-    "Say design response to wind caused the failure.",
-    "Testing protects against unknown risks.",
-    "Innovation is not wrong. Uncontrolled innovation is risky.",
-    "Known abnormal behavior strengthens risk-management arguments.",
-    "Avoid random accident explanations.",
-    "Prevention answers must match the cause.",
-    "Public trust links failure to society.",
-    "Accountability is corrective, not only blame.",
-    "This distinction between oscillation and flutter is likely exam-worthy.",
-    "Avoid extreme answers.",
-    "Changed design means changed risk.",
-    "Ethics is not only fraud, it is competent judgment.",
-    "Be specific about aerodynamics, not just weight.",
-    "Stakeholders include direct and indirect groups.",
-    "Normalizing warning signs is ethically dangerous.",
-    "Not all ethics cases are about lying.",
-    "Testing is part of public safety.",
-    "Do not mix case patterns.",
+    "Cost-saving is not automatically wrong. Safety is the limit.",
+    "Use the resonance versus flutter distinction carefully.",
+    "Public infrastructure always points back to public safety.",
+    "Remember the plate-girder design and reduced stiffness link.",
+    "Static strength alone does not prove dynamic safety.",
+    "Innovation means extra testing, not less testing.",
+    "Galloping Gertie is a warning-sign fact, not trivia.",
+    "Weak luck answers usually miss professional responsibility.",
+    "Say the design response to wind was the engineering issue.",
+    "The best first response to warning signs is investigation.",
+    "Professional responsibility includes all relevant loads.",
+    "Torsional means twisting.",
+    "Public fascination does not make a structure safe.",
+    "Balance economy with real-condition safety, not appearance alone.",
+    "Changed form means changed assumptions.",
+    "Correct diagnosis is part of accountability and prevention.",
+    "Too narrow answers usually ignore design judgment.",
+    "Prevention answers should mention testing or restrictions.",
+    "Bad-luck answers score weakly in ethics cases.",
+    "Scenario questions reward judgment, not memorized buzzwords.",
+    "Future design lessons should focus on aerodynamics and validation.",
+    "Public trust links failure to the reputation of engineering.",
+    "Known motion before collapse strengthens the risk-management argument.",
+    "Innovation is ethical only when controlled by safety.",
+    "Static calculations are not the full ethics answer here.",
+    "Standing is not the same as safe.",
+    "When cost reduces stiffness, safety must take priority.",
+    "Accountability includes learning from failure and improving standards.",
     "End with public safety and real-world dynamic loads."
   ],
   "case-7": [
@@ -3428,8 +3454,11 @@ function highlightTerms(text, caseId) {
       .replaceAll("torsional flutter", "<strong>torsional flutter</strong>")
       .replaceAll("Torsional flutter", "<strong>Torsional flutter</strong>")
       .replaceAll("resonance", "<strong>resonance</strong>")
+      .replaceAll("vortex shedding", "<strong>vortex shedding</strong>")
       .replaceAll("wind-induced", "<strong>wind-induced</strong>")
       .replaceAll("public safety", "<strong>public safety</strong>")
+      .replaceAll("public trust", "<strong>public trust</strong>")
+      .replaceAll("dynamic loads", "<strong>dynamic loads</strong>")
       .replaceAll("cost-saving", "<strong>cost-saving</strong>")
       .replaceAll("warning signs", "<strong>warning signs</strong>")
       .replaceAll("warning sign", "<strong>warning sign</strong>")
