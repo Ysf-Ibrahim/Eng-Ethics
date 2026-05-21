@@ -2149,334 +2149,356 @@ const quizData = [
     caseId: "case-7",
     questions: [
       {
-        question: "The mattress believed to be extinguished was stored in a closet near the main stairway. From an ethics perspective, why was this decision the starting point of the disaster?",
+        question: "Hotel staff move a mattress that may still be smoldering into a closet beside the main stairway. Which ethical judgment is strongest?",
         options: [
-          "It created a foreseeable fire hazard directly beside the main escape route.",
-          "It made the room look untidy and was against hotel cleaning procedures.",
-          "It violated a patent on mattress storage used by the hotel chain.",
-          "It delayed staff from checking other rooms during the night shift."
+          "It creates a foreseeable fire hazard beside the main escape route.",
+          "It is acceptable if the mattress looks damp from the outside.",
+          "It becomes a safety issue only if inspectors are already on site.",
+          "It mainly concerns housekeeping efficiency rather than life safety."
         ],
         correctAnswer: 0,
-        explanation: "Placing a not-fully-extinguished mattress next to the stairway combined a fire source with the escape path — a foreseeable danger."
+        explanation: "Storing a possibly active fire source beside the main escape path combines ignition risk with egress failure."
       },
       {
-        question: "Which of the following best explains why the Gulf Hotel fire turned into a disaster rather than a minor incident?",
+        question: "Why is the Gulf Hotel fire an engineering ethics case rather than only an accidental fire?",
         options: [
-          "Multiple hazards were combined in a building full of vulnerable occupants.",
-          "The city had no fire department at the time of the fire.",
-          "The hotel was built with intentionally dangerous materials.",
-          "Firefighters refused to respond to a low-income neighborhood."
+          "Because every hotel fire automatically becomes an engineering case.",
+          "Because the building was old enough that modern standards did not matter.",
+          "Because known hazards and weak exits turned it into a public-safety failure.",
+          "Because the event became famous and later appeared in textbooks."
         ],
-        correctAnswer: 0,
-        explanation: "Weak exits, flammable storage, poor signage, and vulnerable occupants all combined to turn a small fire into a mass casualty event."
+        correctAnswer: 2,
+        explanation: "The ethics issue is not just ignition. It is the preventable system of unsafe conditions that allowed mass harm."
       },
       {
-        question: "Which ethical principle is most central to the Gulf Hotel fire case?",
+        question: "Inspectors had already cited the hotel for a non-working exit light. Why does that fact matter most ethically?",
         options: [
-          "Public safety and welfare of building occupants.",
-          "Property rights of the hotel owner.",
-          "Advertising honesty in the hospitality industry.",
-          "Intellectual property protection for fire suppression designs."
+          "It shows the city had a complete solution but chose not to use it.",
+          "It shows a known life-safety defect was not corrected in time.",
+          "It proves the exit light caused the original mattress fire.",
+          "It means hotel management was legally exempt from further responsibility."
         ],
-        correctAnswer: 0,
-        explanation: "The fundamental duty in engineering ethics is to hold public safety, health, and welfare paramount."
+        correctAnswer: 1,
+        explanation: "A prior citation shows awareness of a hazard, which makes failure to correct it an accountability problem."
       },
       {
-        question: "The hotel's exit sign was known to be broken before the fire. Why does this matter ethically?",
+        question: "Which explanation of the Gulf Hotel tragedy is weakest?",
         options: [
-          "It reduced occupants' ability to find the escape route during smoke and panic.",
-          "It increased electricity costs for the hotel management.",
-          "It caused the mattress to reignite near the stairway.",
-          "It prevented the fire department from seeing the building from the street."
+          "Unsafe storage near the stairway helped turn a small fire into a larger one.",
+          "Poor exits and weak emergency guidance made evacuation harder.",
+          "Known hazards and weak follow-up mattered as much as the ignition source.",
+          "The deaths were caused only by one smoker, so building safety is secondary."
         ],
-        correctAnswer: 0,
-        explanation: "Emergency exit lighting is a life-safety system. A broken sign directly undermines occupants' ability to escape."
+        correctAnswer: 3,
+        explanation: "Reducing the case to one smoker ignores the building owner, inspectors, and known life-safety failures."
       },
       {
-        question: "Inspectors had cited the Gulf Hotel for safety violations before the fire. What does this most importantly show?",
+        question: "A low-cost hotel houses elderly, disabled, homeless, transient, or intoxicated occupants. What does ethical safety practice require?",
         options: [
-          "A known safety problem existed but was not corrected before the disaster.",
-          "The city had a perfect system for tracking and fixing hotel violations.",
-          "Hotel management had no knowledge of the building's conditions.",
-          "The inspection system was too strict and targeted low-income buildings unfairly."
+          "Lower standards because the residents can leave if they dislike conditions.",
+          "The same minimum rules, but no need for extra urgency.",
+          "Stronger life-safety protection because many occupants may struggle to escape.",
+          "Only voluntary safety upgrades because the building serves low-income guests."
         ],
-        correctAnswer: 0,
-        explanation: "A prior citation means the hazard was foreseeable and known — which makes the failure to correct it an ethical accountability problem."
+        correctAnswer: 2,
+        explanation: "Vulnerable occupants increase the duty of care because they may have less ability to self-protect in an emergency."
       },
       {
-        question: "What was the main accountability failure in the period before the fire?",
+        question: "After the first mattress fire seemed controlled, what should hotel management have done?",
         options: [
-          "Known safety hazards were identified but not corrected in time.",
-          "The hotel was too new to have a formal inspection process.",
-          "Inspectors were not allowed to enter private residential buildings.",
-          "Management was unaware of any fire-related risks in the building."
+          "Store the mattress in the closet until daylight so staff can watch it later.",
+          "Place it near cleaning supplies so it stays out of guest rooms.",
+          "Return it to service if no visible flames remain.",
+          "Fully extinguish or remove it and keep it away from exits and flammables."
         ],
-        correctAnswer: 0,
-        explanation: "Accountability requires not just identifying hazards but ensuring they are fixed before harm occurs."
+        correctAnswer: 3,
+        explanation: "A mattress can keep heat deep inside and reignite. Safe response required full extinguishment or safe removal."
       },
       {
-        question: "Some accounts focus on the cigarette smoker who started the initial mattress fire. Why is blaming only the smoker an incomplete ethical analysis?",
+        question: "Why is saying 'the hotel was old' an incomplete explanation of the case?",
         options: [
-          "The unsafe building conditions allowed a small fire to become a mass-casualty disaster.",
-          "The smoker had legal permission to smoke in all areas of the building.",
-          "Engineering ethics does not apply to accidental fires caused by human error.",
-          "Smokers are always fully responsible for any fire that results from their behavior."
+          "Age mattered, but correctable hazards made the building unsafe.",
+          "Old buildings are automatically unethical regardless of condition.",
+          "Age explains the fire completely, so no other analysis is needed.",
+          "If a building is old, city officials have no responsibility for it."
         ],
         correctAnswer: 0,
-        explanation: "A system without sprinklers, working exits, or safe storage allowed a cigarette-related fire to kill 55 people. The system design is an ethical responsibility."
+        explanation: "The ethical issue was not age alone. It was failing to correct foreseeable hazards in an occupied building."
       },
       {
-        question: "What factor most increased the danger of the fire spreading rapidly?",
+        question: "What most directly made evacuation fail during the fire?",
         options: [
-          "Flammable cleaning supplies and insecticides were stored near the reigniting mattress.",
-          "The hotel had too many sprinkler heads that obstructed the hallways.",
-          "The building had wide windows that created draft conditions.",
-          "The fire alarm was too loud and caused panic before the fire grew."
+          "Too many guests were trying to leave at the same time, creating confusion.",
+          "The main stairway was blocked, the fire escape crowded, and the exit light failed.",
+          "The building had so many exits that people could not choose one quickly.",
+          "The mattress was too heavy for staff to move after it reignited."
         ],
-        correctAnswer: 0,
-        explanation: "Flammable materials stored adjacent to a reigniting fire source is a classic compounding hazard."
+        correctAnswer: 1,
+        explanation: "Evacuation failed because the primary route was lost, the secondary route was overloaded, and emergency guidance was weak."
       },
       {
-        question: "Why did the vulnerability of the hotel's occupants make the safety failures especially serious?",
+        question: "Which statement best describes the risk management failure in the Gulf Hotel case?",
         options: [
-          "Elderly, disabled, intoxicated, and homeless men were less able to escape quickly.",
-          "Vulnerable people tend to smoke more, which increased ignition risk.",
-          "Low-income occupants were less likely to pay for fire insurance.",
-          "Vulnerable occupants attracted more media coverage after the disaster."
+          "The only true risk was smoking, and the rest followed naturally.",
+          "The fire became fatal because the city lacked a fire department.",
+          "Foreseeable hazards were allowed to combine before occupancy.",
+          "Risk management does not really apply to lodging buildings."
         ],
-        correctAnswer: 0,
-        explanation: "Vulnerable people have reduced capacity to protect themselves, which increases the ethical duty of building owners and authorities."
+        correctAnswer: 2,
+        explanation: "Risk management is about identifying and controlling hazard combinations, not waiting for them to interact."
       },
       {
-        question: "After the first small mattress fire appeared to be under control, what should management have done?",
+        question: "If an inspector cites a broken exit light in an occupied hotel, what is the best professional response?",
         options: [
-          "Fully extinguished the mattress or moved it safely away from the building.",
-          "Stored it in the stairway closet to monitor it until morning.",
-          "Placed it beside the cleaning chemicals so the area could be watched.",
-          "Ignored it after visible smoke stopped and resumed normal business."
+          "Require correction and verify it before continued occupancy.",
+          "Issue the citation and assume the owner will handle the problem eventually.",
+          "Leave the matter to the next inspection cycle unless guests complain.",
+          "Treat the defect as cosmetic unless the building has already had a fatal fire."
         ],
         correctAnswer: 0,
-        explanation: "A mattress fire can reignite from deep within. Safe handling required full extinguishment or safe removal."
+        explanation: "Professional responsibility means ensuring that known life-safety defects are actually corrected."
       },
       {
-        question: "Which of the following best describes the risk management failure in the Gulf Hotel case?",
+        question: "Why is code enforcement ethically important in this case?",
         options: [
-          "Multiple foreseeable hazards were allowed to exist together in the same building.",
-          "The hotel was operating without any insurance, which was the main risk.",
-          "The only hazard was the cigarette, and management controlled smoking rules.",
-          "Risk management only applies to industrial buildings, not residential hotels."
+          "Because any written rule is enough to satisfy public welfare.",
+          "Because enforcement mainly protects the city from lawsuits.",
+          "Because old hotels are otherwise impossible to regulate fairly.",
+          "Because rules protect people only when violations are corrected."
         ],
-        correctAnswer: 0,
-        explanation: "Risk management means identifying and controlling combinations of hazards — smoking, flammable storage, poor exits, no suppression, and vulnerable occupants all combined."
+        correctAnswer: 3,
+        explanation: "A code that is cited but not enforced does not protect the public in practice."
       },
       {
-        question: "The fire killed 55 people and injured 30. What does this high casualty count show from an ethics perspective?",
+        question: "Which written-answer claim is weakest?",
         options: [
-          "The building's safety systems were inadequate for its actual occupants and conditions.",
-          "The fire was an extraordinary event that no safety system could have prevented.",
-          "High casualties show that the victims did not follow emergency procedures.",
-          "The death toll reflects normal outcomes for fires in 1940s buildings."
+          "Known hazards were not corrected before people were harmed.",
+          "The fire was unavoidable, so ethical responsibility is limited.",
+          "Vulnerable occupants made the duty of care stronger.",
+          "The broken exit light matters because emergency guidance is part of life safety."
         ],
-        correctAnswer: 0,
-        explanation: "Mass casualties in a preventable incident show that safety provisions failed to meet the real needs of the people inside."
+        correctAnswer: 1,
+        explanation: "The case is valuable precisely because the harm was not unavoidable. Multiple foreseeable hazards were left in place."
       },
       {
-        question: "The NSPE Code of Ethics requires engineers to hold paramount the safety, health, and welfare of the public. How does this connect to the Gulf Hotel case?",
+        question: "How should engineers or safety officials think about vulnerable occupants in the Gulf Hotel?",
         options: [
-          "The hotel owner and city authorities failed to protect occupants from foreseeable and known hazards.",
-          "The NSPE canon does not apply to building owners who are not engineers.",
-          "The canon was satisfied because a fire inspection was conducted at some point.",
-          "Public safety means only preventing structural collapse, not fire hazards."
+          "They matter mainly for social policy, not engineering ethics.",
+          "They reduce owner responsibility because self-rescue is always personal.",
+          "Their vulnerability increases the duty to provide exits and protection.",
+          "They should be considered only after the building meets minimum cost targets."
         ],
-        correctAnswer: 0,
-        explanation: "Foreseeable hazards in an occupied building that were not corrected directly contradicts the obligation to hold public safety paramount."
+        correctAnswer: 2,
+        explanation: "Ethical responsibility becomes stronger when affected people have less ability to escape or demand safer conditions."
       },
       {
-        question: "Why is code enforcement ethically important, beyond just writing the rules?",
+        question: "Why is public safety the central principle in the Gulf Hotel case?",
         options: [
-          "Safety codes only protect people if violations are actually corrected, not just cited.",
-          "Codes are mainly important for new construction and not for occupied buildings.",
-          "Enforcement is only necessary when a building owner requests an inspection.",
-          "Written codes satisfy the ethical obligation regardless of whether they are followed."
+          "People stayed in a building without basic life-safety protection.",
+          "Public safety applies only because the fire appeared in the news.",
+          "It is central only if the owner is a licensed engineer.",
+          "It matters less than the question of who first saw the mattress fire."
         ],
         correctAnswer: 0,
-        explanation: "A cited hazard that is never fixed shows that the enforcement system is not fulfilling its life-safety purpose."
+        explanation: "This case is about the duty to protect building occupants before a foreseeable emergency becomes mass harm."
       },
       {
-        question: "What physical conditions made escape from the Gulf Hotel especially difficult during the fire?",
+        question: "Which fact most strongly supports an accountability criticism of the hotel and authorities?",
         options: [
-          "The main stairway was blocked and the fire escape became dangerously overcrowded.",
-          "The building had too many exits, causing occupants to scatter and get confused.",
-          "The fire alarm was too quiet and did not alert occupants on upper floors.",
-          "Firefighters locked the main exits to control the direction of evacuation."
+          "The building was in a busy downtown area.",
+          "The exit light was known but not fixed in time.",
+          "The mattress fire began after smoking.",
+          "Many victims were not identified immediately after death."
         ],
-        correctAnswer: 0,
-        explanation: "A blocked stairway plus a single overcrowded fire escape left vulnerable occupants with extremely limited escape options."
+        correctAnswer: 1,
+        explanation: "Accountability is strongest where a known safety defect was identified but not fixed."
       },
       {
-        question: "The Gulf Hotel was a low-cost lodging for poor and transient men. What is the ethical problem with allowing an unsafe building to operate in that context?",
+        question: "Why is the sentence 'the fire was accidental' too incomplete for an ethics exam?",
         options: [
-          "Low-cost housing still requires life-safety standards, regardless of tenant income.",
-          "Low-cost buildings are exempt from fire safety requirements under historical codes.",
-          "Poor tenants accepted the risk voluntarily by choosing a cheap building.",
-          "Safety costs are too high for operators of low-income housing to afford."
+          "Because accidental events can never involve engineering judgment.",
+          "Because the only relevant question is who lit the cigarette.",
+          "Because ethics ends once the first ignition source is identified.",
+          "Because weak safeguards turned ignition into mass harm."
         ],
-        correctAnswer: 0,
-        explanation: "Every person in a building — regardless of economic status — deserves the protection of basic life-safety provisions."
+        correctAnswer: 3,
+        explanation: "Ignition alone does not explain the ethics failure. The preventable conditions around it do."
       },
       {
-        question: "How did the Gulf Hotel fire become visible as a wider public safety issue beyond a single incident?",
+        question: "What set of measures best addresses emergency egress failure?",
         options: [
-          "The mass death toll showed that fire safety enforcement was inadequate at a systemic level.",
-          "The fire received media coverage only because the hotel was in a wealthy neighborhood.",
-          "The city was already improving fire codes and the disaster had no further impact.",
-          "The fire prompted only the hotel owner to improve conditions, with no wider change."
+          "More hall lighting and less formal inspection paperwork.",
+          "A larger lobby and fewer written fire rules.",
+          "Working exit lights, clear routes, and usable escape paths.",
+          "Faster elevators so guests can leave without using stairs."
         ],
-        correctAnswer: 0,
-        explanation: "Disasters with large casualties often trigger systemic reform, revealing that the failure was not isolated but structural."
+        correctAnswer: 2,
+        explanation: "Egress safety depends on route clarity, route usability, and enough capacity for escape."
       },
       {
-        question: "What is the ethical responsibility of a fire inspector who cites a building for a safety violation?",
+        question: "What is the strongest justice-based interpretation of the Gulf Hotel fire?",
         options: [
-          "To report the violation, follow up, and ensure the correction is made.",
-          "To issue the citation and consider the responsibility transferred to the owner.",
-          "To wait until the building's lease expires before requiring any changes.",
-          "To approve the building conditionally once the owner acknowledges the citation."
+          "Neglect is worse when people at risk are less able to protect themselves.",
+          "Justice is unrelated because the case involved fire rather than design drawings.",
+          "Justice matters only if the owner intended to harm the guests.",
+          "Justice applies only after compensation is paid."
         ],
         correctAnswer: 0,
-        explanation: "A citation without enforcement follow-up does not fulfill the professional duty to protect public safety."
+        explanation: "A building used by vulnerable people demands greater care, not lower standards."
       },
       {
-        question: "Which set of measures would most directly have prevented the escape route failures in the Gulf Hotel fire?",
+        question: "What should city authorities have done after learning of the exit-light problem?",
         options: [
-          "Working exit signs, clear unblocked stairways, and usable emergency exits.",
-          "More hotel guests per floor to increase awareness and self-rescue potential.",
-          "Lower room prices to encourage tenants to leave the building faster.",
-          "Decorative lighting in hallways to improve the appearance of the exit path."
+          "Wait for the next routine review so the owner had time to respond informally.",
+          "Assume the owner would fix it because the defect looked minor.",
+          "Issue another warning letter but allow normal occupancy to continue without checking.",
+          "Follow up quickly and require correction before the hotel kept housing guests."
         ],
-        correctAnswer: 0,
-        explanation: "Exit signs, clear routes, and usable exits are the direct countermeasures to escape-route failure."
+        correctAnswer: 3,
+        explanation: "When a known life-safety defect remains in an occupied building, authorities must ensure correction rather than merely record awareness."
       },
       {
-        question: "Which set of measures would most directly have prevented the rapid fire spread in the Gulf Hotel?",
+        question: "Which explanation of the Gulf Hotel fire is too narrow?",
         options: [
-          "Sprinklers or extinguishers combined with safe storage of flammable materials.",
-          "More guests in the building to raise the alarm faster.",
-          "Wider hallways to allow smoke to dissipate before reaching rooms.",
-          "Removing exit signs to prevent glare from affecting visibility during smoke."
+          "Unsafe storage near the stairway mattered.",
+          "The disaster was only a mattress problem.",
+          "Poor emergency guidance worsened evacuation.",
+          "Vulnerable occupants raised the duty of care."
         ],
-        correctAnswer: 0,
-        explanation: "Fire suppression and safe fuel storage are the primary controls for limiting fire growth and spread."
+        correctAnswer: 1,
+        explanation: "The mattress mattered, but the tragedy also involved exits, signage, enforcement, and vulnerable occupants."
       },
       {
-        question: "Ethically, how should the mattress storage decision after the first fire be characterized?",
+        question: "Which case fact best shows compounding risk rather than a single isolated mistake?",
         options: [
-          "It turned a small, controllable fire into a building-wide hazard.",
-          "It was a reasonable short-term measure given the late hour and available staff.",
-          "It satisfied fire safety rules because the mattress appeared to be no longer burning.",
-          "It was the only option available because the exit was already blocked."
+          "A reigniting mattress, flammable supplies, and a blocked stairway.",
+          "The building had guests from different backgrounds and life situations.",
+          "The city already had inspection forms and citation procedures.",
+          "The fire happened in a downtown location rather than in the suburbs."
         ],
         correctAnswer: 0,
-        explanation: "Placing a not-fully-safe mattress near flammable materials and the main escape route transformed a manageable incident into a disaster."
+        explanation: "Compounding risk appears when ignition source, fuel, and escape blockage are allowed to interact."
       },
       {
-        question: "Which of the following is the weakest written-answer claim about the Gulf Hotel fire?",
+        question: "Why does public trust matter in a case like Gulf Hotel?",
         options: [
-          "The disaster was entirely the fault of the victims who chose to stay in a dangerous building.",
-          "The hotel's management failed to correct known safety hazards.",
-          "The city inspectors identified problems but enforcement was not timely.",
-          "Multiple compounding failures created conditions that made mass death possible."
+          "Public trust is mainly about whether the hotel was financially successful.",
+          "It matters only for luxury lodging because low-cost guests expect fewer protections.",
+          "People expect even low-cost lodging to meet basic life-safety standards.",
+          "Trust becomes relevant only after the courts decide who pays damages."
         ],
-        correctAnswer: 0,
-        explanation: "Blaming victims for choosing affordable housing ignores the building owner's and city's clear responsibility to provide safe conditions."
+        correctAnswer: 2,
+        explanation: "Public trust means people believe that occupied buildings meet minimum life-safety requirements regardless of price."
       },
       {
-        question: "Why does public trust matter in the context of the Gulf Hotel fire?",
+        question: "A building with vulnerable occupants has weak exits, poor signage, and no strong suppression system. What should responsible officials do?",
         options: [
-          "People must be able to trust that lodging they use meets basic safety standards.",
-          "Public trust only matters for high-end hotels, not low-cost lodging.",
-          "Trust is restored automatically once the building owner apologizes publicly.",
-          "Public trust is only relevant to engineering ethics when products are involved."
+          "Treat it as acceptable as long as there has not yet been a fatal fire.",
+          "Treat it as a high-priority safety risk and act before occupancy continues.",
+          "Leave the choice to occupants because they accepted the building's low cost.",
+          "Focus only on future renovations and ignore the current condition."
         ],
-        correctAnswer: 0,
-        explanation: "Anyone who pays to stay in a building trusts that it meets minimum life-safety standards — that trust was violated by the Gulf Hotel's conditions."
+        correctAnswer: 1,
+        explanation: "Known conditions that could trap vulnerable occupants demand urgent corrective action before disaster."
       },
       {
-        question: "If fire department response is delayed, how does that affect the ethical responsibility of the building's internal safety systems?",
+        question: "Which claim is weakest?",
         options: [
-          "It increases the importance of internal protection, since external response cannot be relied upon.",
-          "It eliminates the hotel owner's responsibility because the city was at fault for the delay.",
-          "It shows that fire departments are responsible for all fire deaths in their jurisdiction.",
-          "It reduces the need for internal safety systems because delays are expected."
+          "A cited-but-not-fixed exit defect is a serious accountability issue.",
+          "Weak fire protection and unsafe storage can turn a small fire deadly.",
+          "Protection of vulnerable occupants is part of public welfare.",
+          "Cheap buildings cannot be expected to meet the same safety duties."
         ],
-        correctAnswer: 0,
-        explanation: "When external response is slow or uncertain, internal fire protection — exits, suppression, signs — becomes the only defense available."
+        correctAnswer: 3,
+        explanation: "Economic status does not reduce the duty to provide basic life-safety protection."
       },
       {
-        question: "Some dismissed the Gulf Hotel as just a flophouse. What is the ethical problem with that attitude?",
+        question: "Why did the blocked main stairway matter ethically, not just physically?",
         options: [
-          "It implies that vulnerable people deserve less protection, which violates the duty of equal safety.",
-          "It is only problematic if the building is used for commercial purposes.",
-          "It is acceptable because low-cost buildings cannot afford safety upgrades.",
-          "It only affects ethical duty if the building is inspected by licensed engineers."
+          "Because it removed the main escape path during emergency.",
+          "Because it made the building look more disorganized from outside.",
+          "Because it showed the hotel relied too heavily on elevators.",
+          "Because it increased the hotel's repair costs after the incident."
         ],
         correctAnswer: 0,
-        explanation: "Dismissing a building's occupants as low-value undermines the universal obligation to protect human life."
+        explanation: "Blocking the main means of egress is a direct life-safety failure when people depend on it to escape."
       },
       {
-        question: "If asked in an exam to explain what caused the Gulf Hotel disaster, which answer is strongest?",
+        question: "What should hotel management have prioritized long before the fire?",
         options: [
-          "A combination of a reigniting mattress, flammable storage, blocked exits, broken signage, and weak enforcement.",
-          "Only the cigarette smoker who started the initial fire in the mattress.",
-          "The fire department, which was responsible for all fire safety in the city.",
-          "The original building design, with no responsibility assigned to management or inspectors."
+          "Keeping occupancy high enough to fund later improvements.",
+          "Reducing complaints about room prices before addressing safety.",
+          "Safe storage, functioning exits, and fire-prevention controls.",
+          "Marketing the hotel as affordable so guests understood the building was basic."
         ],
-        correctAnswer: 0,
-        explanation: "Strong exam answers address multiple causes — physical, managerial, and enforcement — not a single factor."
+        correctAnswer: 2,
+        explanation: "Management's ethical duty was to maintain the building's life-safety systems before an emergency exposed their weakness."
       },
       {
-        question: "How should a professional explain their responsibility in the context of the Gulf Hotel fire?",
+        question: "Out of 133 guests, 55 died and 30 were injured. From an ethics perspective, what does that scale of harm show?",
         options: [
-          "Identify foreseeable hazards and ensure they are corrected before harm occurs.",
-          "Document all safety problems but wait for a supervisor to approve any action.",
-          "Prioritize keeping the building open because closure harms low-income residents.",
-          "Report only hazards that are explicitly listed in current building codes."
+          "The fire was unusually severe, so normal ethics analysis does not apply.",
+          "The building's protections were inadequate for the real occupants inside.",
+          "The main lesson is simply that old buildings are impossible to make safe.",
+          "The outcome mainly reflects the behavior of the guests rather than the building."
         ],
-        correctAnswer: 0,
-        explanation: "Professional responsibility requires proactive identification and correction of foreseeable hazards, not reactive documentation."
+        correctAnswer: 1,
+        explanation: "The scale of harm shows that the building's protection layers failed the people who depended on them."
       },
       {
-        question: "How do the consequences of the Gulf Hotel fire serve as a deterrent for future negligence?",
+        question: "Which answer best distinguishes accountability from code enforcement in this case?",
         options: [
-          "Mass casualties show the cost of ignoring foreseeable hazards and failing to enforce safety.",
-          "Consequences deter only when the building owner is personally fined.",
-          "The death toll was too long ago to have any deterrent effect today.",
-          "Deterrence only works in industrial settings, not in lodging."
+          "Accountability is public anger, while code enforcement is private building maintenance.",
+          "Accountability applies only after tragedy, while code enforcement matters only before it.",
+          "There is no real difference because both mean identifying the first smoker.",
+          "Accountability means fixing known hazards; code enforcement makes corrections happen."
         ],
-        correctAnswer: 0,
-        explanation: "Documented disasters with known preventable causes create professional and moral pressure to take safety obligations seriously."
+        correctAnswer: 3,
+        explanation: "The two ideas are related but distinct: one is responsibility, the other is the mechanism that makes safety rules real."
       },
       {
-        question: "How is accountability connected to prevention in the Gulf Hotel case?",
+        question: "Which answer is too narrow for a full exam response about the Gulf Hotel fire?",
         options: [
-          "Holding parties accountable for failing to fix hazards leads to stronger codes and earlier corrections.",
-          "Accountability is only relevant after a disaster and has no effect on future prevention.",
-          "Prevention is the responsibility of tenants, not building owners or city inspectors.",
-          "Accountability ends when a citation is issued, regardless of whether it is followed up."
+          "The building's emergency egress failed when routes became unusable.",
+          "Known hazards and weak follow-up made the case ethically serious.",
+          "The main ethical lesson is simply that the hotel needed sprinklers.",
+          "Vulnerable occupants increase the duty of care."
         ],
-        correctAnswer: 0,
-        explanation: "Accountability that includes real consequences motivates actors to prevent harm rather than wait for disaster."
+        correctAnswer: 2,
+        explanation: "Sprinklers mattered, but the case also involved signage, exits, storage, enforcement, and accountability."
       },
       {
-        question: "Which of the following is the best final conclusion about the Gulf Hotel fire from an engineering ethics perspective?",
+        question: "Why is blaming the victims a weak ethical response?",
         options: [
-          "Foreseeable hazards in an occupied building must be corrected before vulnerable people are harmed.",
-          "The fire proves that old buildings should be demolished rather than repaired.",
-          "The disaster shows that only licensed engineers can prevent building fires.",
-          "Public safety is only relevant to disasters that involve structural collapse."
+          "Because building fires are always caused by occupant behavior alone.",
+          "Because occupants relied on owners and authorities for safe shelter and egress.",
+          "Because vulnerable people are never allowed to make any choices for themselves.",
+          "Because responsibility belongs only to the city once a building is occupied."
+        ],
+        correctAnswer: 1,
+        explanation: "The ethical duty rested with the people and systems responsible for the building's safety conditions."
+      },
+      {
+        question: "Which is the best final lesson of the Gulf Hotel fire?",
+        options: [
+          "Any old building should be closed immediately, even without inspection.",
+          "The case mainly proves that smoking is always the single decisive cause.",
+          "The most important reform is to increase hotel profits so maintenance improves.",
+          "Known hazards must be corrected before vulnerable people are harmed."
+        ],
+        correctAnswer: 3,
+        explanation: "The enduring lesson is about preventing foreseeable harm before it reaches vulnerable occupants."
+      },
+      {
+        question: "If a citation is issued but no timely correction follows, which failure is most directly shown?",
+        options: [
+          "Accountability failed because awareness did not produce action.",
+          "Justice was fully satisfied because the defect had been documented.",
+          "Professional responsibility was transferred entirely to the occupants.",
+          "The risk no longer counted as foreseeable once it was written down."
         ],
         correctAnswer: 0,
-        explanation: "The case teaches that foreseeability, vulnerable occupants, and the duty to act before harm are the core ethics lessons."
+        explanation: "A recorded hazard that remains uncorrected shows that knowing about danger is not the same as acting on it."
       }
     ]
   },
@@ -3025,36 +3047,38 @@ const quizTopics = {
     "Final lesson"
   ],
   "case-7": [
-    "Foreseeable hazard",
-    "Chain of failures",
-    "Core principle",
-    "Exit sign ethics",
-    "Known hazard",
-    "Accountability",
-    "Single cause",
-    "Fire spread",
-    "Vulnerable stakeholders",
+    "Stairway hazard",
+    "Ethics case",
+    "Known defect",
+    "Weak explanation",
+    "Vulnerable occupants",
     "First response",
+    "Incomplete explanation",
+    "Escape failure",
     "Risk management",
-    "Consequences",
-    "NSPE safety",
-    "Code enforcement",
-    "Escape routes",
-    "Low-cost lodging",
-    "Public visibility",
     "Inspector duty",
-    "Egress prevention",
-    "Fire suppression",
-    "Mattress decision",
+    "Code enforcement",
     "Weak claim",
-    "Public trust",
-    "Defense in depth",
+    "Stakeholder vulnerability",
+    "Public safety",
+    "Accountability fact",
+    "Incomplete ethics answer",
+    "Emergency egress",
     "Justice",
-    "Multi-factor cause",
-    "Professional responsibility",
-    "Deterrence",
-    "Accountability + prevention",
-    "Final lesson"
+    "Authority response",
+    "Too narrow answer",
+    "Compounding risk",
+    "Public trust",
+    "High-priority hazard",
+    "Weak claim",
+    "Main stairway",
+    "Management priorities",
+    "Scale of harm",
+    "Accountability vs enforcement",
+    "Too narrow lesson",
+    "Victim blaming",
+    "Final lesson",
+    "Citation without correction"
   ],
   "case-8": [
     "Public space failure",
@@ -3296,36 +3320,38 @@ const quizExamTips = {
     "End with public safety and real-world dynamic loads."
   ],
   "case-7": [
-    "A foreseeable hazard near an escape route is a double failure — fire risk and egress failure combined.",
-    "Strong answers list multiple combined factors, not a single cause.",
-    "Public safety and welfare is always the highest-priority principle in building and fire cases.",
-    "Exit signs are life-safety systems — a broken one is a safety defect, not a maintenance issue.",
-    "A prior citation means the hazard was known and preventable — use 'foreseeable' in your answer.",
-    "Accountability = identify + correct. Knowing a hazard and not fixing it is the failure.",
-    "Single-cause explanations almost always score lower than multi-factor ones in ethics exams.",
-    "Flammable storage near ignition source = compounding hazard — show this chain in written answers.",
-    "Vulnerable stakeholders always increase ethical duty — mention who was affected and why.",
-    "The correct response to a fire risk that appears controlled is full safe removal, not storage.",
-    "Risk management = identifying foreseeable hazard combinations, not just individual risks.",
-    "High casualty count proves the safety system was inadequate for the real population inside.",
-    "NSPE 'hold paramount' is always high-yield for fire and building cases.",
-    "A cited-but-not-fixed violation is more damaging ethically than an uncited one — it proves awareness.",
-    "Escape route failure = blocked path + crowded alternative + no working signage.",
-    "Poverty does not reduce safety rights — this is a trap answer, never choose it.",
-    "Disasters become systemic lessons when enforcement failures are revealed at scale.",
-    "Inspector duty = report AND follow up. Issuing a citation is not enough.",
-    "Exit safety = signs + clear routes + usable exits. Name all three if asked.",
-    "Fire suppression + safe storage = the two physical controls for limiting fire spread.",
-    "The mattress decision is ethically central — it combined fire source, fuel, and escape blockage.",
-    "Victim-blaming claims are always the weakest in engineering ethics — look for them in MCQs.",
-    "Public trust applies to all lodging, not just hotels or high-cost buildings.",
-    "Delayed external response makes internal protection systems the last line of defense.",
-    "Any answer that implies some groups deserve less safety is ethically wrong — mark it wrong.",
-    "Exam answers combining physical cause + management failure + enforcement failure are strongest.",
-    "Professional responsibility = proactive hazard correction, not reactive documentation.",
-    "Consequences deter future negligence — connect the death toll to the preventable causes.",
-    "Accountability that leads to code reform is the highest-value answer for prevention questions.",
-    "Best conclusion combines foreseeability + vulnerability + duty to act before harm."
+    "Fire source plus escape path is a high-yield ethics link.",
+    "Explain why it became a public-safety failure, not only how it started.",
+    "A prior citation proves the hazard was known before the disaster.",
+    "Victim-blaming or single-cause answers are usually the weakest.",
+    "Vulnerable occupants increase the duty of care.",
+    "After a small fire, the ethical response is safe removal or full extinguishment.",
+    "Old building is not a complete explanation; focus on correctable hazards.",
+    "Escape failure means blocked route, weak backup, and poor guidance together.",
+    "Risk management questions reward combined-hazard answers.",
+    "Inspector duty means cite, follow up, and verify correction.",
+    "Codes protect life only when enforced in practice.",
+    "Unavoidable is usually a weak ethics answer when hazards were known.",
+    "Justice questions ask who lacked power to protect themselves.",
+    "Public safety is usually the first principle in occupied-building disasters.",
+    "Known defect plus no correction equals accountability.",
+    "Accidental does not remove responsibility for foreseeable harm.",
+    "Name signs, routes, and usable exits in egress answers.",
+    "Protection duties rise when occupants are vulnerable.",
+    "Authorities must act before another incident, not after it.",
+    "Too-narrow answers ignore management and enforcement.",
+    "Show how ignition, fuel, and blocked escape combined.",
+    "Public trust applies to any lodging people rely on.",
+    "If occupants are vulnerable, weak safety systems demand urgency.",
+    "Any answer implying poor people deserve less safety is wrong.",
+    "Blocked stairs are not just inconvenient; they remove primary egress.",
+    "Prevention answers should include management action and building systems.",
+    "Large casualty counts show safety failed for the real occupant population.",
+    "Distinguish responsibility from the enforcement mechanism.",
+    "Do not reduce Gulf Hotel to one missing system like sprinklers alone.",
+    "Victims relied on the building and authorities for safety.",
+    "Best conclusions combine foreseeability, vulnerability, and duty to act.",
+    "Awareness without correction is the accountability failure."
   ],
   "case-8": [
     "When a public structure fails, connect the case to public safety and professional duty.",
@@ -3471,14 +3497,20 @@ function highlightTerms(text, caseId) {
       .replaceAll("Gulf Hotel", "<strong>Gulf Hotel</strong>")
       .replaceAll("public safety", "<strong>public safety</strong>")
       .replaceAll("public welfare", "<strong>public welfare</strong>")
+      .replaceAll("public trust", "<strong>public trust</strong>")
+      .replaceAll("accountability", "<strong>accountability</strong>")
+      .replaceAll("code enforcement", "<strong>code enforcement</strong>")
+      .replaceAll("risk management", "<strong>risk management</strong>")
       .replaceAll("exit light", "<strong>exit light</strong>")
+      .replaceAll("main stairway", "<strong>main stairway</strong>")
+      .replaceAll("fire escape", "<strong>fire escape</strong>")
       .replaceAll("exit signs", "<strong>exit signs</strong>")
+      .replaceAll("emergency egress", "<strong>emergency egress</strong>")
       .replaceAll("sprinklers", "<strong>sprinklers</strong>")
       .replaceAll("extinguishers", "<strong>extinguishers</strong>")
       .replaceAll("foreseeable", "<strong>foreseeable</strong>")
       .replaceAll("vulnerable", "<strong>vulnerable</strong>")
-      .replaceAll("flammables", "<strong>flammables</strong>")
-      .replaceAll("code", "<strong>code</strong>");
+      .replaceAll("flammable", "<strong>flammable</strong>");
   }
 
   if (caseId === "case-8") {
