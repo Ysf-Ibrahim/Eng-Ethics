@@ -1457,334 +1457,334 @@ const quizData = [
     caseId: "case-5",
     questions: [
       {
-        question: "A hospital uses a software-controlled radiation therapy machine. Patients report burning sensations and later show injuries consistent with massive radiation exposure, while the manufacturer initially says overdose is impossible. What is the strongest ethical interpretation of this situation in the Therac-25 case?",
+        question: "A hospital notifies AECL that two patients experienced burns after Therac-25 treatments, but AECL engineers insist overdose is impossible because the software passed all internal tests. What is the most ethical immediate response for AECL?",
         options: [
-          "The manufacturer should treat the reports as safety warnings and investigate before more patients are harmed.",
-          "The operators should continue normal use unless the machine displays a fully explained error.",
-          "The manufacturer can reject the reports until the exact bug is reproduced in a lab.",
-          "The hospitals alone are responsible because they operated the device."
+          "Restrict use of the device, investigate the reports urgently, and notify all other hospitals using the machine.",
+          "Continue normal operation until the exact software fault can be reproduced in a laboratory setting.",
+          "Ask the hospital to collect more reports before any formal action is taken.",
+          "Refer the matter to the FDA and take no internal action until a formal investigation is ordered."
         ],
         correctAnswer: 0,
-        explanation: "Patient reports of harm in a safety-critical medical device must trigger immediate investigation and protective action."
+        explanation: "Patient harm reports from a safety-critical medical device must be treated as evidence of real risk, not as problems to disprove."
       },
       {
-        question: "What made Therac-25 more dangerous than earlier machines?",
+        question: "Therac-20 had hardware interlocks that Therac-25 did not. What ethical concern does this design decision most directly raise?",
         options: [
-          "It relied heavily on software while reducing hardware interlocks.",
-          "It used only manual controls with no computer.",
-          "It could not deliver radiation at all.",
-          "It was designed only for training students."
+          "Engineers overcomplicated the Therac-20 with unnecessary hardware, so removal was a reasonable simplification.",
+          "Removing independent physical safeguards made the device entirely dependent on software, eliminating the hardware backup if software failed.",
+          "Hardware interlocks are expensive, and removing them is standard engineering practice for newer devices.",
+          "The absence of hardware interlocks was acceptable because the FDA approved the final design."
         ],
-        correctAnswer: 0,
-        explanation: "The risk came from overreliance on software without enough independent hardware interlocks."
+        correctAnswer: 1,
+        explanation: "Removing hardware interlocks concentrated all patient safety in a single software layer, meaning any software fault could reach patients with nothing to stop it."
       },
       {
-        question: "An operator sees a vague malfunction code and presses proceed because similar errors happened often before. Which ethical issue does this best illustrate?",
+        question: "Which statement would be weakest in an engineering ethics exam answer about the Therac-25 accidents?",
         options: [
-          "Human factors and poor error communication.",
-          "Intellectual property violation.",
-          "Environmental responsibility.",
-          "Fair pricing."
+          "AECL should have validated the reused Therac-20 code under the new hardware configuration.",
+          "Vague malfunction codes normalized unsafe behavior by training operators to proceed without understanding the danger.",
+          "The accidents occurred because operators chose to press proceed rather than stopping treatment.",
+          "Fail-safe design would have required the machine to stop when a safe state could not be confirmed."
         ],
-        correctAnswer: 0,
-        explanation: "The interface trained operators to normalize unclear errors and continue without understanding the danger."
+        correctAnswer: 2,
+        explanation: "Blaming only the operator ignores the system design that made unsafe behavior easy, routine, and effectively invisible to operators."
       },
       {
-        question: "Which answer best explains why blaming only the operator is ethically weak in Therac-25?",
+        question: "Which answer best distinguishes fail-safe design from safety redundancy in the context of Therac-25?",
         options: [
-          "The operator worked inside a system with vague warnings, weak fail-safes, and unsafe proceed behavior.",
-          "Operators never interact with medical devices.",
-          "Operators designed all original Therac-25 software.",
-          "Patients were responsible for selecting software modes."
+          "Fail-safe means the machine runs on backup power; redundancy means two operators monitor every treatment session.",
+          "Fail-safe and safety redundancy are two names for the same concept in medical device design.",
+          "Fail-safe means the software restarts automatically; redundancy means the hospital keeps a second machine on standby.",
+          "Fail-safe means the device moves to a safe state when it cannot confirm normal operation; redundancy means independent safeguards protect against single-point failure."
         ],
-        correctAnswer: 0,
-        explanation: "Operator action mattered, but the design allowed unsafe operation and failed to guide users safely."
+        correctAnswer: 3,
+        explanation: "Fail-safe is about the machine's default response under uncertainty. Redundancy is about independent layers so one failure does not reach the patient."
       },
       {
-        question: "What made Malfunction 54 important in the Therac-25 case?",
+        question: "Therac-25 operators reported that editing treatment settings quickly sometimes produced Malfunction 54. Investigation later revealed a race condition in the software triggered by fast user input. What ethical issue does this most directly raise?",
         options: [
-          "It revealed a timing/race-condition problem during fast editing of treatment settings.",
-          "It was a normal message meaning treatment finished correctly.",
-          "It showed the hospital had too many trained operators.",
-          "It was unrelated to patient radiation exposure."
+          "The software was not tested against realistic operator behavior, creating a hidden safety fault that reached patients.",
+          "Operators violated the device manual by editing settings more quickly than the specification permitted.",
+          "Race conditions are a known limitation of all software and fall outside normal engineering ethics responsibility.",
+          "AECL should have replaced human operators with automated treatment systems to prevent fast-input errors."
         ],
         correctAnswer: 0,
-        explanation: "Malfunction 54 was linked to unsafe machine behavior triggered by realistic operator edits."
+        explanation: "A safety-critical system must be tested the way real users actually operate it, not only under ideal or slow-input conditions."
       },
       {
-        question: "A manufacturer argues that its software was reused from an older medical device and therefore should be trusted. Which response best matches engineering ethics?",
+        question: "After one hospital reported a probable overdose, AECL investigated only at that site and sent no warning to other hospitals. Weeks later, a second overdose occurred elsewhere. What should AECL have done after the first report?",
         options: [
-          "Reused software must be revalidated when the system or safety protections change.",
-          "Reused software is always safer and needs no testing.",
-          "Reused software is always unethical and must be banned.",
-          "Reused software matters only in non-medical products."
+          "Waited for a second incident before alerting anyone, since one report could be a false alarm.",
+          "Notified all hospitals using the device of the potential risk and suspended or restricted use until the investigation was complete.",
+          "Investigated internally without contacting other hospitals to avoid causing unnecessary alarm.",
+          "Asked the FDA to notify other hospitals on AECL's behalf while continuing normal internal operations."
         ],
-        correctAnswer: 0,
-        explanation: "Old code may contain hidden assumptions that fail in the new system."
+        correctAnswer: 1,
+        explanation: "When a safety signal appears in a medical device, all users must be warned even before the cause is confirmed."
       },
       {
-        question: "Which statement best explains the role of poor software engineering in Therac-25?",
+        question: "During software development, an AECL engineer notices a timing condition that could briefly put the machine in an unsafe state during fast operator input. The engineer's manager says this scenario is too unlikely to require a design change. What is the most ethical course of action for the engineer?",
         options: [
-          "Weak testing, poor documentation, and insufficient independent review allowed safety-critical software faults to reach patients.",
-          "Software engineering was irrelevant because radiation is physical.",
-          "The only problem was that the machine had too many buttons.",
-          "Documentation would not help because software cannot be reviewed."
+          "Accept the manager's judgment because schedule and risk decisions are management's responsibility.",
+          "Document the concern privately and mention it informally to a colleague as a personal record.",
+          "Formally report the potential hazard and recommend testing or design changes to resolve it before the product is released.",
+          "Report the concern directly to the FDA, bypassing internal management to ensure external oversight."
         ],
-        correctAnswer: 0,
-        explanation: "Software controlled physical radiation, so poor software practice became a patient safety failure."
+        correctAnswer: 2,
+        explanation: "Engineers have a professional duty to escalate safety concerns formally, regardless of management's initial reaction to them."
       },
       {
-        question: "Why were hardware interlocks ethically important?",
+        question: "AECL reused software from the Therac-20 in the Therac-25 without fully revalidating it. The Therac-20 had hardware interlocks that compensated for software limitations that no longer existed in the Therac-25. What is the strongest ethical concern here?",
         options: [
-          "They could provide independent protection if software checks failed.",
-          "They would make software testing unnecessary.",
-          "They exist only to reduce treatment speed.",
-          "They would make operators unnecessary in all cases."
+          "The reused code relied on hardware protections that were removed, so reusing it without revalidation introduced hidden risks.",
+          "Reusing software from a previous device is inherently unethical regardless of context.",
+          "Revalidation is only required when hardware components, not software, are changed.",
+          "Code reuse is acceptable without further testing if the manufacturer has prior approval for the original software."
         ],
         correctAnswer: 0,
-        explanation: "Independent physical protection helps prevent one software failure from injuring patients."
+        explanation: "Code validated under one safety environment may behave dangerously in a different configuration."
       },
       {
-        question: "What does the arithmetic overflow problem show ethically?",
+        question: "A hospital has been seeing unexplained malfunction codes during Therac-25 treatments. No patient injury has been confirmed yet, and the manufacturer has not issued a safety alert. What is the most ethical course of action for the hospital?",
         options: [
-          "Small software assumptions can become deadly when code controls physical energy.",
-          "Overflow only affects harmless display numbers.",
-          "Software errors are not engineering concerns.",
-          "Overflow proves operators caused the accident."
+          "Continue normal operation because no official safety alert has been issued by the manufacturer.",
+          "Stop treatments on the affected machine, report the unusual behavior to the manufacturer and the regulator, and investigate before resuming.",
+          "Train operators to clear malfunction codes faster so treatments are not disrupted.",
+          "Request the full source code from AECL and review it internally before taking any action."
         ],
-        correctAnswer: 0,
-        explanation: "A counter rolling back to zero hid an unsafe state and allowed dangerous treatment."
+        correctAnswer: 1,
+        explanation: "A medical institution must act on potential patient risk independently, without waiting for the manufacturer to act first."
       },
       {
-        question: "In terms of transparency, what was one major failure in Therac-25?",
+        question: "From a transparency perspective, what did AECL most clearly owe to hospitals and operators using the Therac-25?",
         options: [
-          "Operators and hospitals did not receive clear explanations of malfunction codes and risks.",
-          "Patients were given too much detailed source code.",
-          "AECL made every accident immediately public.",
-          "The FDA wrote all user manuals."
+          "Publishing technical white papers for academic review of the software architecture.",
+          "Responding publicly to media questions about the accident reports.",
+          "Sharing the full source code with every hospital for independent safety review.",
+          "Clearly communicating what malfunction codes meant, what risks existed, and what actions operators should take when errors appeared."
         ],
-        correctAnswer: 0,
-        explanation: "Vague error codes and poor disclosure reduced users' ability to respond safely."
+        correctAnswer: 3,
+        explanation: "Transparency in safety-critical systems means users receive actionable information to operate safely — not press releases."
       },
       {
-        question: "Why did repeated accidents make AECL's accountability failure more serious?",
+        question: "An operator frequently sees malfunction codes during Therac-25 setup. Because these codes always seem harmless and the machine restarts normally, the operator develops a habit of pressing proceed immediately. One session, this leads to a fatal overdose. Which explanation most accurately identifies where primary ethical responsibility lies?",
         options: [
-          "Repeated harm showed early warnings were not acted on quickly enough.",
-          "Repeated accidents prove the device was safe.",
-          "Accountability only starts after the final accident.",
-          "The manufacturer has no role after selling equipment."
+          "The operator is fully responsible for developing an unsafe habit of pressing proceed after any error.",
+          "The hospital is responsible because it failed to supervise and correct operator behavior over time.",
+          "The system design is primarily responsible because it normalized unclear errors and allowed unsafe continuation, shaping operator behavior.",
+          "The patient assumed this risk by consenting to radiation therapy."
         ],
-        correctAnswer: 0,
-        explanation: "When harm repeats, the duty to stop use, investigate, and warn becomes stronger."
+        correctAnswer: 2,
+        explanation: "Interface design that makes unsafe behavior easy and invisible carries primary design responsibility, not the operator who was shaped by it."
       },
       {
-        question: "Which option best distinguishes accountability from transparency in this case?",
+        question: "A hospital administrator says: \"We trusted the Therac-25 completely because it was the most technologically advanced machine available.\" Which lesson from engineering ethics best challenges this reasoning?",
         options: [
-          "Transparency is clear disclosure of risks; accountability is taking corrective responsibility after warnings.",
-          "Transparency means paying compensation; accountability means hiding technical details.",
-          "Transparency and accountability are unrelated to patient safety.",
-          "Transparency applies only to regulators, while accountability applies only to patients."
+          "Advanced technology is not automatically safe; complexity can hide failure modes that require stronger testing and oversight, not less.",
+          "Hospitals should rely only on proven older technology to minimize risk.",
+          "Technologically advanced devices receive more rigorous regulatory scrutiny, so higher trust in them is justified.",
+          "Engineers on advanced projects are more experienced, so their designs carry lower ethical risk."
         ],
         correctAnswer: 0,
-        explanation: "Both matter, but transparency focuses on information and accountability on responsibility and action."
+        explanation: "Sophistication can increase, not reduce, risk — especially when complexity masks unexpected failure modes."
       },
       {
-        question: "Why is 'the software bug was rare' not a strong ethical defense?",
+        question: "From a professional responsibility perspective, what was AECL's most important duty regarding the Therac-25 software?",
         options: [
-          "Rare failures can still be unacceptable when consequences are severe and patients can die.",
-          "Rare failures are always acceptable in hospitals.",
-          "Rare failures cannot be tested.",
-          "Rare failures prove the system is ethical."
+          "To minimize software documentation to reduce maintenance costs and development time.",
+          "To ensure the software controlling a dangerous physical process was independently validated, tested under realistic conditions, and accompanied by hardware fail-safes.",
+          "To outsource software testing to the hospitals that operated the device in clinical settings.",
+          "To respond to FDA inquiries promptly without conducting parallel internal safety reviews."
         ],
-        correctAnswer: 0,
-        explanation: "Safety-critical systems require attention to low-probability, high-severity failures."
+        correctAnswer: 1,
+        explanation: "Manufacturers of safety-critical devices carry primary responsibility for design quality, independent validation, and fail-safe protection."
       },
       {
-        question: "Which answer best explains the ethical issue with pressing proceed after a malfunction?",
+        question: "A software counter in the Therac-25 could overflow from its maximum value back to zero, hiding an unsafe machine state from the operator. Which ethical interpretation is strongest?",
         options: [
-          "The system allowed treatment to continue while safety status was unclear.",
-          "It made the machine slower.",
-          "It reduced hospital paperwork.",
-          "It meant the patient chose the treatment."
+          "Arithmetic overflow is a routine low-level technical matter unrelated to engineering ethics.",
+          "The fault is acceptable because all software contains some numerical edge cases that cannot be anticipated.",
+          "AECL could not reasonably have been expected to test for every possible counter value.",
+          "When software controls dangerous physical output, even details like counter overflow become ethical failures if they are not tested and guarded against."
         ],
-        correctAnswer: 0,
-        explanation: "A safety-critical device should stop when it cannot confirm a safe state."
+        correctAnswer: 3,
+        explanation: "A counter rolling to zero hid an unsafe state and allowed lethal radiation delivery. Technical detail does not cancel ethical responsibility."
       },
       {
-        question: "What does the dose-per-pulse monitor added later represent ethically?",
+        question: "An exam answer states: \"Therac-25 harmed patients because of a software bug in the code.\" Which response best identifies why this answer is too narrow?",
         options: [
-          "A hardware safety layer that can stop dangerous doses even if software fails.",
-          "A cosmetic upgrade to improve patient confidence.",
-          "A replacement for all software testing.",
-          "A way to make operators ignore errors."
+          "It ignores the organizational failures — insufficient testing, denial of early reports, missing fail-safes, and poor error communication — that allowed the bug to harm patients.",
+          "It ignores that hardware problems, not software faults, were the underlying cause of overdoses.",
+          "It ignores that patient injuries resulted from incorrect hospital procedures and inadequate operator training.",
+          "It ignores that the FDA should have identified and corrected the bug before approving the device."
         ],
         correctAnswer: 0,
-        explanation: "It added independent protection against dangerous radiation delivery."
+        explanation: "The bug is the mechanism; the ethical failure is why it reached patients and why harm was not stopped after the first warning."
       },
       {
-        question: "Which answer best describes the public trust issue in Therac-25?",
+        question: "Engineers on a medical software project are asked to skip detailed safety documentation to meet a product release deadline. The software controls radiation dose delivery. What should the team do?",
         options: [
-          "Patients and hospitals lost confidence that advanced medical devices were properly tested and monitored.",
-          "Public trust was unaffected because only software was involved.",
-          "Public trust depends only on hospital furniture.",
-          "Public trust increased because AECL denied the issue."
+          "Skip documentation for this release and add it later, since documentation does not directly affect how the software operates.",
+          "Document only the features most likely to be reviewed by the FDA and skip the rest.",
+          "Refuse to skip safety documentation, because it supports testing, maintenance, accountability, and investigation of any future safety event.",
+          "Record behavior informally in internal emails rather than formal safety project records."
         ],
-        correctAnswer: 0,
-        explanation: "A device meant to heal patients instead harmed them, damaging trust in medical technology."
+        correctAnswer: 2,
+        explanation: "Documentation for safety-critical software is not optional — it enables review, verification, and accountability when harm occurs."
       },
       {
-        question: "What should AECL have done after the first credible overdose report?",
+        question: "After overdose reports from multiple hospitals, AECL's public position was that radiation overdose was physically impossible with the Therac-25. Which ethical principle was most directly violated?",
         options: [
-          "Stop or restrict use, investigate deeply, notify users, and add safeguards.",
-          "Continue use until several more hospitals complained.",
-          "Deny the event because the exact bug was not reproduced yet.",
-          "Tell operators to press proceed faster."
+          "Accountability, because AECL did not offer financial compensation to affected patients.",
+          "Transparency, because AECL communicated false certainty to hospitals while patients continued to face unacknowledged risk.",
+          "Professional responsibility, because AECL's statement contradicted its sales marketing claims.",
+          "Risk management, because AECL failed to update its internal risk register after the reports."
         ],
-        correctAnswer: 0,
-        explanation: "Patient safety requires conservative action after serious harm reports."
+        correctAnswer: 1,
+        explanation: "Claiming safety when harm reports exist without investigation prevents hospitals from protecting patients."
       },
       {
-        question: "Which answer best describes professional responsibility in Therac-25?",
+        question: "Which answer best distinguishes accountability from transparency as they applied to AECL's conduct in the Therac-25 case?",
         options: [
-          "AECL had to ensure software controlling radiation was tested, documented, reviewed, and fail-safe.",
-          "AECL only had to make the machine marketable.",
-          "Hospitals alone had to inspect source code.",
-          "Operators alone were responsible for all safety logic."
+          "Accountability means AECL needed to publish technical reports; transparency means issuing a formal public apology.",
+          "Transparency means complying with FDA information requests; accountability means paying regulatory fines.",
+          "Both principles describe the same duty, which is to provide clear user documentation.",
+          "Transparency means providing clear risk information to users; accountability means taking corrective action and accepting responsibility when harm has occurred."
         ],
-        correctAnswer: 0,
-        explanation: "Manufacturers and engineers are responsible for safety-critical design quality."
+        correctAnswer: 3,
+        explanation: "Transparency is about what you communicate. Accountability is about what you do and own when things go wrong."
       },
       {
-        question: "If asked about 'safety redundancy,' which answer is strongest?",
+        question: "A first hospital reported a likely overdose. AECL made a targeted software change. Months later, a second overdose occurred at a different hospital involving a related but distinct software fault. What does this pattern most strongly indicate?",
         options: [
-          "Therac-25 lacked enough independent hardware safeguards, so software faults could directly harm patients.",
-          "Redundancy means adding more screens to the same software.",
-          "Redundancy was unnecessary because radiation therapy is controlled by doctors.",
-          "Redundancy applies only to bridges and aircraft."
+          "The second accident proves that software faults in complex systems cannot be fully eliminated.",
+          "The second hospital's operator failed to follow updated safety procedures issued after the first incident.",
+          "The first investigation was not thorough enough; discovering one fault should have triggered a broader safety review of related code, not only a targeted patch.",
+          "Repeated harm shows the device should have been immediately recalled after the first incident without any investigation."
         ],
-        correctAnswer: 0,
-        explanation: "Redundancy means independent layers of protection, not repeating the same weak control."
+        correctAnswer: 2,
+        explanation: "One confirmed fault in safety-critical software requires a broader audit of related code — not only a narrow fix."
       },
       {
-        question: "Which answer best explains the human factors lesson?",
+        question: "If a software fault in a radiation therapy machine occurs only once in every thousand treatments, what should engineers conclude about its ethical acceptability?",
         options: [
-          "Designers must expect real operators to work quickly, face confusing errors, and rely on interface guidance.",
-          "Operators should never be trained.",
-          "Human factors means blaming humans for all errors.",
-          "User interface design has no safety impact."
+          "Probability alone does not determine acceptability; a rare but potentially lethal fault in a patient-facing device demands investigation and protection.",
+          "A rate of once per thousand is rare enough to be acceptable in an approved medical device.",
+          "Testing rare conditions is not practically feasible, so rare faults fall outside engineering responsibility.",
+          "Rare faults are the responsibility of operators, who should monitor for unusual machine behavior during sessions."
         ],
         correctAnswer: 0,
-        explanation: "The device should have been designed around realistic operator behavior."
+        explanation: "Risk = probability × severity. In patient safety, high severity dominates. Low probability does not excuse catastrophic harm."
       },
       {
-        question: "Which statement is the weakest ethical conclusion?",
+        question: "The Therac-25 could sometimes resume treatment after a malfunction by pressing a single key, without confirming whether the machine had returned to a safe state. Which ethical principle does this design most clearly violate?",
         options: [
-          "Therac-25 was only a case of operator carelessness.",
-          "Medical software requires strong testing.",
-          "Fail-safe design matters in radiation machines.",
-          "AECL's slow response created accountability concerns."
+          "Accountability, because error events were not automatically logged for future review.",
+          "Fail-safe design, because a safety-critical device must require confirmed safety before allowing dangerous output to continue.",
+          "Human factors, because operators should have been trained not to use the key in uncertain situations.",
+          "Documentation, because the key behavior was not described in the user manual."
         ],
-        correctAnswer: 0,
-        explanation: "The case involved system design, software, communication, and accountability failures."
+        correctAnswer: 1,
+        explanation: "A fail-safe device stops or prevents harmful output when it cannot confirm safe conditions — not defaults to continuation."
       },
       {
-        question: "What does the FDA's intervention show?",
+        question: "An engineer proposes fixing the Therac-25 safety problem by adding a second software check that runs the same validation logic as the existing one. Which ethical assessment best applies?",
         options: [
-          "Independent regulation becomes critical when manufacturer controls fail to protect patients.",
-          "Regulators are always responsible for writing software.",
-          "Regulation removes manufacturer responsibility.",
-          "The device was safe before the FDA acted."
+          "A second software check doubles safety because it provides two independent validations of the same condition.",
+          "Two checks that share the same codebase are acceptable for approved devices as standard industry practice.",
+          "Adding any additional check improves safety, so the proposal should be accepted as an ethical improvement.",
+          "Two checks in the same software are not independent; true safety redundancy requires a physically separate safeguard that can protect patients when software fails."
         ],
-        correctAnswer: 0,
-        explanation: "The FDA required corrective action after repeated safety failures."
+        correctAnswer: 3,
+        explanation: "Redundancy means independent protection layers. If both checks share the same software fault, neither one prevents harm."
       },
       {
-        question: "Which answer best captures the failure chain?",
+        question: "An engineer argues: \"Once the FDA approved the Therac-25, AECL had fulfilled its safety obligations.\" Which response is most ethically accurate?",
         options: [
-          "Software overreliance, weak testing, vague errors, missing fail-safes, denial, repeated patient harm.",
-          "Strong hardware interlocks, clear errors, immediate shutdown, no patient harm.",
-          "Wind instability, torsional flutter, bridge collapse.",
-          "Split rods, doubled load, walkway failure."
+          "The argument is correct because FDA approval represents the highest safety standard for medical devices.",
+          "The argument is partially correct; AECL retained responsibility only until the device was delivered to purchasing hospitals.",
+          "The argument is wrong; FDA approval sets a baseline, but manufacturers retain ongoing duty to monitor, investigate, and respond to safety signals throughout the device's operational life.",
+          "The argument is correct if AECL responded to all FDA communications within required response deadlines."
         ],
-        correctAnswer: 0,
-        explanation: "This chain matches the Therac-25 case."
+        correctAnswer: 2,
+        explanation: "Regulatory approval is a snapshot in time. Ongoing safety responsibility does not transfer to regulators after approval."
       },
       {
-        question: "Why was AECL's safety analysis ethically weak?",
+        question: "After the accidents, engineers added a dose-per-pulse monitor that could detect and interrupt treatment if radiation exceeded safe limits, working independently of the main control software. Which ethical principle does this addition most directly represent?",
         options: [
-          "It did not properly examine the software even though software controlled radiation delivery.",
-          "It focused too much on operator safety.",
-          "It provided excessive independent review.",
-          "It removed all risk before sale."
+          "Transparency, because the monitor displayed radiation values to operators in real time during treatment.",
+          "Safety redundancy, because an independent hardware safeguard was added to protect patients even if the main software failed.",
+          "Accountability, because the monitor created a formal record of each treatment dose for regulatory review.",
+          "Risk management, because AECL documented the monitor's addition in its updated device risk register."
         ],
-        correctAnswer: 0,
-        explanation: "Safety analysis must cover the components that control dangerous energy."
+        correctAnswer: 1,
+        explanation: "The dose-per-pulse monitor was independent of the software that failed — exactly the kind of hardware redundancy the original design lacked."
       },
       {
-        question: "Which answer best explains why advanced technology can create ethical risk?",
+        question: "From a patient safety perspective, how should AECL have treated repeated operator reports that patients were experiencing burns during Therac-25 treatment?",
         options: [
-          "Complexity can hide failure modes, so testing and accountability must increase.",
-          "Advanced technology is always unethical.",
-          "New technology removes public safety duties.",
-          "Complex systems cannot be tested."
+          "As early warning signals to collect and review at the next quarterly device safety meeting.",
+          "As operator misuse reports, because the device had passed manufacturer validation testing.",
+          "As isolated incidents without statistical significance until multiple hospitals confirmed similar patterns.",
+          "As credible harm indicators requiring immediate investigation and protective action, even before the technical cause was confirmed."
         ],
-        correctAnswer: 0,
-        explanation: "Advanced systems require stronger safety processes, not blind trust."
+        correctAnswer: 3,
+        explanation: "Patient harm reports are the most direct safety signal. Dismissing them as user error while patients are being treated is an ethical failure."
       },
       {
-        question: "Which option best applies risk management to Therac-25?",
+        question: "AECL investigated one overdose report at the reporting hospital but did not warn other sites. A second patient was overdosed at a different hospital weeks later. Which ethical assessment is most accurate?",
         options: [
-          "Identify overdose hazards, test realistic failures, add interlocks, and stop use after warning signs.",
-          "Assume overdose is impossible because the machine is computerized.",
-          "Let operators decide whether unknown errors are safe.",
-          "Wait for lawsuits before changing safety logic."
+          "AECL bore primary responsibility for the second accident by failing to warn all users after receiving the first credible safety report.",
+          "The second hospital was primarily responsible because it should have independently monitored its device for safety issues.",
+          "The FDA bore primary responsibility for not coordinating safety information between hospitals.",
+          "Both hospitals share equal responsibility for failing to communicate with each other about device behavior."
         ],
         correctAnswer: 0,
-        explanation: "Risk management requires preventing foreseeable high-severity harm."
+        explanation: "A manufacturer who discovers a safety signal in one installation has a duty to warn all installations — not only the one that reported."
       },
       {
-        question: "In an ethics exam, why is 'radiation therapy is dangerous' not enough as an answer?",
+        question: "What does the Therac-25 case most strongly establish about software in safety-critical medical systems?",
         options: [
-          "The issue was preventable unsafe design and weak response, not the general danger of radiation.",
-          "Radiation therapy always violates ethics.",
-          "Patients caused the radiation errors.",
-          "Medical devices do not need safety design."
+          "Software in medical devices should be replaced with purely mechanical controls wherever clinical performance allows.",
+          "The primary lesson is that software testing must be performed by external regulators before any medical device receives approval.",
+          "Software controlling dangerous physical processes must be independently validated, tested under realistic operator conditions, and backed by hardware safeguards — not trusted as the sole safety layer.",
+          "Safety-critical software needs more operational features to handle the wide range of operator behaviors in clinical settings."
         ],
-        correctAnswer: 0,
-        explanation: "The ethical issue is avoidable exposure from poor engineering controls."
+        correctAnswer: 2,
+        explanation: "The case proves software controlling physical harm requires the same engineering rigor as physical structure — independently reviewed, realistically tested, and hardware-backed."
       },
       {
-        question: "Which answer best explains why documentation matters in safety-critical software?",
+        question: "Therac-25 operators saw one-line messages like \"Malfunction 54\" with no explanation of cause, severity, or required action. Over time, operators treated all malfunction codes as harmless. Which statement best explains the engineering ethics issue?",
         options: [
-          "It allows review, maintenance, investigation, and verification of safety behavior.",
-          "It only helps marketing teams.",
-          "It replaces the need for testing.",
-          "It is optional once the software works once."
+          "Operators should have demanded training on each malfunction code before being permitted to use the device.",
+          "Hospital management was responsible for developing internal procedures to interpret each error code.",
+          "The FDA should have required plain-language error messages as a condition of device approval.",
+          "The interface design failed to support safe operator decisions by presenting unexplained errors that gradually trained operators toward unsafe behavior."
         ],
-        correctAnswer: 0,
-        explanation: "Documentation supports transparency, accountability, and safety review."
+        correctAnswer: 3,
+        explanation: "Human factors engineering requires interfaces that support correct decisions. The system shaped unsafe operator behavior — that is a design failure."
       },
       {
-        question: "What is the strongest prevention answer?",
+        question: "Which prevention strategy would have best addressed the root causes of the Therac-25 accidents?",
         options: [
-          "Improve software validation, hardware interlocks, error messages, incident reporting, and regulatory cooperation.",
-          "Remove all operators and trust the software completely.",
-          "Continue using the device until the bug happens again.",
-          "Replace patient complaints with manufacturer assumptions."
+          "Removing all operator interaction from treatment setup to eliminate human error as a factor.",
+          "Requiring the FDA to perform independent software testing of all medical devices before granting approval.",
+          "Combining rigorous software validation, independent hardware interlocks, clear error communication, prompt response to harm reports, and strong manufacturer accountability across all users.",
+          "Replacing all Therac-25 machines with the older Therac-20 units, which had hardware interlocks already installed."
         ],
-        correctAnswer: 0,
-        explanation: "Prevention must address software, hardware, communication, accountability, and regulation."
+        correctAnswer: 2,
+        explanation: "The failure had multiple root causes — technical, organizational, and communicative. Prevention must address all of them."
       },
       {
-        question: "What is the best final exam conclusion about Therac-25?",
+        question: "Which statement is the strongest final conclusion for a 5-mark engineering ethics exam answer about Therac-25?",
         options: [
-          "Therac-25 shows that safety-critical medical software must be tested, transparent, fail-safe, human-centered, and accountable.",
-          "Therac-25 proves all software is unethical in medicine.",
-          "Therac-25 shows operators alone should be blamed for medical accidents.",
-          "Therac-25 proves radiation therapy should be banned."
+          "Therac-25 proves that software has no place in safety-critical medical devices because it cannot be fully controlled.",
+          "Therac-25 demonstrates that safety-critical software must be rigorously tested, backed by independent hardware safeguards, transparent to users, and accountable to harm signals — because ignoring any one of these layers put patients in danger.",
+          "Therac-25 shows that stricter FDA pre-approval software testing would have been sufficient to prevent all the accidents.",
+          "Therac-25 demonstrates that operators need greater professional training and personal responsibility for understanding the medical devices they use."
         ],
-        correctAnswer: 0,
-        explanation: "This captures the ethical lesson without exaggeration."
+        correctAnswer: 1,
+        explanation: "This conclusion captures the multi-layered ethical lesson without exaggerating the role of any single party."
       }
     ]
   },
