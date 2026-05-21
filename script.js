@@ -276,389 +276,268 @@ const quizData = [
     caseId: "case-2",
     questions: [
       {
-        question: "In the Heathrow Terminal 5 case, what makes the opening-day failure an engineering ethics issue rather than only a travel inconvenience?",
+        question: "A week before Heathrow Terminal 5 opens, integration reports show that baggage handling, staff navigation, parking access, and check-in coordination still break down under realistic rehearsals. The opening date is politically important and the building is complete. What is the most ethical response?",
         options: [
-          "The terminal was expensive to build",
-          "Project decisions affected passengers, public trust, service reliability, and stakeholder welfare",
-          "The terminal had modern architecture",
-          "The airport had many shops"
+          "Open fully because the remaining problems are operational details that staff can solve once passengers arrive.",
+          "Treat the warnings as launch-readiness risk, reduce scope or delay the opening, and require corrective action before full service.",
+          "Keep the date fixed because changing it would damage the public image of the project more than the disruption would.",
+          "Transfer responsibility to frontline staff because the technical build is already finished."
         ],
         correctAnswer: 1,
-        explanation: "The failure affected real users through delays, baggage problems, cancellations, and poor communication."
+        explanation: "Operational readiness is part of professional responsibility. A public system should not open at full scale when known risks remain unresolved."
       },
       {
-        question: "Which statement best describes the main difference between the Volkswagen case and the Heathrow Terminal 5 case?",
+        question: "Heathrow T5 involved 163 IT applications, more than 15 IT vendors, 564 interfaces, over 9,000 connected devices, 11 miles of conveyor belts, and a baggage system capable of handling up to 12,000 bags per hour. Why did that scale make the Big Bang launch ethically risky?",
         options: [
-          "Volkswagen was about poor airport training, while Heathrow was about emissions fraud",
-          "Volkswagen was mainly intentional deception, while Heathrow was mainly poor readiness and project execution",
-          "Both cases were only about financial accounting",
-          "Heathrow involved no ethical concerns"
-        ],
-        correctAnswer: 1,
-        explanation: "Volkswagen centered on deliberate cheating, while Heathrow centered on project-management failure, readiness, and stakeholder impact."
-      },
-      {
-        question: "Why was the \"Big Bang\" launch approach risky for Heathrow Terminal 5?",
-        options: [
-          "It allowed too much time for testing",
-          "It moved many operations at once, so failures quickly affected many passengers and flights",
-          "It reduced the number of passengers",
-          "It removed the need for staff training"
-        ],
-        correctAnswer: 1,
-        explanation: "A large-scale immediate launch leaves little room to recover when problems occur."
-      },
-      {
-        question: "In terms of risk management, what was one major weakness in the Heathrow T5 opening?",
-        options: [
-          "The organization prepared too many contingency plans",
-          "The project did not manage predictable opening-day problems effectively",
-          "The project had no passengers",
-          "The terminal was too small to have risks"
-        ],
-        correctAnswer: 1,
-        explanation: "Problems such as baggage failure, long queues, staff confusion, and communication breakdowns should have had stronger contingency planning."
-      },
-      {
-        question: "Why is poor passenger communication an ethical issue in this case?",
-        options: [
-          "Communication is only a marketing issue",
-          "Passengers affected by delays and baggage failures needed truthful, timely information",
-          "Communication only matters after the project is successful",
-          "Passengers should solve the problem themselves"
-        ],
-        correctAnswer: 1,
-        explanation: "When people are harmed or inconvenienced, they deserve clear information and support."
-      },
-      {
-        question: "Which principle is most connected to British Airways ignoring staff concerns before opening?",
-        options: [
-          "Stakeholder management",
-          "Product color selection",
-          "Luxury branding",
-          "Advertising creativity"
+          "Because one failure could cascade across passengers, staff, baggage, and flights at the same time.",
+          "Because months of testing automatically guaranteed that a full launch would be safe enough.",
+          "Because system complexity removed the duty to listen to frontline operational concerns.",
+          "Because the cost of the project made opening on the announced date the main ethical priority."
         ],
         correctAnswer: 0,
-        explanation: "Staff are key stakeholders because they understand operational readiness and run the system."
+        explanation: "The more tightly coupled the system, the greater the duty to control rollout risk so one failure does not hit everyone at once."
       },
       {
-        question: "Why was insufficient staff training a serious failure?",
+        question: "A senior executive says, 'The terminal passed testing, the building is complete, and the brand needs the opening to happen as announced.' Which response best fits engineering ethics?",
         options: [
-          "Staff training is unrelated to system success",
-          "A complex system cannot operate ethically or reliably if the people running it are not prepared",
-          "Training only matters for small projects",
-          "Passengers should train the staff"
+          "Physical completion is the key ethical standard once the project cost has already been spent.",
+          "Protecting public image should control the decision because reputational loss also harms stakeholders.",
+          "Opening is acceptable if the organization is prepared to offer refunds and apologies afterward.",
+          "A public system should not enter full service unless real operations, staff, and contingencies are ready for expected demand."
+        ],
+        correctAnswer: 3,
+        explanation: "Engineering ethics asks whether the system is truly ready for public use, not whether the opening ceremony can still proceed."
+      },
+      {
+        question: "During cutover from test mode to live mode, a software filter used in testing is left active and transfer-bag information is handled incorrectly. Which ethical lesson is most direct?",
+        options: [
+          "Staff training mattered more than any technology control, so the software issue is secondary.",
+          "Airports should avoid highly integrated systems because integration itself is ethically suspect.",
+          "Launch approval requires controlled transition from test conditions to live operation, not just impressive rehearsal statistics.",
+          "Real passengers are mainly responsible once they choose to rely on a new terminal."
+        ],
+        correctAnswer: 2,
+        explanation: "A complex system is not ethically ready if the shift from testing to live operation is not verified and controlled."
+      },
+      {
+        question: "Business analysts repeatedly hear from baggage handlers and union representatives that parking, security access, and baggage procedures are not ready for real operating pressure. What should they do?",
+        options: [
+          "Remove the concerns from readiness reporting until senior management explicitly requests them.",
+          "Treat the concerns as stakeholder evidence, convert them into risks and requirements, and escalate them into launch decisions.",
+          "Assume operational staff naturally resist change and continue with the approved plan.",
+          "Wait until opening day because only live traffic can prove whether the concerns are serious."
         ],
         correctAnswer: 1,
-        explanation: "The system's success depended on trained staff who could manage baggage, check-in, and passenger flow."
+        explanation: "Business analysts have an ethical role in making sure operational concerns become decision-useful evidence, not background noise."
       },
       {
-        question: "Which statement best explains the baggage-handling problem from a project-management perspective?",
+        question: "Management learns that server-capacity planning may not support opening-day baggage loads, but delaying the launch would be embarrassing after months of publicity. What is the strongest ethical response?",
         options: [
-          "It was only a passenger mistake",
-          "The system was complex and suffered from implementation, capacity, and operational readiness problems",
-          "Baggage systems never require testing",
-          "The system failed because airports should not use technology"
+          "Open as planned because compensation can be offered later if disruption becomes serious.",
+          "Keep the risk discussion internal so passengers and staff do not lose confidence before launch.",
+          "Trust that on-site teams will improvise once the real load appears.",
+          "Delay or limit the launch until capacity and contingency plans are credible under expected load."
         ],
-        correctAnswer: 1,
-        explanation: "The baggage failure reflected readiness and performance planning problems."
+        correctAnswer: 3,
+        explanation: "Public image does not outrank credible capacity risk when thousands of people will depend on the system."
       },
       {
-        question: "What is the ethical problem with opening a public system mainly because of deadline pressure?",
+        question: "Passengers at a new terminal face long queues, late check-in, and uncertainty about luggage and flights. Which communication duty is most ethically important at that moment?",
         options: [
-          "Deadlines are always unethical",
-          "Meeting a deadline can become unethical if known risks to users are ignored",
-          "Public systems do not need deadlines",
-          "Deadline pressure improves safety automatically"
-        ],
-        correctAnswer: 1,
-        explanation: "Deadlines matter, but they should not override readiness and public responsibility."
-      },
-      {
-        question: "What does the Heathrow T5 case teach about testing?",
-        options: [
-          "Testing is unnecessary for large projects",
-          "Testing must be realistic and connected to actual opening-day conditions",
-          "Testing should only involve ideal scenarios",
-          "Testing guarantees success in all cases"
-        ],
-        correctAnswer: 1,
-        explanation: "Although testing occurred, opening-day conditions still exposed problems in readiness and capacity."
-      },
-      {
-        question: "Which failure area is most directly related to passengers not knowing what was happening during delays?",
-        options: [
-          "Poor communication and crisis management",
-          "Strong stakeholder engagement",
-          "Good transparency",
-          "Perfect implementation"
+          "Give accurate, timely, visible information and enough ground support so affected people can make informed decisions.",
+          "Avoid detailed announcements until leadership agrees on a perfect message.",
+          "Focus communication on premium customers first because they are the most visible publicly.",
+          "Communicate only after the technical cause is fully diagnosed."
         ],
         correctAnswer: 0,
-        explanation: "Lack of announcements, staff help, and information systems worsened passenger frustration."
+        explanation: "During disruption, truthful communication is part of stakeholder care, not an optional public-relations extra."
       },
       {
-        question: "Why is stakeholder concern important before launching a complex project?",
+        question: "Heathrow T5 underwent six months of testing using about 16,000 volunteers, yet opening day still failed badly. What is the best ethical interpretation?",
         options: [
-          "Stakeholders only complain and should be ignored",
-          "Stakeholders can identify practical risks that managers may miss",
-          "Stakeholders are unrelated to project success",
-          "Stakeholders only matter after the launch"
+          "The tests were unethical because they involved too many volunteers before launch.",
+          "The failure proves testing has little value in complex public infrastructure projects.",
+          "Readiness claims were too optimistic because testing did not prove real operational performance under actual demand, staffing, and disruption.",
+          "Once testing reaches that scale, managers are ethically justified in assuming full readiness."
+        ],
+        correctAnswer: 2,
+        explanation: "A long testing period does not prove readiness if it does not capture the real operating conditions that matter on launch day."
+      },
+      {
+        question: "Some baggage handlers later said they had mostly been shown around the terminal rather than fully prepared for real procedures. Why is that ethically serious?",
+        options: [
+          "Because training concerns matter only in human resources, not in engineering or project ethics.",
+          "Because staff discomfort is less important than meeting a public opening date.",
+          "Because operators can learn critical procedures only after passengers begin arriving.",
+          "Because a complex public system is not responsibly launched if the people running it cannot perform under real conditions."
+        ],
+        correctAnswer: 3,
+        explanation: "Training is part of operational readiness. If staff are not ready, the system is not ready."
+      },
+      {
+        question: "A project manager knows that parking access, security delays, baggage handling, and passenger wayfinding still have unresolved operational dependencies. What should the project manager do before approving full launch?",
+        options: [
+          "Approve the date and let departments solve issues independently during live operations.",
+          "Reassess readiness across the whole operating chain, activate contingency plans, and recommend phased opening or delay if risks remain high.",
+          "Narrow the readiness review to the baggage software because other issues are not technical enough.",
+          "Leave the decision entirely to public-relations leadership because passenger expectation is now the main risk."
         ],
         correctAnswer: 1,
-        explanation: "Staff and unions raised concerns based on operational experience."
+        explanation: "Project managers are responsible for whole-system readiness, not just milestone completion."
       },
       {
-        question: "Which answer best describes a safer alternative to the Heathrow T5 Big Bang launch?",
+        question: "Why was listening to frontline staff and unions ethically important in Heathrow T5?",
         options: [
-          "Launch all operations at once with no backup",
-          "Use a phased or iterative opening with fewer flights first",
-          "Cancel all testing",
-          "Ignore staff training until after launch"
-        ],
-        correctAnswer: 1,
-        explanation: "A phased launch would reduce impact and allow problems to be fixed gradually."
-      },
-      {
-        question: "Which principle is most connected to the need to plan for baggage-system failure?",
-        options: [
-          "Risk management",
-          "Styling",
-          "Entertainment",
-          "Branding only"
+          "They were close to daily operations and could identify practical weaknesses that senior planning teams might miss.",
+          "Their role was mainly symbolic because only executives understand whole-system risk.",
+          "Stakeholder listening matters only after the first public complaint.",
+          "Union concerns should be separated from readiness decisions to keep the launch objective."
         ],
         correctAnswer: 0,
-        explanation: "A predictable high-impact failure should have been identified and prepared for."
+        explanation: "Stakeholder management matters most when people closest to the work are warning about operational weakness before the public is affected."
       },
       {
-        question: "Why did the Heathrow T5 failure damage reputation?",
+        question: "The baggage system did not fail only because one belt stopped. It involved conveyor issues, information problems, performance limits, and operational confusion. Which ethical lesson follows?",
         options: [
-          "Because passengers saw that the promised world-class service did not match the opening-day reality",
-          "Because passengers dislike all airports equally",
-          "Because the terminal had no architecture",
-          "Because no flights were affected"
+          "The main responsibility belonged to passengers who chose to check bags on opening day.",
+          "Large systems should be judged mainly by construction completion rather than operational performance.",
+          "Complex-system approval must include realistic load, interface behavior, human procedures, and cutover controls, not one isolated technical check.",
+          "High technology always creates unavoidable opening chaos in airports."
+        ],
+        correctAnswer: 2,
+        explanation: "For complex public systems, ethics requires whole-system thinking instead of narrow technical optimism."
+      },
+      {
+        question: "An engineer believes the terminal is being presented as ready when unresolved operational risks remain. Internal meetings downplay the concern because the opening date is close. What should the engineer do first?",
+        options: [
+          "Document the risks, raise them through authorized channels, and keep escalating if readiness concerns are ignored.",
+          "Stay silent because launch timing is a management matter rather than an engineering matter.",
+          "Wait until passengers are affected so the concern will be easier to prove.",
+          "Publicly accuse the project team immediately without building a technical record."
         ],
         correctAnswer: 0,
-        explanation: "Public trust was harmed because the project's promise conflicted with actual user experience."
+        explanation: "The first ethical step is documented internal reporting. Escalation becomes stronger if serious public harm remains likely and the warnings are ignored."
       },
       {
-        question: "Which statement best explains the role of external pressure in the Heathrow case?",
+        question: "Heathrow and British Airways promoted Terminal 5 as a world-class opening, yet passengers experienced confusion, missing bags, and cancelled flights almost immediately. Why did this damage public trust so strongly?",
         options: [
-          "Public perception and deadline pressure may have pushed management to open despite risks",
-          "External pressure always improves project safety",
-          "External pressure removed all responsibility from managers",
-          "The public forced passengers to lose baggage"
+          "Because airport projects are always judged more harshly than other infrastructure.",
+          "Because once any public project fails, trust can never return.",
+          "Because public trust depends only on architectural appearance and media messaging.",
+          "Because the gap between promised readiness and actual user experience suggested that leadership overstated operational preparedness."
+        ],
+        correctAnswer: 3,
+        explanation: "Trust depends on whether public promises about readiness match the real service people receive."
+      },
+      {
+        question: "What would have been the most ethically defensible alternative to the Big Bang launch strategy?",
+        options: [
+          "Keep the full launch but add more apology messaging in case disruption occurs.",
+          "Start with a phased or limited rollout, monitor the system under live conditions, train staff further, and expand only after stability is demonstrated.",
+          "Shift responsibility to vendors and proceed because integrated systems always require some public disruption.",
+          "Reduce transparency so early problems do not generate panic or reputation damage."
+        ],
+        correctAnswer: 1,
+        explanation: "A phased launch reduces the number of people exposed while the organization learns whether the system can operate reliably."
+      },
+      {
+        question: "A senior leader says, 'No one died, so Heathrow T5 is a project failure, not an ethics case.' Which response best matches engineering ethics?",
+        options: [
+          "Ethics applies only when fraud is proven in court.",
+          "The case is mainly about customer-service quality, not professional duty.",
+          "Ethics still applies because public-facing systems can cause serious avoidable disruption, stress, and loss of trust when launched irresponsibly.",
+          "Ethics is irrelevant once compensation has been paid."
+        ],
+        correctAnswer: 2,
+        explanation: "Public welfare includes major avoidable disruption in systems that thousands of people depend on, not only physical injury."
+      },
+      {
+        question: "On opening day, operations managers must decide whether to keep accepting large volumes of checked bags even though the baggage system is falling behind and transfer-bag data is unreliable. What is the most ethical basis for the decision?",
+        options: [
+          "Keep accepting normal volume so the launch appears stable for as long as possible.",
+          "Prioritize the published schedule because baggage recovery can happen later.",
+          "Limit operations to what can be handled safely and reliably, even if that means reducing service and informing passengers immediately.",
+          "Continue full service unless regulators issue a formal shutdown order."
+        ],
+        correctAnswer: 2,
+        explanation: "When reliable operation is no longer possible, responsible leaders reduce scope rather than pretend the system is still working."
+      },
+      {
+        question: "Before launch, staff complain about parking access, security entry, terminal layout, and unloading procedures. What should business analysts have done with that information?",
+        options: [
+          "Translate it into concrete operational requirements, failure scenarios, and readiness criteria rather than treating it as informal noise.",
+          "Exclude it because business analysis should focus on software features rather than operations.",
+          "Save it for post-launch lessons learned so the opening is not delayed.",
+          "Treat it as a labour-relations issue with little relevance to passenger outcomes."
         ],
         correctAnswer: 0,
-        explanation: "The video suggests pressure to meet the deadline and improve public perception contributed to the failure."
+        explanation: "Operational complaints can be requirements evidence when they point to predictable failure modes in live service."
       },
       {
-        question: "Which of the following best represents the ethical lesson for project managers?",
+        question: "Why did ignoring staff and union concerns conflict with integrity in this case?",
         options: [
-          "Open the project on time even if users are harmed",
-          "Balance schedule, readiness, risk, training, communication, and stakeholder welfare",
-          "Focus only on cost and ignore operations",
-          "Avoid listening to staff"
+          "Integrity mainly concerns financial disclosure, not operational decisions.",
+          "Once formal testing is complete, integrity no longer requires questioning readiness.",
+          "Integrity means defending the announced date consistently so the organization looks confident.",
+          "Integrity required leaders to judge readiness honestly instead of dismissing warnings that challenged the preferred launch story."
+        ],
+        correctAnswer: 3,
+        explanation: "Integrity in project ethics means being honest about readiness, especially when stakeholder evidence is inconvenient."
+      },
+      {
+        question: "By the fifth day, about 250 flights had been cancelled and around 15,000 bags were backlogged. What does accountability require after a failure on that scale?",
+        options: [
+          "Explaining that complex systems are unpredictable and moving on once media attention fades.",
+          "Accepting responsibility, compensating affected passengers, correcting systems and procedures, and learning from the failure before scaling operations further.",
+          "Focusing only on which employee made the first mistake on opening day.",
+          "Treating the event as unavoidable because the building eventually operated later."
         ],
         correctAnswer: 1,
-        explanation: "Ethical project management requires responsibility to people affected by the project."
+        explanation: "Accountability is broader than blame. It includes correction, compensation, and organizational learning."
       },
       {
-        question: "If staff reported they did not understand the system and management ignored them, which ethical issue is most relevant?",
+        question: "In a readiness meeting for a public-facing terminal, which question best reflects ethical judgment?",
         options: [
-          "Ignoring stakeholder warnings",
-          "Good communication",
-          "Successful training",
-          "Perfect accountability"
+          "Will the opening ceremony and media coverage reinforce the brand strongly enough?",
+          "Can the terminal operate reliably for real passengers, staff, baggage, and flights at expected load, with contingencies if parts fail?",
+          "Have enough senior leaders committed publicly that cancellation is now impossible?",
+          "Are contractual milestone payments protected even if operations remain uncertain?"
+        ],
+        correctAnswer: 1,
+        explanation: "The ethically relevant question is whether real users can be served reliably, not whether the launch commitment is already public."
+      },
+      {
+        question: "External deadline pressure and public image concerns are increasing. Which principle most directly limits the decision to open?",
+        options: [
+          "Large projects should be completed exactly as scheduled whenever possible.",
+          "Risk belongs mainly to operators once the facility is handed over.",
+          "A complex public system should be launched only when it is reasonably ready, tested, and operationally reliable for the people who depend on it.",
+          "Reputation damage becomes the main ethical issue once a date has been announced."
+        ],
+        correctAnswer: 2,
+        explanation: "Schedule pressure matters, but launch approval is ethically limited by readiness, reliability, and stakeholder protection."
+      },
+      {
+        question: "On opening morning, queues are growing, the baggage system is unstable, and passengers cannot get clear answers. What should the crisis team do first?",
+        options: [
+          "Activate the disruption plan: slow or reduce operations if needed, deploy visible support staff, and give frequent, truthful updates across channels.",
+          "Say as little as possible until every technical cause is confirmed.",
+          "Keep normal operations running unchanged so confidence is not shaken.",
+          "Focus only on the root-cause investigation because passenger communication can wait."
         ],
         correctAnswer: 0,
-        explanation: "Staff concerns were signals of operational risk."
+        explanation: "Crisis management is about protecting people during failure, not only diagnosing the technical cause in the background."
       },
       {
-        question: "Which statement best describes the crisis-management failure?",
+        question: "What is the strongest final engineering ethics lesson from Heathrow Terminal 5?",
         options: [
-          "The organization quickly solved all passenger concerns with clear communication",
-          "The organization struggled to manage baggage failure, queues, confusion, and passenger information",
-          "There was no crisis because flights were unaffected",
-          "Crisis management is only needed after one month"
+          "Complex infrastructure mainly fails because staff resist change, so management should centralize decisions more tightly.",
+          "If a project has been expensive and heavily tested, it should usually open on time to protect public confidence.",
+          "The main lesson is simply that baggage technology is unreliable in airports.",
+          "A complex public system is not a success at launch unless readiness, training, stakeholder input, communication, and risk control are strong enough to protect the people using it."
         ],
-        correctAnswer: 1,
-        explanation: "The opening-day crisis was worsened by poor communication and weak contingency response."
-      },
-      {
-        question: "What is the best explanation of why the baggage system's capacity problem matters ethically?",
-        options: [
-          "Capacity planning is only a technical detail",
-          "Poor capacity planning can harm users when a system fails under real demand",
-          "Capacity is irrelevant in airports",
-          "Passengers should reduce luggage by themselves"
-        ],
-        correctAnswer: 1,
-        explanation: "If a system cannot handle real demand, people suffer the consequences."
-      },
-      {
-        question: "Which answer best connects Heathrow T5 to accountability?",
-        options: [
-          "Organizations should deny responsibility when launch problems happen",
-          "Organizations should explain the failure, compensate affected users, and improve systems",
-          "Accountability only applies to passengers",
-          "Accountability means blaming one random employee"
-        ],
-        correctAnswer: 1,
-        explanation: "Accountability requires owning the failure and correcting harm."
-      },
-      {
-        question: "Why is \"the system was tested\" not a complete defense for the Heathrow failure?",
-        options: [
-          "Testing never matters",
-          "Testing may be insufficient if it does not reflect real conditions, real staff readiness, and real capacity",
-          "Testing always makes failure impossible",
-          "Testing is only for software projects"
-        ],
-        correctAnswer: 1,
-        explanation: "Testing must match realistic operational stress and user conditions."
-      },
-      {
-        question: "Which sentence would be strongest in a written answer about Heathrow T5?",
-        options: [
-          "The terminal was unlucky and nothing could be learned",
-          "The project failed ethically because readiness, risk planning, communication, and stakeholder concerns were not handled properly before affecting the public",
-          "The only issue was that passengers were impatient",
-          "The project was successful because it opened on the planned date"
-        ],
-        correctAnswer: 1,
-        explanation: "This connects the case facts to ethical project responsibility."
-      },
-      {
-        question: "Which group should be considered stakeholders in the Heathrow Terminal 5 case?",
-        options: [
-          "Only top executives",
-          "Passengers, staff, British Airways, airport management, regulators, and the public",
-          "Only architects",
-          "Only baggage manufacturers"
-        ],
-        correctAnswer: 1,
-        explanation: "Many groups were affected by the opening-day failure."
-      },
-      {
-        question: "What is the strongest final lesson of the Heathrow Terminal 5 case?",
-        options: [
-          "A project is successful if it opens on time",
-          "Complex systems must be launched only when operational readiness, training, risk planning, communication, and stakeholder concerns are properly addressed",
-          "Public users do not matter in project management",
-          "Reputation pressure is more important than readiness"
-        ],
-        correctAnswer: 1,
-        explanation: "The case teaches that responsible project launch requires more than construction completion."
-      },
-      {
-        question: "If a written exam asks \"How did the Heathrow T5 failure become visible?\", which answer is strongest?",
-        options: [
-          "It became visible through opening-day passenger confusion, baggage failure, long queues, and cancelled flights",
-          "It was discovered only years later in a laboratory",
-          "It was hidden from all passengers",
-          "It was only visible in financial reports"
-        ],
-        correctAnswer: 0,
-        explanation: "The failure became obvious when the real system failed under opening-day operating conditions."
-      },
-      {
-        question: "Why does the opening-day visibility matter ethically?",
-        options: [
-          "It showed that real users were affected by poor readiness",
-          "It proved that passengers caused the project failure",
-          "It showed that testing is never useful",
-          "It proved the terminal should never have been built"
-        ],
-        correctAnswer: 0,
-        explanation: "The ethical issue is that public users experienced avoidable disruption."
-      },
-      {
-        question: "Which phrase would be strongest in a written answer about Heathrow T5?",
-        options: [
-          "The terminal was unlucky",
-          "Opening on time is not success if the system is not operationally ready",
-          "Airports should not use baggage systems",
-          "Passengers were the main cause"
-        ],
-        correctAnswer: 1,
-        explanation: "This captures the core lesson of the case."
-      },
-      {
-        question: "In terms of stakeholder management, why was ignoring staff concerns unethical?",
-        options: [
-          "Staff concerns can reveal real operational risks before users are harmed",
-          "Staff should never be involved in projects",
-          "Only top managers can understand systems",
-          "Staff concerns are always emotional and irrelevant"
-        ],
-        correctAnswer: 0,
-        explanation: "Staff are key stakeholders who understand daily operations."
-      },
-      {
-        question: "Why is a phased rollout ethically better for a complex public system?",
-        options: [
-          "It hides all problems from the public",
-          "It reduces risk by exposing fewer users while problems are identified and fixed",
-          "It removes the need for testing",
-          "It guarantees no cost"
-        ],
-        correctAnswer: 1,
-        explanation: "Phased rollout limits damage and allows controlled learning."
-      },
-      {
-        question: "Which option best explains the human-factor failure in Heathrow T5?",
-        options: [
-          "Staff were not sufficiently prepared to operate the new terminal smoothly",
-          "Passengers did not understand engineering ethics",
-          "The terminal had no technology",
-          "The baggage had no labels"
-        ],
-        correctAnswer: 0,
-        explanation: "Human readiness is part of system readiness."
-      },
-      {
-        question: "What is the best ethical response when staff say a system is not ready?",
-        options: [
-          "Ignore them to protect the deadline",
-          "Investigate the concerns, test readiness, and delay launch if needed",
-          "Punish them for speaking",
-          "Launch faster"
-        ],
-        correctAnswer: 1,
-        explanation: "Ethical management requires responding to credible warnings."
-      },
-      {
-        question: "Which principle is most connected to informing passengers during delays and baggage failure?",
-        options: [
-          "Transparency and accountability",
-          "Decoration",
-          "Branding only",
-          "Profit maximization"
-        ],
-        correctAnswer: 0,
-        explanation: "Affected stakeholders deserve timely, truthful information."
-      },
-      {
-        question: "Which answer best explains why \"the system had been tested\" was not enough?",
-        options: [
-          "Testing was irrelevant",
-          "Testing did not fully prevent real-load, staff-readiness, and opening-day operational failures",
-          "Testing always creates failure",
-          "Testing only matters after opening"
-        ],
-        correctAnswer: 1,
-        explanation: "Testing must reflect realistic use, not only controlled scenarios."
-      },
-      {
-        question: "If asked \"What should have been done differently?\", which answer is strongest?",
-        options: [
-          "Launch everything at once and hope staff adapt",
-          "Use phased opening, realistic testing, trained staff, contingency plans, and clear communication",
-          "Stop all flights permanently",
-          "Ignore public perception"
-        ],
-        correctAnswer: 1,
-        explanation: "This answer covers the main preventions for the failure."
+        correctAnswer: 3,
+        explanation: "Project success is ethical only when the people who depend on the system are protected by real operational readiness."
       }
     ]
   },
@@ -3163,41 +3042,30 @@ const quizTopics = {
     "Final lesson"
   ],
   "case-2": [
-    "Project ethics",
-    "Case comparison",
-    "Big Bang launch",
-    "Risk management",
-    "Communication",
-    "Stakeholders",
-    "Training",
-    "Baggage system",
-    "Deadline pressure",
-    "Testing",
-    "Crisis management",
-    "Stakeholder warnings",
-    "Phased rollout",
-    "Risk management",
-    "Public trust",
-    "External pressure",
-    "Project management",
-    "Ignored warnings",
-    "Crisis management",
-    "Capacity planning",
-    "Accountability",
-    "Realistic testing",
-    "Written answers",
-    "Stakeholders",
-    "Final lesson",
-    "Failure visibility",
-    "User impact",
-    "Written answer",
-    "Stakeholder management",
-    "Phased rollout",
-    "Human factors",
-    "Ignored warnings",
-    "Communication",
-    "Realistic testing",
-    "Prevention"
+    "Readiness vs launch date",
+    "System complexity",
+    "Building complete is not ready",
+    "Test-to-live cutover",
+    "Business analyst escalation",
+    "Capacity vs image pressure",
+    "Crisis communication",
+    "Limits of testing",
+    "Training responsibility",
+    "Project-manager duty",
+    "Frontline stakeholder knowledge",
+    "Whole-system approval",
+    "Internal escalation",
+    "Public trust gap",
+    "Phased launch",
+    "Public welfare",
+    "Limiting operations ethically",
+    "Business-analysis duty",
+    "Integrity and ignored warnings",
+    "Accountability after disruption",
+    "Ethical readiness question",
+    "Launch only if ready",
+    "Crisis-team first move",
+    "Final lesson"
   ],
   "case-3": [
     "Similarity and ethics",
@@ -3466,41 +3334,30 @@ const quizExamTips = {
     "Best conclusions connect software, deception, public welfare, compliance, and trust."
   ],
   "case-2": [
-    "Ethics applies when engineering/project decisions affect people.",
-    "Do not force every case into the same ethical category.",
-    "For major systems, phased implementation usually reduces risk.",
-    "Risk management means identifying likely failures before they harm users.",
-    "Poor communication often connects to transparency and accountability.",
-    "Stakeholders include workers, not only customers.",
-    "A system is not ready if operators are not ready.",
-    "For technical systems, ask whether testing matched real operating conditions.",
-    "Profit, reputation, or schedule pressure becomes unethical when it overrides stakeholder welfare.",
-    "Strong phrase: \"Testing must reflect real use.\"",
-    "In written answers, link communication failures to accountability.",
-    "Ignoring warnings is a strong ethics point.",
-    "Safer implementation strategy = phased rollout.",
-    "In project ethics, foreseeable risk creates responsibility.",
-    "Reputation damage often comes from gap between promise and performance.",
-    "External pressure explains causes, but does not excuse poor decisions.",
-    "Project ethics = not just completion, but responsible completion.",
-    "Warnings before failure are important in written answers.",
-    "Crisis management means action during failure, not only planning before failure.",
-    "Technical planning becomes ethical when failure affects users.",
-    "Accountability includes responsibility plus corrective action.",
-    "Do not only ask \"Was it tested?\" Ask \"Was it tested realistically?\"",
-    "Strong answers connect facts, principles, and consequences.",
-    "Stakeholder questions require broad thinking.",
-    "Best final line: \"Opening on time is not success if the system is not ready.\"",
-    "T5 visibility answer = opening-day operational breakdown.",
-    "Real-world harm to users makes project failure ethical.",
-    "Use this sentence in conclusion.",
-    "Staff are stakeholders, not just workers.",
-    "Big system = phased launch is usually safer.",
-    "Human factors include training, navigation, procedures, and communication.",
-    "Ignored warnings are often high-value written-answer points.",
-    "Communication failures usually connect to transparency.",
-    "Ask: tested how, by whom, and under what conditions?",
-    "Prevention answer = phased rollout + training + testing + risk plan + communication."
+    "Operational readiness beats ceremonial readiness.",
+    "Scale increases the ethical duty to control rollout risk.",
+    "Physical completion is not the same as launch readiness.",
+    "Cutover errors are approval failures, not just technical glitches.",
+    "BA ethics includes turning staff concerns into requirements and risks.",
+    "Public image never outranks credible capacity risk.",
+    "During disruption, information is part of stakeholder care.",
+    "Testing volume does not prove realistic readiness.",
+    "If operators are unready, the system is unready.",
+    "Project managers are responsible for launch scope, not just schedule.",
+    "Frontline staff often see the risks first.",
+    "Whole-system thinking beats single-component thinking.",
+    "Document first, then escalate through proper channels.",
+    "Public trust falls when promise and lived reality diverge.",
+    "Phased launch is a high-yield risk-reduction answer.",
+    "Public welfare includes major avoidable disruption, not only injury.",
+    "Reduce service when that is what reliable operation requires.",
+    "Operational complaints can be requirements evidence.",
+    "Integrity means honest readiness judgment under pressure.",
+    "Accountability means responsibility, compensation, correction, and learning.",
+    "Ask whether real users can be served reliably at real load.",
+    "Launch only if ready is a core project-ethics rule.",
+    "Crisis response must help people while the technical team diagnoses.",
+    "Best conclusions connect readiness, stakeholders, communication, and trust."
   ],
   "case-3": [
     "Do not say profit is always unethical. Say safety must not be compromised for profit.",
@@ -4032,6 +3889,10 @@ function restoreQuizPosition(snapshot) {
 }
 
 function gentlyRevealResult(caseId) {
+  if (caseId === "case-2") {
+    return;
+  }
+
   window.requestAnimationFrame(() => {
     const resultCard = document.querySelector(`[data-quiz-for="${caseId}"] .result-card`);
     if (resultCard) {
