@@ -1785,6 +1785,28 @@ const quizData = [
         ],
         correctAnswer: 1,
         explanation: "This conclusion captures the multi-layered ethical lesson without exaggerating the role of any single party."
+      },
+      {
+        question: "A hospital physicist suspects that Therac-25 caused a radiation overdose, but AECL says overdose is impossible and asks the hospital not to make unsupported claims. Which action best fits whistle-blowing and public-safety principles?",
+        options: [
+          "Document the evidence, report through hospital and manufacturer channels, and escalate to regulators if patients remain at risk.",
+          "Stay silent until AECL admits the problem in writing, because the manufacturer has more technical authority.",
+          "Blame the operator publicly before completing any technical review so the danger is exposed quickly.",
+          "Continue normal treatments because the manufacturer has not issued an official safety alert."
+        ],
+        correctAnswer: 0,
+        explanation: "Serious patient harm requires documented reporting through proper channels, with escalation if the danger is ignored."
+      },
+      {
+        question: "An AECL engineer has already reported repeated injury signals internally, but managers say contacting regulators would be disloyal and would damage the company unless causation is proved with absolute certainty. Which answer best applies moral-duty reasoning?",
+        options: [
+          "Loyalty to the company requires silence until the company itself approves any outside communication.",
+          "Whistle-blowing is unethical unless the engineer can guarantee in advance that outside reporting will succeed.",
+          "The engineer's personal motive matters more than whether patients may continue to face serious harm.",
+          "If serious patient harm may continue, internal channels have been tried, and documented evidence is persuasive, escalation beyond the organization may become a moral duty."
+        ],
+        correctAnswer: 3,
+        explanation: "When grave public harm is at stake and internal reporting fails, loyalty does not override the duty to prevent further injury."
       }
     ]
   },
@@ -2088,6 +2110,28 @@ const quizData = [
         correctAnswer: 2,
         explanation: "The strongest ethics conclusion connects real-world loads, public safety, professional judgment, and the limits on economy and innovation."
       },
+      {
+        question: "An engineer repeatedly observes abnormal bridge movement and believes it may endanger the public, but project leaders treat it as normal flexibility. What is the most ethical first response?",
+        options: [
+          "Ignore the issue because the bridge has not collapsed and normal use is still continuing.",
+          "Wait until drivers or pedestrians begin filing formal public complaints about the motion.",
+          "Accuse the project team publicly right away, even before making a technical record of the behavior.",
+          "Document the observations, report the concern through responsible engineering channels, and request technical investigation."
+        ],
+        correctAnswer: 3,
+        explanation: "The first ethical step is documented internal reporting and technical investigation because public safety may be at risk."
+      },
+      {
+        question: "Suppose internal reports about Galloping Gertie are minimized even though the public continues using the bridge and engineers have documented unusual movement. Which answer best fits whistle-blowing ethics?",
+        options: [
+          "External disclosure is always unethical if the bridge is still open and no collapse has happened yet.",
+          "If serious public harm may occur and documented internal warnings are ignored, stronger escalation beyond the project can become ethically justified.",
+          "Once project leaders disagree, the engineer's duty ends because management owns the risk decision.",
+          "Public-safety concerns should stay informal so the bridge's reputation is not damaged unnecessarily."
+        ],
+        correctAnswer: 1,
+        explanation: "Ignored internal warnings plus serious public risk strengthen the case for escalation beyond normal channels."
+      },
     ]
   },
   {
@@ -2356,6 +2400,28 @@ const quizData = [
         ],
         correctAnswer: 2,
         explanation: "The main ethics lesson is about foreseeable harm, vulnerability, and the duty to act before disaster."
+      },
+      {
+        question: "A hotel worker knows the emergency exit light is not working and sees that management has not corrected it after inspection. The hotel houses elderly, intoxicated, and low-income occupants. What is the strongest ethical action?",
+        options: [
+          "Document the hazard, report it to management or inspectors, and escalate if it remains uncorrected.",
+          "Ignore it because the hotel is low-cost and the defect may not matter unless a fire starts.",
+          "Wait until a fire happens so the seriousness of the danger can be proved clearly.",
+          "Treat it as only a maintenance issue with no real ethical importance."
+        ],
+        correctAnswer: 0,
+        explanation: "A known life-safety defect in a building with vulnerable occupants creates a duty to report and push for correction."
+      },
+      {
+        question: "An inspector worries that pressing harder on Gulf Hotel violations will embarrass the city and damage the owner's business. Which response is strongest?",
+        options: [
+          "Avoid stronger action because bad publicity can harm local jobs and city reputation.",
+          "Delay action unless a second inspector sees the same defect during a later fire drill.",
+          "Protecting vulnerable occupants matters more than avoiding embarrassment, so unresolved life-safety hazards should be documented and escalated.",
+          "Let management decide because inspectors should not interfere once a citation has already been written."
+        ],
+        correctAnswer: 2,
+        explanation: "Public safety outweighs embarrassment or business image when known hazards still threaten vulnerable people."
       }
     ]
   },
@@ -2691,6 +2757,39 @@ const quizData = [
         ],
         correctAnswer: 0,
         explanation: "This conclusion combines the main case facts with ethics principles."
+      },
+      {
+        question: "An engineer notices that a shop-drawing change may double the load on a walkway connection, but the project team is under schedule pressure and wants to proceed. What should the engineer do first?",
+        options: [
+          "Stay silent because schedule pressure is a management issue rather than an engineering responsibility.",
+          "Document the concern, report it through responsible project channels, and require recalculation before approval.",
+          "Approve the change because it came from the fabricator, who better understands constructability details.",
+          "Wait until construction is complete and then raise the issue if visible performance problems appear."
+        ],
+        correctAnswer: 1,
+        explanation: "A safety-critical design concern must be documented and addressed before the public is exposed to danger."
+      },
+      {
+        question: "Suppose an engineer has already raised concern internally several times about an unchecked load-path change, but project leaders dismiss it to avoid delay while the public opening approaches. Which answer best fits whistle-blowing ethics?",
+        options: [
+          "External disclosure is automatically unethical if the engineer still works for the project team.",
+          "The engineer should drop the issue because management, not engineering staff, owns the final decision.",
+          "If serious public harm is possible, internal channels have been tried, and documented evidence is persuasive, stronger escalation beyond the project may become ethically justified.",
+          "Once drawings have moved forward, it is better to avoid conflict and revisit the issue after the event."
+        ],
+        correctAnswer: 2,
+        explanation: "When grave public harm is possible and internal response fails, escalation beyond the organization can become morally justified."
+      },
+      {
+        question: "Project managers say that reporting an unsafe design change outside the team would be disloyal and damaging to the firm's reputation. Which response is ethically strongest?",
+        options: [
+          "Loyalty to the firm should come before disclosure whenever the evidence is technical rather than visible to the public.",
+          "Engineers should avoid outside reporting because public criticism is usually worse than the original technical risk.",
+          "Protecting a company's reputation is normally more important than reporting unresolved hazards that might still be corrected later.",
+          "Loyalty does not require silence when public safety is endangered; whistle-blowing can show that internal ethical response has failed."
+        ],
+        correctAnswer: 3,
+        explanation: "Whistle-blowing is not disloyal when the goal is preventing serious public harm after internal channels fail."
       }
     ]
   },
@@ -2867,7 +2966,9 @@ const quizTopics = {
     "Specific ethics",
     "Documentation",
     "Prevention",
-    "Final conclusion"
+    "Final conclusion",
+    "Escalating harm reports",
+    "Loyalty vs patient safety"
   ],
   "case-6": [
     "Public warning sign",
@@ -2896,7 +2997,9 @@ const quizTopics = {
     "Learning from failure",
     "Public trust",
     "Stakeholders",
-    "Final lesson"
+    "Final lesson",
+    "Internal reporting",
+    "Escalation threshold"
   ],
   "case-7": [
     "Known defect",
@@ -2922,7 +3025,9 @@ const quizTopics = {
     "Weak stakeholder claim",
     "Follow-up enforcement",
     "Ethical reasoning",
-    "Final lesson"
+    "Final lesson",
+    "Worker reporting duty",
+    "Inspector escalation"
   ],
   "case-8": [
     "Public space failure",
@@ -2954,7 +3059,10 @@ const quizTopics = {
     "Prevention",
     "Ethics education",
     "Weak claim",
-    "Final conclusion"
+    "Final conclusion",
+    "Unchecked design change",
+    "Escalation after rebuff",
+    "Loyalty vs safety"
   ]
 };
 
@@ -3127,7 +3235,9 @@ const quizExamTips = {
     "Be specific to the ethical failure.",
     "Documentation supports transparency, accountability, and safety review.",
     "Strong prevention answers cover multiple safety layers.",
-    "End with patient safety and professional responsibility."
+    "End with patient safety and professional responsibility.",
+    "Whistle-blowing is strongest when serious patient harm is supported by documented evidence.",
+    "Loyalty does not override the duty to prevent ongoing harm to patients."
   ],
   "case-6": [
     "Warning signs in a public structure should trigger action before harm occurs.",
@@ -3156,7 +3266,9 @@ const quizExamTips = {
     "Accountability includes learning from failure and improving standards.",
     "Public trust depends on real safety, not bold appearance.",
     "Stakeholders include everyone affected by the bridge's safety.",
-    "Best conclusions combine public safety, uncertainty, and responsibility."
+    "Best conclusions combine public safety, uncertainty, and responsibility.",
+    "Start with evidence and authorized channels unless urgent danger requires immediate escalation.",
+    "Ignored internal warnings plus serious public risk strengthen the case for escalation."
   ],
   "case-7": [
     "Known hazard plus no correction is a strong accountability pattern.",
@@ -3182,7 +3294,9 @@ const quizExamTips = {
     "Who was vulnerable matters ethically, not just technically.",
     "Follow-up is part of enforcement, not an optional extra.",
     "Ethical reasoning compares facts, duties, stakeholders, options, and impacts.",
-    "Best conclusions combine foreseeability, vulnerability, and prevention."
+    "Best conclusions combine foreseeability, vulnerability, and prevention.",
+    "Vulnerable occupants make even small life-safety defects ethically urgent.",
+    "Bad publicity is never a good reason to leave known public hazards uncorrected."
   ],
   "case-8": [
     "When a public structure fails, connect the case to public safety and professional duty.",
@@ -3214,7 +3328,10 @@ const quizExamTips = {
     "Prevention must match the cause.",
     "Why studied questions ask for the broader lesson.",
     "Avoid blaming normal users.",
-    "End with public safety, communication, and accountability."
+    "End with public safety, communication, and accountability.",
+    "Safety-critical design changes must be documented and recalculated before approval.",
+    "DeGeorge-style questions reward evidence, internal reporting, and serious public risk.",
+    "Loyalty does not require silence when unresolved hazards threaten the public."
   ]
 };
 
