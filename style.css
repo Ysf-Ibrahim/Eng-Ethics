@@ -2671,10 +2671,399 @@ h5 {
   background: rgba(20, 184, 166, 0.06);
 }
 
+/* =====================================================================
+   SITE NAV — top sticky bar (brand + section links + badge)
+   ===================================================================== */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(6, 11, 22, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(34, 211, 238, 0.11);
+}
+
+.site-nav::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(34, 211, 238, 0.28) 30%, rgba(139, 92, 246, 0.22) 70%, transparent 100%);
+}
+
+.site-nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 54px;
+}
+
+.nav-brand {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+
+.nav-brand-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  flex-shrink: 0;
+}
+
+.nav-section-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+
+.nav-section-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  border-radius: 999px;
+  padding: 6px 13px;
+  color: var(--muted-strong);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: color 150ms ease, background 150ms ease;
+  white-space: nowrap;
+}
+
+.nav-section-link:hover,
+.nav-section-link:focus-visible {
+  color: var(--ink);
+  background: rgba(34, 211, 238, 0.09);
+}
+
+.nav-exam-badge {
+  flex: 0 0 auto;
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.08);
+  color: var(--primary-dark);
+  padding: 4px 11px;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Case nav sits below site nav */
+.case-nav {
+  top: 54px;
+}
+
+/* =====================================================================
+   HEADER — cleaner with no stats block
+   ===================================================================== */
+
+.header-tagline {
+  max-width: 680px;
+  margin: 0 0 8px;
+  color: var(--ink-soft);
+  font-size: 1.12rem;
+  line-height: 1.55;
+}
+
+.header-sub {
+  max-width: 580px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+
+/* =====================================================================
+   CASE DASHBOARD — homepage case card grid
+   ===================================================================== */
+
+.cases-dashboard {
+  padding: 32px 0 12px;
+  scroll-margin-top: 118px;
+}
+
+.cases-dashboard-heading {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.case-dashboard-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 2px);
+  background: rgba(16, 27, 45, 0.78);
+  padding: 20px 22px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-soft);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.case-dashboard-card:hover,
+.case-dashboard-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(34, 211, 238, 0.42);
+  background: rgba(20, 35, 58, 0.92);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.36), 0 0 0 1px rgba(34, 211, 238, 0.1);
+}
+
+.cdc-num {
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cdc-title {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.06rem;
+  line-height: 1.3;
+}
+
+.cdc-focus {
+  margin: 0;
+  color: var(--muted-strong);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.cdc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.cdc-tags span {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 999px;
+  background: rgba(24, 40, 64, 0.64);
+  color: var(--muted-strong);
+  padding: 3px 9px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.cdc-cta {
+  margin-top: 4px;
+  color: var(--primary-dark);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+/* =====================================================================
+   CASE INNER NAV — section pills inside each case
+   ===================================================================== */
+
+.case-inner-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 14px 0 6px;
+}
+
+.cin-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(16, 27, 45, 0.72);
+  color: var(--muted-strong);
+  padding: 5px 13px;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition: transform 150ms ease, border-color 150ms ease, color 150ms ease, background 150ms ease;
+}
+
+.cin-link:hover,
+.cin-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(34, 211, 238, 0.48);
+  background: rgba(34, 211, 238, 0.08);
+  color: var(--ink);
+}
+
+/* =====================================================================
+   QUIZ ACTIONS ROW — Previous / Submit / Next / Restart layout
+   ===================================================================== */
+
+.quiz-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.quiz-actions .quiz-nav-group {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+
+.quiz-actions .quiz-reset-group {
+  margin-left: auto;
+}
+
+/* Submit button stands out — wider */
+.quiz-actions [data-submit-quiz] {
+  min-width: 140px;
+}
+
+/* Prev/Next share the same look as secondary but narrower */
+.quiz-nav-btn {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(24, 40, 64, 0.74);
+  color: var(--ink-soft);
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  transition: transform 150ms ease, border-color 150ms ease, background 150ms ease;
+}
+
+.quiz-nav-btn:hover:not(:disabled),
+.quiz-nav-btn:focus-visible:not(:disabled) {
+  transform: translateY(-1px);
+  border-color: rgba(34, 211, 238, 0.44);
+  background: rgba(34, 211, 238, 0.08);
+}
+
+/* =====================================================================
+   QUIZ CARD IMPROVEMENTS
+   ===================================================================== */
+
+.single-quiz-card {
+  border-radius: calc(var(--radius) + 6px);
+}
+
+.single-quiz-meta {
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.option-label {
+  padding: 13px 15px;
+  border-radius: var(--radius);
+  line-height: 1.55;
+}
+
+.option-label:has(input:checked):not(.correct-option):not(.wrong-option) {
+  border-color: var(--primary);
+  background: rgba(34, 211, 238, 0.1);
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.16);
+}
+
+.option-label.correct-option {
+  border-color: rgba(34, 197, 94, 0.7);
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.option-label.wrong-option {
+  border-color: rgba(251, 113, 133, 0.7);
+  background: rgba(251, 113, 133, 0.12);
+}
+
+/* Result card improvements */
+.result-card {
+  border-radius: calc(var(--radius) + 2px);
+  padding: 18px 20px;
+}
+
+.result-card h4 {
+  font-size: 1.1rem;
+}
+
+/* =====================================================================
+   SECTION SCROLL MARGIN — account for two sticky bars
+   ===================================================================== */
+
+.case-section {
+  scroll-margin-top: 120px;
+}
+
+article[id] {
+  scroll-margin-top: 120px;
+}
+
+/* =====================================================================
+   CASE HEADING — improved
+   ===================================================================== */
+
+.case-heading {
+  border-radius: calc(var(--radius) + 8px);
+}
+
+/* =====================================================================
+   RESPONSIVE — new components
+   ===================================================================== */
+
 @media (max-width: 900px) {
   .study-dashboard,
   .module-snapshot {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-dashboard-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .nav-section-links {
+    display: none;
+  }
+
+  .nav-exam-badge {
+    display: none;
+  }
+
+  .case-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cin-link {
+    font-size: 0.82rem;
+    padding: 5px 11px;
   }
 }
 

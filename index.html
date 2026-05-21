@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering Ethics Final Exam Study Website</title>
+  <title>Engineering Ethics Case Studies — Exam Prep</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -12,56 +12,45 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <p class="eyebrow">Engineering Ethics Final Exam</p>
-      <h1>Engineering Ethics Final Study Hub</h1>
-      <p class="header-summary">
-        Case studies, MCQs, written answers, and exam summaries built for fast final-exam revision.
-      </p>
-
-      <div class="study-dashboard" aria-label="Study progress summary">
-        <div class="dashboard-item">
-          <strong>10</strong>
-          <span>Cases</span>
-        </div>
-        <div class="dashboard-item">
-          <strong>MCQ</strong>
-          <span>Practice</span>
-        </div>
-        <div class="dashboard-item">
-          <strong>Written</strong>
-          <span>Questions</span>
-        </div>
-        <div class="dashboard-item">
-          <strong>A+</strong>
-          <span>Summaries</span>
-        </div>
-      </div>
+      <p class="eyebrow">Exam Preparation</p>
+      <h1>Engineering Ethics<br>Case Studies</h1>
+      <p class="header-tagline">A focused exam-prep guide for engineering ethics, case analysis, MCQs, and written questions.</p>
+      <p class="header-sub">Choose a case to study the story, key ethical issues, MCQs, and written-answer practice.</p>
     </div>
   </header>
 
+  <div class="site-nav">
+    <div class="site-nav-inner">
+      <a class="nav-brand" href="#main-content">
+        <span class="nav-brand-dot" aria-hidden="true"></span>
+        Engineering Ethics
+      </a>
+      <nav class="nav-section-links" aria-label="Page sections">
+        <a href="#cases-dashboard" class="nav-section-link">Cases</a>
+        <a href="#case-1" class="nav-section-link">Practice</a>
+        <a href="#vw-written" class="nav-section-link">Written Qs</a>
+        <a href="#vw-top-issues" class="nav-section-link">Top Ethics</a>
+      </nav>
+      <span class="nav-exam-badge">Exam Prep</span>
+    </div>
+  </div>
+
   <nav class="case-nav" aria-label="Case study navigation">
-    <a href="#case-1"><span>1</span> Volkswagen Emissions Scandal</a>
-    <a href="#case-2"><span>2</span> Heathrow Terminal 5</a>
-    <a href="#case-3"><span>3</span> Boeing 737 MAX Crisis</a>
-    <a href="#case-4"><span>4</span> Ariane 5 Flight 501</a>
-    <a href="#case-5"><span>5</span> Therac-25 Accidents</a>
+    <a href="#case-1"><span>1</span> Volkswagen</a>
+    <a href="#case-2"><span>2</span> Heathrow T5</a>
+    <a href="#case-3"><span>3</span> Boeing 737 MAX</a>
+    <a href="#case-4"><span>4</span> Ariane 5</a>
+    <a href="#case-5"><span>5</span> Therac-25</a>
     <a href="#case-6"><span>6</span> Tacoma Narrows</a>
     <a href="#case-7"><span>7</span> Gulf Hotel Fire</a>
-    <a href="#case-8"><span>8</span> Hyatt Regency Walkway</a>
-    <a href="#case-9"><span>9</span> Piper Alpha / Safety Culture</a>
-    <a href="#case-10"><span>10</span> Theranos / Medical Fraud</a>
+    <a href="#case-8"><span>8</span> Hyatt Regency</a>
+    <a href="#case-9"><span>9</span> Piper Alpha</a>
+    <a href="#case-10"><span>10</span> Theranos</a>
   </nav>
 
   <main id="main-content" class="page-shell">
-    <section class="intro-panel" aria-labelledby="how-to-use-title">
-      <div>
-        <p class="section-kicker">How to use this website</p>
-        <h2 id="how-to-use-title">Study the same way the exam asks questions.</h2>
-      </div>
-      <p>
-        Cases 1 to 8 are complete guided lessons with one-by-one MCQ practice. Cases 9 to 10 are clean
-        <strong>coming soon</strong> placeholders so future content can be added without the page feeling repetitive.
-      </p>
+    <section id="cases-dashboard" class="cases-dashboard" aria-label="Case studies">
+      <p class="cases-dashboard-heading">All 10 cases</p>
     </section>
 
     <section id="case-1" class="case-section vw-case" data-case-id="case-1" aria-labelledby="case-1-title">
@@ -281,9 +270,10 @@
         <p class="quiz-warning" data-warning-for="case-1" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-1"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-1" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-1">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-1" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-1">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-1" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-1">Restart</button>
         </div>
       </article>
 
@@ -567,9 +557,10 @@
         <p class="quiz-warning" data-warning-for="case-2" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-2"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-2" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-2">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-2" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-2">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-2" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-2">Restart</button>
         </div>
       </article>
 
@@ -734,9 +725,10 @@
         <p class="quiz-warning" data-warning-for="case-3" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-3"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-3" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-3">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-3" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-3">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-3" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-3">Restart</button>
         </div>
       </article>
 
@@ -992,9 +984,10 @@
         <p class="quiz-warning" data-warning-for="case-4" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-4"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-4" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-4">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-4" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-4">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-4" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-4">Restart</button>
         </div>
       </article>
 
@@ -1164,9 +1157,10 @@
         <p class="quiz-warning" data-warning-for="case-5" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-5"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-5" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-5">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-5" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-5">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-5" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-5">Restart</button>
         </div>
       </article>
 
@@ -1365,9 +1359,10 @@
         <p class="quiz-warning" data-warning-for="case-6" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-6"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-6" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-6">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-6" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-6">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-6" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-6">Restart</button>
         </div>
       </article>
 
@@ -1580,9 +1575,10 @@
         <p class="quiz-warning" data-warning-for="case-7" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-7"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-7" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-7">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-7" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-7">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-7" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-7">Restart</button>
         </div>
       </article>
 
@@ -1822,9 +1818,10 @@
         <p class="quiz-warning" data-warning-for="case-8" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-8"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-8" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-8">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-8" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-8">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-8" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-8">Restart</button>
         </div>
       </article>
 
@@ -2047,9 +2044,10 @@
         <p class="quiz-warning" data-warning-for="case-9" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-9"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-9" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-9">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-9" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-9">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-9" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-9">Restart</button>
         </div>
       </article>
 
@@ -2298,9 +2296,10 @@
         <p class="quiz-warning" data-warning-for="case-10" aria-live="polite"></p>
         <div class="quiz-list" data-quiz-for="case-10"></div>
         <div class="quiz-actions">
+          <button type="button" class="secondary-button quiz-nav-btn" data-prev-question="case-10" disabled>&#8592; Prev</button>
           <button type="button" class="primary-button" data-submit-quiz="case-10">Submit Answer</button>
-          <button type="button" class="primary-button" data-next-question="case-10" hidden>Next Question</button>
-          <button type="button" class="secondary-button" data-reset-quiz="case-10">Restart Quiz</button>
+          <button type="button" class="primary-button" data-next-question="case-10" disabled>Next &#8594;</button>
+          <button type="button" class="secondary-button" data-reset-quiz="case-10">Restart</button>
         </div>
       </article>
 

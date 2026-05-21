@@ -3837,16 +3837,7 @@ function restoreQuizPosition(snapshot) {
 }
 
 function gentlyRevealResult(caseId) {
-  if (caseId === "case-2") {
-    return;
-  }
-
-  window.requestAnimationFrame(() => {
-    const resultCard = document.querySelector(`[data-quiz-for="${caseId}"] .result-card`);
-    if (resultCard) {
-      resultCard.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    }
-  });
+  // No auto-scroll — position is managed by restoreQuizPosition to prevent page jump.
 }
 
 function renderQuiz(caseId) {
@@ -3854,6 +3845,7 @@ function renderQuiz(caseId) {
   const container = document.querySelector(`[data-quiz-for="${caseId}"]`);
   const submitButton = document.querySelector(`[data-submit-quiz="${caseId}"]`);
   const nextButton = document.querySelector(`[data-next-question="${caseId}"]`);
+  const prevButton = document.querySelector(`[data-prev-question="${caseId}"]`);
   const resetButton = document.querySelector(`[data-reset-quiz="${caseId}"]`);
 
   if (!container || !quiz) {
@@ -3961,14 +3953,19 @@ function renderQuiz(caseId) {
 
   container.appendChild(quizShell);
 
+  if (prevButton) {
+    prevButton.disabled = questionIndex === 0;
+  }
+
   if (submitButton) {
+    const hasAnswer = state.answers[questionIndex] !== undefined;
     submitButton.hidden = isSubmitted;
-    submitButton.disabled = isSubmitted;
+    submitButton.disabled = !hasAnswer;
   }
 
   if (nextButton) {
-    nextButton.hidden = !isSubmitted || isLastQuestion;
-    nextButton.disabled = !isSubmitted || isLastQuestion;
+    nextButton.hidden = isLastQuestion;
+    nextButton.disabled = !isSubmitted;
   }
 
   if (resetButton) {
@@ -4058,6 +4055,16 @@ function nextQuestion(caseId) {
   restoreQuizPosition(position);
 }
 
+function previousQuestion(caseId) {
+  const state = getState(caseId);
+  if (state.currentIndex <= 0) return;
+  const position = rememberQuizPosition(caseId);
+  state.currentIndex = Math.max(state.currentIndex - 1, 0);
+  setWarning(caseId, "");
+  renderQuiz(caseId);
+  restoreQuizPosition(position);
+}
+
 function resetQuiz(caseId) {
   const position = rememberQuizPosition(caseId);
   quizState[caseId] = {
@@ -4125,6 +4132,7 @@ function bindQuizButtons() {
   document.addEventListener("click", (event) => {
     const submitButton = event.target.closest("[data-submit-quiz]");
     const nextButton = event.target.closest("[data-next-question]");
+    const prevButton = event.target.closest("[data-prev-question]");
     const resetButton = event.target.closest("[data-reset-quiz]");
 
     if (submitButton) {
@@ -4137,6 +4145,11 @@ function bindQuizButtons() {
       nextQuestion(nextButton.dataset.nextQuestion);
     }
 
+    if (prevButton) {
+      event.preventDefault();
+      previousQuestion(prevButton.dataset.prevQuestion);
+    }
+
     if (resetButton) {
       event.preventDefault();
       resetQuiz(resetButton.dataset.resetQuiz);
@@ -4144,7 +4157,113 @@ function bindQuizButtons() {
   });
 }
 
+const CASE_META = [
+  { id: "case-1",  num: 1,  title: "Volkswagen Emissions Scandal",   focus: "Deceptive software, environmental responsibility, and public trust",        tags: ["Integrity", "Transparency", "Environmental Responsibility"] },
+  { id: "case-2",  num: 2,  title: "Heathrow Terminal 5",            focus: "Operational readiness, risk management, and stakeholder communication",      tags: ["Accountability", "Risk Management", "Public Trust"] },
+  { id: "case-3",  num: 3,  title: "Boeing 737 MAX Crisis",          focus: "Safety culture, automated flight systems, and regulatory oversight",         tags: ["Public Safety", "Transparency", "Professional Responsibility"] },
+  { id: "case-4",  num: 4,  title: "Ariane 5 Flight 501",            focus: "Software reuse, overflow failure, and common-mode redundancy",               tags: ["Validation", "Testing", "Professional Responsibility"] },
+  { id: "case-5",  num: 5,  title: "Therac-25 Accidents",            focus: "Patient safety, fail-safe design, and software ethics",                      tags: ["Patient Safety", "Accountability", "Risk Management"] },
+  { id: "case-6",  num: 6,  title: "Tacoma Narrows Bridge",          focus: "Design assumptions, professional competence, and innovation risk",           tags: ["Competence", "Risk Management", "Public Safety"] },
+  { id: "case-7",  num: 7,  title: "Gulf Hotel Fire",                focus: "Safety culture, code compliance, and risk assessment",                       tags: ["Public Safety", "Legal Compliance", "Accountability"] },
+  { id: "case-8",  num: 8,  title: "Hyatt Regency Walkway",          focus: "Design change authorization, professional review, and communication",        tags: ["Professional Responsibility", "Communication", "Public Safety"] },
+  { id: "case-9",  num: 9,  title: "Piper Alpha Disaster",           focus: "Safety culture, permit-to-work systems, and escalation",                    tags: ["Safety Culture", "Accountability", "Whistle-blowing"] },
+  { id: "case-10", num: 10, title: "Theranos Medical Fraud",         focus: "Medical device validation, honesty, and patient safety",                     tags: ["Honesty", "Transparency", "Patient Safety"] }
+];
+
+function generateCaseDashboard() {
+  const container = document.getElementById("cases-dashboard");
+  if (!container) return;
+
+  const grid = document.createElement("div");
+  grid.className = "case-dashboard-grid";
+
+  CASE_META.forEach((meta) => {
+    const card = document.createElement("a");
+    card.className = "case-dashboard-card";
+    card.href = "#" + meta.id;
+
+    const numEl = document.createElement("span");
+    numEl.className = "cdc-num";
+    numEl.textContent = "Case " + meta.num;
+
+    const titleEl = document.createElement("h3");
+    titleEl.className = "cdc-title";
+    titleEl.textContent = meta.title;
+
+    const focusEl = document.createElement("p");
+    focusEl.className = "cdc-focus";
+    focusEl.textContent = meta.focus;
+
+    const tagsEl = document.createElement("div");
+    tagsEl.className = "cdc-tags";
+    meta.tags.forEach((tag) => {
+      const span = document.createElement("span");
+      span.textContent = tag;
+      tagsEl.appendChild(span);
+    });
+
+    const ctaEl = document.createElement("span");
+    ctaEl.className = "cdc-cta";
+    ctaEl.textContent = "Study Case →";
+
+    card.appendChild(numEl);
+    card.appendChild(titleEl);
+    card.appendChild(focusEl);
+    card.appendChild(tagsEl);
+    card.appendChild(ctaEl);
+    grid.appendChild(card);
+  });
+
+  container.appendChild(grid);
+}
+
+const INNER_NAV_LABELS = {
+  "story":      "Story",
+  "about":      "Case Story",
+  "core":       "Must Know",
+  "summary":    "Summary",
+  "top-issues": "Top Ethics",
+  "ethics":     "Full Ethics",
+  "meaning":    "Full Ethics",
+  "quiz":       "MCQs",
+  "written":    "Written Qs"
+};
+
+function generateCaseInnerNavs() {
+  document.querySelectorAll(".case-section").forEach((section) => {
+    const heading = section.querySelector(".case-heading");
+    if (!heading) return;
+
+    const articles = section.querySelectorAll("article[id]");
+    if (!articles.length) return;
+
+    const nav = document.createElement("div");
+    nav.className = "case-inner-nav";
+    nav.setAttribute("role", "navigation");
+    nav.setAttribute("aria-label", "Case sections");
+
+    let hasLinks = false;
+    articles.forEach((article) => {
+      const id = article.id;
+      const key = Object.keys(INNER_NAV_LABELS).find((k) => id.endsWith("-" + k));
+      if (!key) return;
+      const a = document.createElement("a");
+      a.href = "#" + id;
+      a.className = "cin-link";
+      a.textContent = INNER_NAV_LABELS[key];
+      nav.appendChild(a);
+      hasLinks = true;
+    });
+
+    if (hasLinks) {
+      heading.insertAdjacentElement("afterend", nav);
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  generateCaseDashboard();
+  generateCaseInnerNavs();
   renderAllQuizzes();
   bindQuizButtons();
 });
