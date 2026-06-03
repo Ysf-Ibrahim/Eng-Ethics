@@ -11,11 +11,11 @@ Offline use
 - You can zip the whole folder and share it with classmates.
 
 Files
-- index.html: The homepage and the 10 case-study sections.
+- index.html: The homepage and the 10 case-study sections.j
 - style.css: The visual design, layout, spacing, colors, and mobile responsiveness.
 - script.js: The reusable quiz logic and quiz data.
 - README.txt: These instructions.
-
+k
 How to add or edit a case
 1. Open index.html.
 2. Find the section you want, for example:
